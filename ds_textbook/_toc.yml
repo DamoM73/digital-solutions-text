@@ -1,0 +1,127 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Explore
+    chapters:
+    - file: 1_explore/0_explore_intro 
+    - file: 1_explore/1_describe_problem
+      sections:
+      - file: 1_explore/1_describe_problem/unit_1
+      - file: 1_explore/1_describe_problem/unit_2
+      - file: 1_explore/1_describe_problem/unit_3
+      - file: 1_explore/1_describe_problem/unit_4
+    - file: 1_explore/2_needs_or_wants
+      sections:
+      - file: 1_explore/2_needs_or_wants/unit_1
+      - file: 1_explore/2_needs_or_wants/unit_2
+      - file: 1_explore/2_needs_or_wants/unit_3
+      - file: 1_explore/2_needs_or_wants/unit_4
+    - file: 1_explore/3_analyse_problem
+      sections:
+      - file: 1_explore/3_analyse_problem/unit_1
+      - file: 1_explore/3_analyse_problem/unit_2
+      - file: 1_explore/3_analyse_problem/unit_3
+      - file: 1_explore/3_analyse_problem/unit_4
+    - file: 1_explore/4_select_impacts
+      sections:
+      - file: 1_explore/4_select_impacts/unit_1
+      - file: 1_explore/4_select_impacts/unit_2
+      - file: 1_explore/4_select_impacts/unit_3
+      - file: 1_explore/4_select_impacts/unit_4
+    - file: 1_explore/5_identify_contraints
+      sections:
+      - file: 1_explore/5_identify_contraints/unit_1
+      - file: 1_explore/5_identify_contraints/unit_2
+      - file: 1_explore/5_identify_contraints/unit_3
+      - file: 1_explore/5_identify_contraints/unit_4
+    - file: 1_explore/6_identify_requirements
+      sections:
+      - file: 1_explore/6_identify_requirements/unit_1
+      - file: 1_explore/6_identify_requirements/unit_2
+      - file: 1_explore/6_identify_requirements/unit_3
+      - file: 1_explore/6_identify_requirements/unit_4
+    - file: 1_explore/7_determine_criteria
+      sections:
+      - file: 1_explore/7_determine_criteria/unit_1
+      - file: 1_explore/7_determine_criteria/unit_2
+      - file: 1_explore/7_determine_criteria/unit_3
+      - file: 1_explore/7_determine_criteria/unit_4
+  - caption: Develop
+    chapters:
+    - file: 2_develop/0_introduction
+    - file: 2_develop/1_design_ui_ux
+      sections:
+      - file: 2_develop/1_design_ui_ux/unit_1
+      - file: 2_develop/1_design_ui_ux/unit_2
+      - file: 2_develop/1_design_ui_ux/unit_3
+      - file: 2_develop/1_design_ui_ux/unit_4
+    - file: 2_develop/2_design_controller
+      sections:
+      - file: 2_develop/2_design_controller/unit_1
+      - file: 2_develop/2_design_controller/unit_2
+      - file: 2_develop/2_design_controller/unit_3
+      - file: 2_develop/2_design_controller/unit_4
+    - file: 2_develop/3_design_model
+      sections:
+      - file: 2_develop/3_design_model/unit_1
+      - file: 2_develop/3_design_model/unit_2
+      - file: 2_develop/3_design_model/unit_3
+      - file: 2_develop/3_design_model/unit_4
+  - caption: Generate
+    chapters:
+    - file: 3_generate/0_introduction
+    - file: 3_generate/1_environment
+      sections:
+      - file: 3_generate/1_environment/unit_1
+      - file: 3_generate/1_environment/unit_2
+      - file: 3_generate/1_environment/unit_3
+      - file: 3_generate/1_environment/unit_4
+    - file: 3_generate/2_generate_code
+      sections:
+      - file: 3_generate/2_generate_code/unit_1
+      - file: 3_generate/2_generate_code/unit_2
+      - file: 3_generate/2_generate_code/unit_3
+      - file: 3_generate/2_generate_code/unit_4
+    - file: 3_generate/3_clarify_code
+      sections:
+      - file: 3_generate/3_clarify_code/unit_1
+      - file: 3_generate/3_clarify_code/unit_2
+      - file: 3_generate/3_clarify_code/unit_3
+      - file: 3_generate/3_clarify_code/unit_4
+    - file: 3_generate/4_test_code
+      sections:
+      - file: 3_generate/4_test_code/unit_1
+      - file: 3_generate/4_test_code/unit_2
+      - file: 3_generate/4_test_code/unit_3
+      - file: 3_generate/4_test_code/unit_4
+  - caption: Evaluate
+    chapters:
+    - file: 4_evaluate/0_introduction
+    - file: 4_evaluate/1_components
+      sections:
+      - file: 4_evaluate/1_components/unit_1
+      - file: 4_evaluate/1_components/unit_2
+      - file: 4_evaluate/1_components/unit_3
+      - file: 4_evaluate/1_components/unit_4
+    - file: 4_evaluate/2_impacts
+      sections:
+      - file: 4_evaluate/2_impacts/unit_1
+      - file: 4_evaluate/2_impacts/unit_2
+      - file: 4_evaluate/2_impacts/unit_3
+      - file: 4_evaluate/2_impacts/unit_4
+    - file: 4_evaluate/3_solution
+      sections:
+      - file: 4_evaluate/3_solution/unit_1
+      - file: 4_evaluate/3_solution/unit_2
+      - file: 4_evaluate/3_solution/unit_3
+      - file: 4_evaluate/3_solution/unit_4
+  - caption: Throughout
+    chapters:
+    - file: 5_throughout/1_communication
+    - file: 5_throughout/2__conventions
+    - file: 5_throughout/3_gramma
+    - file: 5_throughout/4_langauge
+    - file: 5_throughout/5_referencing
