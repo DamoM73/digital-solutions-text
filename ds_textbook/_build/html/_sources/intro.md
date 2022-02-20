@@ -1,4 +1,4 @@
-# The EDGE Approach to Digital Solutions
+# EDGE approach to Digital Solutions
 
 The QCAA Digital Solutions curriculum a problem solving approach called EDGE, which stands for Explore, Develop, Genreate and Evaluate.
 
