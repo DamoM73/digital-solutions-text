@@ -1,4 +1,4 @@
-# Unit 1 - Creating with code
+# Unit 1 - Describing the Problem
 ```{admonition} Students will:
 - understand the constituents of a digital problem
 ```

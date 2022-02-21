@@ -1,4 +1,4 @@
-# Unit 1 - Creating with code
+# Unit 1: Analyse the Problem
 ```{admonition} Students will:
 - understand methods of breaking down problems into parts using computational thinking and thinking tools
 - analyse problems to identify essential elements, components and features of problems in Digital Solutions
