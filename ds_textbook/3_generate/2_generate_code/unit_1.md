@@ -1,4 +1,4 @@
-# Unit 1 - Creating with code
+# Unit 1: Generate Code
 ```{admonition} Students will:
 - generate user interfaces by investigating and applying useability principles
 - explore the use of a procedural text-based language for writing and modifying code and using existing code blocks or statements

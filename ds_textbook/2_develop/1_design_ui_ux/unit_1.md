@@ -1,4 +1,4 @@
-# Unit 1 - Creating with code
+# Unit 1: Design UI and UX
 ```{admonition} Students will:
 - recognise and describe the meaning and importance of user experience
 - recognise and describe useability principles including accessibility, effectiveness, safety, utility and learnability
