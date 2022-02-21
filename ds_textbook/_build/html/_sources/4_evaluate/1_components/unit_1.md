@@ -1,4 +1,4 @@
-# Unit 1 - Creating with code
+# Unit 1: Evaluate Components
 ```{admonition} Students will:
 - evaluate and make recommendations about the use of programming language rules and syntax for a given problem
 - evaluate and make recommendations about algorithmic steps using debugging processes

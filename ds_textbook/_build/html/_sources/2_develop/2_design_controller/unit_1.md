@@ -1,4 +1,4 @@
-# Unit 1 - Creating with code
+# Unit 1 - Design Algorithms
 ```{admonition} Students will:
 - recognise and describe programming syntax and rules
 - understand that simple algorithms consist of input, process and output at various stages

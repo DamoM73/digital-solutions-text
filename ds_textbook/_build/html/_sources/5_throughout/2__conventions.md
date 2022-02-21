@@ -1,4 +1,4 @@
-# Project Conventions
+# Use Project Conventions
 ```{admonition} Students will:
 - appraise information and ideas
 - communicate using digital technologies–specific language

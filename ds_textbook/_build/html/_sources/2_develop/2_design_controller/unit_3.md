@@ -1,1 +1,1 @@
-# Unit 3: Digital innovation
+# Unit 3: Design Algorithms
