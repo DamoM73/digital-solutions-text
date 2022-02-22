@@ -1,6 +1,5 @@
 # Generate Introduction
-```{admonition} Tools used:
-The following tools are used to complete the Generate phase:
+```{admonition} Tools used to complete the Generate phase:
 - Mind Maps
 - QT Designer
 - Annotated Code

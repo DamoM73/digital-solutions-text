@@ -45,15 +45,16 @@
     <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Learning Scenario" href="learning_scenario.html" />
+    <link rel="next" title="The Text Structure" href="1_text_structure.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -104,8 +105,18 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="learning_scenario.html">
+  <a class="reference internal" href="1_text_structure.html">
+   The Text Structure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2_learning_scenario.html">
    Learning Scenario
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3_tools_used.html">
+   Technologies Used
   </a>
  </li>
 </ul>
@@ -814,80 +825,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-text-structure">
-   The Text Structure
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#digital-solutions-units">
-     Digital Solutions Units
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#unit-1-creating-with-code">
-       Unit 1: Creating with code
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#unit-2-application-and-data-solutions">
-       Unit 2: Application and data solutions
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#unit-3-digital-innovation">
-       Unit 3: Digital innovation
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#unit-4-digital-impacts">
-       Unit 4: Digital impacts
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#edge-phases">
-     EDGE Phases
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#explore">
-       Explore
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#develop">
-       Develop
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#generate">
-       Generate
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#evaluate">
-       Evaluate
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#throughout">
-       Throughout
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -900,80 +837,6 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-text-structure">
-   The Text Structure
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#digital-solutions-units">
-     Digital Solutions Units
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#unit-1-creating-with-code">
-       Unit 1: Creating with code
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#unit-2-application-and-data-solutions">
-       Unit 2: Application and data solutions
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#unit-3-digital-innovation">
-       Unit 3: Digital innovation
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#unit-4-digital-impacts">
-       Unit 4: Digital impacts
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#edge-phases">
-     EDGE Phases
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#explore">
-       Explore
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#develop">
-       Develop
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#generate">
-       Generate
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#evaluate">
-       Evaluate
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#throughout">
-       Throughout
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -992,81 +855,6 @@ const thebe_selector_output = ".output, .cell_output"
 <div><p>The process is iterative, proceeds through a number of phases, requiring students to explore problems, develop ideas, generate components and digital solutions, and evaluate personal, social and economic impacts, components and digital solutions. (syllabus)</p>
 </div></blockquote>
 <p><img alt="EDGE Process" src="_images/EDGE.png" /></p>
-<div class="section" id="the-text-structure">
-<h2>The Text Structure<a class="headerlink" href="#the-text-structure" title="Permalink to this headline">¶</a></h2>
-<p>In this text students will learn the Digital Solutions content, through the application of the EDGE processes. The process has been broken down into sub-phases. Students will navigate these phases for each of the four unit, applying the process to a sample problem and developing the required skills, whilst learning the content.</p>
-<div class="section" id="digital-solutions-units">
-<h3>Digital Solutions Units<a class="headerlink" href="#digital-solutions-units" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="unit-1-creating-with-code">
-<h4>Unit 1: Creating with code<a class="headerlink" href="#unit-1-creating-with-code" title="Permalink to this headline">¶</a></h4>
-<p>In Unit 1, students will explore the creative and technical aspects of developing interactive digital solutions. They investigate algorithms, programming features and useability principles to generate small interactive solutions using programming tools and gain a practical understanding of programming features. This allows them the opportunity to explore existing and developing trends involving digital technologies.</p>
-</div>
-<div class="section" id="unit-2-application-and-data-solutions">
-<h4>Unit 2: Application and data solutions<a class="headerlink" href="#unit-2-application-and-data-solutions" title="Permalink to this headline">¶</a></h4>
-<p>In Unit 2, students are required to engage with and learn subject matter through the use of the various phases of the problem-solving process in Digital Solutions. Students will optimise a given database and use programming skills acquired in Unit 1 to write procedural text-based code to generate a solution that interacts with an existing database via structured query language (SQL). Students will plan, develop and generate the interface and code to enable the user to insert, update, retrieve and delete data using an existing database via SQL. Prior to inserting the data, the system will validate the data being entered to ensure its integrity and reliability for use and storage. Retrieved data will be displayed to the user in an appropriate format, such as text or a symbolic visual form.</p>
-<p>Students are required to understand the structure of a database, along with how primary and foreign keys and data types affect the performance of the database. Students will evaluate the security, privacy and ethical effects of storing data in databases from individual, organisational and government perspectives.</p>
-</div>
-<div class="section" id="unit-3-digital-innovation">
-<h4>Unit 3: Digital innovation<a class="headerlink" href="#unit-3-digital-innovation" title="Permalink to this headline">¶</a></h4>
-<p>In Unit 3, students are required to engage with and learn subject matter through the use of the various phases of the problem-solving process in Digital Solutions. Students analyse the requirements of particular groups of people, and use knowledge and skills of problem-solving, computational, design and systems thinking. They will determine data requirements and use available resources to create prototyped digital solutions by programming and developing user interfaces to improve user experiences.</p>
-</div>
-<div class="section" id="unit-4-digital-impacts">
-<h4>Unit 4: Digital impacts<a class="headerlink" href="#unit-4-digital-impacts" title="Permalink to this headline">¶</a></h4>
-<p>In Unit 4, students learn how data is shared in both local and global contexts, particularly how digital solutions are increasingly required to exchange data securely and efficiently. Students will understand elements of cybersecurity by exploring the conditions, environment and methods for enabling data to flow between different digital systems. They will analyse data privacy and data integrity risks associated with transferring data between applications and evaluate the personal, social and economic impacts associated with the use and availability of both public and private data. Students will develop an application that simulates the exchange of data between two applications.</p>
-</div>
-</div>
-<div class="section" id="edge-phases">
-<h3>EDGE Phases<a class="headerlink" href="#edge-phases" title="Permalink to this headline">¶</a></h3>
-<p>Below are the four phases, and their sub-phases, as used by this text. There is an additional phase which addresses syllabus content that is used through the EDGE process.</p>
-<div class="section" id="explore">
-<h4>Explore<a class="headerlink" href="#explore" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p>Describe the problem</p></li>
-<li><p>Determine human needs or wants</p></li>
-<li><p>Analyse the problem</p></li>
-<li><p>Select Impacts</p></li>
-<li><p>Identify Constraints</p></li>
-<li><p>Identify Requirements</p></li>
-<li><p>Determine Criteria</p></li>
-</ul>
-</div>
-<div class="section" id="develop">
-<h4>Develop<a class="headerlink" href="#develop" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p>Design UI and UX</p></li>
-<li><p>Design Algorithms</p></li>
-<li><p>Design Data Source</p></li>
-</ul>
-</div>
-<div class="section" id="generate">
-<h4>Generate<a class="headerlink" href="#generate" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p>Select Development Environment</p></li>
-<li><p>Generate Code</p></li>
-<li><p>Clarify Code</p></li>
-<li><p>Test Code</p></li>
-</ul>
-</div>
-<div class="section" id="evaluate">
-<h4>Evaluate<a class="headerlink" href="#evaluate" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p>Evaluate Components</p></li>
-<li><p>Assess Impacts</p></li>
-<li><p>Evaluate Solution</p></li>
-</ul>
-</div>
-<div class="section" id="throughout">
-<h4>Throughout<a class="headerlink" href="#throughout" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p>Communicate</p></li>
-<li><p>Use Project Conventions</p></li>
-<li><p>Use Gramma and Language Structures</p></li>
-<li><p>Use Technical Language</p></li>
-<li><p>Apply Referencing</p></li>
-</ul>
-</div>
-</div>
-</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -1106,10 +894,10 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="learning_scenario.html" title="next page">
+    <a class='right-next' id="next-link" href="1_text_structure.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Learning Scenario</p>
+        <p class="prev-next-title">The Text Structure</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -6,7 +6,9 @@ root: intro
 parts:
   - caption: Introduction
     chapters:
-    - file: learning_scenario
+    - file: 1_text_structure
+    - file: 2_learning_scenario
+    - file: 3_tools_used
   - caption: Explore
     chapters:
     - file: 1_explore/0_explore_intro 
