@@ -45,12 +45,11 @@
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -96,6 +95,18 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
    EDGE approach to Digital Solutions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../learning_scenario.html">
+   Learning Scenario
   </a>
  </li>
 </ul>
@@ -380,7 +391,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../2_develop/2_design_controller.html">
-   Design Controller
+   Design Algorithms
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
   <label for="toctree-checkbox-9">
@@ -390,29 +401,29 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../2_develop/2_design_controller/unit_1.html">
-     Unit 1 - Design Controller
+     Unit 1 - Design Algorithms
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../2_develop/2_design_controller/unit_2.html">
-     Unit 2: Design Controller
+     Unit 2: Design Algorithms
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../2_develop/2_design_controller/unit_3.html">
-     Unit 3: Design Controller
+     Unit 3: Design Algorithms
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../2_develop/2_design_controller/unit_4.html">
-     Unit 4: Design Controller
+     Unit 4: Design Algorithms
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../2_develop/3_design_model.html">
-   Design the Model
+   Design Data Source
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
   <label for="toctree-checkbox-10">
@@ -422,22 +433,22 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../2_develop/3_design_model/unit_1.html">
-     Unit 1: Design the Model
+     Unit 1: Design Data Source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../2_develop/3_design_model/unit_2.html">
-     Unit 2: Design the Model
+     Unit 2: Design Data Source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../2_develop/3_design_model/unit_3.html">
-     Unit 3: Design the Model
+     Unit 3: Design Data Source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../2_develop/3_design_model/unit_4.html">
-     Unit 4: Design the Model
+     Unit 4: Design Data Source
     </a>
    </li>
   </ul>
@@ -699,27 +710,27 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../5_throughout/1_communication.html">
-   Communication
+   Communicate
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../5_throughout/2__conventions.html">
-   Project Conventions
+   Use Project Conventions
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../5_throughout/3_gramma.html">
-   Gramma and Language Strcutures
+   Use Gramma and Language Structures
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../5_throughout/4_langauge.html">
-   Technical Language
+   Use Technical Language
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../5_throughout/5_referencing.html">
-   Referencing
+   Apply Referencing
   </a>
  </li>
 </ul>

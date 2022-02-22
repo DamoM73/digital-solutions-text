@@ -45,12 +45,11 @@
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -96,6 +95,18 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../intro.html">
    EDGE approach to Digital Solutions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../learning_scenario.html">
+   Learning Scenario
   </a>
  </li>
 </ul>
@@ -380,7 +391,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../2_develop/2_design_controller.html">
-   Design Controller
+   Design Algorithms
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
   <label for="toctree-checkbox-9">
@@ -390,29 +401,29 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/2_design_controller/unit_1.html">
-     Unit 1 - Design Controller
+     Unit 1 - Design Algorithms
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/2_design_controller/unit_2.html">
-     Unit 2: Design Controller
+     Unit 2: Design Algorithms
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/2_design_controller/unit_3.html">
-     Unit 3: Design Controller
+     Unit 3: Design Algorithms
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/2_design_controller/unit_4.html">
-     Unit 4: Design Controller
+     Unit 4: Design Algorithms
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../2_develop/3_design_model.html">
-   Design the Model
+   Design Data Source
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
   <label for="toctree-checkbox-10">
@@ -422,22 +433,22 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/3_design_model/unit_1.html">
-     Unit 1: Design the Model
+     Unit 1: Design Data Source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/3_design_model/unit_2.html">
-     Unit 2: Design the Model
+     Unit 2: Design Data Source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/3_design_model/unit_3.html">
-     Unit 3: Design the Model
+     Unit 3: Design Data Source
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/3_design_model/unit_4.html">
-     Unit 4: Design the Model
+     Unit 4: Design Data Source
     </a>
    </li>
   </ul>
@@ -699,27 +710,27 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../5_throughout/1_communication.html">
-   Communication
+   Communicate
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../5_throughout/2__conventions.html">
-   Project Conventions
+   Use Project Conventions
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../5_throughout/3_gramma.html">
-   Gramma and Language Strcutures
+   Use Gramma and Language Structures
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../5_throughout/4_langauge.html">
-   Technical Language
+   Use Technical Language
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../5_throughout/5_referencing.html">
-   Referencing
+   Apply Referencing
   </a>
  </li>
 </ul>
@@ -804,6 +815,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-are-digital-problems">
+   What are digital problems
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#describing-the-problem">
+   Describing the problem
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -816,6 +845,24 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-are-digital-problems">
+   What are digital problems
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#describing-the-problem">
+   Describing the problem
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -830,11 +877,32 @@
 <li><p>understand the constituents of a digital problem</p></li>
 </ul>
 </div>
-<div class="admonition-tools-use admonition">
-<p class="admonition-title">Tools use: </p>
+<div class="admonition-tools-used admonition">
+<p class="admonition-title">Tools used: </p>
 <ul class="simple">
 <li><p>mind maps</p></li>
 </ul>
+</div>
+<div class="section" id="what-are-digital-problems">
+<h2>What are digital problems<a class="headerlink" href="#what-are-digital-problems" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Problem solving in technology-rich environments involves using digital technology, communication tools and networks to acquire and evaluate information, communicate with others and perform practical tasks. It requires the ability to solve problems for personal, social and economic purposes through the setting of appropriate goals and plans and by the accessing and making use of information through computers and computer networks. (Program for the International Assessment of Adult Competancies (PIAAC), 2020)</p>
+</div></blockquote>
+<blockquote>
+<div><p>Digital problems are therefore those problems that are solvable using information and communication technologies. These digital solutions can use a wide variety of developed and developing contexts such as web applications, mobile applications, interactive media and intelligent systems. (QCAA, 2017)</p>
+</div></blockquote>
+<p>What distinguishes a digital problem is that the solution consists of digital hardware and software working together to form a digital system.</p>
+<p><img alt="IPO" src="../../_images/IPO.png" /></p>
+<p>In a digital system:</p>
+<ul class="simple">
+<li><p>data goes in (input)</p></li>
+<li><p>data is manipulated (process)</p></li>
+<li><p>data is sent out (output)</p></li>
+</ul>
+</div>
+<div class="section" id="describing-the-problem">
+<h2>Describing the problem<a class="headerlink" href="#describing-the-problem" title="Permalink to this headline">¶</a></h2>
+<p>Once you have established that the problem is a digital problem, it is important to develop a clear understanding of the problem.</p>
 </div>
 </div>
 

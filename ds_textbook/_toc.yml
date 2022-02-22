@@ -4,6 +4,9 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Introduction
+    chapters:
+    - file: learning_scenario
   - caption: Explore
     chapters:
     - file: 1_explore/0_explore_intro 
