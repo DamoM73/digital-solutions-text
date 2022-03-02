@@ -1,15 +1,8 @@
 # Unit 1: Describing the Problem
-```{admonition} Students will:
-- understand the constituents of a digital problem
-```
-
-```{admonition} Tools used: 
-- mind maps
-```
 
 ## What are digital problems
 
-> Problem solving in technology-rich environments involves using digital technology, communication tools and networks to acquire and evaluate information, communicate with others and perform practical tasks. It requires the ability to solve problems for personal, social and economic purposes through the setting of appropriate goals and plans and by the accessing and making use of information through computers and computer networks. (Program for the International Assessment of Adult Competancies (PIAAC), 2020)
+> Problem solving in technology-rich environments involves using digital technology, communication tools and networks to acquire and evaluate information, communicate with others and perform practical tasks. It requires the ability to solve problems for personal, social and economic purposes through the setting of appropriate goals and plans and by the accessing and making use of information through computers and computer networks. (Program for the International Assessment of Adult Competencies (PIAAC), 2020)
 
 > Digital problems are therefore those problems that are solvable using information and communication technologies. These digital solutions can use a wide variety of developed and developing contexts such as web applications, mobile applications, interactive media and intelligent systems. (QCAA, 2017)
 
