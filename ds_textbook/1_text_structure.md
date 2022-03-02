@@ -1,9 +1,11 @@
 # The Text Structure
 In this text students will learn the Digital Solutions content, through the application of the EDGE processes. The process has been broken down into sub-phases. Students will navigate these phases for each of the four units, applying the process to a sample problem and developing the required skills, whilst learning the content.
 
+---
 ## Digital Solutions Context
 The Digital Solutions Technology context we will be using for this text is Interactive Media.
 
+---
 ## Digital Solutions Units
 
 ### Unit 1: Creating with code
@@ -20,6 +22,7 @@ In Unit 3, students are required to engage with and learn subject matter through
 ### Unit 4: Digital impacts
 In Unit 4, students learn how data is shared in both local and global contexts, particularly how digital solutions are increasingly required to exchange data securely and efficiently. Students will understand elements of cybersecurity by exploring the conditions, environment and methods for enabling data to flow between different digital systems. They will analyse data privacy and data integrity risks associated with transferring data between applications and evaluate the personal, social and economic impacts associated with the use and availability of both public and private data. Students will develop an application that simulates the exchange of data between two applications.
 
+---
 ## EDGE Phases
 Below are the four phases, and their sub-phases, as used by this text. There is an additional phase which addresses syllabus content that is used through the EDGE process.
 

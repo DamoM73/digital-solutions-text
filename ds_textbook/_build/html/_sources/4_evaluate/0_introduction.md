@@ -1,6 +1,5 @@
 # Evaluate Introduction
-```{admonition} Tools used:
-The following tools are used to complete the Evaluate phase:
+```{admonition} Tools used to complete the Evaluate phase:
 - Evaluation Table
 - Impacts Assessment
 ```
