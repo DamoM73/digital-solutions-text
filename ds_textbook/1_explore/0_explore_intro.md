@@ -7,9 +7,20 @@
 - Requirement Tables
 - Criteria Tables
 ```
+
 The explore phase involves students investigating a need, want or opportunity to analyse and understand a digital problem and its relationship to existing solutions.
 
-To explore the problem, students:
+To complete the Explore phase of the EDGE problem solving processes we will work through seven steps.
+1. Describe the problem
+2. Determine human needs or wants
+3. Analyse the problem
+4. Select impacts
+5. Identify constraints
+6. Identify requirements
+7. Determine criteria
+
+
+According to the syllabus (QCAA), to explore the problem, students:
 - describe problems from a user perspective
 - recognise constraints
 - use decomposition to dissect problems and existing solutions to similar problems

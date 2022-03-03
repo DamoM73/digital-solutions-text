@@ -130,3 +130,6 @@ parts:
     - file: 5_throughout/3_gramma
     - file: 5_throughout/4_langauge
     - file: 5_throughout/5_referencing
+  - caption: End material
+    chapters:
+    - file: bibliography

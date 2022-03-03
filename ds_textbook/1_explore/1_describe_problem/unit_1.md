@@ -16,4 +16,18 @@ In a digital system:
 - data is sent out (output)
 
 ## Describing the problem
-Once you have established that the problem is a digital problem, it is important to develop a clear understanding of the problem. 
+Describing the problem is an important first step in developing a digital solution. There are uncountable examples of failed solutions due to the designer solving a different problem to the one they were supposed to solve. Therefore the first step in our problem solving process is to clearly, and succinctly.
+
+To describe the problem we will use the TOSCA framework {cite}`garrette_2018_cracked`. TOSCA is an abbreviation for Trouble, Owner, Success Criteria, Constraints and Actors.
+
+- **Trouble**: What indicates the current situation is not the desired one?
+- **Owner**: Who is responsible for its resolution?
+- **Success**: What will success look like and when?
+- **Constraints**: What are the binding constraints on developing a solution?
+- **Actors**: Who are the relevant stakeholders?
+
+We do this using our mind map. The problem description branch can be seen below.
+
+![describe problem mind map branch](../assests/mm_descrbe_problem.png)
+
+Ultimately, this is an initial sketch of the problem which we will investigate in further detail throughout the Exploration phase.
