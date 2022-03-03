@@ -1,5 +1,6 @@
 # Explore Introduction
 ```{admonition} Tools used to complete the Explore phase:
+:class: attention
 - Mind Maps
 - Empathy Maps
 - Personas
@@ -20,7 +21,7 @@ To complete the Explore phase of the EDGE problem solving processes we will work
 7. Determine criteria
 
 
-According to the syllabus (QCAA), to explore the problem, students:
+According to {cite}`qcaa_2017_digital`, to explore the problem, students:
 - describe problems from a user perspective
 - recognise constraints
 - use decomposition to dissect problems and existing solutions to similar problems
