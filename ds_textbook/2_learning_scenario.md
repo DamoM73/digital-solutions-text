@@ -4,7 +4,9 @@ We will use a scenario to assist in learning the content of this text. This scen
 
 ---
 ## Unit 1 Scenario
-Mikey unit 1 video
+Meet Mikey. Mikey is a 30 year-old guy who rents an inner city unit and works in customer support. Mikey in an introvert, and he finds that by the end of his day, he is "all talked out". He's rarely in the mood for socialising, and just wants to "decompress" at home. 
+
+On a recent camping trip Mikey rediscovered hangman. Sure, he played the game at school, but he never realised how much he enjoyed playing it. He would love nothing more than coming home each day and playing hangman to relax, but that would involve interacting with people. Mikey is looking for a way to play hangman by himself.
 
 ---
 ## Unit 2 Scenario
