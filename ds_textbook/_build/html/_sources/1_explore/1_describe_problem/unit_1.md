@@ -1,6 +1,6 @@
 # Unit 1: Describing the Problem
 
-## What are digital problems
+## What are digital problems?
 
 > Problem solving in technology-rich environments involves using digital technology, communication tools and networks to acquire and evaluate information, communicate with others and perform practical tasks. It requires the ability to solve problems for personal, social and economic purposes through the setting of appropriate goals and plans and by the accessing and making use of information through computers and computer networks.{cite}`PIAAC_2009`
 

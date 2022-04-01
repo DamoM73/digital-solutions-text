@@ -7,7 +7,7 @@ We will be using Python as our programming language for this course. Specificall
 
 To install Python go to the **[downloads section of the Python website](https://www.python.org/downloads/)** and choose the installer for your OS.
 
-<font color=red>**Really important for Windows users (hence the red):** You need to make sure that you check the box beside **Add Python 3.10 to PATH**. Failure to do this will hamper the use of Python on Windows, and when you have a problem, I will just tell you to reinstall it using the instruction that you should have used the first time.</font>
+<font color=red>**Really important for Windows users (hence the red):** You need to make sure that you check the box beside **Add Python 3.10 to PATH**. Failure to do this will hamper the use of Python on Windows, and when you have a problem, I will just tell you to reinstall it using the instructions that you should have used the first time.</font>
 
 <font color=red>Follow the steps below:</font>
 

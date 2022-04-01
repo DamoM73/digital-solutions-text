@@ -5,6 +5,8 @@
 Meet Mikey. Mikey is a 30 year-old guy who rents an inner city unit and works in customer support. Mikey in an introvert, and he finds that by the end of his day, he is "all talked out". He's rarely in the mood for socialising, and just wants to "decompress" at home. 
 
 On a recent camping trip Mikey rediscovered hangman. Sure, he played the game at school, but he never realised how much he enjoyed playing it. He would love nothing more than coming home each day and playing hangman to relax, but that would involve interacting with people. Mikey is looking for a way to play hangman by himself.
+
+Mikey is concerned that if he had hangman on his phone, that he would play it at work. Therefore he is looking for a solution that would only reside on his laptop. He knows that he can buy a hangman game, but he cannot afford it.
 ```
 
 ## Is it a digital problem?
@@ -24,3 +26,4 @@ The problem involves:
 Therefore the problem is one that can be solved with a Digital Solution.
 
 ## Describe the problem in mind map using TOSCA
+![mind_map](../assests/mm_u1_sen_desc.png)
