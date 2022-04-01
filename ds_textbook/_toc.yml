@@ -15,6 +15,7 @@ parts:
     - file: 1_explore/1_describe_problem
       sections:
       - file: 1_explore/1_describe_problem/unit_1
+      - file: 1_explore/1_describe_problem/unit_1_scenario
       - file: 1_explore/1_describe_problem/unit_2
     - file: 1_explore/2_needs_or_wants
       sections:
