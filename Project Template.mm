@@ -1,0 +1,12 @@
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node CREATED="1651621002857" ID="ID_788635100" MODIFIED="1651621022165" TEXT="Project Template">
+<node CREATED="1651621108548" ID="ID_1294864912" MODIFIED="1651621144466" POSITION="right" TEXT="Problem description">
+<node CREATED="1651621896928" ID="ID_369923452" MODIFIED="1651624591635" TEXT="Success criteria"/>
+<node CREATED="1651621707505" ID="ID_1148868884" MODIFIED="1651621894786" TEXT="Owner"/>
+<node CREATED="1651624774924" ID="ID_1515099844" MODIFIED="1651624789291" TEXT="Actors"/>
+<node CREATED="1651624758012" ID="ID_134870782" MODIFIED="1651624767103" TEXT="Constraints"/>
+<node CREATED="1651621685643" ID="ID_1093010684" MODIFIED="1651621706702" TEXT="Trouble / Opportunity"/>
+</node>
+</node>
+</map>
