@@ -51,7 +51,6 @@ parts:
       - file: 2_develop/1_design_ui_ux/unit_1
       - file: 2_develop/1_design_ui_ux/unit_2
       - file: 2_develop/1_design_ui_ux/unit_3
-      - file: 2_develop/1_design_ui_ux/unit_4
     - file: 2_develop/2_design_controller
       sections:
       - file: 2_develop/2_design_controller/unit_1
