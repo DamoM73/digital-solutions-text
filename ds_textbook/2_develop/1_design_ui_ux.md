@@ -12,11 +12,13 @@
 - explore existing user interfaces to identify pitfalls and useful solutions
 - explore existing user interfaces to determine how user characteristics influence the user-interface requirements and user experience for problems and solutions in relation to the useability principles
 - symbolise ideas for a user interface using sketches, diagrams, schematic diagrams or mock-ups
+{cite}`qcaa_2017_digital`
 ```
 
 ```{admonition} Unit 2 subject matter covered:
 - explore and use the elements and principles of visual communication elements are limited to space, line, colour, shape, texture, tone, form, proportion and scale
 - explore and use the elements and principles of visual communication principles are limited to balance, contrast, proximity, harmony, alignment, repetition and hierarchy
+{cite}`qcaa_2017_digital`
 ```
 
 ```{admonition} Unit 3 subject matter covered:
@@ -24,4 +26,5 @@
 - symbolise and explain a variety of interfaces
 - appraise user interfaces against useability principles
 - generate low-fidelity user-interface prototypes appropriate to the digital context by using the elements and principles of visual communication such as sketches, mood boards, storyboards, sitemaps, wireframes and mock-ups
+{cite}`qcaa_2017_digital`
 ```

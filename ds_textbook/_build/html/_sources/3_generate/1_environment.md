@@ -10,13 +10,16 @@
 
 ```{admonition} Unit 1 subject matter covered:
 - explore programming development tools to understand how to use them effectively
+{cite}`qcaa_2017_digital`
 ```
 
 ```{admonition} Unit 3 subject matter covered:
 - explore flexible development methods to support a variety of user profiles
+{cite}`qcaa_2017_digital`
 ```
 
 ```{admonition} Unit 4 subject matter covered:
 - use a suitable programming environment to receive data from an external source, and process and display the data in an appropriate format
 - use a suitable programming environment to incorporate existing code libraries (where applicable)
+{cite}`qcaa_2017_digital`
 ```

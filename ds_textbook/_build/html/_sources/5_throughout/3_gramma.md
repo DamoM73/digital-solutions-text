@@ -1,4 +1,5 @@
 # Use Gramma and Language Structures
-```{admonition} Students will:
+```{admonition} Subject matter covered:
 - communicate using language conventions, textual features, such as annotations, paragraphs and sentences, and referencing conventions to convey information to particular audiences about digital solutions
+{cite}`qcaa_2017_digital`
 ```

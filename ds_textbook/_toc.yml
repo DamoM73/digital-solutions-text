@@ -105,7 +105,7 @@ parts:
   - caption: Throughout
     chapters:
     - file: 5_throughout/1_communication
-    - file: 5_throughout/2__conventions
+    - file: 5_throughout/2_conventions
     - file: 5_throughout/3_gramma
     - file: 5_throughout/4_langauge
     - file: 5_throughout/5_referencing

@@ -1,4 +1,5 @@
 # Use Technical Language
-```{admonition} Students will:
+```{admonition} Subject matter covered:
 - communicate using digital technologies–specific language
+{cite}`qcaa_2017_digital`
 ```
