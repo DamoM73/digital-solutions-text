@@ -4,7 +4,7 @@
 
 > Problem solving in technology-rich environments involves using digital technology, communication tools and networks to acquire and evaluate information, communicate with others and perform practical tasks. It requires the ability to solve problems for personal, social and economic purposes through the setting of appropriate goals and plans and by the accessing and making use of information through computers and computer networks.{cite}`PIAAC_2009`
 
-> Digital problems are therefore those problems that are solvable using information and communication technologies. These digital solutions can use a wide variety of developed and developing contexts such as web applications, mobile applications, interactive media and intelligent systems. {cite}`qcaa_2017_digital`
+> Digital problems are therefore those problems that are solvable using information and communication technologies. These digital solutions can use a wide variety of developed and developing contexts such as web applications, mobile applications, interactive media and intelligent systems. {cite}`digital_technologies_hub_2022`
 
 What distinguishes a digital problem is that the solution consists of digital hardware and software working together to form a digital system.
 
@@ -14,6 +14,8 @@ In a digital system:
 - data goes in (input)
 - data is manipulated (process)
 - data is sent out (output)
+
+---
 
 ## Describing the problem
 Describing the problem is an important first step in developing a digital solution. There are uncountable examples of failed solutions due to the designer solving a different problem to the one they were supposed to solve. Therefore the first step in our problem solving process is to clearly, and succinctly.
