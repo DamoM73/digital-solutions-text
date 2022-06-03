@@ -21,5 +21,5 @@ The develop phase involves students creating new understanding and identifying p
 - use computational thinking to apply abstraction procedures to problem components
 - use computational thinking to express algorithms
 - use systems and design thinking to develop ideas about components and solutions to test conceptual models
-- use systems and design thinking to generate creative ideas, identify a solution and evaluate ideas that best meet the criteria for success. {cite}`qcaa_2017_digital`
+- use systems and design thinking to generate creative ideas, identify a solution and evaluate ideas that best meet the criteria for success. {cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```

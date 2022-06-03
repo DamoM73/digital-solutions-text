@@ -17,12 +17,12 @@ We record these details on our mind map.
 
 ```{admonition} Unit 1 subject matter covered:
 - understand the constituents of a digital problem
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
 
 ```{admonition} Unit 2 subject matter covered:
 - understand the nature of data-driven problems
 - understand the difference between data, information and wisdom
 - understand that data-driven programming is typically applied to streams of structured data for filtering, transforming, aggregating (such as computing statistics), or calling other programs
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```

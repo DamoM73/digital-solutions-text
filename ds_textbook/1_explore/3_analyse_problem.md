@@ -17,13 +17,13 @@ We use mind maps to create a basic sketch of our understanding of the problem an
 - explore existing solutions to similar problems
 - analyse a given problem to identify the boundary or scope of the problem
 - analyse a given problem to identify missing, required or unnecessary facts or information
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
 
 ```{admonition} Unit 2 subject matter covered:
 - determine manageable aspects of a problem through decomposition, pattern recognition and analysis of programming options including data models, and storage and output requirements
 - analyse problems associated with data insertion, including variations in data formats, data structures, validation rules and data requirements
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
 
 ```{admonition} Unit 3 subject matter covered:
@@ -34,7 +34,7 @@ We use mind maps to create a basic sketch of our understanding of the problem an
 - analyse problems and information to determine and explore data sources to understand relational and flat file data structures
 - recognise and compare different file formats and data structures appropriate to the context
 - determine file formats and data structures appropriate to the technology context
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
 
 ```{admonition} Unit 4 subject matter covered:
@@ -45,5 +45,5 @@ We use mind maps to create a basic sketch of our understanding of the problem an
 - determine manageable aspects of a problem through a decomposition and analysis of available tools and code libraries
 - determine manageable aspects of a problem through a decomposition and analysis of data interface
 - determine data sources required to generate data components
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```

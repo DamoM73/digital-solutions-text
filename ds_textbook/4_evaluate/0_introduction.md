@@ -11,5 +11,5 @@ When students evaluate, they use systems, design and computational thinking to a
 appraise test data and errors
 - use design thinking to evaluate components and the digital solution against prescribed and self-determined criteria
 - make changes in response to continual testing and appraisal of components and digital solutions
-- make justified recommendations about inputs and the digital solution with supporting evidence.{cite}`qcaa_2017_digital`
+- make justified recommendations about inputs and the digital solution with supporting evidence.{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```

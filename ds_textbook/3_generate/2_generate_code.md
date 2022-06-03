@@ -27,7 +27,7 @@
 - generate Selection structures, counted loops, while loops, and single, multi-branch and nested conditional logic statements
 - generate local and global variables
 - generate a prototype digital solution in response to a problem
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
 
 ```{admonition} Unit 2 subject matter covered:
@@ -37,7 +37,7 @@
 - generate a prototype digital solution to access, manipulate and display data in an interactive media that validates the data to be entered for reliability to ensure that the data is valid for use and storage
 - generate a prototype digital solution to access, manipulate and display data in an interactive media that includes user interfaces that will enable the insertion, updating and Selection of data from/to a database
 - generate a prototype digital solution to access, manipulate and display data in an interactive media that creates procedural code to control user interaction, data validation, execution of SQL  queries, manipulation and display of query results through the user interface
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
 
 ```{admonition} Unit 3 subject matter covered:
@@ -48,7 +48,7 @@
 - generate program modules that validate data inputs
 - generate program modules that control the interactions in a digital solution
 - synthesise user interface, processing and data components to generate a prototype digital solution
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
 
 ```{admonition} Unit 4 subject matter covered:
@@ -57,5 +57,5 @@
 - manipulate data from an external source
 - generate within programmed methods use of data types, error-checking functions and conversions
 - generate within programmed methods use of structures, including one-dimensional collections, e.g. arrays and lists
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```

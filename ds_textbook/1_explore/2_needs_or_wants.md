@@ -14,5 +14,5 @@ In order to create a digital solution we must deeply understand our users and pr
 ```{admonition} Unit 1 subject matter covered:
 - analyse problems to identify the human need, want or opportunity that requires a new or re-imagined digital solution
 - analyse a given problem to identify the user perspective and user-experience requirements
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```

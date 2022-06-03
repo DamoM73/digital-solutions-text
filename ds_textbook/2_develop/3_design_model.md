@@ -25,7 +25,7 @@
 - apply data management processes, e.g. encryption, consistency, searching, pattern recognition and de-identification
 - determine appropriate data types, constraints, and primary and foreign keys
 - evaluate and modify a database structure to third normal form (3NF)
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
 
 ```{admonition} Unit 3 subject matter covered:
@@ -43,5 +43,5 @@
 - symbolise, analyse and evaluate Caesar, Polyalphabetic (e.g. Vigenere and Gronsfield), and one-time pad encryption algorithms
 - describe data using appropriate naming conventions, data formats and structures
 - symbolise and explain secure data transmission techniques and processes, including the use of encryption, decryption, authentication, hashing and checksums
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```

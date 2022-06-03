@@ -1,7 +1,7 @@
 # Unit 1: Analyse the Problem
 
 ## Computational thinking
-Computational thinking describes the processes and approaches we draw on when thinking about how a computer can help us to solve complex problems and create systems. We often draw on logical reasoning, algorithms, decomposition, abstraction, and patterns and generalisation when thinking computationally. {cite}`digital_technologies_hub_2022`
+> Computational thinking describes the processes and approaches we draw on when thinking about how a computer can help us to solve complex problems and create systems. We often draw on logical reasoning, algorithms, decomposition, abstraction, and patterns and generalisation when thinking computationally. {cite}`digital_technologies_hub_2022`
 
 ### Decomposition
 Decomposition is the process of breaking down complex problems into smaller, more manageable parts. With decomposition, problems that 
@@ -62,17 +62,11 @@ Then creating algorithms, ask:
 - In what order should you complete those steps?
 
 ---
-## Functional Concerns 
-In the analysing the problem we need to consider what elements, components and features are needed to solve this problem. These are called the functional concerns. The best practice it to view these from the perspective of:
-- **User Interface (UI):** what elements, components and features does the user need to interact with your solution?
-- **Processing:** what actions will your solution have to complete to resolve the problem?
-- **Data:** what information will you solution need to collect, store and use?
+## Systems thinking
+> A system is a set of interrelated elements that make a unified whole. Systems are everywhere — for example, the interdisciplinary team involve in supporting someone, the Human Resources in your organization, the circulatory system in your body, the predator/prey relationships in nature, the ignition system in your car, and so on. Ecological systems and human social systems are living systems; human-made systems such as cars and washing machines are nonliving systems. {cite}`Systems_2022`
 
-![functional](../assests/functional.png)
+Systems thinking is a holistic approach to the identification and solving of problems, where parts and components of a system, their interactions and interrelationships are analysed individually to see how they influence the functioning of the whole system. This approach enables the understanding of systems and working with complexity, uncertainty and risk. It requires identifying and making connections between solutions, systems and society. Systems thinking also requires the identification and examination of interactions between different components of a system. Essential to this is the understanding of the interdependence between information systems and how a change or output from one system can affect another, and how this affects larger systems such as the economy and society.
 
-We need to decompose each node that you add to the mind map, breaking them down to the smallest possible element, component or feature.
+In this course we will engage in systems thinking by addressing scope, constraints, limitations and requirements.
 
-## Identifying missing, required or unnecessary facts or information
-
-## Use Case Diagram
-
+### Scope

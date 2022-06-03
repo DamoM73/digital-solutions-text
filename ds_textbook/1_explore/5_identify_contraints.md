@@ -11,10 +11,10 @@ This information is recorded in the mind map
 
 ```{admonition} Unit 1 subject matter covered:
 - analyse a given problem to identify constraints and limitations of the environment
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
 
 ```{admonition} Unit 4 subject matter covered:
 - determine manageable aspects of a problem through a decomposition and analysis of constraints
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```

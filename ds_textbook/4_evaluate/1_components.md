@@ -26,5 +26,5 @@
 - justify selection of relevant data from existing data sources
 - evaluate user interfaces from existing solutions using heuristic reviews for the useability principles
 - evaluate against prescribed and self-determined criteria the user interface and programmed solutions
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```

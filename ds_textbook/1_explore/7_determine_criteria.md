@@ -11,5 +11,5 @@ This information is recorded in the criteria table which provides clear guidance
 
 ```{admonition} Unit 1 subject matter covered:
 - analyse a given problem to identify prescribed and self-determined criteria to evaluate the personal, social and economic impacts of the solution
-{cite}`qcaa_2017_digital`
+{cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
