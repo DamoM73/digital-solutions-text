@@ -5,10 +5,13 @@
 - mind maps
 - UML Use Case Diagram
 ```
-To analyse the problem we use our understanding of computational thinking to decompose the problem.
+To analyse the problem we use our understanding of **computational thinking** and **systems thinking** to decompose the problem and define the scope.
 
-We use mind maps to create a basic sketch of our understanding of the problem and we use the UML Use Case Diagram to identify the scope of the program and the processed involved.
+We use mind maps to create a basic sketch of our understanding of the problem.
+![scope mind map](../1_explore/assests/mm_scope.png)
 
+We use the UML Use Case Diagram to help identify the scope of the program and the processes involved.
+![Use Case Symbols](../1_explore/assests/use_case_symbols.png)
 
 ```{admonition} Unit 1 subject matter covered:
 - understand methods of breaking down problems into parts using computational thinking and thinking tools

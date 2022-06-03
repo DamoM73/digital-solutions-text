@@ -6,14 +6,9 @@
 ## Introduction
 Once we have established that the a digital solution is applicable to the problem, it is important to have a clear understanding of what the problem is.
 
-To describe the problem we will use the TOSCA framework which considers the problem through the lenses of:
-- Trouble
-- Owner
-- Success Criteria
-- Constraints
-- Actors
+We use the project mind map to decompose the problem. Our first step is to describe the problem with a problem statement.
 
-We record these details on our mind map.
+![Problem statement](./assests/mm_problem_statement.png)
 
 ```{admonition} Unit 1 subject matter covered:
 - understand the constituents of a digital problem

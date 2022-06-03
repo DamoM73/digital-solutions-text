@@ -1,5 +1,5 @@
 # Unit 1: Determine Human Needs or Wants
-
+Determining the human needs and wants provides us with an understanding that we can use to assess the effectiveness of solution, as well as the individual constituent components.
 ---
 ## Empathy Maps
 To help identify user needs, UX professionals use empathy maps. Watch **[this video](https://youtu.be/QwF9a56WFWA)** to learn about empathy makes and how to use them.

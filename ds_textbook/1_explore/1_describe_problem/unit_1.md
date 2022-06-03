@@ -20,33 +20,29 @@ The scope of the project provides detail about how the solution will address the
 
 The scope includes:
 - **Problem Statement** - The problem statement is an overall descriptive statement about what needs to be solved. It includes a justification for the project (explains why is it being undertaken in the first place).
-- **Objective** - These are the overall project goals that will meet the needs of your customers. They are described in terms of the product or service that will exist at the end of the project. The developer needs to understand the objectives because it gives a basis for any decision making in the future. It also allows the developer to evaluate the most recent status of the project against the original objectives which had already been set.
-- **Deliverables** - The deliverables are the objects are that need to be produced. It may also describe the key features and what client needs are being met though them.
-- **Constraints and Limitations** - What are the barriers or things that must be adhered to. These are the requirement specifications for the project. These are summarized and typically involve a technical description. The requirements also have descriptions which are functional so that the project participants can implement them. These might include such things as the platforms the projects is being developed for and the programming languages involved.
+- **Objectives** - These are the overall project goals that will meet the needs of your customers.
+- **Deliverables** - The deliverables are the objects are that need to be produced. 
+- **Constraints and Limitations** - What are the barriers or things that must be adhered to? These are the requirement specifications for the project.
 - **Timeline** - How long the project will run for and any specific milestones or checkpoints along the way.
 
+We will deal with each of these in coming sections, but let's start with the Problem Statement.
+
 ### Problem Statement
-> A problem statement is a concise and unbiased description of the problem or issues a process improvement project seeks to address. 
+> A problem statement is a concise and unbiased description of the problem or issues a process improvement project seeks to address. {cite}`indeededitorialteam_2021_what`
 
-How to write a problem statement
 Use this step-by-step guide to craft your problem statement:
+- **Identify the problem:** Before you write your problem statement, you must first identify the problem.
+- **Begin your statement with your ideal situation:** Next, your problem statement should identify the ideal environment if the problem didn't exist.
+- **Describe the current gaps:** Concisely identify what the current environment looks like and then focus on the 5Ws and H:
+  - **who** does the problem affect?
+  - **what** is causing the problem?
+  - **where** where does the problem occurs? Is it location specific?
+  - **when** does the problem occurs? **When** did it became a problem? Is it time specific?
+  - **why** is it a problem? **Why** must it be resolve?
+  - **how** much of an impact does the problem have on individuals or groups?
+- **State the consequences of the problem:** Highlight and quantify the consequences of the problem. 
+- **Propose addressing the problem:** Identify how you will make progress towards reaching the desired goal.
 
-Identify the problem.
-Begin your statement with your ideal situation.
-Describe current gaps.
-State the consequences of the problem.
-Propose addressing the problem.
-1. Identify the problem
-Before you write your problem statement, you must first identify the problem.
+![problem statement](../assests/mm_problem_statement.png)
 
-2. Begin your statement with your ideal situation
-Next, your problem statement should identify the ideal environment if the problem didn't exist. Ideally, this section should also describe what your company hopes to accomplish through this process improvement project.
-
-3. Describe the current gaps
-Now it's onto your problem statement's reality section. Your goal is to be concise and identify what the current environment looks like and then focus on the 5Ws and H - what the problem is, what is causing the problem, why it's an issue and who first realised the problem.
-
-4. State the consequences of the problem
-Next is the consequences section of your problem statement, where you should quantify and highlight the consequences of the problem. Use this section to identify specific numbers, such as the time or revenue lost or the number of resources wasted. It's important for your consequences section to include concrete numbers that support your claims.
-
-5. Propose addressing the problem
-Finally, end your problem statement with a proposal section. In this section, identify how your company will make progress towards reaching the desired goals and accomplishing its ideal environment. While you may decide to disclose several solutions in this section, it's more important to focus on identifying how your company will find those solutions than it is to identify the specific resolution to implement.
+The answers to these questions are added to the project mind map.

@@ -69,4 +69,56 @@ Systems thinking is a holistic approach to the identification and solving of pro
 
 In this course we will engage in systems thinking by addressing scope, constraints, limitations and requirements.
 
-### Scope
+--- 
+## Scope
+We have already discussed that scope includes:
+- **Problem Statement** - The problem statement is an overall descriptive statement about what needs to be solved. It includes a justification for the project (explains why is it being undertaken in the first place).
+- **Objectives** - These are the overall project goals that will meet the needs of your customers.
+- **Deliverables** - The deliverables are the objects are that need to be produced. 
+- **Constraints and Limitations** - What are the barriers or things that must be adhered to? These are the requirement specifications for the project.
+- **Timeline** - How long the project will run for and any specific milestones or checkpoints along the way.
+
+We have already sketched out our Problem Statement. Remember, this process is not linear. If you think of additional points to add to the Problem Statement, then go back and add them.
+
+Now that we better understand our users and their needs, we can complete some more of the scope on our mind map.
+
+![scope mind map](../assests/mm_scope.png)
+
+### Objectives
+What are the project's overall goals that will meet the needs of your customers. These describe the primary impacts that your solution will have on the users. For example, is your objective to entertain the user, to make them more efficient or to improve their heath?
+
+### Deliverables
+What are the objects are that you need to produced? This may be the final product, or it may be a milestone towards this product. 
+
+In Unit 1 you will have two different deliverables:
+- For FIA1 you will need to deliver a technical proposal
+- For FIA2 you will need to deliver a program prototype
+
+### Timeline
+How long the project will run for? What are the specific milestones or checkpoints along the way? Each criteria sheet you will receive, will contain explicit checkpoints.
+
+---
+## Use Case Diagram
+> In the Unified Modelling Language (UML), a use case diagram can summarize the details of your system's users (also known as actors) and their interactions with the system. To build one, you'll use a set of specialized symbols and connectors. {cite}`lucidchart_2019_uml`
+ 
+An effective use case diagram can help you represent:
+- Scenarios in which your system or application interacts with people, organizations, or external systems
+- Goals that your system or application helps those entities (known as actors) achieve
+- The scope of your system
+
+We will employ Use Case Diagrams to further develop our exploration of the problem.
+
+Watch **[this video](https://youtu.be/zid-MVo7M-E)** to learn how to create a Use Case Diagram.
+
+### Steps to create a Use Case Diagram
+1. What is the system being created?
+2. Who are the actors using the system? (People, Organisations, Other systems, External devices)
+3. Is each actor a primary actor or a secondary actor?
+4. What actions will the primary actors want to do with the system?
+5. How will each actor interact with the use cases?
+6. Are the any new actions automatically connected to current use cases?
+7. Are there any additional, optional actions connected to current use cases?
+8. Do any use cases or actors have sub categories?
+
+### Use Case Diagram Symbols
+![Use Case Diagram Symbols](../assests/use_case_symbols.png)
