@@ -733,6 +733,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#constraints">
+   Constraints
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limitations">
+   Limitations
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -745,6 +763,24 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#constraints">
+   Constraints
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limitations">
+   Limitations
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -753,6 +789,31 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="unit-1-identify-constraints">
 <h1>Unit 1: Identify Constraints<a class="headerlink" href="#unit-1-identify-constraints" title="Permalink to this headline">¶</a></h1>
+<p>This is the final node for our scope. Although the node says constraints, we will include constraints and limitations, since, from the developer’s perspective they have the same effect - restricting what you can do.</p>
+<p>We list the constraints and limitation under the Scope node on the mind map.</p>
+<p><img alt="constraints mind map" src="../../_images/mm_constraints.png" /></p>
+<div class="section" id="constraints">
+<h2>Constraints<a class="headerlink" href="#constraints" title="Permalink to this headline">¶</a></h2>
+<p>A constraint is a restriction on the degree of freedom you have in providing a solution. Constraints are effectively global requirements, such as limited development resources or a decision by senior management that restricts the way you develop a system. Constraints can be economic, political, technical, or environmental and pertain to your project resources, schedule, target environment, or to the system itself.</p>
+<p>Examples of constraints:</p>
+<ul class="simple">
+<li><p>The system will work on our existing technical infrastructure - no new technologies will be introduced.</p></li>
+<li><p>The system will only use the data contained in the existing corporate database.</p></li>
+<li><p>The system shall be available 99.99% of the time for any 24-hour period.</p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="limitations">
+<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<p>The limitations of the environment are concerned with what the environment can actually do, or what does the development environment allow to occur.</p>
+<p>An example of this may be considering the limitations of Python as a development language.</p>
+<blockquote>
+<div><p>Python is an interpreted language and dynamically-typed language. The line by line execution of code often leads to slow execution.</p>
+</div></blockquote>
+<blockquote>
+<div><p>The dynamic nature of Python is also responsible for the slow speed of Python because it has to do the extra work while executing code. So, Python is not used for purposes where speed is an important aspect of the project. <span id="id1">[<a class="reference internal" href="../../bibliography.html#id12">Team, 2019</a>]</span></p>
+</div></blockquote>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

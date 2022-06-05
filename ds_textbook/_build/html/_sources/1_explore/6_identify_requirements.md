@@ -6,7 +6,13 @@
 - requirments table
 ```
 
-At this stage of the exploration you should have a clear idea of what the project demands of you. You need to explicitly state the requirements in your mind map, and then categorise them as must, should, could, won't in the requirements table.
+At this stage of the exploration you should have a clear idea of what the project demands of you.
+
+Identify the function and non-functional requirements that the project is explicitly and implicitly asking for and add them to the mind map under requirements.
+![Requirements mind map](./assests/mm_requirements.png)
+
+Now expand the requirements using the Requirements Table under the headings of must, should, could and won't.
+![Requirements table](./assests/MuSCoW.png)
 
 ```{admonition} Unit 1 subject matter covered:
 - analyse a given problem to identify the requirements of the solution

@@ -1,4 +1,4 @@
-# Identify Constraints and Limitations
+# Identify Constraints
 
 ```{admonition} Tools used:
 :class: attention
@@ -7,7 +7,9 @@
 
 You will need to identify the parameters that you will be working within, such as the constraints and limitations placed on your project.
 
-This information is recorded in the mind map
+This information is recorded in the mind map.
+
+![constraints mind map](./assests/mm_constraints.png)
 
 ```{admonition} Unit 1 subject matter covered:
 - analyse a given problem to identify constraints and limitations of the environment

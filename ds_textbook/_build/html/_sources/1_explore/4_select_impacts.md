@@ -9,6 +9,8 @@ When selecting impacts the developer needs to consider what they hope to achieve
 
 This decision is recorded in the mind map.
 
+![impacts mind map](./assests/mm_impact.png)
+
 ```{admonition} Unit 1 subject matter covered:
 - understand and describe personal, social and economic impacts
 {cite}`queenslandcurriculumassessmentauthority_2017_digital`

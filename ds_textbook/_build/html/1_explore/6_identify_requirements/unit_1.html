@@ -237,7 +237,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../5_identify_contraints.html">
-   Identify Constraints and Limitations
+   Identify Constraints
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
@@ -733,6 +733,41 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#identifying-the-solution-requirements">
+   Identifying the Solution Requirements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functional-requirements">
+     Functional requirements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#non-functional-requirements">
+     Non-functional requirements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recording-the-solution-requirements">
+     Recording the Solution Requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-the-requirements-table">
+   Creating the Requirements Table
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -745,6 +780,41 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#identifying-the-solution-requirements">
+   Identifying the Solution Requirements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functional-requirements">
+     Functional requirements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#non-functional-requirements">
+     Non-functional requirements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#recording-the-solution-requirements">
+     Recording the Solution Requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-the-requirements-table">
+   Creating the Requirements Table
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -753,6 +823,82 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="unit-1-identify-requirements">
 <h1>Unit 1: Identify Requirements<a class="headerlink" href="#unit-1-identify-requirements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="identifying-the-solution-requirements">
+<h2>Identifying the Solution Requirements<a class="headerlink" href="#identifying-the-solution-requirements" title="Permalink to this headline">¶</a></h2>
+<p>The solution requirements specify the capabilities that are critically required for the solution to effectively meet the needs of the users and deliver value.</p>
+<p>At this stage of the investigation, it is important to note that we are identifying the requirements that have been asked of us, <em>we are not identifying everything we want to do</em>. These requirements might be explicitly listed under a requirements heading, or they may be implied throughout the criteria sheet and stimulus.</p>
+<p>Solution requirements can generally be broken down into two different categories: functional requirements and non-functional requirements.</p>
+<div class="section" id="functional-requirements">
+<h3>Functional requirements<a class="headerlink" href="#functional-requirements" title="Permalink to this headline">¶</a></h3>
+<p>These are concerned with what the system needs to do.</p>
+<p>These can include:</p>
+<ul class="simple">
+<li><p><strong>User interface</strong> criteria concerning:</p>
+<ul>
+<li><p>Hardware or software that are required to be used</p></li>
+<li><p>The way that a user is to interact with the system</p></li>
+<li><p>Specific text or data fields the user needs to have shown to them</p></li>
+</ul>
+</li>
+<li><p><strong>Coded components</strong> presented as a list of specific code modules that need to be developed in order to:</p>
+<ul>
+<li><p>Process user input</p></li>
+<li><p>Calculate results using data</p></li>
+<li><p>Store or display data</p></li>
+</ul>
+</li>
+<li><p><strong>Data interface</strong> criteria concerning:</p>
+<ul>
+<li><p>Specific datasets that must be considered or used</p></li>
+<li><p>File formats to be used</p></li>
+<li><p>Data structures to be implemented and created</p></li>
+<li><p>Any potential requirements to clean the data (remove errors), restructure or filter existing data or methods that are to be used to collect new data</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="non-functional-requirements">
+<h3>Non-functional requirements<a class="headerlink" href="#non-functional-requirements" title="Permalink to this headline">¶</a></h3>
+<p>Non-functional requirements specify the manner or the environment in which a solution is intended to operate.</p>
+<p>They are concern with such matters as:</p>
+<ul class="simple">
+<li><p><strong>Usability principles:</strong></p>
+<ul>
+<li><p>Accessibility: the ability to be used by many different people, even people with disabilities.</p></li>
+<li><p>Effectiveness: the ability of users to use the system to do the work they need to do. Effectiveness includes reliability, which means the solution needs to be constant, dependable, consistent and repeatable.</p></li>
+<li><p>Safety: the ability for users to make errors and recover from the mistake.</p></li>
+<li><p>Utility: the ability of the system to provide all the functionality that users need.</p></li>
+<li><p>Learnability: how easy the system is to learn</p></li>
+</ul>
+</li>
+<li><p><strong>Performance:</strong> How quickly and efficiently the solution works and how it responds to commands and requests for action</p></li>
+<li><p><strong>Security:</strong> The level of protection the system and its data are expected to have in place</p></li>
+<li><p><strong>Design:</strong> The visual elements expected from the solution</p></li>
+<li><p><strong>Documentation:</strong> The type and extent of written documentation expected or needed</p></li>
+<li><p><strong>Economic:</strong> The financial component of the project. Is there a budget? Can it have a running cost?</p></li>
+<li><p><strong>Legal:</strong> The legal frameworks that the project must work within. The most common are privacy and intellectual property laws.</p></li>
+</ul>
+</div>
+<div class="section" id="recording-the-solution-requirements">
+<h3>Recording the Solution Requirements<a class="headerlink" href="#recording-the-solution-requirements" title="Permalink to this headline">¶</a></h3>
+<p>When you identify a solution requirements from the criteria sheet or documentation, record it in the mind map under the appropriate node.</p>
+<p><img alt="requirements mind map" src="../../_images/mm_requirements.png" /></p>
+<p><strong>Note:</strong> it is possible, depending on the project, that some of the nodes could be empty.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="creating-the-requirements-table">
+<h2>Creating the Requirements Table<a class="headerlink" href="#creating-the-requirements-table" title="Permalink to this headline">¶</a></h2>
+<p>The Requirements Table is about triaging all the possible requirements into a priority for your project. The table has four columns, like the one below:</p>
+<p><img alt="Requirements Table" src="../../_images/MuSCoW.png" /></p>
+<p>How to fill the table out:</p>
+<ul class="simple">
+<li><p><strong>Must:</strong> This column contains all the requirements you have identified and added to the mind map.</p></li>
+<li><p><strong>Should:</strong> This column contains requirements that you think are important. It might include functional and non-functional requirements not mentioned in the criteria sheet or stimulus (eg. the Usability Principle of Safety).</p></li>
+<li><p><strong>Could:</strong> This column contains ideas that you would love to implement, but you do not have the time or knowledge needed (eg. making a post on social media).</p></li>
+<li><p><strong>Won’t</strong> This column contains ideas that other might like, but you are not interested in. Don’t simply put the negative of a requirement (eg. if you have mentioned the Usability Principle of Effectiveness, don’t add “Won’t crash” to this column).</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
