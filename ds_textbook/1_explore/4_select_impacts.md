@@ -4,7 +4,7 @@
 :class: attention
 - mind maps
 ```
-
+## Introduction
 When selecting impacts the developer needs to consider what they hope to achieve with the solution.
 
 This decision is recorded in the mind map.

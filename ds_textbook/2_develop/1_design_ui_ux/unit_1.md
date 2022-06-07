@@ -16,7 +16,12 @@ Although they are two distinct fields, they do have significant overlap. For the
 
 A design's usability depends on how well its features accommodate users' needs and contexts.
 
-In Digital Solutions we will focus on the five usability principles of accessibility, effectiveness, safety, utility and learnability.
+In Digital Solutions we will focus on five usability principles:
+- accessibility
+- effectiveness
+- safety
+- utility
+- learnability
 
 ### Accessibility
 
@@ -29,7 +34,9 @@ Accessibility guidelines are based on four principles (often referred to as POUR
 - **Robust:** Content must be robust enough so that it can be interpreted reliably by a wide variety of users and types of assistive technologies. As technologies evolve, code and content should remain accessible for users of common and current assistive devices and tools.
 
 ### Effectiveness
-Effectiveness is the ability of users to use the system to do the work they need to do. Users need to be able to interact with a digital solution quickly and easily; and outputs need to be presented clearly in a way that can be easily interpreted by the user. Effectiveness includes reliability, which means the solution needs to be constant, dependable, consistent and repeatable. When you evaluate effectiveness you are looking for things that work or do not work as expected.
+Effectiveness is the ability of users to use the system to do the work they need to do. 
+
+Users need to be able to interact with a digital solution quickly and easily; and outputs need to be presented clearly in a way that can be easily interpreted by the user. Effectiveness includes reliability, which means the solution needs to be constant, dependable, consistent and repeatable. When you evaluate effectiveness you are looking for things that work or do not work as expected.
 
 ### Safety
 Safety is the ability for users to make errors and recover from the mistake. 
@@ -77,7 +84,9 @@ Use informative feedback.
 - Alerts need to be compatible with, and exist within, the messaging framework
 
 ### Utility
-Utility is the ability of the system to provide all the functionality that users need. It matters little that something is easy if it's not what you want. There are many ways that a solution can be useful, and will be strongly influenced by users' needs and the desired impacts of the solution.
+Utility is the ability of the system to provide all the functionality that users need. 
+
+It matters little that something is easy if it's not what you want. There are many ways that a solution can be useful, and will be strongly influenced by users' needs and the desired impacts of the solution.
 
 ---
 ### Learnability
@@ -92,7 +101,7 @@ Learnability includes how quickly and easily users can learn to:
 
 ---
 ## Symbolising UI
-There are many different ways to symbolise a UI.I our course, you will only need to use mock-ups, but it is useful to know and understand what the other methods are used for.
+There are many different ways to symbolise a UI. In our course, you will only need to use mock-ups, but it is useful to know and understand what the other methods are used for.
 
 ### Sketching
 User Interface sketching refers to sketching out the basics of a user interface, most often using pen and paper. It occurs before getting into wireframing, prototyping and coding. Sketches are quick and dirty. Don't worry about the specifics of design or functionality in a UI sketch. A UI sketch should simply serve to help you eliminate bad ideas and brainstorm good ideas about how to bring your proposed product to the screen. The sketch should help you translate idea to interface in the minimum possible time. At the end of the UI sketching process you should know that you've figured out the absolute best way to bring your product to the screen.
@@ -113,6 +122,10 @@ In other words, a wireframe describes the basic structure, functions, and conten
 ### Mockup
 The wireframe shows the basic structure with the contents of the app and the functions, whereas a mockup adds design, colour, style, and typography to it. A mockup shows a realistic picture of how things will shape up in the end. The visual representation of the mockup will show what all will be covered in the final picture.
 
+We will be using two different tools for creating Mockups:
+- **FIA1:** Adobe XD
+- **FIA2:** QT Designer
+
 ![ui_mockup](../assets/mockup-example.png)
 
 ### Prototype
@@ -125,3 +138,14 @@ An application interface flowchart connects the screens of an application togeth
 
 ---
 ## Annotating
+Annotating the UI is an import way to show how you have incorporated the Useability Principles into your UI design.
+
+Each annotations should have the following features:
+- A description of how you have incorporated a Useability Principle.
+- An arrow pointing to an example of this on the UI.
+- Each annotation should only deal with one principle and one example.
+- The Useability Principle should be in bold.
+
+Below is an example of an annotated mockup.
+
+![annoated mockup](../assets/annotation.png)

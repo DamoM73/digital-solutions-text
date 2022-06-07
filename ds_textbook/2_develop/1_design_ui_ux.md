@@ -5,6 +5,19 @@
 - XD Mock-ups
 - QT Designer Mock-ups
 ```
+## Introduction
+In designing our UI and UX we need to incorporate **Useability Principles**.
+
+Useability Principles are:
+- **Accessibility:** the ability to be used by many different people, even people with disabilities
+- **Effectiveness:** the ability of users to use the system to do the work they need to do
+- **Safety:** the ability for users to make errors and recover from the mistake. 
+- **Utility:** the ability of the system to provide all the functionality that users need.
+- **Learnability:** concerned with how easy a system is to learn.
+
+The design of the UI is shown through an **annotated mockup**
+
+![annotated mockup](./assets/annotation.png)
 
 ```{admonition} Unit 1 subject matter covered:
 - recognise and describe the meaning and importance of user experience

@@ -5,6 +5,7 @@
 - mind maps
 - UML Use Case Diagram
 ```
+## Introduction
 To analyse the problem we use our understanding of **computational thinking** and **systems thinking** to decompose the problem and define the scope.
 
 We use mind maps to create a basic sketch of our understanding of the problem.
