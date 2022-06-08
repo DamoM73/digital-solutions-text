@@ -8,6 +8,18 @@
 - Pseudocode
 - Desk-checking
 ```
+## Introduction
+
+Algorithms are the heart of your program, so we spend a bit of effort in designing them.
+
+You will use the following tools to design your algorithms. You will work with them in no particular order, and will most likely mover back a forth between them.
+
+### Activity Diagram
+![activity diagram](./assets/activity.png)
+
+## Class Diagram
+![class diagram](./assets/class_diagram.png)
+
 
 ```{admonition} Unit 1 subject matter covered:
 - recognise and describe programming syntax and rules

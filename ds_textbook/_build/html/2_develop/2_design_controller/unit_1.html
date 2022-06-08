@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unit 1 - Design Algorithms &#8212; EDGE approach to Digital Solutions</title>
+    <title>Unit 1: Design Algorithms &#8212; EDGE approach to Digital Solutions</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -352,7 +352,7 @@
   <ul class="current">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Unit 1 - Design Algorithms
+     Unit 1: Design Algorithms
     </a>
    </li>
    <li class="toctree-l2">
@@ -733,6 +733,39 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#activity-diagrams">
+   Activity Diagrams
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#class-diagrams">
+   Class Diagrams
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pseudocode">
+   Pseudocode
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ipo-tables">
+   IPO Tables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#desk-checking">
+   Desk-checking
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -740,11 +773,44 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Unit 1 - Design Algorithms</h1>
+                <h1>Unit 1: Design Algorithms</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#activity-diagrams">
+   Activity Diagrams
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#class-diagrams">
+   Class Diagrams
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pseudocode">
+   Pseudocode
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ipo-tables">
+   IPO Tables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#desk-checking">
+   Desk-checking
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -752,7 +818,70 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="unit-1-design-algorithms">
-<h1>Unit 1 - Design Algorithms<a class="headerlink" href="#unit-1-design-algorithms" title="Permalink to this headline">¶</a></h1>
+<h1>Unit 1: Design Algorithms<a class="headerlink" href="#unit-1-design-algorithms" title="Permalink to this headline">¶</a></h1>
+<p>Algorithms are the commands that make up our programs.</p>
+<p>There are 6 basic building blocks that an algorithm consists of. Each of them serve a particular purpose.</p>
+<ul class="simple">
+<li><p><strong>Sequence:</strong> a number of instructions that are processed one after the other.</p></li>
+<li><p><strong>Assignment:</strong> used to store the value of an expression into a variable.</p></li>
+<li><p><strong>Condition:</strong> the way that a computer asks a question which can only generate two possible responses: True (yes) or False (no).</p></li>
+<li><p><strong>Selection:</strong> a statement that uses a condition to select, or determine, whether the next line of the program is to be executed.</p></li>
+<li><p><strong>Iteration:</strong> the repetition of a number of instructions. These are generally referred to as loops and refer to a section of code that is repeated.</p></li>
+<li><p><strong>Modularisation:</strong> refers to the process of breaking a large, unwieldy programming task into separate, smaller, more manageable subtasks or modules. Individual modules can then be cobbled together like building blocks to create a larger application.</p></li>
+</ul>
+<p>In designing your algorithm, you will need to decide how to arrange these building block to achieve you outcome.</p>
+<p>We will use a number of tools to do this:</p>
+<ul class="simple">
+<li><p>Activity Diagrams</p></li>
+<li><p>Class Diagrams</p></li>
+<li><p>Pseudocode</p></li>
+<li><p>IPO Tables</p></li>
+<li><p>Desk-checking</p></li>
+</ul>
+<hr class="docutils" />
+<div class="section" id="activity-diagrams">
+<h2>Activity Diagrams<a class="headerlink" href="#activity-diagrams" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Activity diagrams show the workflow from a start point to the finish point detailing the many decision paths that exist in the progression of events contained in the activity <span id="id1">[<a class="reference internal" href="../../bibliography.html#id15">Systems, 2022</a>]</span>.</p>
+</div></blockquote>
+<p>An activity diagram is made of of different components. Some of the most common components of an activity diagram include:</p>
+<ul class="simple">
+<li><p><strong>Action:</strong> A step in the activity wherein the users or software perform a given task.</p></li>
+<li><p><strong>Decision node:</strong> A conditional branch in the flow that includes a single input and two or more outputs.</p></li>
+<li><p><strong>Control flows:</strong> Another name for the connectors that show the flow between steps in the diagram.</p></li>
+<li><p><strong>Start node:</strong> Symbolizes the beginning of the activity.</p></li>
+<li><p><strong>End node:</strong> Represents the final step in the activity.</p></li>
+</ul>
+<p>Watch <strong><a class="reference external" href="https://www.youtube.com/watch?v=knM8BGY9yVI">this video</a></strong> to understand how to create an activity diagram.</p>
+<p><strong>Activity Diagram Symbols</strong></p>
+<p><img alt="activity diagram symbols" src="../../_images/activity_symbols.png" /></p>
+</div>
+<hr class="docutils" />
+<div class="section" id="class-diagrams">
+<h2>Class Diagrams<a class="headerlink" href="#class-diagrams" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>Class diagrams clearly map out the structure of a particular system by modelling its classes, attributes, operations, and relationships between objects <span id="id2">[<a class="reference internal" href="../../bibliography.html#id16">Lucidchart, 2017</a>]</span>.</p>
+</div></blockquote>
+<p>Class diagrams are particularly useful when using Object Orientated Programming.</p>
+<p>The standard class diagram is composed of three sections:</p>
+<ul class="simple">
+<li><p><strong>Upper section:</strong> Contains the name of the class. This section is always required.</p></li>
+<li><p><strong>Middle section:</strong> Contains the attributes of the class. Use this section to describe the qualities of the class.</p></li>
+<li><p><strong>Bottom section:</strong> Includes class operations (methods). Displayed in list format, each operation takes up its own line.</p></li>
+</ul>
+<p>Watch <strong><a class="reference external" href="https://www.youtube.com/watch?v=UI6lqHOVHic">this video</a></strong> to learn how to create class diagrams.</p>
+<p><strong>Class Diagram Symbols</strong></p>
+<p><img alt="class symbols" src="../../_images/class_symbols.png" /></p>
+</div>
+<div class="section" id="pseudocode">
+<h2>Pseudocode<a class="headerlink" href="#pseudocode" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="ipo-tables">
+<h2>IPO Tables<a class="headerlink" href="#ipo-tables" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="desk-checking">
+<h2>Desk-checking<a class="headerlink" href="#desk-checking" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
