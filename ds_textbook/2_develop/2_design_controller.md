@@ -4,15 +4,15 @@
 :class: attention
 - Activity Diagrams
 - Class Diagrams
-- IPO Tables
 - Pseudocode
+- IPO Tables
 - Desk-checking
 ```
-## Introduction
+## For Unit 1 to 4
 
 Algorithms are the heart of your program, so we spend a bit of effort in designing them.
 
-You will use the following tools to design your algorithms. You will work with them in no particular order, and will most likely mover back a forth between them.
+You will use the following tools to design your algorithms. You will work with them in no particular order, and will most likely move back a forth between them.
 
 ### Activity Diagram
 ![activity diagram](./assets/activity.png)
@@ -20,6 +20,11 @@ You will use the following tools to design your algorithms. You will work with t
 ## Class Diagram
 ![class diagram](./assets/class_diagram.png)
 
+## IPO Tables
+![ipo example](./assets/ipo_example.png)
+
+## Desk Checking
+![desk check](./assets/desk_check_1.png)
 
 ```{admonition} Unit 1 subject matter covered:
 - recognise and describe programming syntax and rules

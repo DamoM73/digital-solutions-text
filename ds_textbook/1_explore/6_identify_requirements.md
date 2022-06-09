@@ -5,7 +5,7 @@
 - mind maps
 - requirments table
 ```
-## Introduction
+## For Unit 1 to 4
 At this stage of the exploration you should have a clear idea of what the project demands of you.
 
 Identify the function and non-functional requirements that the project is explicitly and implicitly asking for and add them to the mind map under requirements.

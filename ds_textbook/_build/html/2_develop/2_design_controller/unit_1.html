@@ -374,7 +374,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../3_design_model.html">
-   Design Data Source
+   Design Data Store
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
   <label for="toctree-checkbox-10">
@@ -752,6 +752,55 @@
   <a class="reference internal nav-link" href="#pseudocode">
    Pseudocode
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#qcaa-pseudocode-rules">
+     QCAA Pseudocode Rules
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#keywords">
+       Keywords
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calculations">
+       Calculations
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#naming-conventions">
+       Naming Conventions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#font">
+       Font
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#variables">
+       Variables
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#modularisation">
+       Modularisation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#iterations">
+       Iterations
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#selection">
+       Selection
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ipo-tables">
@@ -762,6 +811,18 @@
   <a class="reference internal nav-link" href="#desk-checking">
    Desk-checking
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#branching-example">
+     Branching Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iteration-example">
+     Iteration Example
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -797,6 +858,55 @@
   <a class="reference internal nav-link" href="#pseudocode">
    Pseudocode
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#qcaa-pseudocode-rules">
+     QCAA Pseudocode Rules
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#keywords">
+       Keywords
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calculations">
+       Calculations
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#naming-conventions">
+       Naming Conventions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#font">
+       Font
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#variables">
+       Variables
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#modularisation">
+       Modularisation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#iterations">
+       Iterations
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#selection">
+       Selection
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ipo-tables">
@@ -807,6 +917,18 @@
   <a class="reference internal nav-link" href="#desk-checking">
    Desk-checking
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#branching-example">
+     Branching Example
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#iteration-example">
+     Iteration Example
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -875,12 +997,249 @@
 </div>
 <div class="section" id="pseudocode">
 <h2>Pseudocode<a class="headerlink" href="#pseudocode" title="Permalink to this headline">¶</a></h2>
+<p>Pseudocode is a technique used to describe the distinct steps of an algorithm in a manner that is easy to understand for anyone with basic programming knowledge.</p>
+<p>Although pseudocode is a syntax-free description of an algorithm, it must provide a full description of the algorithm’s logic so that moving from it to implementation should be merely a task of translating each line into code using the syntax of any programming language.</p>
+<p>Advantages of pseudocode:</p>
+<ul class="simple">
+<li><p><strong>Better readability</strong> - Often, programmers work alongside people from other domains, such as mathematicians, business partners, managers, and so on. Using pseudocode to explain the mechanics of the code will make the communication between the different backgrounds easier and more efficient.</p></li>
+<li><p><strong>Ease up code construction</strong> - When the programmer goes through the process of developing and generating pseudocode, the process of converting that into real code written in any programming language will become much easier and faster as well.</p></li>
+<li><p><strong>A good middle point between flowchart and code</strong> - Moving directly from the idea to the flowchart to the code is not always a smooth ride. That’s where pseudocode presents a way to make the transition between the different stages somewhat smoother.</p></li>
+<li><p><strong>Act as a start point for documentation</strong> - Documentation is an essential aspect of building a good project. Often, starting documentation is the most difficult part. However, pseudocode can represent a good starting point for what the documentation should include. Sometimes, programmers include the pseudocode as a docstring at the beginning of the code file.</p></li>
+<li><p><strong>Easier bug detection and fixing</strong> - Since pseudocode is written in a human-readable format, it is easier to edit and discover bugs before actually writing a single line of code. Editing pseudocode can be done more efficiently than testing, debugging, and fixing actual code.</p></li>
+</ul>
+<div class="section" id="qcaa-pseudocode-rules">
+<h3>QCAA Pseudocode Rules<a class="headerlink" href="#qcaa-pseudocode-rules" title="Permalink to this headline">¶</a></h3>
+<p>In Digital Solutions, pseudocode has an additional purpose. The Digital Solutions Syllabus allows for a range of programming languages to be used. With different languages being used in schools across Queensland, pseudocode is used as the formal method of representing algorithms in Digital Solutions. In that capacity, QCAA has established very specific rules around for its use.</p>
+<div class="section" id="keywords">
+<h4>Keywords<a class="headerlink" href="#keywords" title="Permalink to this headline">¶</a></h4>
+<p><strong>KEYWORDS</strong> should be written bold and capitalized.</p>
+<p>Keywords do not have to be valid programming language words as long as they clearly convey the intent of the line of pseudocode.</p>
+</div>
+<div class="section" id="calculations">
+<h4>Calculations<a class="headerlink" href="#calculations" title="Permalink to this headline">¶</a></h4>
+<p>Pseudocode should clearly indicate what is happening at each step, including formulas of calculations.</p>
+<p>For example:
+<code class="docutils literal notranslate"><span class="pre">CALCULATE</span> <span class="pre">net</span></code> is not as clear as <code class="docutils literal notranslate"><span class="pre">CALCULATE</span> <span class="pre">net</span> <span class="pre">=</span> <span class="pre">gross</span> <span class="pre">−</span> <span class="pre">tax</span></code></p>
+</div>
+<div class="section" id="naming-conventions">
+<h4>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">¶</a></h4>
+<p>Use snake case naming convention for variable names with multiple words, subroutines, methods and functions.</p>
+<p>Snake case is a convention where all words are in lowercase and spaces between words is replaces with an <code class="docutils literal notranslate"><span class="pre">_</span></code></p>
+<p>For example:
+<code class="docutils literal notranslate"><span class="pre">VAR</span> <span class="pre">file_name</span></code></p>
+</div>
+<div class="section" id="font">
+<h4>Font<a class="headerlink" href="#font" title="Permalink to this headline">¶</a></h4>
+<p>Use a mono-space typeface when writing algorithms on computer:</p>
+<p>Windows mono-space fonts:</p>
+<ul class="simple">
+<li><p>Courier New</p></li>
+<li><p>Consolas</p></li>
+<li><p>Cascadia Code</p></li>
+<li><p>Cascadia Mono</p></li>
+</ul>
+<p>Mac mono-spaced fonts:</p>
+<ul class="simple">
+<li><p>Andalé Mono</p></li>
+<li><p>Consolas</p></li>
+<li><p>Courier</p></li>
+<li><p>Courier New</p></li>
+</ul>
+</div>
+<div class="section" id="variables">
+<h4>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h4>
+<p>To input or output values, common words can be used as keywords.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">INPUT</span> <span class="pre">mark</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">WRITE</span> <span class="pre">&quot;the</span> <span class="pre">total</span> <span class="pre">is&quot;</span> <span class="pre">count</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PRINT</span> <span class="pre">x,</span> <span class="pre">y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DISPLAY</span> <span class="pre">name,</span> <span class="pre">result</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">READ</span> <span class="pre">name</span> <span class="pre">from</span> <span class="pre">list.txt</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OUTPUT</span> <span class="pre">average</span></code></p></li>
+</ul>
+<p>Pseudocode uses the assignment operator, <code class="docutils literal notranslate"><span class="pre">=</span></code> to assign values.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CALCULATE</span> <span class="pre">net</span> <span class="pre">=</span> <span class="pre">gross</span> <span class="pre">-</span> <span class="pre">tax</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="modularisation">
+<h4>Modularisation<a class="headerlink" href="#modularisation" title="Permalink to this headline">¶</a></h4>
+<p>All pseudocode modules start and ends with the <code class="docutils literal notranslate"><span class="pre">BEGIN</span></code> and <code class="docutils literal notranslate"><span class="pre">END</span></code> keywords.</p>
+<p>Main algorithm:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BEGIN</span>
+    <span class="n">statements</span>
+<span class="n">END</span>
+</pre></div>
+</div>
+<p>Defining procedures, subroutines, methods or functions</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BEGIN</span> <span class="n">function_name</span>
+    <span class="n">statements</span>
+<span class="n">END</span>
+</pre></div>
+</div>
+<p>Calling procedures, subroutines, methods or functions</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">statements</span>
+<span class="n">function_name</span>
+<span class="n">statements</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="iterations">
+<h4>Iterations<a class="headerlink" href="#iterations" title="Permalink to this headline">¶</a></h4>
+<p>There are three main types of loops — each has a clear start and end, with the statements within the loop indented.</p>
+<p><strong>Post-test loops</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">REPEAT</span>
+    <span class="n">statements</span>
+<span class="n">UNTIL</span>
+</pre></div>
+</div>
+<p><strong>Note:</strong> Python does not have a Post-test loop, so we will not be using this.</p>
+<p><strong>Pre-test loop</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">WHILE</span>
+    <span class="n">statements</span>
+<span class="n">ENDWHILE</span>
+</pre></div>
+</div>
+<p><strong>Counted loop</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FOR</span> <span class="n">count</span> <span class="o">=</span> <span class="n">start_val</span> <span class="n">TO</span> <span class="n">end_val</span>
+    <span class="n">statements</span>
+<span class="n">NEXT</span> <span class="n">count</span>
+<span class="n">ENDFOR</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="selection">
+<h4>Selection<a class="headerlink" href="#selection" title="Permalink to this headline">¶</a></h4>
+<p>A control structure used for decisions or branching and choosing alternate paths. The beginning and end of these structures are indicated with keywords.</p>
+<p><strong>IF statement</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="n">condition</span> <span class="n">THEN</span>
+    <span class="n">statements</span>
+<span class="n">ENDIF</span>
+</pre></div>
+</div>
+<p><strong>IF…ELSE statement</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="n">condition</span> <span class="n">THEN</span>
+    <span class="n">statements</span>
+<span class="n">ELSE</span>
+    <span class="n">statements</span>
+<span class="n">ENDIF</span>
+</pre></div>
+</div>
+<p><strong>IF…ELIF…ELSE statement</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="n">condition</span> <span class="n">THEN</span>
+    <span class="n">statements</span>
+<span class="n">ELSE</span> <span class="n">IF</span> <span class="n">condition</span> <span class="n">THEN</span>
+    <span class="n">statements</span>
+<span class="n">ELSE</span>
+    <span class="n">statements</span>
+<span class="n">ENDIF</span>
+</pre></div>
+</div>
+<p><strong>MATCH statement</strong>
+In most other languages these are called switches</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SWITCH</span> <span class="n">test_variable</span>
+    <span class="n">CASE</span> <span class="n">option</span>
+        <span class="n">statements</span>
+    <span class="n">CASE</span> <span class="n">option</span>
+        <span class="n">statements</span>
+    <span class="n">CASE</span> <span class="n">statements</span>
+<span class="n">ENDSWITCH</span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="ipo-tables">
 <h2>IPO Tables<a class="headerlink" href="#ipo-tables" title="Permalink to this headline">¶</a></h2>
+<p>Input Process Output (IPO) tables show sections of your algorithms. They are made up of three columns:</p>
+<ul class="simple">
+<li><p><strong>Inputs:</strong> Lists all the information/actions this section needs.</p></li>
+<li><p><strong>Process:</strong> Contains the pseudocode for this algorithm, following QCAA pseudocode rules</p></li>
+<li><p><strong>Output:</strong> Lists all the information/actions that result from this section.</p></li>
+</ul>
+<p><img alt="IPO Table" src="../../_images/ipo_table.png" /></p>
+<p>There is no need to represent all of your program in IPO tables, but rather you need to show the more complicated or tricky code. Each table should represent a section of code, with different functions (modules) being the obvious breaking point.</p>
+<p>Across all you IPO Tables you should have examples of all algorithm components:</p>
+<ul class="simple">
+<li><p>sequence</p></li>
+<li><p>assignment</p></li>
+<li><p>condition</p></li>
+<li><p>selection</p></li>
+<li><p>iteration</p></li>
+<li><p>modularisation</p></li>
+</ul>
 </div>
+<hr class="docutils" />
 <div class="section" id="desk-checking">
 <h2>Desk-checking<a class="headerlink" href="#desk-checking" title="Permalink to this headline">¶</a></h2>
+<p>Desk checking is a manual (non computerised) technique for checking the logic of an algorithm. The person performing the desk check effectively acts as the computer, using pen and paper to record results. The desk checker carefully follows the algorithm being careful to rigidly adhere to the logic specified. The desk check can expose problems with the algorithm.</p>
+<p>Desk checks are useful to check an algorithm (before coding) thereby confirming that the algorithm works as expected and saves time possibly writing a program that doesn’t do what was intended. Another benefit of a desk check is that it confirms to the programmer/designer that the algorithm performs as intended.</p>
+<p>A desk check is normally done as a table with columns for:</p>
+<ul class="simple">
+<li><p>Pseudo code line number - Pseudo code doesn’t normally have lines numbers, but these are necessary in a desk check to specify the line(s) being executed</p></li>
+<li><p>One column per variable used.</p>
+<ul>
+<li><p>The columns should be in alphabetical order on variable name with the variable name at the top of the column.</p></li>
+<li><p>As the algorithm is executed, the new values of the variables are put in the appropriate column.</p></li>
+<li><p>Show working for calculations.</p></li>
+<li><p>If variable names consist of a number of words it is permissible to put a space between each word in the name so that the name fits better in the column by wrapping to the next line. e.g. the variable column heading discount Price could be used rather than the actual variable name discountPrice.</p></li>
+</ul>
+</li>
+<li><p>condition column.</p>
+<ul>
+<li><p>The result of the condition will be true (T) or false (F).</p></li>
+<li><p>As the algorithm is executed, conditions are evaluated and the details are recorded in the column.</p></li>
+<li><p>Show working when evaluating the conditions.</p></li>
+<li><p>This is used whenever a condition is evaluated - IF WHILE or FOR statements all have explicit or implicit conditions.</p></li>
+</ul>
+</li>
+<li><p>Input/Output</p>
+<ul>
+<li><p>used to show what is input by the user and displayed by the program.</p></li>
+<li><p>Show inputs with: the variable name, a “?” and the value input e.g. price ? 200.</p></li>
+<li><p>Show outputs with the variable name, an =, and the value displayed (or just the value displayed) e.g. discountPrice= 180 .</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="branching-example">
+<h3>Branching Example<a class="headerlink" href="#branching-example" title="Permalink to this headline">¶</a></h3>
+<p>Consider the following pseudocode:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="n">BEGIN</span> <span class="n">calcPrice</span><span class="p">()</span>
+<span class="mi">2</span>    <span class="n">INPUT</span> <span class="n">price</span>
+<span class="mi">3</span>    <span class="n">IF</span> <span class="n">price</span> <span class="o">&gt;</span> <span class="mi">100</span> <span class="n">THEN</span>
+<span class="mi">4</span>        <span class="n">discount</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="mi">15</span> <span class="o">/</span> <span class="mi">100</span>
+<span class="mi">5</span>        <span class="n">price</span> <span class="o">=</span> <span class="n">price</span> <span class="o">-</span> <span class="n">discount</span>
+<span class="mi">6</span>    <span class="n">ENDIF</span>
+<span class="mi">7</span>    <span class="n">DISPLAY</span> <span class="n">price</span>
+<span class="mi">8</span> <span class="n">END</span>
+</pre></div>
+</div>
+<p>Since it has branching logic, you will need to run a test for each of the branches (in this case two).</p>
+<p>Inputs: price = $200<br />
+Correct results: price = $170
+<img alt="desk check 1" src="../../_images/desk_check_1.png" /></p>
+<p>Inputs: price = $50<br />
+Correct results: price = $50.
+<img alt="desk check 2" src="../../_images/desk_check_2.png" /></p>
+</div>
+<div class="section" id="iteration-example">
+<h3>Iteration Example<a class="headerlink" href="#iteration-example" title="Permalink to this headline">¶</a></h3>
+<p>Consider the following pseudocode:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="n">BEGIN</span> <span class="n">calcSquares</span><span class="p">()</span>
+<span class="mi">2</span>    <span class="n">DISPLAY</span> <span class="s2">&quot;X&quot;</span><span class="p">,</span> <span class="s2">&quot;X Squared&quot;</span>
+<span class="mi">3</span>    <span class="n">FOR</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">TO</span> <span class="mi">3</span>
+<span class="mi">4</span>        <span class="n">xSquared</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+<span class="mi">5</span>        <span class="n">DISPLAY</span> <span class="n">x</span><span class="p">,</span> <span class="n">xSquared</span>
+<span class="mi">6</span>    <span class="n">NEXT</span> <span class="n">x</span>
+<span class="mi">7</span>    <span class="n">ENDFOR</span>
+<span class="mi">8</span>    <span class="n">DISPLAY</span> <span class="s2">&quot;-----------&quot;</span>
+<span class="mi">9</span> <span class="n">END</span>
+</pre></div>
+</div>
+<p><img alt="desk check 3" src="../../_images/desk_check_3.png" /></p>
+</div>
 </div>
 </div>
 

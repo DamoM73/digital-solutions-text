@@ -1,4 +1,4 @@
-# Design Data Source
+# Design Data Store
 
 ```{admonition} Tools used to complete the Develop phase:
 :class: attention
@@ -7,6 +7,12 @@
 - Data Dictionaries
 - Relational Schemas
 ```
+## For Unit 1
+Data Stores are not addressed in Unit 1. For the purposes of developing your solution, you need to consider two things:
+1. What data will you need to collect and keep temporarily (whilst the program is running)
+2. What data will you need to load from or save to a file.
+
+This information can be add to your mindmap.
 
 ```{admonition} Unit 2 subject matter covered:
 - recognise data types, constraints, and primary and foreign keys

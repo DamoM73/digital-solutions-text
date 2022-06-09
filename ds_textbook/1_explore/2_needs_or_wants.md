@@ -4,7 +4,7 @@
 - empathy maps
 - personas
 ```
-## Introduction
+## For Unit 1 to 4
 In order to create a digital solution we must deeply understand our users and prioritize their needs. To achieve this we will use empathy maps and personas.
 
 ![empathy_thumb](./assests/empathy_map_thumb.png) 
