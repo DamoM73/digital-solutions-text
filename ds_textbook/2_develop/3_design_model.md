@@ -12,7 +12,7 @@ Data Stores are not addressed in Unit 1. For the purposes of developing your sol
 1. What data will you need to collect and keep temporarily (whilst the program is running)
 2. What data will you need to load from or save to a file.
 
-This information can be add to your mindmap.
+This information can be add to your mind map.
 
 ```{admonition} Unit 2 subject matter covered:
 - recognise data types, constraints, and primary and foreign keys

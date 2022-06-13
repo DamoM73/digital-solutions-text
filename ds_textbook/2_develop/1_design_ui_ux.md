@@ -5,7 +5,7 @@
 - XD Mock-ups
 - QT Designer Mock-ups
 ```
-## For Unit 1 to 4
+## For Units 1 to 4
 In designing our UI and UX we need to incorporate **Useability Principles**.
 
 Useability Principles are:

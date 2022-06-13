@@ -68,6 +68,7 @@ parts:
     - file: 3_generate/1_environment
       sections:
       - file: 3_generate/1_environment/unit_1
+      - file: 3_generate/1_environment/unit_2
       - file: 3_generate/1_environment/unit_3
       - file: 3_generate/1_environment/unit_4
     - file: 3_generate/2_generate_code

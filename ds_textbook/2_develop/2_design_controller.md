@@ -8,7 +8,7 @@
 - IPO Tables
 - Desk-checking
 ```
-## For Unit 1 to 4
+## For Units 1 to 4
 
 Algorithms are the heart of your program, so we spend a bit of effort in designing them.
 

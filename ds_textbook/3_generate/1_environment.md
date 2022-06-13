@@ -2,12 +2,26 @@
 
 ```{admonition} Tools used:
 :class: attention 
-- Mind Maps
-- QT Designer
-- Annotated Code
-- Testing
+- Mind Map
 ```
+## For Units 1 to 4
+Our development environment will consist of:
+- **Operating System:** Windows or macOS
+- **Language:** Python
+- **Packages:** PyQt6
+- **IDE:** Visual Studio Code
+- **Version Control:**
+  - Git
+  - GitHub
+  - GitHub Desktop
+- **Mind Mapping:** FreeMind
+- **Diagramming:** Diagrams dot net
+- **Mockups**:
+  - Adobe XD or
+  - QT Designer
 
+These should be recorded in your Mind map:  
+![Development Environment](./assets/mm_developement_env.png)
 
 ```{admonition} Unit 1 subject matter covered:
 - explore programming development tools to understand how to use them effectively
