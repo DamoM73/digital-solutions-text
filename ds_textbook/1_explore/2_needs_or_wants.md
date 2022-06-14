@@ -1,4 +1,4 @@
-# Determine Human Needs or Wants
+# Determine Needs or Wants
 ```{admonition} Tools used:
 :class: attention
 - empathy maps

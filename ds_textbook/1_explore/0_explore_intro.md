@@ -9,7 +9,8 @@
 - Criteria Tables
 ```
 
-The explore phase involves students investigating a need, want or opportunity to analyse and understand a digital problem and its relationship to existing solutions.
+## Overview
+> The explore phase involves students investigating a need, want or opportunity to analyse and understand a digital problem and its relationship to existing solutions {cite}`queenslandcurriculumassessmentauthority_2017_digital`
 
 To complete the Explore phase of the EDGE problem solving processes we will work through seven steps.
 1. Describe the problem

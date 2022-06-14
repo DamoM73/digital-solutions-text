@@ -161,7 +161,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../1_explore/2_needs_or_wants.html">
-   Determine Human Needs or Wants
+   Determine Needs or Wants
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -171,7 +171,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../1_explore/2_needs_or_wants/unit_1.html">
-     Unit 1: Determine Human Needs or Wants
+     Unit 1: Determine Needs or Wants
     </a>
    </li>
   </ul>
@@ -309,7 +309,7 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../0_introduction.html">
+  <a class="reference internal" href="../0_develop_intro.html">
    Develop Introduction
   </a>
  </li>
@@ -407,7 +407,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../3_generate/0_introduction.html">
+  <a class="reference internal" href="../../3_generate/0_generate_intro.html">
    Generate Introduction
   </a>
  </li>
@@ -424,6 +424,11 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../../3_generate/1_environment/unit_1.html">
      Unit 1: Select Development Environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../3_generate/1_environment/unit_2.html">
+     Unit 2: Select Development Environment
     </a>
    </li>
    <li class="toctree-l2">
@@ -532,7 +537,7 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../4_evaluate/0_introduction.html">
+  <a class="reference internal" href="../../4_evaluate/0_evaluate_intro.html">
    Evaluate Introduction
   </a>
  </li>
@@ -739,6 +744,28 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#good-programming-practices">
+   Good Programming Practices
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependability">
+     Dependability
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#efficiency">
+     Efficiency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#effectiveness">
+     Effectiveness
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#activity-diagrams">
    Activity Diagrams
   </a>
@@ -844,6 +871,28 @@
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#good-programming-practices">
+   Good Programming Practices
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependability">
+     Dependability
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#efficiency">
+     Efficiency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#effectiveness">
+     Effectiveness
+    </a>
+   </li>
+  </ul>
+ </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#activity-diagrams">
    Activity Diagrams
@@ -951,8 +1000,8 @@
 <li><p><strong>Iteration:</strong> the repetition of a number of instructions. These are generally referred to as loops and refer to a section of code that is repeated.</p></li>
 <li><p><strong>Modularisation:</strong> refers to the process of breaking a large, unwieldy programming task into separate, smaller, more manageable subtasks or modules. Individual modules can then be cobbled together like building blocks to create a larger application.</p></li>
 </ul>
-<p>In designing your algorithm, you will need to decide how to arrange these building block to achieve you outcome.</p>
-<p>We will use a number of tools to do this:</p>
+<p>In designing your algorithm, you will need to decide how to arrange these building block to achieve you outcome. To do this it is wise to follow good programming practices.</p>
+<p>We will use a number of tools to develop algorithms using good programming practices:</p>
 <ul class="simple">
 <li><p>Activity Diagrams</p></li>
 <li><p>Class Diagrams</p></li>
@@ -960,6 +1009,36 @@
 <li><p>IPO Tables</p></li>
 <li><p>Desk-checking</p></li>
 </ul>
+<hr class="docutils" />
+<div class="section" id="good-programming-practices">
+<h2>Good Programming Practices<a class="headerlink" href="#good-programming-practices" title="Permalink to this headline">¶</a></h2>
+<p>The are many good practices to following when programming. These need to be applied right from when the algorithms are first being developed.</p>
+<div class="section" id="dependability">
+<h3>Dependability<a class="headerlink" href="#dependability" title="Permalink to this headline">¶</a></h3>
+<p>In systems engineering, dependability is a measure of a system’s reliability, maintainability.</p>
+<ul class="simple">
+<li><p><strong>maintainability:</strong> easy-to-read code that is easy to dissect, so that parts relating to a required change are easy to modify without risking a chain reaction of errors in dependant modules.</p></li>
+<li><p><strong>reliability:</strong> the probability of a program producing an error or failing to process a task;</p>
+<ul>
+<li><p>In Digital Solutions, testing and useability considerations contribute to reliability.</p></li>
+<li><p>For example, predicting where errors are likely to occur (whether user or systems related) can inform mindful use programming constructs.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="efficiency">
+<h3>Efficiency<a class="headerlink" href="#efficiency" title="Permalink to this headline">¶</a></h3>
+<p>A situation in which a system or machine uses minimal resources such as time and processing power while still achieving its goals; there are two types of efficiency:</p>
+<ul class="simple">
+<li><p><strong>algorithmic efficiency:</strong> refers to the reliability, speed and programming methodology for developing succinct structures within an application</p></li>
+<li><p><strong>code efficiency:</strong> is directly linked with algorithmic efficiency and the speed of runtime execution for software, and is the key element in ensuring high performance; its goal is to reduce resource consumption and completion time as much as possible with minimum risk to the business or operating environment, e.g. using a FOR loop instead of repetitive IF, THEN and ELSE statements where appropriate.</p></li>
+</ul>
+</div>
+<div class="section" id="effectiveness">
+<h3>Effectiveness<a class="headerlink" href="#effectiveness" title="Permalink to this headline">¶</a></h3>
+<p>A measure of the success of the algorithm to solve an identified problem; depending on the complexity of the problem, this could be tested with a desk check, but generally, the effectiveness of an algorithm can only be determined after the code has been generated and then tested within the appropriate context;</p>
+</div>
+</div>
 <hr class="docutils" />
 <div class="section" id="activity-diagrams">
 <h2>Activity Diagrams<a class="headerlink" href="#activity-diagrams" title="Permalink to this headline">¶</a></h2>
@@ -974,7 +1053,8 @@
 <li><p><strong>Start node:</strong> Symbolizes the beginning of the activity.</p></li>
 <li><p><strong>End node:</strong> Represents the final step in the activity.</p></li>
 </ul>
-<p>Watch <strong><a class="reference external" href="https://www.youtube.com/watch?v=knM8BGY9yVI">this video</a></strong> to understand how to create an activity diagram.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/knM8BGY9yVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><span id="id2">[<a class="reference internal" href="../../bibliography.html#id20">Master2Teach, 2020</a>]</span></p>
 <p><strong>Activity Diagram Symbols</strong></p>
 <p><img alt="activity diagram symbols" src="../../_images/activity_symbols.png" /></p>
 </div>
@@ -982,7 +1062,7 @@
 <div class="section" id="class-diagrams">
 <h2>Class Diagrams<a class="headerlink" href="#class-diagrams" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>Class diagrams clearly map out the structure of a particular system by modelling its classes, attributes, operations, and relationships between objects <span id="id2">[<a class="reference internal" href="../../bibliography.html#id16">Lucidchart, 2017</a>]</span>.</p>
+<div><p>Class diagrams clearly map out the structure of a particular system by modelling its classes, attributes, operations, and relationships between objects <span id="id3">[<a class="reference internal" href="../../bibliography.html#id16">Lucidchart, 2017</a>]</span>.</p>
 </div></blockquote>
 <p>Class diagrams are particularly useful when using Object Orientated Programming.</p>
 <p>The standard class diagram is composed of three sections:</p>
@@ -991,7 +1071,8 @@
 <li><p><strong>Middle section:</strong> Contains the attributes of the class. Use this section to describe the qualities of the class.</p></li>
 <li><p><strong>Bottom section:</strong> Includes class operations (methods). Displayed in list format, each operation takes up its own line.</p></li>
 </ul>
-<p>Watch <strong><a class="reference external" href="https://www.youtube.com/watch?v=UI6lqHOVHic">this video</a></strong> to learn how to create class diagrams.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UI6lqHOVHic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><span id="id4">[<a class="reference internal" href="../../bibliography.html#id21">Lucidchart, 2017</a>]</span></p>
 <p><strong>Class Diagram Symbols</strong></p>
 <p><img alt="class symbols" src="../../_images/class_symbols.png" /></p>
 </div>

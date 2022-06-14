@@ -45,7 +45,7 @@ parts:
       - file: 1_explore/7_determine_criteria/unit_1
   - caption: Develop
     chapters:
-    - file: 2_develop/0_introduction
+    - file: 2_develop/0_develop_intro
     - file: 2_develop/1_design_ui_ux
       sections:
       - file: 2_develop/1_design_ui_ux/unit_1
@@ -64,7 +64,7 @@ parts:
       - file: 2_develop/3_design_model/unit_4
   - caption: Generate
     chapters:
-    - file: 3_generate/0_introduction
+    - file: 3_generate/0_generate_intro
     - file: 3_generate/1_environment
       sections:
       - file: 3_generate/1_environment/unit_1
@@ -89,7 +89,7 @@ parts:
       - file: 3_generate/4_test_code/unit_4
   - caption: Evaluate
     chapters:
-    - file: 4_evaluate/0_introduction
+    - file: 4_evaluate/0_evaluate_intro
     - file: 4_evaluate/1_components
       sections:
       - file: 4_evaluate/1_components/unit_1

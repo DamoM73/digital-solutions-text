@@ -11,14 +11,36 @@ There are 6 basic building blocks that an algorithm consists of. Each of them se
 - **Iteration:** the repetition of a number of instructions. These are generally referred to as loops and refer to a section of code that is repeated. 
 - **Modularisation:** refers to the process of breaking a large, unwieldy programming task into separate, smaller, more manageable subtasks or modules. Individual modules can then be cobbled together like building blocks to create a larger application.
 
-In designing your algorithm, you will need to decide how to arrange these building block to achieve you outcome.
+In designing your algorithm, you will need to decide how to arrange these building block to achieve you outcome. To do this it is wise to follow good programming practices.
 
-We will use a number of tools to do this:
+We will use a number of tools to develop algorithms using good programming practices:
 - Activity Diagrams
 - Class Diagrams
 - Pseudocode
 - IPO Tables
 - Desk-checking
+
+---
+## Good Programming Practices
+The are many good practices to following when programming. These need to be applied right from when the algorithms are first being developed.
+
+
+
+### Dependability
+In systems engineering, dependability is a measure of a system's reliability, maintainability.
+
+- **maintainability:** easy-to-read code that is easy to dissect, so that parts relating to a required change are easy to modify without risking a chain reaction of errors in dependant modules.
+- **reliability:** the probability of a program producing an error or failing to process a task;
+    - In Digital Solutions, testing and useability considerations contribute to reliability. 
+    - For example, predicting where errors are likely to occur (whether user or systems related) can inform mindful use programming constructs.
+
+### Efficiency
+A situation in which a system or machine uses minimal resources such as time and processing power while still achieving its goals; there are two types of efficiency:
+- **algorithmic efficiency:** refers to the reliability, speed and programming methodology for developing succinct structures within an application
+- **code efficiency:** is directly linked with algorithmic efficiency and the speed of runtime execution for software, and is the key element in ensuring high performance; its goal is to reduce resource consumption and completion time as much as possible with minimum risk to the business or operating environment, e.g. using a FOR loop instead of repetitive IF, THEN and ELSE statements where appropriate.
+
+### Effectiveness
+A measure of the success of the algorithm to solve an identified problem; depending on the complexity of the problem, this could be tested with a desk check, but generally, the effectiveness of an algorithm can only be determined after the code has been generated and then tested within the appropriate context;
 
 ---
 ## Activity Diagrams
@@ -31,7 +53,9 @@ An activity diagram is made of of different components. Some of the most common 
 - **Start node:** Symbolizes the beginning of the activity.
 - **End node:** Represents the final step in the activity.
 
-Watch **[this video](https://www.youtube.com/watch?v=knM8BGY9yVI)** to understand how to create an activity diagram.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/knM8BGY9yVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{cite}`master2teach_2020_activity`
 
 **Activity Diagram Symbols**
 
@@ -48,7 +72,9 @@ The standard class diagram is composed of three sections:
 - **Middle section:** Contains the attributes of the class. Use this section to describe the qualities of the class.
 - **Bottom section:** Includes class operations (methods). Displayed in list format, each operation takes up its own line.
 
-Watch **[this video](https://www.youtube.com/watch?v=UI6lqHOVHic)** to learn how to create class diagrams.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UI6lqHOVHic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{cite}`lucidchart_2017_uml_vid`
 
 **Class Diagram Symbols**
 

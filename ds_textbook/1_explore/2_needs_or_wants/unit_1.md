@@ -1,11 +1,14 @@
-# Unit 1: Determine Human Needs or Wants
+# Unit 1: Determine Needs or Wants
 Determining the human needs and wants provides us with an understanding that we can use to assess the effectiveness of solution, as well as the individual constituent components.
 ---
 ## Empathy Maps
-To help identify user needs, UX professionals use empathy maps. Watch **[this video](https://youtu.be/QwF9a56WFWA)** to learn about empathy makes and how to use them.
+To help identify user needs, UX professionals use empathy maps. 
 
-![empathy map](../assests/empathy_map.png) 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QwF9a56WFWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{cite}`playbookux_2019_what`
+
+![empathy map](../assests/empathy_map.png)  
 {cite}`gibbons_2018_empathy`
 
 To fill out an empathy map, consider:
@@ -29,10 +32,13 @@ In doing this be aware that:
 - Refrain from using nouns as they will lead to defining solutions, and this is not the aim of the process.
 ---
 ## Personas
-To ensure that the digital solution is meeting the needs of the user, rather than the needs of the developer, UX professionals employ user personas. To understand user personas watch **[this video](https://youtu.be/u44pBnAn7cM)**.
+To ensure that the digital solution is meeting the needs of the user, rather than the needs of the developer, UX professionals employ user personas. 
 
-![user_persona](../assests/persona.png)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u44pBnAn7cM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
+{cite}`playbookux_2019_creating`
+
+![user_persona](../assests/persona.png)  
 {cite}`faller_2019_what`
 
 Personas are fictional representations and generalisations of user clusters which identify:

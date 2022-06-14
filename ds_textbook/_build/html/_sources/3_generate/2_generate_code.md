@@ -2,7 +2,7 @@
 
 ```{admonition} Tools use:
 :class: attention
-- QT Designer Mock-ups
+- QT Designer
 - Annotated code
 ```
 

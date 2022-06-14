@@ -108,7 +108,9 @@ An effective use case diagram can help you represent:
 
 We will employ Use Case Diagrams to further develop our exploration of the problem.
 
-Watch **[this video](https://youtu.be/zid-MVo7M-E)** to learn how to create a Use Case Diagram.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zid-MVo7M-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{cite}`lucidchart_2018_uml`
 
 ### Steps to create a Use Case Diagram
 1. What is the system being created?
