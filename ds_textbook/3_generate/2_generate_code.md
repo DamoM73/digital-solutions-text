@@ -6,6 +6,23 @@
 - Annotated code
 ```
 
+## For Units 1 to 4
+In generating code we will need to use programming features and operations:
+- Basic Features of Programming
+  - Variables
+  - Control Structures
+  - Data Structures
+  - Syntax
+  - Libraries
+  - Classes
+- Operations
+  - Arithmetic operators
+  - Assignment operators
+  - Comparison operators
+  - Logical operators
+  - Identity operators
+  - Membership operators 
+
 ```{admonition} Unit 1 subject matter covered:
 - generate user interfaces by investigating and applying useability principles
 - explore the use of a procedural text-based language for writing and modifying code and using existing code blocks or statements
