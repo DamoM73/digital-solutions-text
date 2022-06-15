@@ -1,6 +1,6 @@
 # Unit 1: Generate Code
 
-In this section we will look at how we create code. We will look at  basic coding concepts and the types of operations. 
+In this section we will look at how we create code. We will look at  basic coding features and the types of operations. 
 
 ---
 ## Basic Features of Programming

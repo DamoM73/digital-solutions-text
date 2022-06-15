@@ -13,7 +13,7 @@
 - Relational Schemas
 ```
 ## Overview
-The develop phase involves students creating new understanding and identifying possible solutions using design, systems, and abstraction and algorithmic computational thinking processes. Students evaluate personal, social and economic impacts, components and digital solutions against criteria throughout the develop phase to make decisions and refine the user experience and technical operation of components of the solution.
+> The develop phase involves students creating new understanding and identifying possible solutions using design, systems, and abstraction and algorithmic computational thinking processes. Students evaluate personal, social and economic impacts, components and digital solutions against criteria throughout the develop phase to make decisions and refine the user experience and technical operation of components of the solution {cite}`queenslandcurriculumassessmentauthority_2017_digital`.
 
 To complete the Develop phase of the EDGE problem solving processes we will need to develop three distinct aspects of the application:
 - User Interface

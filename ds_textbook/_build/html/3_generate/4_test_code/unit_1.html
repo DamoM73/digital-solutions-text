@@ -738,6 +738,53 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#testing">
+   Testing
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planning-testing">
+     Planning testing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#debugging">
+     Debugging
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#error-correction">
+   Error Correction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#syntax-errors">
+     Syntax errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#logic-errors">
+     Logic errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#runtime-errors">
+     Runtime errors
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -750,6 +797,53 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#testing">
+   Testing
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planning-testing">
+     Planning testing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#debugging">
+     Debugging
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#error-correction">
+   Error Correction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#syntax-errors">
+     Syntax errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#logic-errors">
+     Logic errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#runtime-errors">
+     Runtime errors
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -758,7 +852,70 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="unit-1-test-code">
 <h1>Unit 1: Test Code<a class="headerlink" href="#unit-1-test-code" title="Permalink to this headline">¶</a></h1>
-<p>Good code practice</p>
+<p>Testing your code is something that starts during algorithm design and will continue right up until the completion of your project. We have already covered desk checking in the development phase. In this section we will look at the testing needed whilst you generate your code.</p>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>There are three types of testing which occur during code generation:</p>
+<ul class="simple">
+<li><p><strong>exploratory testing:</strong> a form of testing that is done without a plan. In an exploratory test, you’re just exploring the application. For example, checking and experimenting with the features when you run your application for the first time?</p></li>
+<li><p><strong>integrated testing:</strong> testing multiple components at the same time.</p></li>
+<li><p><strong>unit testing</strong> testing that single components operate in the right way.</p></li>
+</ul>
+<p>A major challenge with integrated testing is when an integrated test doesn’t give the right result. It’s very hard to diagnose the issue without being able to isolate which part of the system is failing. Unit tests help you to isolate what is broken in your application and fix it faster.</p>
+<div class="section" id="planning-testing">
+<h3>Planning testing<a class="headerlink" href="#planning-testing" title="Permalink to this headline">¶</a></h3>
+<p>To have a complete set of manual tests, all you need to do is make a list of all the features your application has, the different types of input it can accept, and the expected results. Now, every time you make a change to your code, you need to go through every single item on that list and check it.</p>
+<p>To have a complete set of tests, you need to:</p>
+<ol class="simple">
+<li><p>make a list of all the features your application has, including the different types of input it can accept, and the expected results.</p></li>
+<li><p>run integrated tests for each feature using correct inputs and check that results match the expected results.</p></li>
+<li><p>run integrated tests for each feature using <em>erroneous</em> inputs and check that errors are caught or prevented.</p></li>
+</ol>
+<p>If your integrated tests fail, then you need to use unit testing to identify where the problems are.</p>
+<p>To run unit tests:</p>
+<ol class="simple">
+<li><p>create a testing script that imports possible erroneous units (functions and methods) from the program.</p></li>
+<li><p>for each unit create a list of the acceptable inputs and expected outputs.</p></li>
+<li><p>run unit tests to ensure that asserts if each unit provides the correct output for each given input.</p></li>
+<li><p>when a incorrect out is received, then debug the specific unit until you get the correct output.</p></li>
+</ol>
+</div>
+<div class="section" id="debugging">
+<h3>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h3>
+<p>In computer programming and software development, debugging is the process of finding and resolving bugs (defects or problems that prevent correct operation) within computer programs, software, or systems. Many programming languages and software development tools also offer programs to aid in debugging, known as debuggers.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="error-correction">
+<h2>Error Correction<a class="headerlink" href="#error-correction" title="Permalink to this headline">¶</a></h2>
+<p>Dealing with errors is an integral part of any development process, to the point where seasoned coders eventually become experts at navigating and fixing the errors they create.</p>
+<p>When developing programs there are three types of error that can occur.</p>
+<div class="section" id="syntax-errors">
+<h3>Syntax errors<a class="headerlink" href="#syntax-errors" title="Permalink to this headline">¶</a></h3>
+<p>Syntax errors occur when the code given does not follow the syntax rules of the programming language. A program cannot run if it has syntax errors. Any such errors must be fixed first. A good integrated development environment (IDE) usually points out any syntax errors to the programmer.</p>
+<p>Examples include:</p>
+<ul class="simple">
+<li><p>misspelling a statement, eg. writing pint instead of print</p></li>
+<li><p>using a variable before it has been declared</p></li>
+<li><p>missing brackets, eg. opening a bracket, but not closing it</p></li>
+</ul>
+</div>
+<div class="section" id="logic-errors">
+<h3>Logic errors<a class="headerlink" href="#logic-errors" title="Permalink to this headline">¶</a></h3>
+<p>A logic errors is an error in the way a program works. The program can run but does not do what it is expected to do. Unlike a syntax error, a logic error does not usually stop a program from running. The program will run, but not function as expected.</p>
+<p>Logic errors can be caused by the programmer:
+- incorrectly using logical operators, eg. expecting a program to stop when the value of a variable reaches <code class="docutils literal notranslate"><span class="pre">5</span></code>, but you use <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">5</span></code> instead of <code class="docutils literal notranslate"><span class="pre">&lt;=</span> <span class="pre">5</span></code>
+- incorrectly using Boolean operators
+- unintentionally creating a situation where an infinite loop may occur
+- incorrectly using brackets in calculations
+- unintentionally using the same variable name at different points in the program for different purposes
+- using incorrect program design</p>
+</div>
+<div class="section" id="runtime-errors">
+<h3>Runtime errors<a class="headerlink" href="#runtime-errors" title="Permalink to this headline">¶</a></h3>
+<p>A runtime errors is an error that takes place during the running of a program. For example, writing a program that tries to access the sixth item in a list that only contains five items. A runtime error is likely to crash the program.</p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
