@@ -749,8 +749,13 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#planning-testing">
-     Planning testing
+    <a class="reference internal nav-link" href="#integrated-testing">
+     Integrated testing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unit-testing">
+     Unit testing
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -808,8 +813,13 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#planning-testing">
-     Planning testing
+    <a class="reference internal nav-link" href="#integrated-testing">
+     Integrated testing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unit-testing">
+     Unit testing
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -862,16 +872,34 @@
 <li><p><strong>unit testing</strong> testing that single components operate in the right way.</p></li>
 </ul>
 <p>A major challenge with integrated testing is when an integrated test doesn’t give the right result. It’s very hard to diagnose the issue without being able to isolate which part of the system is failing. Unit tests help you to isolate what is broken in your application and fix it faster.</p>
-<div class="section" id="planning-testing">
-<h3>Planning testing<a class="headerlink" href="#planning-testing" title="Permalink to this headline">¶</a></h3>
-<p>To have a complete set of manual tests, all you need to do is make a list of all the features your application has, the different types of input it can accept, and the expected results. Now, every time you make a change to your code, you need to go through every single item on that list and check it.</p>
-<p>To have a complete set of tests, you need to:</p>
+<div class="section" id="integrated-testing">
+<h3>Integrated testing<a class="headerlink" href="#integrated-testing" title="Permalink to this headline">¶</a></h3>
+<p>Integrated testing is used throughout an application’s life-time, covering many development cycles. Since our projects only deal with a single development cycle, you will only use integrated testing at the end of your project.</p>
+<p>To undertake integrated testing, you need to:</p>
 <ol class="simple">
 <li><p>make a list of all the features your application has, including the different types of input it can accept, and the expected results.</p></li>
 <li><p>run integrated tests for each feature using correct inputs and check that results match the expected results.</p></li>
 <li><p>run integrated tests for each feature using <em>erroneous</em> inputs and check that errors are caught or prevented.</p></li>
 </ol>
-<p>If your integrated tests fail, then you need to use unit testing to identify where the problems are.</p>
+<p>It is best to record this information in a table with the following columns:</p>
+<ul class="simple">
+<li><p><strong>Feature:</strong> the feature you are testing (this will repeated for this test)</p></li>
+<li><p><strong>Input:</strong> the input entered by the tester</p></li>
+<li><p><strong>Expected Output:</strong> the output expected if the feature is working correctly</p></li>
+<li><p><strong>Actual Output:</strong> the output obtain by running the test</p></li>
+<li><p><strong>Action:</strong> what steps, if any, need to be taken to resolve the problem.</p></li>
+</ul>
+<p>For example:<br />
+<img alt="Integrated Test" src="../../_images/integrated_testing.png" /></p>
+</div>
+<div class="section" id="unit-testing">
+<h3>Unit testing<a class="headerlink" href="#unit-testing" title="Permalink to this headline">¶</a></h3>
+<p>In Digital Solutions we will use unit testing in three capacities:</p>
+<ul class="simple">
+<li><p>Throughout the generation phase, when a distinct unit (eg. function, class, or method) is completed.</p></li>
+<li><p>Throughout the generation when the code in a previously tested unit is changed.</p></li>
+<li><p>When the integrated tests fail unit testing is used to identify where the problems are.</p></li>
+</ul>
 <p>To run unit tests:</p>
 <ol class="simple">
 <li><p>create a testing script that imports possible erroneous units (functions and methods) from the program.</p></li>
@@ -879,6 +907,8 @@
 <li><p>run unit tests to ensure that asserts if each unit provides the correct output for each given input.</p></li>
 <li><p>when a incorrect out is received, then debug the specific unit until you get the correct output.</p></li>
 </ol>
+<p>Record your testing in a table like this:
+<img alt="Unit testing" src="../../_images/unit_testing.png" /></p>
 </div>
 <div class="section" id="debugging">
 <h3>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h3>

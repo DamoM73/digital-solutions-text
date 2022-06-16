@@ -5,7 +5,6 @@
 - annotated code
 ```
 
-Clarifying code
 ## For Units 1 to 4
 When writing your code, you will need to use comments and code conventions to clarify your code and make it maintainable.
 

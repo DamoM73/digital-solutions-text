@@ -6,7 +6,13 @@
 ```
 
 ## Overview
-When students evaluate, they use systems, design and computational thinking to appraise personal, social and economic impacts, components and digital solutions by weighing up or assessing strengths, implications and limitations against prescribed and self-determined criteria. When students refine ideas and a digital solution, they make partial or minor changes based on selected criteria to improve the user experience and technical operation. Evaluation occurs throughout each phase of the problem-solving process in Digital Solutions in order to refine the components and a solution in response to the prescribed and self-determined criteria.
+> When students evaluate, they use systems, design and computational thinking to appraise personal, social and economic impacts, components and digital solutions by weighing up or assessing strengths, implications and limitations against prescribed and self-determined criteria. When students refine ideas and a digital solution, they make partial or minor changes based on selected criteria to improve the user experience and technical operation. Evaluation occurs throughout each phase of the problem-solving process in Digital Solutions in order to refine the components and a solution in response to the prescribed and self-determined criteria. {cite}`queenslandcurriculumassessmentauthority_2017_digital`
+
+Evaluation happens in two phases:
+- **throughout the generation phase:** inform recommendations that refine your solution
+- **at the end of the process:** 
+  - evaluate how well your solution has meet the requirements you identified during the Explore phase
+  - evaluate whether your solution will have the impacts that you identified in the Exploration phase
 
 ```{admonition} To evaluate and refine, students:
 - use pattern recognition to compare behaviours, e.g. usage and system, and outcomes of alternative solutions

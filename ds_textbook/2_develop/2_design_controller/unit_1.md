@@ -24,8 +24,6 @@ We will use a number of tools to develop algorithms using good programming pract
 ## Good Programming Practices
 The are many good practices to following when programming. These need to be applied right from when the algorithms are first being developed.
 
-
-
 ### Dependability
 In systems engineering, dependability is a measure of a system's reliability, maintainability.
 

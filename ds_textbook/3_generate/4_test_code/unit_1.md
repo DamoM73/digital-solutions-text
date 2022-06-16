@@ -3,7 +3,6 @@
 Testing your code is something that starts during algorithm design and will continue right up until the completion of your project. We have already covered desk checking in the development phase. In this section we will look at the testing needed whilst you generate your code.
 
 ## Testing
-
 There are three types of testing which occur during code generation:
 - **exploratory testing:** a form of testing that is done without a plan. In an exploratory test, you're just exploring the application. For example, checking and experimenting with the features when you run your application for the first time? 
 - **integrated testing:** testing multiple components at the same time.
@@ -11,21 +10,38 @@ There are three types of testing which occur during code generation:
 
 A major challenge with integrated testing is when an integrated test doesn't give the right result. It's very hard to diagnose the issue without being able to isolate which part of the system is failing. Unit tests help you to isolate what is broken in your application and fix it faster.
 
-### Planning testing
-To have a complete set of manual tests, all you need to do is make a list of all the features your application has, the different types of input it can accept, and the expected results. Now, every time you make a change to your code, you need to go through every single item on that list and check it.
+### Integrated testing
+Integrated testing is used throughout an application's life-time, covering many development cycles. Since our projects only deal with a single development cycle, you will only use integrated testing at the end of your project.
 
-To have a complete set of tests, you need to:
+To undertake integrated testing, you need to:
 1. make a list of all the features your application has, including the different types of input it can accept, and the expected results. 
 2. run integrated tests for each feature using correct inputs and check that results match the expected results.
 3. run integrated tests for each feature using *erroneous* inputs and check that errors are caught or prevented.
 
-If your integrated tests fail, then you need to use unit testing to identify where the problems are.
+It is best to record this information in a table with the following columns:
+- **Feature:** the feature you are testing (this will repeated for this test)
+- **Input:** the input entered by the tester
+- **Expected Output:** the output expected if the feature is working correctly
+- **Actual Output:** the output obtain by running the test
+- **Action:** what steps, if any, need to be taken to resolve the problem.
+
+For example:  
+![Integrated Test](../assets/integrated_testing.png)
+
+### Unit testing
+In Digital Solutions we will use unit testing in three capacities:
+- Throughout the generation phase, when a distinct unit (eg. function, class, or method) is completed.
+- Throughout the generation when the code in a previously tested unit is changed.
+- When the integrated tests fail unit testing is used to identify where the problems are.
 
 To run unit tests:
 1. create a testing script that imports possible erroneous units (functions and methods) from the program.
 2. for each unit create a list of the acceptable inputs and expected outputs.
 3. run unit tests to ensure that asserts if each unit provides the correct output for each given input.
 4. when a incorrect out is received, then debug the specific unit until you get the correct output.
+
+Record your testing in a table like this:
+![Unit testing](../assets/unit_testing.png)
 
 ### Debugging
 In computer programming and software development, debugging is the process of finding and resolving bugs (defects or problems that prevent correct operation) within computer programs, software, or systems. Many programming languages and software development tools also offer programs to aid in debugging, known as debuggers.
@@ -53,5 +69,6 @@ Logic errors can be caused by the programmer:
     - incorrectly using brackets in calculations
     - unintentionally using the same variable name at different points in the program for different purposes
     - using incorrect program design
+
 ### Runtime errors
 A runtime errors is an error that takes place during the running of a program. For example, writing a program that tries to access the sixth item in a list that only contains five items. A runtime error is likely to crash the program.

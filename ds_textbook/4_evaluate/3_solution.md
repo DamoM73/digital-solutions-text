@@ -2,7 +2,7 @@
 
 ```{admonition} Tools use:
 :class: attention
-- evaluation table
+- solution evaluation table
 ```
 
 ```{admonition} Unit 1 subject matter covered:

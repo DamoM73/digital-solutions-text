@@ -2,9 +2,25 @@
 
 ```{admonition} Tools use:
 :class: attention 
-- Alpha Testing
-- Beta Testing
+- Integrated Testing Table
+- Unit Testing Table
 ```
+
+## For Units 1 to 4
+You will need to test the code that you have generated to ensure the reliability of your code.
+
+During the generate phase your will need to undertake both:
+- Integrated testing
+- Unit testing
+
+The results of these tests should be recorded in two tables
+
+Integrated Testing table  
+![Integrated Testing](./assets/integrated_testing.png)
+
+Unit Testing table
+![Unit Testing](./assets/unit_testing.png)
+
 
 ```{admonition} Unit 1 subject matter covered:
 - test inputs, outputs and processes
