@@ -738,6 +738,43 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evaluating-user-interface">
+   Evaluating User Interface
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planning-ui-feedback-collection">
+     Planning UI Feedback Collection
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#establish-your-feedback-criteria">
+       Establish your feedback criteria
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#establishing-the-survey-questions-types">
+       Establishing the survey questions types
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#write-your-survey-questions">
+       Write your survey questions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -750,6 +787,43 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evaluating-user-interface">
+   Evaluating User Interface
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#planning-ui-feedback-collection">
+     Planning UI Feedback Collection
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#establish-your-feedback-criteria">
+       Establish your feedback criteria
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#establishing-the-survey-questions-types">
+       Establishing the survey questions types
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#write-your-survey-questions">
+       Write your survey questions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -758,6 +832,150 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="unit-1-evaluate-components">
 <h1>Unit 1: Evaluate Components<a class="headerlink" href="#unit-1-evaluate-components" title="Permalink to this headline">¶</a></h1>
+<p>Evaluating components occurs throughout the generation phase. It occurs anytime you change a component of your solution to improve it.
+For example, the database is taking too long to build and populate, so, instead of doing this each time the program is launched, you decide to build and populate the database once and then repopulate when there is an update.</p>
+<p>Component evaluation also happens towards to end of the Generate phase when you have other users test your solution and give you feedback. For example, your testers indicate that the text is too hard to read, you recommend to increase the size and contrast of all text.</p>
+<p>Although this important design skill is demonstrates critical thinking, it is frequently hidden from assessor. Therefore we will use the Evaluate Components table to keep a track of these decisions as they occur.</p>
+<p>For example<br />
+<img alt="component evaluation" src="../../_images/component_eval.png" /></p>
+<hr class="docutils" />
+<div class="section" id="evaluating-user-interface">
+<h2>Evaluating User Interface<a class="headerlink" href="#evaluating-user-interface" title="Permalink to this headline">¶</a></h2>
+<p>One of the components that require evaluation is UI. This presents a unique problem. Developers should not evaluated their UI design. Why?
+Watch the video below to find out.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/baY3SaIhfl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><span id="id1">[<a class="reference internal" href="../../bibliography.html#id24">Mackey, 2021</a>]</span></p>
+<p>The problem with developers evaluating their UI design is that (as the video shows) developers already know how the application is meant to be used.</p>
+<p>You need other people to evaluate your UI and give you feedback. You will need to plan the collection of this feedback to ensure useful data for your evaluation.</p>
+<div class="section" id="planning-ui-feedback-collection">
+<h3>Planning UI Feedback Collection<a class="headerlink" href="#planning-ui-feedback-collection" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="establish-your-feedback-criteria">
+<h4>Establish your feedback criteria<a class="headerlink" href="#establish-your-feedback-criteria" title="Permalink to this headline">¶</a></h4>
+<p>You want useful, specific measurable feedback that you can use to evaluate your UI. To do this you need to have clear criteria to assess. Fortunately, in the exploration phase of the EDGE Process, you have establish prescribed criteria and self-determined criteria.</p>
+<p>To establish your feedback criteria:</p>
+<ol class="simple">
+<li><p>identify the prescribed criteria, and self determined criteria that address either the UI or Useability Principles</p></li>
+<li><p>list these criteria, along with their respective measurements of success.</p></li>
+<li><p>establish tasks that the user can do to test each criteria.</p></li>
+</ol>
+<p>Now that you have the tasks established to test the relevant prescribed and self determined criteria, you will need a way to collect the testers’ feedback. For this you will use a survey.</p>
+</div>
+<div class="section" id="establishing-the-survey-questions-types">
+<h4>Establishing the survey questions types<a class="headerlink" href="#establishing-the-survey-questions-types" title="Permalink to this headline">¶</a></h4>
+<p>You will use Microsoft Forms to survey your testers. Microsoft Forms has has a number of different question, each with the specific uses. They are laid out in the table below.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Question type</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+<th class="text-align:left head"><p>Considerations</p></th>
+<th class="text-align:left head"><p>Use Examples</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Text (short answer)</p></td>
+<td class="text-align:left"><p>A single-line box in which testers can type responses</p></td>
+<td class="text-align:left"><p>Good when the range of answers is not known, but requires manual summary</p></td>
+<td class="text-align:left"><p>Name, email</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Text (long answer)</p></td>
+<td class="text-align:left"><p>A multiple-line box in which testers can type responses</p></td>
+<td class="text-align:left"><p>Good when the range of answers is not known, but requires manual summary</p></td>
+<td class="text-align:left"><p>Additional comments</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Choice</p></td>
+<td class="text-align:left"><p>A list of multiple options from which the user selects one response</p></td>
+<td class="text-align:left"><p>Good when the range of answers is know and has automatic tallying of response frequency</p></td>
+<td class="text-align:left"><p>Age range, Education level</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Rating</p></td>
+<td class="text-align:left"><p>Users can provide a weighted response on a range of values</p></td>
+<td class="text-align:left"><p>Allows the user to record their strength of opinion and has automatic averaging of results</p></td>
+<td class="text-align:left"><p>How easy was the program to use?</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Ranking</p></td>
+<td class="text-align:left"><p>Allows testers to arrange responses in order of preference</p></td>
+<td class="text-align:left"><p>Allows user to show preference, but cannot be automatically summarised</p></td>
+<td class="text-align:left"><p>Order the features from most desirable to least desirable</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Likert</p></td>
+<td class="text-align:left"><p>Like a series of ratings on the same scale</p></td>
+<td class="text-align:left"><p>Easy to fill out, but has no automatic summary features</p></td>
+<td class="text-align:left"><p>Rate the UI features on their ease of use</p></td>
+</tr>
+</tbody>
+</table>
+<p>Of these question type options, you will mostly use Text, Choice and Rating questions.</p>
+<p>Considered the criteria that you will have your testers evaluate, and choose the best type of question for each criteria.</p>
+</div>
+<div class="section" id="write-your-survey-questions">
+<h4>Write your survey questions<a class="headerlink" href="#write-your-survey-questions" title="Permalink to this headline">¶</a></h4>
+<p>To write your survey questions we need to decode (translate) each criteria you are evaluating. The prescribed criteria and the self-determined criteria are written for a developer audience, therefore the language used is very technical. Asking the user about the use of proximity, or to rate the safety of the application doesn’t make sense to a non-developer.</p>
+<p>You will need to look at each criteria and ask yourself:</p>
+<ul class="simple">
+<li><p>what does that look like from the user’s experience</p></li>
+<li><p>what can I ask about that experience</p></li>
+</ul>
+<p>For example. Instead of asking about the Visual Communication Principle of proximity, you might ask about the effect proximity is supposed to generate. You could ask the following question.</p>
+<p><em>Did the grouping of similar text boxes make it easier to enter your information?</em></p>
+<p>Now you need to combine it with the question type. For this question I would use a 5 point rating, ranging from Totally Disagree through to Totally Agree, and then change the question into a statement they can respond to.</p>
+<p><em>The grouping of similar text boxes made it easier to enter your information? &lt;Totally Disagree&gt; &lt;Disagree&gt; &lt;Neutral&gt; &lt;Agree&gt; &lt;Totally Disagree&gt;</em></p>
+<p>There is entire academic discipline devoted to writing survey questions. Fortunately, you won’t be expected to be that proficient, but here are some tips form Survey Monkey <span id="id2">[<a class="reference internal" href="../../bibliography.html#id23">SurveyMonkey, 2019</a>]</span> about writing your questions:</p>
+<ul class="simple">
+<li><p><strong>ask closed-ended questions:</strong></p>
+<ul>
+<li><p>closed-ended questions are questions that can only be answered by selecting from a limited number of options.</p></li>
+<li><p>closed-ended questions are quicker to respond to</p></li>
+<li><p>closed-ended questions are easier to analyse</p></li>
+<li><p>closed-ended questions guide the respondent towards the topic you want answered</p></li>
+<li><p>you can use open-ended questions, but try to limit these to around two, and place these at the end.</p></li>
+</ul>
+</li>
+<li><p><strong>keep your survey questions neutral:</strong></p>
+<ul>
+<li><p>don’t put an opinion in your question prompt (or asking a “leading question”)</p></li>
+<li><p>this can influence respondents to answer in a way that doesn’t reflect how they really feel</p></li>
+</ul>
+</li>
+<li><p><strong>have a balanced set of answer choices:</strong></p>
+<ul>
+<li><p>make sure that your answer choices cover all the options, from the negative to the positive</p></li>
+<li><p>not balanced - Extremely helpful, Very helpful, Helpful</p></li>
+<li><p>balanced - Very helpful, Helpful, Neither helpful nor unhelpful, Unhelpful, Very unhelpful</p></li>
+</ul>
+</li>
+<li><p><strong>avoid “double-barrelled” questions:</strong></p>
+<ul>
+<li><p>double-barrelled questions asks respondents to assess two different things at the same time</p></li>
+<li><p>this can cause confusion and compromise your results</p></li>
+<li><p>you need to ensure that each question addresses only one topic</p></li>
+</ul>
+</li>
+<li><p><strong>avoid using similarly worded questions:</strong></p>
+<ul>
+<li><p>this can become monotonous for the respondent</p></li>
+<li><p>it can lead to respondents either leaving your survey or engaging in “straight-lining” (answering your questions without putting much thought into them)</p></li>
+<li><p>address this by varying the types of questions you ask, how you ask them, and by spacing out questions that look similar</p></li>
+</ul>
+</li>
+<li><p><strong>let most of your questions be optional to answer:</strong></p>
+<ul>
+<li><p>respondents may not know the answers to all of your questions</p></li>
+<li><p>there may be some questions they simply don’t feel comfortable answering</p></li>
+<li><p>consider this when deciding which questions to require answers to.</p></li>
+<li><p>when you’re unsure whether to make a certain question optional or required, lean on making it optional</p></li>
+</ul>
+</li>
+<li><p><strong>do a test drive:</strong></p>
+<ul>
+<li><p>yes I want to you test the survey that you are using to test your application</p></li>
+<li><p>as a survey creator, there’s no worse feeling than finding mistakes in your survey once it’s already sent</p></li>
+<li><p>share your survey with colleagues, friends, and others, in advance. A pair of fresh eyes can be all it takes to spot mistakes in your survey.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
