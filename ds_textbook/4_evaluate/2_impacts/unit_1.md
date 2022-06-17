@@ -17,6 +17,6 @@ There are two ways that these impacts can be assessed
 - for these types of impacts, you will need to express a **justified** opinion on its impact
 - the justification should identify the mechanism of the impact, or an example of a similar process.
     
-Irrespective of the type of assessment, you will need to rate the success of the application achieving each impact. This is normally done best in a table.
+Irrespective of the type of assessment, you will need to rate the success of the application achieving each impact. This is best done in a table.
 
 ![Impacts Assessment Table](../assets/impacts_eval.png)
