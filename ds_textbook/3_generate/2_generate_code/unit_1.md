@@ -187,58 +187,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 
 In Python addition, subtraction, and multiplication are all strait forward and do exactly like you would expect. Note: that brackets `(` and `)` work the same as they would in mathematical equations. 
 
-It is worth checking out how division, modulus, floor division and exponentiation work.
-
-#### Division
-Division `/` will always give you a result as a `float`, even if the result is a whole number.
-
-Try this code:
-```python
-print(10 / 2)
-print(10 / 4)
-```
-
-#### Floor division
-Floor division `//` will give you an `int` whole number component of a division calculation, even if the actual result is not whole numbers.
-
-Try this code:
-```python
-print(10 // 2)
-print(10 // 4)
-```
-
-#### Modulus
-Modulus `%` will give you an `int` of the remainder component of a division calculation, even if the actual result is in whole numbers.
-
-Try this code:
-```python
-print(10 % 2)
-print(10 % 4)
-```
-
-Modulus can be confusing, but you use it all the time without thinking about it.
-
-For example, how many minutes and seconds in 140 secs?
-
-Try this code:
-```python
-minutes = 140 // 60
-seconds = 140 % 60
-
-print(f"{minutes} minutes and {seconds} seconds")
-```
-
-#### Exponentiation
-Exponentiation is simply means 'to the power of'. So `2**2` is the same as saying two to the power of two, or two squared.
-
-Try this code:
-```python
-# 2 squared is
-print(2**2)
-
-# 2 cubed is
-print(2**3) 
-```
+It is worth checking out how division, modulus, floor division and exponentiation work. Check out the **[arithmetic operators examples](https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=arithmetic_ops.ipynb)
 
 ### Assignment Operators
 The standard assignment operator `=` is used to assign values to a variable.
