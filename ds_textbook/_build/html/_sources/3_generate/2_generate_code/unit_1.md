@@ -7,10 +7,14 @@ In this section we will look at how we create code. We will look at  basic codin
 Programs are created using six basic features. The skill of a programmer is knowing when and how to use these features.
 
 ### Variables
-Variables are the names you give to computer memory locations which are used to store values in a computer program. Variables can store data of different types, and different types can do different things. In programming languages, there are two different type systems:
+Variables are the names you give to computer memory locations which are used to store values in a computer program. Variables can store data of different types, and different variable types can do different things. 
+
+In programming languages, there are two different type systems:
 
 - **dynamic:** type checking only occurs as the code runs, and the type of a variable is allowed to change over its lifetime.
 - **static:** type checks are performed without running the program. In most statically typed languages this is done as your program is compiled. The type of a variable is not allowed to change over its lifetime.
+
+#### In Python
 
 Python is a dynamically typed language. 
 
@@ -20,26 +24,60 @@ The Python data types that we will be using are:
     - strings are sequences of character data
     - the string type in Python is called `str`
     - string literals may be delimited using either single or double quotes
+    - **<a href="https://www.w3schools.com/python/python_strings.asp" target="_blank">Strings refresher</a>**
 - **Integers:**
     - integers are whole numbers
     - the integer type in Python is called `int`
     - there is effectively no limit to how long an integer value can be, but it is constrained by the amount of memory your system has.
+    - **<a href="https://www.w3schools.com/python/python_numbers.asp" target="_blank">Integer refresher</a>**
 - **Floating-Point Numbers:**
     - float values are numbers specified with a decimal point
     - the `float` type in Python designates a floating-point number
     - optionally, the character e or E followed by a positive or negative integer may be appended to specify scientific notation
+    - **<a href="https://www.w3schools.com/python/python_numbers.asp" target="_blank">Float refresher</a>**
 - **Boolean Type:**
     - objects of Boolean type may have one of two values, `True` or `False`
     - the Boolean type in Python is called `bool`
     - a value that is true in Boolean context is sometimes said to be "truthy" and one that is false in Boolean context is said to be "falsy"
     - the "truthiness" of an object of Boolean type is self-evident: Boolean objects that are equal to `True` are truthy (true), and those equal to `False` are falsy (false)
+    - https://www.w3schools.com/python/python_booleans.asp
+    - **<a href="https://www.w3schools.com/python/python_numbers.asp" target="_blank">Boolean refresher</a>**
+
+**<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fassigning.ipynb" target="_blank">How to assigning variables in Python</a>**
+
+### Conditions
+
+A condition is the way that a computer asks a question. Computers can only generate two possible  responses to questions. Yes and No, or more precisely, True and False. A more formal definition is that a condition is a logical expression that evaluates to true or false. 
+
+#### In Python
+
+Conditions are part of `if` and `while` statements. They have the syntax of `value` `operator` `value` with six possible operators:
+
+- Equals: a == b
+- Not Equals: a != b
+- Less than: a < b
+- Less than or equal to: a <= b
+- Greater than: a > b
+- Greater than or equal to: a >= b
 
 ### Control Structures
 Flow of control through any given function is implemented with three basic types of control structures:
 
-- **Sequential:** default mode. Sequential execution of code statements one line after another (like following a recipe)
-- **Selection:** used for decisions, branching (choosing between 2 or more alternative paths). 
-- **Repetition:** - used for looping, i.e. repeating a piece of code multiple times in a row.
+- **<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fsequence.ipynb" target="_blank">Sequential</a>**
+- **<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fselection.ipynb" target="_blank">Selection</a>**
+- **<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fiteration.ipynb" target="_blank">Iteration</a>**
+
+### Functions (modularisation)
+> In Python, a function is a group of related statements that performs a specific task. Functions help break our program into smaller and modular chunks {cite}`programiz_2022_python`.
+
+Using functions provides the following advantages: 
+- make programs more organized and manageable
+- avoid repetition and makes code reusable
+- reduce the chances of error
+- increases program readability
+- divide a complex problem into simpler ones
+- increases the ease of modifying a program
+- streamlines testing and debugging
 
 ### Data Structures
 > Data structures are used to store data in an organized form. No matter what problem are you solving, in one way or another you have to deal with data — whether it's an employee's salary, stock prices, a grocery list, or even a simple telephone directory. {cite}`ulhaq_2018_the`
@@ -177,141 +215,84 @@ Arithmetic operators are used with numeric values to perform common mathematical
 
 |Operator|Name|Example|
 |:-------|:---|:------|
-| + |Addition|x + y|
-| - |Subtraction|x - y|
-| * |Multiplication|x * y|
-| / |Division|x / y|
-| % |Modulus|x % y|
-| ** |Exponentiation|x ** y|
-|// |Floor division|x // y|
+| `+` |Addition|`x + y`|
+| `-` |Subtraction|`x - y`|
+| `*` |Multiplication|`x * y`|
+| `/` |Division|`x / y`|
+| `%` |Modulus|`x % y`|
+| `**` |Exponentiation|`x ** y`|
+| `//` |Floor division|`x // y`|
 
 In Python addition, subtraction, and multiplication are all strait forward and do exactly like you would expect. Note: that brackets `(` and `)` work the same as they would in mathematical equations. 
 
-It is worth checking out how division, modulus, floor division and exponentiation work. Check out the **[arithmetic operators examples](https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=arithmetic_ops.ipynb)
+It is worth checking out how division, modulus, floor division and exponentiation work. 
+
+**<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Farithmetic_ops.ipynb" target="_blank">Arithmetic operators examples</a>**
 
 ### Assignment Operators
 The standard assignment operator `=` is used to assign values to a variable.
 
 |Operator|Example|Same As|
 |:-------|:------|:------|
-|= |x = 5|x = 5|
-| += |x += 3|x = x + 3|
-| -= |x -= 3|x = x - 3|
-| \*= |  x \*= 3 |x = x * 3|
-| /= |x /= 3|x = x / 3|
-| %= |x %= 3|x = x % 3|
-| //= |x //= 3|x = x // 3|
-| **= |x **= 3|x = x ** 3|
+| `=` |`x = 5`|`x = 5`|
+| `+=` |`x += 3`|`x = x + 3`|
+| `-=` |`x -= 3`|`x = x - 3`|
+| `*=` |  `x *= 3` |`x = x * 3`|
+| `/=` |`x /= 3`|`x = x / 3`|
+| `%=` |`x %= 3`|`x = x % 3`|
+| `//=` |`x //= 3`|`x = x // 3`|
+| `**=` |`x **= 3`|`x = x ** 3`|
 
-The other assignment operators `+=`, `-+`, `*+`, etc. adjust a variable by operation sign and the value provided. 
+The other assignment operators `+=`, `-=`, `*=`, etc. adjust a variable by operation sign and the value provided. 
 
-Try the code below for an example.
-```python
-num_1 = 5
-
-print(f"Before: {num_1}")
-
-num_1 += 1
-
-print(f"After: {num_1}")
-```
+**<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Fassign_ops.ipynb" target="_blank">Assignment operators examples</a>**
 
 ### Comparison Operators
 Comparison operators are used to compare two values, and will return a value of `True` or `False`.
 
 |Operator|Name|Example|
 |:-------|:---|:------|
-| == |Equal|x == y|
-|!=|Not equal|x != y|
-|>|Greater than|x > y|
-|<|Less than|x < y|
-|>=|Greater than or equal to|x >= y|
-|<=|Less than or equal to|x <= y|
+| `==` |Equal|`x == y`|
+| `!=`|Not equal|`x != y`|
+| `>`|Greater than|`x > y`|
+| `<`|Less than|`x < y`|
+|`>=`|Greater than or equal to|`x >= y`|
+|`<=`|Less than or equal to|`x <= y`|
 
 Comparisons can be between values, variables, calculations or even the results of a function call.
 
-Try the code below for examples.
-```python
-name = "Damien"
-threshold = 10
-
-print(4 == 4)
-print(name != "Damien")
-print(10 > threshold)
-print("a" < "c")
-print(10 >= threshold)
-print(4 <= 15)
-```
+**<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Fcomparison_ops.ipynb" target="_blank">Comparison operators examples</a>**
 
 ### Logical Operators
 Logical operators are used to combine conditional statements. The truthiness of the conditions is tested, and then operator combines the resulting Boolean values to produce either `True` or `False`.
 
 |Operator|Description|Example|
 |:-------|:----------|:------|
-|and|Returns True if both statements are true|x < 5 and  x < 10|
-|or|Returns True if one of the statements is true|x < 5 or x < 4|
-|not|Reverse the result, returns False if the result is true|not(x < 5 and x < 10)|
+|`and`|Returns `True` if all statements are `True`|`x < 5 and  x < 10`|
+|`or`|Returns `True` if one of the statements is `True`|`x < 5 or x < 4`|
+|`not`|Reverse the result, returns `False` if the result is `True`|`not(x < 5 and x < 10)`|
 
-Check the different permeations below by running the code
-```python
-print(f"True and True is {True and True}")
-print(f"True and False is {True and False}")
-print(f"False and True is {False and True}")
-print(f"False and False is {False and False}")
-print("")
-print(f"True or True is {True or True}")
-print(f"True or False is {True or False}")
-print(f"False or True is {False or True}")
-print(f"False or False is {False or False}")
-print("")
-print(f"Not True is {not True}")
-print(f"Not False is {not False}")
-```
-
-It is worth noting that in Python the default Truthiness of any object is `True`. This leads to a common mistake like the exmaple below.
-
-In the code below, the condition `10 < 1` is `False` the second condition of `3` gives a `True` and `False and True` is `True` so the code prints `Hello`.
-
-Try it.
-```python
-if 10 < 1 or 3:
-    print("Hello")
-```
+**<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Flogical_ops.ipynb" target="_blank">Logical operators examples</a>**
 
 ### Identity Operators
 Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.
 
 |Operator|Description|Example|
 |:-------|:----------|:------|
-|is|Returns True if both variables are the same object|x is y|
-|is not|Returns True if both variables are not the same object|x is not y|
+|`is`|Returns `True` if both variables are the same object|`x is y`|
+|`is not`|Returns `True` if both variables are not the same object|`x is not y`|
 
-The code below should highlight the difference.
-```python
-list_1 = []
-list_2 = []
-list_3 = list_1
- 
-print(list_1 == list_2)
-print(list_1 is list_2)
-print(list_1 == list_3)
-print(list_1 is list_3)
-```
+**<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Fidenity_ops.ipynb" target="_blank">Identity operators examples</a>**
 
 ### Membership Operators
 Membership operators are used to test if a sequence is presented in an object (list, tuple or string).
 
 |Operator|Description|Example|
 |:-------|:----------|:------|
-|in|Returns True if a sequence with the specified value is present in the object|x in y|
-|not in|Returns True if a sequence with the specified value is not present in the object|x not in y|
+|`in`|Returns `True` if a sequence with the specified value is present in the object|`x in y`|
+|`not in`|Returns `True` if a sequence with the specified value is not present in the object|`x not in y`|
 
-Run the code to see who it works.
-```python
-print("a" in "cat")
-print("a" in ["cat", "dog", "goat"])
-print(1 in (34,14,1,5))
-```
+**<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Fmember_op.ipynb" target="_blank">Membership operators examples</a>**
 
 ### Bitwise Operators
 Bitwise operators are used to compare (binary) numbers. Realistically we are not going to use these, but it worth knowing they exist in case you come across them in some code.

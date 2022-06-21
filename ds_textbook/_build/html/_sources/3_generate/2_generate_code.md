@@ -10,6 +10,7 @@
 In generating code we will need to use programming features and operations:
 - Basic Features of Programming
   - Variables
+  - Functions
   - Control Structures
   - Data Structures
   - Syntax
@@ -30,7 +31,7 @@ In generating code we will need to use programming features and operations:
 - explore the use of a procedural text-based language for analysing and critiquing the end result of code statements using input or output evidence, i.e. runtime evidence
 - explore functions and procedures with efficient and maintainable code that includes reuseable coded components
 - explore functions and procedures with efficient and maintainable code that responds to keyboard and mouse events
-- explore functions and procedures with efficient and maintainable code that uses variables, Selection structures, counted loops, while loops and single, multi-branch and nested conditional logic/statements
+- explore functions and procedures with efficient and maintainable code that uses variables, selection structures, counted loops, while loops and single, multi-branch and nested conditional logic/statements
 - explore functions and procedures with efficient and maintainable code that uses operators, including arithmetic (+, –, *, /, integer, modulus, exponent), comparison (<, >, <=, >=, equal, not equal) and logical (AND, OR, NOT)
 - explore the purpose of code statements by writing code and using existing code blocks or statements
 - explore object/event triggers and develop explanations about their effect/s on user interfaces
