@@ -187,7 +187,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 
 In Python addition, subtraction, and multiplication are all strait forward and do exactly like you would expect. Note: that brackets `(` and `)` work the same as they would in mathematical equations. 
 
-It is worth checking out how division, modulus, floor division and exponentiation work. Check out the **[arithmetic operators examples](https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=arithmetic_ops.ipynb)
+It is worth checking out how division, modulus, floor division and exponentiation work. Check out the **[arithmetic operators examples](https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=arithmetic_ops.ipynb){:target="\_blank"}**
 
 ### Assignment Operators
 The standard assignment operator `=` is used to assign values to a variable.

@@ -833,28 +833,6 @@
     <a class="reference internal nav-link" href="#arithmetic-operators">
      Arithmetic Operators
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#division">
-       Division
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#floor-division">
-       Floor division
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#modulus">
-       Modulus
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#exponentiation">
-       Exponentiation
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#assignment-operators">
@@ -998,28 +976,6 @@
     <a class="reference internal nav-link" href="#arithmetic-operators">
      Arithmetic Operators
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#division">
-       Division
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#floor-division">
-       Floor division
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#modulus">
-       Modulus
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#exponentiation">
-       Exponentiation
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#assignment-operators">
@@ -1318,55 +1274,7 @@
 </tbody>
 </table>
 <p>In Python addition, subtraction, and multiplication are all strait forward and do exactly like you would expect. Note: that brackets <code class="docutils literal notranslate"><span class="pre">(</span></code> and <code class="docutils literal notranslate"><span class="pre">)</span></code> work the same as they would in mathematical equations.</p>
-<p>It is worth checking out how division, modulus, floor division and exponentiation work.</p>
-<div class="section" id="division">
-<h4>Division<a class="headerlink" href="#division" title="Permalink to this headline">¶</a></h4>
-<p>Division <code class="docutils literal notranslate"><span class="pre">/</span></code> will always give you a result as a <code class="docutils literal notranslate"><span class="pre">float</span></code>, even if the result is a whole number.</p>
-<p>Try this code:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">/</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="floor-division">
-<h4>Floor division<a class="headerlink" href="#floor-division" title="Permalink to this headline">¶</a></h4>
-<p>Floor division <code class="docutils literal notranslate"><span class="pre">//</span></code> will give you an <code class="docutils literal notranslate"><span class="pre">int</span></code> whole number component of a division calculation, even if the actual result is not whole numbers.</p>
-<p>Try this code:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">//</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="modulus">
-<h4>Modulus<a class="headerlink" href="#modulus" title="Permalink to this headline">¶</a></h4>
-<p>Modulus <code class="docutils literal notranslate"><span class="pre">%</span></code> will give you an <code class="docutils literal notranslate"><span class="pre">int</span></code> of the remainder component of a division calculation, even if the actual result is in whole numbers.</p>
-<p>Try this code:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Modulus can be confusing, but you use it all the time without thinking about it.</p>
-<p>For example, how many minutes and seconds in 140 secs?</p>
-<p>Try this code:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">minutes</span> <span class="o">=</span> <span class="mi">140</span> <span class="o">//</span> <span class="mi">60</span>
-<span class="n">seconds</span> <span class="o">=</span> <span class="mi">140</span> <span class="o">%</span> <span class="mi">60</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">minutes</span><span class="si">}</span><span class="s2"> minutes and </span><span class="si">{</span><span class="n">seconds</span><span class="si">}</span><span class="s2"> seconds&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="exponentiation">
-<h4>Exponentiation<a class="headerlink" href="#exponentiation" title="Permalink to this headline">¶</a></h4>
-<p>Exponentiation is simply means ‘to the power of’. So <code class="docutils literal notranslate"><span class="pre">2**2</span></code> is the same as saying two to the power of two, or two squared.</p>
-<p>Try this code:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2 squared is</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-
-<span class="c1"># 2 cubed is</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> 
-</pre></div>
-</div>
-</div>
+<p>It is worth checking out how division, modulus, floor division and exponentiation work. Check out the **<a class="reference external" href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=arithmetic_ops.ipynb">arithmetic operators examples</a></p>
 </div>
 <div class="section" id="assignment-operators">
 <h3>Assignment Operators<a class="headerlink" href="#assignment-operators" title="Permalink to this headline">¶</a></h3>
