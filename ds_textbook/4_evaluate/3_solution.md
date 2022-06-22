@@ -6,6 +6,9 @@
 ```
 
 ## For Units 1 to 4
+Create a Solutions Evaluation table for both the prescribed criteria and the self-determined criteria. Copy all the of the requirements and criteria you established in the Explore phase.
+
+![Solutions Evaluation table](./assets/solution_eval.png)
 
 
 ```{admonition} Unit 1 subject matter covered:

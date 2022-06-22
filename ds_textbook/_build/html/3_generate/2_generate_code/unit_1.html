@@ -778,36 +778,14 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#functions-modularisation">
-     Functions (modularisation)
+    <a class="reference internal nav-link" href="#modularisation-functions">
+     Modularisation (Functions)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#data-structures">
      Data Structures
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#lists">
-       Lists
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#tuples">
-       Tuples
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#sets">
-       Sets
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#dictionaries">
-       Dictionaries
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#syntax">
@@ -945,36 +923,14 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#functions-modularisation">
-     Functions (modularisation)
+    <a class="reference internal nav-link" href="#modularisation-functions">
+     Modularisation (Functions)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#data-structures">
      Data Structures
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#lists">
-       Lists
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#tuples">
-       Tuples
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#sets">
-       Sets
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#dictionaries">
-       Dictionaries
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#syntax">
@@ -1149,21 +1105,40 @@
 <li><p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fiteration.ipynb" target="_blank">Iteration</a></strong></p></li>
 </ul>
 </div>
-<div class="section" id="functions-modularisation">
-<h3>Functions (modularisation)<a class="headerlink" href="#functions-modularisation" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="modularisation-functions">
+<h3>Modularisation (Functions)<a class="headerlink" href="#modularisation-functions" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><p>In Python, a function is a group of related statements that performs a specific task. Functions help break our program into smaller and modular chunks <span id="id2">[<a class="reference internal" href="../../bibliography.html#id25">Programiz, 2022</a>]</span>.</p>
+<div><p>Modular programming refers to the process of breaking a large, unwieldy programming task into separate, smaller, more manageable subtasks or modules. Individual modules can then be cobbled together like building blocks to create a larger application <span id="id2">[<a class="reference internal" href="../../bibliography.html#id26">Bailey, 2022</a>]</span>.</p>
 </div></blockquote>
-<p>Using functions provides the following advantages:</p>
+<p>There are several advantages to modularizing code in a large application:</p>
 <ul class="simple">
-<li><p>make programs more organized and manageable</p></li>
-<li><p>avoid repetition and makes code reusable</p></li>
-<li><p>reduce the chances of error</p></li>
-<li><p>increases program readability</p></li>
-<li><p>divide a complex problem into simpler ones</p></li>
-<li><p>increases the ease of modifying a program</p></li>
-<li><p>streamlines testing and debugging</p></li>
+<li><p><strong>Simplicity:</strong></p>
+<ul>
+<li><p>focusing on one relatively small portion of the problem, rather than the entire problem at hand.</p></li>
+<li><p>Wrapping your head around a smaller problem domain makes development easier and less error-prone.</p></li>
 </ul>
+</li>
+<li><p><strong>Maintainability:</strong></p>
+<ul>
+<li><p>modularisation enforces logical boundaries between different problem domains.</p></li>
+<li><p>minimizing interdependency decreases likelihood that modifications to a single module will have an impact on other parts of the program.</p></li>
+<li><p>This reduced interdependency makes it more viable for a team of many programmers to work collaboratively on a large application.</p></li>
+</ul>
+</li>
+<li><p><strong>Reusability:</strong></p>
+<ul>
+<li><p>the code defined in a single module can be easily reused by other parts of the application.</p></li>
+<li><p>This eliminates the need to duplicate it.</p></li>
+</ul>
+</li>
+<li><p><strong>Scoping:</strong></p>
+<ul>
+<li><p>modules typically define a separate namespace</p></li>
+<li><p>this helps avoid errors when the same name is used for different purposes.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fmodular.ipynb" target="_blank">Using modularisation in Python</a></strong></p>
 </div>
 <div class="section" id="data-structures">
 <h3>Data Structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h3>
@@ -1173,51 +1148,67 @@
 <p>Based on different scenarios, data will need to be stored in a specific format.</p>
 <p>In Python we will deal with four data structures:</p>
 <ul class="simple">
-<li><p>lists</p></li>
-<li><p>tuples</p></li>
-<li><p>sets</p></li>
-<li><p>dictionaries</p></li>
+<li><p><strong>Lists:</strong></p>
+<ul>
+<li><p>lists are defined as an ordered collection of items</p></li>
+<li><p>they are one of Python’s essential data structures</p></li>
+<li><p>list are defined using square brackets <code class="docutils literal notranslate"><span class="pre">[</span></code> <code class="docutils literal notranslate"><span class="pre">]</span></code> to enclose the elements, which are separated by commas</p></li>
+<li><p>For example, <code class="docutils literal notranslate"><span class="pre">[1,2,3,4]</span></code>.</p></li>
+<li><p>each element in the list is referred to by its index (position number), starting at 0.</p></li>
+<li><p><strong><a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">Lists refresher</a></strong></p></li>
 </ul>
-<div class="section" id="lists">
-<h4>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h4>
-<p>A list is defined as an ordered collection of items, and it is one of the essential data structures when using Python. The term “ordered collections” means that each item in a list comes with an order that uniquely identifies them. When creating a list, all the items in the list should be put in square brackets <code class="docutils literal notranslate"><span class="pre">[</span></code> <code class="docutils literal notranslate"><span class="pre">]</span></code> and separated by commas to let Python know that a list has been created.</p>
-<p>Here’s an example of a list of size 4 <code class="docutils literal notranslate"><span class="pre">[1,2,3,4]</span></code>.</p>
-<p>Each data element is assigned a positive numerical value called the Index, which corresponds to the position of that item in the array. The starting index of the list is 0.</p>
-<p>Lists can be nested, which means that it can contain any type of object, including other lists.</p>
-<p>Lists are mutable, which means they can be altered even after being created. A user can search, add, shift, move, and delete elements from a list at their own will.</p>
-<p>When replacing elements in a list, the number of elements added does not need to be equal to the number of elements in the list, and Python will adjust the list as needed. Mutability also enables the user to input additional elements into the list without making any replacements.</p>
-</div>
-<div class="section" id="tuples">
-<h4>Tuples<a class="headerlink" href="#tuples" title="Permalink to this headline">¶</a></h4>
-<p>A tuple is an ordered collection of objects. Unlike lists, tuples come with limited functionality.</p>
-<p>The primary differing characteristic between lists and tuples is mutability. Lists are mutable, whereas tuples are immutable. Tuples cannot be modified, added, or deleted once they’ve been created. Lists are defined by using parentheses <code class="docutils literal notranslate"><span class="pre">(</span></code> <code class="docutils literal notranslate"><span class="pre">)</span></code> to enclose the elements, which are separated by commas.</p>
-<p>Here’s an example of a tuple of size 4 <code class="docutils literal notranslate"><span class="pre">(1,2,3,4)</span></code>.</p>
-<p>When writing a tuple with only a single element, the coder must use a comma after the item, for example <code class="docutils literal notranslate"><span class="pre">(1,)</span></code>.</p>
-<p>Reasons for using tuples instead of list:</p>
-<ul class="simple">
+</li>
+<li><p><strong>Tuples:</strong></p>
+<ul>
+<li><p>Tuples are also an ordered collection of objects, but unlike lists, they come with limited functionality.</p></li>
+<li><p>The primary differing characteristic between lists and tuples is that lists are mutable, whereas tuples are immutable. This means tuples cannot be modified, added, or deleted once they’ve been created.</p></li>
+<li><p>tuples are defined by using parentheses <code class="docutils literal notranslate"><span class="pre">(</span></code> <code class="docutils literal notranslate"><span class="pre">)</span></code> to enclose the elements, which are separated by commas</p>
+<ul>
+<li><p>For example, <code class="docutils literal notranslate"><span class="pre">(1,2,3,4)</span></code>.</p></li>
+</ul>
+</li>
+<li><p>each element in the tuple is referred to by its index (position number), starting at 0.</p></li>
+<li><p>reasons for using tuples instead of lists:</p>
+<ul>
 <li><p>when the developer does not want the data to be modified</p></li>
-<li><p>when speed is important as tuples use less memory, and they make program execution faster than using lists.</p></li>
+<li><p>when speed is important as tuples use less memory, and they make program execution faster</p></li>
 </ul>
-</div>
-<div class="section" id="sets">
-<h4>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h4>
-<p>A set is defined as a unique collection of unique elements that do not follow a specific order.</p>
-<p>Sets are used when the existence of an object in a collection of objects is more important than the number of times it appears or the order of the objects.</p>
-<p>Unlike tuples, sets are mutable – they can be modified, added, replaced, or removed. They are defined by using curly brackets <code class="docutils literal notranslate"><span class="pre">{</span></code> <code class="docutils literal notranslate"><span class="pre">}</span></code> to enclose the elements, which are separated by commas.</p>
-<p>Here’s an example of a set of size 4 <code class="docutils literal notranslate"><span class="pre">{1,2,3,4}</span></code>.</p>
-<p>One of the ways that sets are used is when checking whether or not some elements are contained in a set or not.</p>
-</div>
-<div class="section" id="dictionaries">
-<h4>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h4>
-<p>Dictionaries in Python is an ordered collection of key-value pairs. Each key-value pair maps the key to its associated value.</p>
-<p>Dictionaries are mutable – they can be modified, added, replaced, or removed. They are defined by using curly brackets <code class="docutils literal notranslate"><span class="pre">{</span></code> <code class="docutils literal notranslate"><span class="pre">}</span></code> to enclose the elements, with a colon <code class="docutils literal notranslate"><span class="pre">:</span></code> separating a key and its value, and each key-pair separated by commas.</p>
-<p>Here’s an example of a dictionary of size 4 <code class="docutils literal notranslate"><span class="pre">{&quot;Doh&quot;:&quot;Doherty&quot;,&quot;Dun&quot;:&quot;Dunlop&quot;,&quot;Fly&quot;:&quot;Flynn&quot;,&quot;Nic&quot;:&quot;Nichols&quot;}</span></code>.</p>
-<p>Dictionaries should be used when the data has a unique reference that can be associated with the value.</p>
-</div>
+</li>
+<li><p><strong><a href="https://www.w3schools.com/python/python_tuples.asp" target="_blank">Tuples refresher</a></strong></p></li>
+</ul>
+</li>
+<li><p><strong>Sets:</strong></p>
+<ul>
+<li><p>sets are a collection of unique elements that do not follow a specific order.</p></li>
+<li><p>they are mutable – they can be modified, added, replaced, or removed</p></li>
+<li><p>sets are defined by using curly brackets <code class="docutils literal notranslate"><span class="pre">{</span></code> <code class="docutils literal notranslate"><span class="pre">}</span></code> to enclose the elements, which are separated by commas</p>
+<ul>
+<li><p>For example, <code class="docutils literal notranslate"><span class="pre">{1,2,3,4}</span></code>.</p></li>
+</ul>
+</li>
+<li><p>they are used when the existence of an object in a collection of objects is more important than the number of times it appears or the order of the objects.</p></li>
+<li><p><strong><a href="https://www.w3schools.com/python/python_sets.asp" target="_blank">Sets refresher</a></strong></p></li>
+</ul>
+</li>
+<li><p><strong>Dictionaries:</strong></p>
+<ul>
+<li><p>dictionaries are an ordered collection of key-value pairs. Each key-value pair maps the key to its associated value</p></li>
+<li><p>they are mutable – they can be modified, added, replaced, or removed.</p></li>
+<li><p>dictionaries are defined by using curly brackets <code class="docutils literal notranslate"><span class="pre">{</span></code> <code class="docutils literal notranslate"><span class="pre">}</span></code> to enclose the elements, with a colon <code class="docutils literal notranslate"><span class="pre">:</span></code> separating a key and its value, and each key-pair separated by commas</p>
+<ul>
+<li><p>For example, <code class="docutils literal notranslate"><span class="pre">{&quot;Doh&quot;:&quot;Doherty&quot;,&quot;Dun&quot;:&quot;Dunlop&quot;,&quot;Fly&quot;:&quot;Flynn&quot;,&quot;Nic&quot;:&quot;Nichols&quot;}</span></code></p></li>
+</ul>
+</li>
+<li><p>they should be used when the data has a unique reference that can be associated with the value.</p></li>
+<li><p><strong><a href="https://www.w3schools.com/python/python_dictionaries.asp" target="_blank">Dictionary refresher</a></strong></p></li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="section" id="syntax">
 <h3>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h3>
-<p>The syntax of a computer language is the set of rules that defines the combinations of symbols that are considered to be correctly structured statements or expressions in that language. This applies both to programming languages, where the document represents source code, and to markup languages, where the document represents data.</p>
+<p>The syntax of a computer language is the set of rules that defines the combinations of symbols that are considered to be correctly structured statements or expressions in that language.</p>
+<p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fsyntax.ipynb" target="_blank">Learn about Python’s syntax</a></strong></p>
 </div>
 <div class="section" id="libraries">
 <h3>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">¶</a></h3>

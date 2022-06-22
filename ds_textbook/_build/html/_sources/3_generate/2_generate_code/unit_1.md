@@ -67,17 +67,26 @@ Flow of control through any given function is implemented with three basic types
 - **<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fselection.ipynb" target="_blank">Selection</a>**
 - **<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fiteration.ipynb" target="_blank">Iteration</a>**
 
-### Functions (modularisation)
-> In Python, a function is a group of related statements that performs a specific task. Functions help break our program into smaller and modular chunks {cite}`programiz_2022_python`.
+### Modularisation (Functions)
 
-Using functions provides the following advantages: 
-- make programs more organized and manageable
-- avoid repetition and makes code reusable
-- reduce the chances of error
-- increases program readability
-- divide a complex problem into simpler ones
-- increases the ease of modifying a program
-- streamlines testing and debugging
+>Modular programming refers to the process of breaking a large, unwieldy programming task into separate, smaller, more manageable subtasks or modules. Individual modules can then be cobbled together like building blocks to create a larger application {cite}`bailey_2022_python`.
+
+There are several advantages to modularizing code in a large application:
+- **Simplicity:** 
+  - focusing on one relatively small portion of the problem, rather than the entire problem at hand. 
+  - Wrapping your head around a smaller problem domain makes development easier and less error-prone.
+- **Maintainability:** 
+  - modularisation enforces logical boundaries between different problem domains. 
+  - minimizing interdependency decreases likelihood that modifications to a single module will have an impact on other parts of the program. 
+  - This reduced interdependency makes it more viable for a team of many programmers to work collaboratively on a large application.
+- **Reusability:**
+  - the code defined in a single module can be easily reused by other parts of the application. 
+  - This eliminates the need to duplicate it.
+- **Scoping:**
+  - modules typically define a separate namespace
+  - this helps avoid errors when the same name is used for different purposes.
+
+**<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fmodular.ipynb" target="_blank">Using modularisation in Python</a>**
 
 ### Data Structures
 > Data structures are used to store data in an organized form. No matter what problem are you solving, in one way or another you have to deal with data — whether it's an employee's salary, stock prices, a grocery list, or even a simple telephone directory. {cite}`ulhaq_2018_the`
@@ -85,59 +94,43 @@ Using functions provides the following advantages:
 Based on different scenarios, data will need to be stored in a specific format. 
 
 In Python we will deal with four data structures:
-- lists
-- tuples
-- sets
-- dictionaries
-
-#### Lists
-A list is defined as an ordered collection of items, and it is one of the essential data structures when using Python. The term "ordered collections" means that each item in a list comes with an order that uniquely identifies them. When creating a list, all the items in the list should be put in square brackets `[` `]` and separated by commas to let Python know that a list has been created.
-
-Here's an example of a list of size 4 `[1,2,3,4]`.
-
-Each data element is assigned a positive numerical value called the Index, which corresponds to the position of that item in the array. The starting index of the list is 0.
-
-Lists can be nested, which means that it can contain any type of object, including other lists.
- 
-Lists are mutable, which means they can be altered even after being created. A user can search, add, shift, move, and delete elements from a list at their own will. 
-
-When replacing elements in a list, the number of elements added does not need to be equal to the number of elements in the list, and Python will adjust the list as needed. Mutability also enables the user to input additional elements into the list without making any replacements.
-
-#### Tuples
-A tuple is an ordered collection of objects. Unlike lists, tuples come with limited functionality.
-
-The primary differing characteristic between lists and tuples is mutability. Lists are mutable, whereas tuples are immutable. Tuples cannot be modified, added, or deleted once they've been created. Lists are defined by using parentheses `(` `)` to enclose the elements, which are separated by commas.
-
-Here's an example of a tuple of size 4 `(1,2,3,4)`.
-
-When writing a tuple with only a single element, the coder must use a comma after the item, for example `(1,)`.
-
-Reasons for using tuples instead of list:
-- when the developer does not want the data to be modified 
-- when speed is important as tuples use less memory, and they make program execution faster than using lists.
-
-#### Sets
-A set is defined as a unique collection of unique elements that do not follow a specific order. 
-
-Sets are used when the existence of an object in a collection of objects is more important than the number of times it appears or the order of the objects. 
-
-Unlike tuples, sets are mutable – they can be modified, added, replaced, or removed. They are defined by using curly brackets `{` `}` to enclose the elements, which are separated by commas.
-
-Here's an example of a set of size 4 `{1,2,3,4}`.
-
-One of the ways that sets are used is when checking whether or not some elements are contained in a set or not. 
-
-#### Dictionaries
-Dictionaries in Python is an ordered collection of key-value pairs. Each key-value pair maps the key to its associated value. 
-
-Dictionaries are mutable – they can be modified, added, replaced, or removed. They are defined by using curly brackets `{` `}` to enclose the elements, with a colon `:` separating a key and its value, and each key-pair separated by commas.
-
-Here's an example of a dictionary of size 4 `{"Doh":"Doherty","Dun":"Dunlop","Fly":"Flynn","Nic":"Nichols"}`.
-
-Dictionaries should be used when the data has a unique reference that can be associated with the value.
+- **Lists:**
+  - lists are defined as an ordered collection of items
+  - they are one of Python's essential data structures
+  - list are defined using square brackets `[` `]` to enclose the elements, which are separated by commas 
+  - For example, `[1,2,3,4]`.
+  - each element in the list is referred to by its index (position number), starting at 0.
+  - **<a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">Lists refresher</a>**
+- **Tuples:**
+  - Tuples are also an ordered collection of objects, but unlike lists, they come with limited functionality.
+  - The primary differing characteristic between lists and tuples is that lists are mutable, whereas tuples are immutable. This means tuples cannot be modified, added, or deleted once they've been created.
+  - tuples are defined by using parentheses `(` `)` to enclose the elements, which are separated by commas 
+    - For example, `(1,2,3,4)`.
+  - each element in the tuple is referred to by its index (position number), starting at 0.
+  - reasons for using tuples instead of lists:
+    - when the developer does not want the data to be modified 
+    - when speed is important as tuples use less memory, and they make program execution faster
+  - **<a href="https://www.w3schools.com/python/python_tuples.asp" target="_blank">Tuples refresher</a>**
+- **Sets:**
+  - sets are a collection of unique elements that do not follow a specific order.
+  - they are mutable – they can be modified, added, replaced, or removed
+  - sets are defined by using curly brackets `{` `}` to enclose the elements, which are separated by commas 
+    - For example, `{1,2,3,4}`.
+  - they are used when the existence of an object in a collection of objects is more important than the number of times it appears or the order of the objects.
+  - **<a href="https://www.w3schools.com/python/python_sets.asp" target="_blank">Sets refresher</a>**
+- **Dictionaries:**
+  - dictionaries are an ordered collection of key-value pairs. Each key-value pair maps the key to its associated value
+  - they are mutable – they can be modified, added, replaced, or removed. 
+  - dictionaries are defined by using curly brackets `{` `}` to enclose the elements, with a colon `:` separating a key and its value, and each key-pair separated by commas 
+    - For example, `{"Doh":"Doherty","Dun":"Dunlop","Fly":"Flynn","Nic":"Nichols"}`
+  - they should be used when the data has a unique reference that can be associated with the value.
+  - **<a href="https://www.w3schools.com/python/python_dictionaries.asp" target="_blank">Dictionary refresher</a>**
 
 ### Syntax
-The syntax of a computer language is the set of rules that defines the combinations of symbols that are considered to be correctly structured statements or expressions in that language. This applies both to programming languages, where the document represents source code, and to markup languages, where the document represents data.
+The syntax of a computer language is the set of rules that defines the combinations of symbols that are considered to be correctly structured statements or expressions in that language.
+
+**<a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fsyntax.ipynb" target="_blank">Learn about Python's syntax</a>**
+
 
 ### Libraries
 A software library refers to a collection of files, programs, routines, scripts, or functions referenced in the programming code. Python comes with a standard library which provides basic functionality. Python allows you to install additional libraries, as well as create your own.
