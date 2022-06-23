@@ -1,8 +1,9 @@
 # Evaluate Introduction
 ```{admonition} Tools used to complete the Evaluate phase:
 :class: attention
-- Evaluation Table
-- Impacts Assessment
+- Component evaluation table
+- Impacts assessment
+- Solution evaluation table
 ```
 
 ## Overview

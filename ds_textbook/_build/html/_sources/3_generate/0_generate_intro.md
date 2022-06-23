@@ -4,7 +4,8 @@
 - Mind Maps
 - QT Designer
 - Annotated Code
-- Testing
+- Integrated Testing Table
+- Unit Testing Table
 ```
 
 ## Overview
