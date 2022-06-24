@@ -15,7 +15,6 @@ parts:
     - file: 1_explore/1_describe_problem
       sections:
       - file: 1_explore/1_describe_problem/unit_1
-      - file: 1_explore/1_describe_problem/unit_1_scenario
       - file: 1_explore/1_describe_problem/unit_2
     - file: 1_explore/2_needs_or_wants
       sections:
@@ -43,6 +42,12 @@ parts:
     - file: 1_explore/7_determine_criteria
       sections:
       - file: 1_explore/7_determine_criteria/unit_1
+    - file: 1_explore/8_scenario
+      sections:
+      - file: 1_explore/8_scenario/unit_1
+      - file: 1_explore/8_scenario/unit_2
+      - file: 1_explore/8_scenario/unit_3
+      - file: 1_explore/8_scenario/unit_4
   - caption: Develop
     chapters:
     - file: 2_develop/0_develop_intro
