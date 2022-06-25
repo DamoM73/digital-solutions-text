@@ -1,13 +1,15 @@
 # Unit 1 Scenario: Explore Phase
 
-## Mind Maps
 
 
-## Empathy Maps
-![Empathy Map](../assests/scenario_empathy.png)
+## Mind Map
+
+
+## Empathy Map
+![Empathy Map](../assests/scenario_empathy.jpg)
 
 ## Personas
-
+![Persona](../assests/scenario_persona.jpg)
 
 
 ## Use Case Diagrams
