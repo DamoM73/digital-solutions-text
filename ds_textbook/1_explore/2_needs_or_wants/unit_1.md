@@ -68,8 +68,7 @@ Components of a persona:
     - ethnicity
     - family status
     - occupation
-- key drivers and motivations 
-- needs
+- motivations 
 - expectations
 - frustrations with the problem
 - environment
@@ -77,3 +76,8 @@ Components of a persona:
     - social
     - technological
 - personality ([Big Five Personality Traits](https://www.verywellmind.com/the-big-five-personality-dimensions-2795422))
+  - openness
+  - contentiousness
+  - extraversion
+  - agreeableness
+  - neuroticism

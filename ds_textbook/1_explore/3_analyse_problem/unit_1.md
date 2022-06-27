@@ -92,7 +92,7 @@ What are the objects are that you need to produced? This may be the final produc
 
 In Unit 1 you will have two different deliverables:
 - For FIA1 you will need to deliver a technical proposal
-- For FIA2 you will need to deliver a program prototype
+- For FIA2 you will need to deliver a low-fidelity prototype
 
 ### Timeline
 How long the project will run for? What are the specific milestones or checkpoints along the way? Each criteria sheet you will receive, will contain explicit checkpoints.
