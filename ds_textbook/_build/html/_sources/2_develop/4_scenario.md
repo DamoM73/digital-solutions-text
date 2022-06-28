@@ -2,12 +2,12 @@
 
 ```{admonition} Tools used to complete the Explore phase:
 :class: attention
-- Mind Maps
-- Empathy Maps
-- Personas
-- Use Case Diagrams
-- Requirement Tables
-- Criteria Tables
+- Mockups
+- Activity Diagrams
+- Class Diagrams
+- IPO Tables
+- Pseudocode
+- Desk-checking
 ```
 
 ## Unit 1 Scenario
