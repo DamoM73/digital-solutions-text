@@ -1,0 +1,1370 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit 1: Clarify Code &#8212; EDGE approach to Digital Solutions</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Unit 3: Clarrify Code" href="unit_3.html" />
+    <link rel="prev" title="Clarify Code" href="../3_clarify_code.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/edge.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">EDGE approach to Digital Solutions</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   EDGE approach to Digital Solutions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../1_text_structure.html">
+   The Text Structure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../2_learning_scenario.html">
+   Learning Scenario
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../3_tools_used.html">
+   Technologies Used
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Explore
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../1_explore/0_explore_intro.html">
+   Explore Introduction
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../1_explore/1_describe_problem.html">
+   Describe the Problem
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/1_describe_problem/unit_1.html">
+     Unit 1: Describing the Problem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/1_describe_problem/unit_2.html">
+     Unit 2: Describing the Problem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../1_explore/2_needs_or_wants.html">
+   Determine Needs or Wants
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/2_needs_or_wants/unit_1.html">
+     Unit 1: Determine Needs or Wants
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../1_explore/3_analyse_problem.html">
+   Analyse the Problem
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/3_analyse_problem/unit_1.html">
+     Unit 1: Analyse the Problem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/3_analyse_problem/unit_2.html">
+     Unit 2: Analyse the Problem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/3_analyse_problem/unit_3.html">
+     Unit 3: Analyse the Problem
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/3_analyse_problem/unit_4.html">
+     Unit 4: Analyse the Problem
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../1_explore/4_select_impacts.html">
+   Select Impacts
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/4_select_impacts/unit_1.html">
+     Unit 1: Select Impacts
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/4_select_impacts/unit_2.html">
+     Unit 2: Select Impacts
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/4_select_impacts/unit_4.html">
+     Unit 4: Select Impacts
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../1_explore/5_identify_contraints.html">
+   Identify Constraints
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/5_identify_contraints/unit_1.html">
+     Unit 1: Identify Constraints
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/5_identify_contraints/unit_4.html">
+     Unit 4: Identify Constraints
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../1_explore/6_identify_requirements.html">
+   Identify Requirements
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/6_identify_requirements/unit_1.html">
+     Unit 1: Identify Requirements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/6_identify_requirements/unit_2.html">
+     Unit 2: Identify Requirements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/6_identify_requirements/unit_4.html">
+     Unit 4: Identify Requirements
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../1_explore/7_determine_criteria.html">
+   Determine Criteria
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/7_determine_criteria/unit_1.html">
+     Unit 1: Determine Criteria
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../1_explore/8_scenario.html">
+   Learning Scenario - Explore
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/8_scenario/unit_1.html">
+     Unit 1 Scenario: Explore Phase
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/8_scenario/unit_2.html">
+     Unit 2 Scenario: Explore Phase
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/8_scenario/unit_3.html">
+     Unit 3 Scenario: Explore Phase
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../1_explore/8_scenario/unit_4.html">
+     Unit 1 Scenario: Explore Phase
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Develop
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../2_develop/0_develop_intro.html">
+   Develop Introduction
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../2_develop/1_design_ui_ux.html">
+   Design UI and UX
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/1_design_ui_ux/unit_1.html">
+     Unit 1: Design UI and UX
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/1_design_ui_ux/unit_2.html">
+     Unit 2: Design UI and UX
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/1_design_ui_ux/unit_3.html">
+     Unit 3: Design UI and UX
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../2_develop/2_design_controller.html">
+   Design Algorithms
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/2_design_controller/unit_1.html">
+     Unit 1: Design Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/2_design_controller/unit_2.html">
+     Unit 2: Design Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/2_design_controller/unit_3.html">
+     Unit 3: Design Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/2_design_controller/unit_4.html">
+     Unit 4: Design Algorithms
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../2_develop/3_design_model.html">
+   Design Data Store
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/3_design_model/unit_2.html">
+     Unit 2: Design Data Source
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/3_design_model/unit_3.html">
+     Unit 3: Design Data Source
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/3_design_model/unit_4.html">
+     Unit 4: Design Data Source
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Generate
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../0_generate_intro.html">
+   Generate Introduction
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../1_environment.html">
+   Select Development Environment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1_environment/unit_1.html">
+     Unit 1: Select Development Environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1_environment/unit_2.html">
+     Unit 2: Select Development Environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1_environment/unit_3.html">
+     Unit 3: Select Development Environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../1_environment/unit_4.html">
+     Unit 4: Select Development Environment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../2_generate_code.html">
+   Generate Code
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2_generate_code/unit_1.html">
+     Unit 1: Generate Code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2_generate_code/unit_2.html">
+     Unit 2: Generate Code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2_generate_code/unit_3.html">
+     Unit 3: Generate Code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../2_generate_code/unit_4.html">
+     Unit 4: Generate Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../3_clarify_code.html">
+   Clarify Code
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Unit 1: Clarify Code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="unit_3.html">
+     Unit 3: Clarrify Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../4_test_code.html">
+   Test Code
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4_test_code/unit_1.html">
+     Unit 1: Test Code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4_test_code/unit_2.html">
+     Unit 2: Test Code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4_test_code/unit_3.html">
+     Unit 3: Test Code
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4_test_code/unit_4.html">
+     Unit 4: Test Code
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Evaluate
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../4_evaluate/0_evaluate_intro.html">
+   Evaluate Introduction
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../4_evaluate/1_components.html">
+   Evaluate Components
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_evaluate/1_components/unit_1.html">
+     Unit 1: Evaluate Components
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_evaluate/1_components/unit_2.html">
+     Unit 2: Evaluate Components
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_evaluate/1_components/unit_3.html">
+     Unit 3: Evaluate Components
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../4_evaluate/2_impacts.html">
+   Assess Impacts
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+  <label for="toctree-checkbox-17">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_evaluate/2_impacts/unit_1.html">
+     Unit 1: Assess Impacts
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_evaluate/2_impacts/unit_4.html">
+     Unit 4: Assess Impacts
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../4_evaluate/3_solution.html">
+   Evaluate Solution
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+  <label for="toctree-checkbox-18">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_evaluate/3_solution/unit_1.html">
+     Unit 1: Evaluate Solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_evaluate/3_solution/unit_3.html">
+     Unit 3: Evaluate Solution
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Throughout
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../5_throughout/1_communication.html">
+   Communicate
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../5_throughout/2_conventions.html">
+   Use Project Conventions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../5_throughout/3_gramma.html">
+   Use Gramma and Language Structures
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../5_throughout/4_langauge.html">
+   Use Technical Language
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../5_throughout/5_referencing.html">
+   Apply Referencing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  End material
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/3_generate/3_clarify_code/unit_1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F3_generate/3_clarify_code/unit_1.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-comments">
+   Using Comments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#coding-conventions">
+   Coding Conventions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#naming-conventions">
+     Naming Conventions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#naming-styles">
+       Naming styles
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-layout">
+     Code Layout
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#blank-lines">
+       Blank Lines
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#maximum-line-length-and-line-breaking">
+       Maximum Line Length and Line Breaking
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#indentation">
+       Indentation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commenting">
+     Commenting
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#block-comments">
+       Block Comments
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#inline-comments">
+       Inline Comments
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#documentation-strings">
+       Documentation Strings
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#whitespace-in-expressions-and-statements">
+     Whitespace in Expressions and Statements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-simplicity">
+     Code Simplicity
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Unit 1: Clarify Code</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-comments">
+   Using Comments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#coding-conventions">
+   Coding Conventions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#naming-conventions">
+     Naming Conventions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#naming-styles">
+       Naming styles
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-layout">
+     Code Layout
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#blank-lines">
+       Blank Lines
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#maximum-line-length-and-line-breaking">
+       Maximum Line Length and Line Breaking
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#indentation">
+       Indentation
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commenting">
+     Commenting
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#block-comments">
+       Block Comments
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#inline-comments">
+       Inline Comments
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#documentation-strings">
+       Documentation Strings
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#whitespace-in-expressions-and-statements">
+     Whitespace in Expressions and Statements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-simplicity">
+     Code Simplicity
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="unit-1-clarify-code">
+<h1>Unit 1: Clarify Code<a class="headerlink" href="#unit-1-clarify-code" title="Permalink to this headline">¶</a></h1>
+<p>Writing code that is easy to comprehend is important for it’s maintainability. In Digital Solutions it is also an important way to explain your code and decisions you have made.</p>
+<p>There are two ways that you can clarify your code:</p>
+<ul class="simple">
+<li><p>Using comments</p></li>
+<li><p>Following coding conventions</p></li>
+</ul>
+<hr class="docutils" />
+<div class="section" id="using-comments">
+<h2>Using Comments<a class="headerlink" href="#using-comments" title="Permalink to this headline">¶</a></h2>
+<p>Comments are a common tooled used by developers. They assist in communicating the intentions of the developer to other programmers, whether that developer is another member of their team, or their own future self who is trying to work out what past-self has done. Therefore, comments are important to coding convention, and will be addressed in the section.</p>
+<p>For Digital Solutions, comments have an additional role of explaining your thinking to the person assessing your work. It is important that you use comments for the following:</p>
+<ul class="simple">
+<li><p>Explaining the purpose of each function</p></li>
+<li><p>Explaining the purposed of each class</p></li>
+<li><p>Explaining the purpose of each class method</p></li>
+<li><p>Detailing your thinking behind and ‘tricky’ code your created</p></li>
+<li><p>Structing your code by creating sections (eg. main loop, constants, etc.)</p></li>
+</ul>
+<p>For our purposes, comments will take the place of annotations.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="coding-conventions">
+<h2>Coding Conventions<a class="headerlink" href="#coding-conventions" title="Permalink to this headline">¶</a></h2>
+<p>When languages are used by many people, a consensus develops around the style of programming in that language. This style guide is called programming conventions. You don’t need to follow the conventions, your program will still work, but following the conventions makes your program more readable, and therefore more maintainable, to other programmers who use the language.</p>
+<p>For Python, these conventions are included in <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP 8 – Style Guide for Python Code</a></p>
+<p>PEP 8 exists to improve the readability of Python code. This is important on three levels:</p>
+<ul class="simple">
+<li><p><strong>personal:</strong> You may spend a few minutes, or a whole day, writing a piece of code to process user authentication. Once you’ve written it, you’re never going to write it again. But you’ll definitely have to read it again. That piece of code might remain part of a project you’re working on. Every time you go back to that file, you’ll have to remember what that code does and why you wrote it, so readability matters.</p></li>
+<li><p><strong>inter-personally:</strong> You may need to collaborate with others, so writing readable code is crucial. Other people, who may have never met you or seen your coding style before, will have to read and understand your code. Having guidelines that you follow and recognize will make it easier for others to read your code.</p></li>
+<li><p><strong>professionally:</strong> Writing clear, readable code shows professionalism. It’ll tell an employer that you understand how to structure your code well.</p></li>
+</ul>
+<p>We’ll now look at the important parts of PEP 8</p>
+<div class="section" id="naming-conventions">
+<h3>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">¶</a></h3>
+<p>When you write Python code, you have to name a lot of things: variables, functions, classes, packages, and so on.</p>
+<p>In choosing a name:</p>
+<ul class="simple">
+<li><p>choose sensible names with meaning. This will save you time and energy later (ie. you’ll be able to figure out, from the name, what a certain variable, function, or class represents).</p></li>
+<li><p>avoid using inappropriate names that might result in errors that are difficult to debug (ie. Python keywords)</p></li>
+<li><p>never use l, O, or I single letter names as these can be mistaken for 1 and 0, depending on typeface.</p></li>
+</ul>
+<div class="section" id="naming-styles">
+<h4>Naming styles<a class="headerlink" href="#naming-styles" title="Permalink to this headline">¶</a></h4>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Type</p></th>
+<th class="text-align:left head"><p>Naming Convention</p></th>
+<th class="text-align:left head"><p>Examples</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Function</p></td>
+<td class="text-align:left"><p>Use a lowercase word or words. Separate words by underscores to improve readability.</p></td>
+<td class="text-align:left"><p>function, my_function</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Variable</p></td>
+<td class="text-align:left"><p>Use a lowercase single letter, word, or words. Separate words with underscores to improve readability.</p></td>
+<td class="text-align:left"><p>x, var, my_variable</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Class</p></td>
+<td class="text-align:left"><p>Start each word with a capital letter. Do not separate words with underscores. This style is called camel case.</p></td>
+<td class="text-align:left"><p>Model, MyClass</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Method</p></td>
+<td class="text-align:left"><p>Use a lowercase word or words. Separate words with underscores to improve readability.</p></td>
+<td class="text-align:left"><p>class_method, method</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Constant</p></td>
+<td class="text-align:left"><p>Use an uppercase single letter, word, or words. Separate words with underscores to improve readability.</p></td>
+<td class="text-align:left"><p>CONSTANT, MY_CONSTANT, MY_LONG_CONSTANT</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Module</p></td>
+<td class="text-align:left"><p>Use a short, lowercase word or words. Separate words with underscores to improve readability.</p></td>
+<td class="text-align:left"><p><a class="reference external" href="http://module.py">module.py</a>, my_module.py</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Package</p></td>
+<td class="text-align:left"><p>Use a short, lowercase word or words. Do not separate words with underscores.</p></td>
+<td class="text-align:left"><p>package, mypackage</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="code-layout">
+<h3>Code Layout<a class="headerlink" href="#code-layout" title="Permalink to this headline">¶</a></h3>
+<p>How you lay out your code has a huge role in how readable it is.</p>
+<div class="section" id="blank-lines">
+<h4>Blank Lines<a class="headerlink" href="#blank-lines" title="Permalink to this headline">¶</a></h4>
+<p>Vertical whitespace, or blank lines, can greatly improve the readability of your code. Code that’s bunched up together can be overwhelming and hard to read. Similarly, too many blank lines in your code makes it look very sparse, and the reader might need to scroll more than necessary. Below are three key guidelines on how to use vertical whitespace.</p>
+<p><strong>Surround top-level functions and classes with two blank lines.</strong><br />
+Top-level functions and classes should be fairly self-contained and handle separate functionality. It makes sense to put extra vertical space around them, so that it’s clear they are separate:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyFirstClass</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+
+<span class="k">class</span> <span class="nc">MySecondClass</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+
+<span class="k">def</span> <span class="nf">top_level_function</span><span class="p">():</span>
+    <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+<p><strong>Surround method definitions inside classes with a single blank line.</strong><br />
+Inside a class, functions are all related to one another. It’s good practice to leave only a single line between them:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">first_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">second_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+<p><strong>Use blank lines sparingly inside functions to show clear steps.</strong><br />
+Sometimes, a complicated function has to complete several steps before the return statement. To help the reader understand the logic inside the function, it can be helpful to leave a blank line between each step.</p>
+<p>In the example below, there is a function to calculate the variance of a list. This is two-step problem, so I have indicated each step by leaving a blank line between them. There is also a blank line before the return statement. This helps the reader clearly see what’s returned:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">calculate_variance</span><span class="p">(</span><span class="n">number_list</span><span class="p">):</span>
+    <span class="n">sum_list</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">number_list</span><span class="p">:</span>
+        <span class="n">sum_list</span> <span class="o">=</span> <span class="n">sum_list</span> <span class="o">+</span> <span class="n">number</span>
+    <span class="n">mean</span> <span class="o">=</span> <span class="n">sum_list</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">number_list</span><span class="p">)</span>
+
+    <span class="n">sum_squares</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">number_list</span><span class="p">:</span>
+        <span class="n">sum_squares</span> <span class="o">=</span> <span class="n">sum_squares</span> <span class="o">+</span> <span class="n">number</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">mean_squares</span> <span class="o">=</span> <span class="n">sum_squares</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">number_list</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">mean_squares</span> <span class="o">-</span> <span class="n">mean</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>If you use vertical whitespace carefully, it can greatly improved the readability of your code. It helps the reader visually understand how your code splits up into sections, and how those sections relate to one another.</p>
+</div>
+<div class="section" id="maximum-line-length-and-line-breaking">
+<h4>Maximum Line Length and Line Breaking<a class="headerlink" href="#maximum-line-length-and-line-breaking" title="Permalink to this headline">¶</a></h4>
+<p>PEP 8 suggests lines should be limited to 79 characters. This is because it allows you to have multiple files open next to one another, while also avoiding line wrapping.</p>
+<p>Of course, keeping statements to 79 characters or less is not always possible. PEP 8 outlines ways to allow statements to run over several lines.</p>
+<p><strong>Breaks within parentheses, brackets or braces.</strong><br />
+Python will assume line continuation if code is contained within parentheses <code class="docutils literal notranslate"><span class="pre">()</span></code>, brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code>, or braces <code class="docutils literal notranslate"><span class="pre">{}</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">arg_one</span><span class="p">,</span> <span class="n">arg_two</span><span class="p">,</span>
+             <span class="n">arg_three</span><span class="p">,</span> <span class="n">arg_four</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">arg_one</span>
+</pre></div>
+</div>
+<p><strong>Implied continuation.</strong><br />
+If it is impossible to use implied continuation, then you can use backslashes <code class="docutils literal notranslate"><span class="pre">\</span></code> to break lines instead:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">mypkg</span> <span class="kn">import</span> <span class="n">example1</span><span class="p">,</span> \
+    <span class="n">example2</span><span class="p">,</span> <span class="n">example3</span>
+</pre></div>
+</div>
+<p>However, if you can use implied continuation, then you should do so.</p>
+<p><strong>Binary operators</strong><br />
+If line breaking needs to occur around binary operators, like + and *, it should occur before the operator. This rule stems from mathematics. Mathematicians agree that breaking before binary operators improves readability. Compare the following two examples.</p>
+<p>Below is an example of breaking before a binary operator:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Recommended</span>
+<span class="n">total</span> <span class="o">=</span> <span class="p">(</span><span class="n">first_variable</span>
+         <span class="o">+</span> <span class="n">second_variable</span>
+         <span class="o">-</span> <span class="n">third_variable</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can immediately see which variable is being added or subtracted, as the operator is right next to the variable being operated on.</p>
+<p>Now, let’s see an example of breaking after a binary operator:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Not Recommended</span>
+<span class="n">total</span> <span class="o">=</span> <span class="p">(</span><span class="n">first_variable</span> <span class="o">+</span>
+         <span class="n">second_variable</span> <span class="o">-</span>
+         <span class="n">third_variable</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here, it’s harder to see which variable is being added and which is subtracted.</p>
+<p>Breaking before binary operators produces more readable code, so PEP 8 encourages it. Code that consistently breaks after a binary operator is still PEP 8 compliant. However, you’re encouraged to break before a binary operator.</p>
+</div>
+<div class="section" id="indentation">
+<h4>Indentation<a class="headerlink" href="#indentation" title="Permalink to this headline">¶</a></h4>
+<p>Indentation, or leading whitespace, is extremely important in Python. The indentation level of lines of code in Python determines how statements are grouped together.</p>
+<p>Consider the following example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x is larger than 5&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The indented print statement lets Python know that it should only be executed if the if statement returns True. The same indentation applies to tell Python what code to execute when a function is called or what code belongs to a given class.</p>
+<p>The key indentation rules laid out by PEP 8 are the following:</p>
+<ul class="simple">
+<li><p>Use 4 consecutive spaces to indicate indentation.</p></li>
+<li><p>Prefer spaces over tabs.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="commenting">
+<h3>Commenting<a class="headerlink" href="#commenting" title="Permalink to this headline">¶</a></h3>
+<p>You should use comments to document code as it’s written. It is important to document your code so that you, and any collaborators, can understand it. When you or someone else reads a comment, they should be able to easily understand the code the comment applies to and how it fits in with the rest of your code.</p>
+<p>Here are some key points to remember when adding comments to your code:</p>
+<ul class="simple">
+<li><p>Limit the line length of comments and docstrings to 72 characters.</p></li>
+<li><p>Use complete sentences, starting with a capital letter.</p></li>
+<li><p>Make sure to update comments if you change your code.</p></li>
+</ul>
+<div class="section" id="block-comments">
+<h4>Block Comments<a class="headerlink" href="#block-comments" title="Permalink to this headline">¶</a></h4>
+<p>Use block comments to document a small section of code. They are useful when you have to write several lines of code to perform a single action, such as importing data from a file or updating a database entry. They are important as they help others understand the purpose and functionality of a given code block.</p>
+<p>PEP 8 provides the following rules for writing block comments:</p>
+<ul class="simple">
+<li><p>Indent block comments to the same level as the code they describe.</p></li>
+<li><p>Start each line with a # followed by a single space.</p></li>
+<li><p>Separate paragraphs by a line containing a single #.</p></li>
+</ul>
+<p>Here is a block comment explaining the function of a for loop. Note that the sentence wraps to a new line to preserve the 79 character line limit:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="c1"># Loop over i ten times and print out the value of i, followed by a</span>
+    <span class="c1"># new line character</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sometimes, if the code is very technical, then it is necessary to use more than one paragraph in a block comment:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">quadratic</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="c1"># Calculate the solution to a quadratic equation using the </span>
+    <span class="c1"># quadratic formula.</span>
+    <span class="c1">#</span>
+    <span class="c1"># There are always two solutions to a quadratic equation, </span>
+    <span class="c1"># x_1 and x_2.</span>
+    <span class="n">x_1</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span> <span class="n">b</span><span class="o">+</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">x_2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span> <span class="n">b</span><span class="o">-</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x_1</span><span class="p">,</span> <span class="n">x_2</span>
+</pre></div>
+</div>
+<p>If you’re ever in doubt as to what comment type is suitable, then block comments are often the way to go. Use them as much as possible throughout your code, but make sure to update them if you make changes to your code!</p>
+</div>
+<div class="section" id="inline-comments">
+<h4>Inline Comments<a class="headerlink" href="#inline-comments" title="Permalink to this headline">¶</a></h4>
+<p>Inline comments explain a single statement in a piece of code. They are useful to remind you, or explain to others, why a certain line of code is necessary. Here’s what PEP 8 has to say about them:</p>
+<ul class="simple">
+<li><p>Use inline comments sparingly.</p></li>
+<li><p>Write inline comments on the same line as the statement they refer to.</p></li>
+<li><p>Separate inline comments by two or more spaces from the statement.</p></li>
+<li><p>Start inline comments with a # and a single space, like block comments.</p></li>
+<li><p>Don’t use them to explain the obvious.</p></li>
+</ul>
+<p>Below is an example of an inline comment:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>  <span class="c1"># This is an inline comment</span>
+</pre></div>
+</div>
+<p>Sometimes, inline comments can seem necessary, but you can use better naming conventions instead. Here’s an example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;John Smith&#39;</span>  <span class="c1"># Student Name</span>
+</pre></div>
+</div>
+<p>Here, the inline comment does give extra information. However using x as a variable name for a person’s name is bad practice. There’s no need for the inline comment if you rename your variable:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">student_name</span> <span class="o">=</span> <span class="s1">&#39;John Smith&#39;</span>
+</pre></div>
+</div>
+<p>Finally, inline comments such as these are bad practice as they state the obvious and clutter code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">empty_list</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Initialize empty list</span>
+
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">5</span>  <span class="c1"># Multiply x by 5</span>
+</pre></div>
+</div>
+<p>Inline comments are more specific than block comments, and it’s easy to add them when they’re not necessary, which leads to clutter. You could get away with only using block comments so, unless you are sure you need an inline comment, your code is more likely to be PEP 8 compliant if you stick to block comments.</p>
+</div>
+<div class="section" id="documentation-strings">
+<h4>Documentation Strings<a class="headerlink" href="#documentation-strings" title="Permalink to this headline">¶</a></h4>
+<p>Documentation strings, or docstrings, are strings enclosed in double (“””) or single (‘’’) quotation marks that appear on the first line of any function, class, method, or module. You can use them to explain and document a specific block of code. There is an entire PEP, PEP 257, that covers docstrings, but you’ll get a summary in this section.</p>
+<p>The most important rules applying to docstrings are the following:</p>
+<ul class="simple">
+<li><p>Surround docstrings with three double quotes on either side, as in “””This is a docstring”””.</p></li>
+<li><p>Write them for all public modules, functions, classes, and methods.</p></li>
+<li><p>Put the “”” that ends a multiline docstring on a line by itself:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">quadratic</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Solve quadratic equation via the quadratic formula.</span>
+
+<span class="sd">    A quadratic equation has the following form:</span>
+<span class="sd">    ax**2 + bx + c = 0</span>
+
+<span class="sd">    There always two solutions to a quadratic equation: x_1 &amp; x_2.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">x_1</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span> <span class="n">b</span><span class="o">+</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">x_2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span> <span class="n">b</span><span class="o">-</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">x_1</span><span class="p">,</span> <span class="n">x_2</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>For one-line docstrings, keep the “”” on the same line:</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">quadratic</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Use the quadratic formula&quot;&quot;&quot;</span>
+    <span class="n">x_1</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span> <span class="n">b</span><span class="o">+</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">x_2</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span> <span class="n">b</span><span class="o">-</span><span class="p">(</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">a</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">x_1</span><span class="p">,</span> <span class="n">x_2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="whitespace-in-expressions-and-statements">
+<h3>Whitespace in Expressions and Statements<a class="headerlink" href="#whitespace-in-expressions-and-statements" title="Permalink to this headline">¶</a></h3>
+<p>Whitespace can be very helpful in expressions and statements when used properly. If there is not enough whitespace, then code can be difficult to read, as it’s all bunched together. If there’s too much whitespace, then it can be difficult to visually combine related terms in a statement.</p>
+<p>Surround the following binary operators with a single space on either side:</p>
+<ul class="simple">
+<li><p>Assignment operators (=, +=, -=, and so forth)</p></li>
+<li><p>Comparisons (==, !=, &gt;, &lt;. &gt;=, &lt;=) and (is, is not, in, not in)</p></li>
+<li><p>Booleans (and, not, or)</p></li>
+</ul>
+<p>Use the same amount of whitespace either side of the operator.</p>
+<p>When to Avoid Adding Whitespace:</p>
+<ul class="simple">
+<li><p>Immediately inside parentheses <code class="docutils literal notranslate"><span class="pre">()</span></code>, brackets <code class="docutils literal notranslate"><span class="pre">[]</span></code>, or braces <code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
+<li><p>Before a comma <code class="docutils literal notranslate"><span class="pre">'</span></code>, semicolon <code class="docutils literal notranslate"><span class="pre">;</span></code>, or colon <code class="docutils literal notranslate"><span class="pre">:</span></code></p></li>
+<li><p>Before the open parenthesis <code class="docutils literal notranslate"><span class="pre">()</span></code> that starts the argument list of a function call</p></li>
+<li><p>Before the open bracket <code class="docutils literal notranslate"><span class="pre">[]</span></code> that starts an index or slice</p></li>
+<li><p>Between a trailing comma <code class="docutils literal notranslate"><span class="pre">,</span></code> and a closing parenthesis <code class="docutils literal notranslate"><span class="pre">)</span></code></p></li>
+<li><p>To align assignment operators</p></li>
+</ul>
+</div>
+<div class="section" id="code-simplicity">
+<h3>Code Simplicity<a class="headerlink" href="#code-simplicity" title="Permalink to this headline">¶</a></h3>
+<p>You will often find that there are several ways to perform a similar action in Python (and any other programming language for that matter).</p>
+<p>Here are the suggestions PEP 8 provides to remove that ambiguity and preserve consistency:</p>
+<ul class="simple">
+<li><p>Don’t compare Boolean values to True or False using the equivalence operator.</p>
+<ul>
+<li><p>rather than using <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">my_bool</span> <span class="pre">==</span> <span class="pre">True</span></code> use <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">my_bool</span></code></p></li>
+</ul>
+</li>
+<li><p>Use the fact that empty sequences are falsy in if statements</p>
+<ul>
+<li><p>given <code class="docutils literal notranslate"><span class="pre">my_list</span> <span class="pre">=</span> <span class="pre">[]</span></code></p></li>
+<li><p>rather than using <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">not</span> <span class="pre">len(my_list)</span></code> use <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">not</span> <span class="pre">my_list</span></code></p></li>
+</ul>
+</li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">not</span></code> rather than <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">...</span> <span class="pre">is</span></code> in if statements.</p>
+<ul>
+<li><p>rather than using <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">not</span> <span class="pre">x</span> <span class="pre">is</span> <span class="pre">None</span></code> use <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">x</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">None</span></code></p></li>
+</ul>
+</li>
+<li><p>Don’t use <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">x:</span></code> when you mean <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">x</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">None</span></code></p>
+<ul>
+<li><p>rather than using <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">var</span></code> use <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">var</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">None</span></code></p></li>
+</ul>
+</li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">.startswith()</span></code> and <code class="docutils literal notranslate"><span class="pre">.endswith()</span></code> instead of slicing.</p>
+<ul>
+<li><p>rather than using <code class="docutils literal notranslate"><span class="pre">my_string[:3]</span> <span class="pre">==</span> <span class="pre">'cat'</span></code> use <code class="docutils literal notranslate"><span class="pre">my_string.startswith('cat')</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./3_generate\3_clarify_code"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../3_clarify_code.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Clarify Code</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="unit_3.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Unit 3: Clarrify Code</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Damien Murtagh<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
