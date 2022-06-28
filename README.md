@@ -1,6 +1,6 @@
 # digital solutions text
  
-Packages
+Packages used:
 - Jupyter Book (python -m pip install -U jupyter-book)
   - jupyter-book build ds_textbook
 - GHP Import (python pip install ghp-import)
