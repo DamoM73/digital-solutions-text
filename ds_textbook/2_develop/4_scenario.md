@@ -1,6 +1,6 @@
 # Learning Scenario - Develop
 
-```{admonition} Tools used to complete the Explore phase:
+```{admonition} Tools used to complete the Develop phase:
 :class: attention
 - Mockups
 - Activity Diagrams

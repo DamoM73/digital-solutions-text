@@ -98,6 +98,12 @@ parts:
       - file: 3_generate/4_test_code/unit_2
       - file: 3_generate/4_test_code/unit_3
       - file: 3_generate/4_test_code/unit_4
+    - file: 3_generate/5_scenario
+      sections:
+      - file: 3_generate/5_scenario/unit_1
+      - file: 3_generate/5_scenario/unit_2
+      - file: 3_generate/5_scenario/unit_3
+      - file: 3_generate/5_scenario/unit_4
   - caption: Evaluate
     chapters:
     - file: 4_evaluate/0_evaluate_intro
