@@ -67,6 +67,12 @@ parts:
       - file: 2_develop/3_design_model/unit_2
       - file: 2_develop/3_design_model/unit_3
       - file: 2_develop/3_design_model/unit_4
+    - file: 2_develop/4_scenario
+      sections:
+      - file: 2_develop/4_scenario/unit_1
+      - file: 2_develop/4_scenario/unit_2
+      - file: 2_develop/4_scenario/unit_3
+      - file: 2_develop/4_scenario/unit_4
   - caption: Generate
     chapters:
     - file: 3_generate/0_generate_intro
