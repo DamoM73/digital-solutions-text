@@ -22,4 +22,6 @@ Follow the videos below to see how to generate the code for our Hangman game.
 ![Integrated Test](../assets/scenario_inter_test.png)
 
 ## Unit Testing Table
+This is an example of just one Unit Test. You should do many throughout the generate phase, especially when you finish each method.
+
 ![Unit Test](../assets/scenario_unit_test.png)
