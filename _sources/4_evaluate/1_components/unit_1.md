@@ -1,11 +1,12 @@
 # Unit 1: Evaluate Components
 
-Evaluating components occurs throughout the generation phase. It occurs anytime you change a component of your solution to improve it. 
-For example, the database is taking too long to build and populate, so, instead of doing this each time the program is launched, you decide to build and populate the database once and then repopulate when there is an update.
+Evaluating components occurs by undertaking **alpha testing** and **beta testing**. 
 
-Component evaluation also happens towards to end of the Generate phase when you have other users test your solution and give you feedback. For example, your testers indicate that the text is too hard to read, you recommend to increase the size and contrast of all text. 
+**Alpha testing** is undertaken by the developer, and occurs throughout the generation phase. For example, the database is taking too long to build and populate, so, instead of doing this each time the program is launched, you decide to build and populate the database once and then repopulate when there is an update. 
 
-Although this important design skill is demonstrates critical thinking, it is frequently hidden from assessor. Therefore we will use the Evaluate Components table to keep a track of these decisions as they occur. 
+**Beta testing** occurs at the end of the Generate phase when other users test your solution and provide feedback. For example, your testers indicate that the text is too hard to read, you recommend to increase the size and contrast of all text. 
+
+Although this important design skill is demonstrates critical thinking, it is frequently hidden from assessors. Therefore we will use the Evaluate Components table to keep a track of these decisions as they occur. 
 
 For example  
 ![component evaluation](../assets/component_eval.png)
