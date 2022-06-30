@@ -29,6 +29,7 @@ Accessibility is the ability to be used by many different people, even people wi
 
 Accessibility guidelines are based on four principles (often referred to as POUR):
 - **Perceivable:** Information and user interface components must be presented to users in ways that they can perceive. For example, it's important to present information that can be perceived in different ways, where a user can adjust colour contrast or font size, or view captions for videos.
+  - For the purposes of this course, we will use the **<a href="https://www.tpgi.com/color-contrast-checker/" target="_blank">Colour Contrast Analyser (CCA)</a>** to assess the perceivability of the fonts of our UI.
 - **Operable:** User interface components and navigation must be operable to users in ways they can operate. For example, required interactions can be performed using keyboard or voice commands.
 - **Understandable:** Information and user interface operation must be understandable. For example, information and instructions are clear and navigation methods are easy to understand and use.
 - **Robust:** Content must be robust enough so that it can be interpreted reliably by a wide variety of users and types of assistive technologies. As technologies evolve, code and content should remain accessible for users of common and current assistive devices and tools.

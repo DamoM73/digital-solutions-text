@@ -1,4 +1,4 @@
-# Learning Scenario - Generate
+# Learning Scenario - Evaluate
 
 ```{admonition} Tools used to complete the Evaluate phase:
 :class: attention
