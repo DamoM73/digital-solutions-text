@@ -120,6 +120,12 @@ parts:
       sections:
       - file: 4_evaluate/3_solution/unit_1
       - file: 4_evaluate/3_solution/unit_3
+    - file: 4_evaluate/4_scenario
+      sections:
+      - file: 4_evaluate/4_scenario/unit_1
+      - file: 4_evaluate/4_scenario/unit_2
+      - file: 4_evaluate/4_scenario/unit_3
+      - file: 4_evaluate/4_scenario/unit_4
   - caption: Throughout
     chapters:
     - file: 5_throughout/1_communication
