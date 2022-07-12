@@ -6,6 +6,6 @@ The text is written using **[Jupyter Books](https://jupyterbook.org/en/stable/)*
 - Jupyter Book (python -m pip install -U jupyter-book)
 - GHP Import (python -m pip install ghp-import)
 
-The HTLM version of the text is held in the gh-pages branch. An is hosted **[here](https://damom73.github.io/digital-solutions-text/intro.html)**.
+The HTLM version of the text is held in the gh-pages branch. It is is hosted **[here](https://damom73.github.io/digital-solutions-text/intro.html)**.
 
 Some tutorials in this text book use Jupyter Notebooks which are held in the **[this repository](https://github.com/DamoM73/edge-approach-to-digital-solutions)**.
