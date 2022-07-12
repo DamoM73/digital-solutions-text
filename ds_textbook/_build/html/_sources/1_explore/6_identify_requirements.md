@@ -22,6 +22,8 @@ Now expand the requirements using the Requirements Table under the headings of m
 ```
 
 ```{admonition} Unit 2 subject matter covered:
+- determine manageable aspects of a problem through decomposition, pattern recognition and analysis of programming options including data models, and storage and output requirements
+- analyse problems associated with data insertion, including variations in data formats, data structures, validation rules and data requirements
 - recognise the elements needed for a data-driven solution, including programming requirements, e.g. SQL  and algorithms
 - recognise the elements needed for a data-driven solution, including system requirements, e.g. platforms, connections, hardware and data stores
 - recognise the elements needed for a data-driven solution, including the data that is required from real-world data sources, e.g. files, peripheral devices, online sources and users

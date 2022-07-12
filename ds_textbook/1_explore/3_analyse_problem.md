@@ -14,6 +14,14 @@ We use mind maps to create a basic sketch of our understanding of the problem.
 We use the UML Use Case Diagram to help identify the scope of the program and the processes involved.
 ![Use Case Symbols](../1_explore/assests/use_case_symbols.png)
 
+## For Units 2 to 4
+In addition to the requirements of Unit 1, you need to be cafeful with the representation of databases in the Use Case Diagram.
+
+|Type of Database|Use Case Representation|
+|:---------------|:----------------------|
+|Internal|Databases are **not** considered an actor and are included within the system box|
+|External|Databases are considered an actor and are drawn as a secondary actor|
+
 ```{admonition} Unit 1 subject matter covered:
 - understand methods of breaking down problems into parts using computational thinking and thinking tools
 - analyse problems to identify essential elements, components and features of problems in Digital Solutions
@@ -21,12 +29,6 @@ We use the UML Use Case Diagram to help identify the scope of the program and th
 - explore existing solutions to similar problems
 - analyse a given problem to identify the boundary or scope of the problem
 - analyse a given problem to identify missing, required or unnecessary facts or information
-{cite}`queenslandcurriculumassessmentauthority_2017_digital`
-```
-
-```{admonition} Unit 2 subject matter covered:
-- determine manageable aspects of a problem through decomposition, pattern recognition and analysis of programming options including data models, and storage and output requirements
-- analyse problems associated with data insertion, including variations in data formats, data structures, validation rules and data requirements
 {cite}`queenslandcurriculumassessmentauthority_2017_digital`
 ```
 

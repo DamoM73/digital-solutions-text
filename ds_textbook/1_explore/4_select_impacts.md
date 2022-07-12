@@ -7,6 +7,43 @@
 ## For Units 1 to 4
 When selecting impacts the developer needs to consider what they hope to achieve with the solution.
 
+The types of impacts you can consider:
+- Personal Impacts
+  - Health and wellbeing
+  - Access to resources, services and opportunities
+  - Quality of life
+  - Personal safety
+  - Resilience
+  - Culture and heritage
+- Social Impacts
+  - Health and wellbeing
+  - Access to resources, services and opportunities
+  - Quality of life
+  - Safety
+  - Security
+  - Resilience
+  - Culture and heritage
+  - Innovation and human capital
+  - Social cohesion
+- Economic Impacts
+  - National economic performance
+  - Trade and competitiveness
+  - Productivity and efficiency
+  - Management of risk and uncertainty
+  - Policies and programs
+  - New services, products, experiences and market niches
+  - Animal health and prosperity
+  - Securing and protecting existing markets
+- Environmental Impacts
+  - Air quality
+  - Ecosystem health and integrity (natural capital)
+  - Climate
+  - Natural hazards mitigation
+  - Energy generation and consumption
+  - Land quality
+  - Aquatic environments
+  - Built environments
+
 This decision is recorded in the mind map.
 
 ![impacts mind map](./assests/mm_impact.png)
