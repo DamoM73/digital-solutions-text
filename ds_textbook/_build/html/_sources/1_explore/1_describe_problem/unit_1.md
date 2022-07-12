@@ -19,11 +19,11 @@ In a digital system:
 The scope of the project provides detail about how the solution will address the problem and what types of things will be produced or delivered. The scope defines the boundaries of the system (or problem) that is being addressed.
 
 The scope includes:
-- **Problem Statement** - The problem statement is an overall descriptive statement about what needs to be solved. It includes a justification for the project (explains why is it being undertaken in the first place).
-- **Objectives** - These are the overall project goals that will meet the needs of your customers.
-- **Deliverables** - The deliverables are the objects are that need to be produced. 
-- **Constraints and Limitations** - What are the barriers or things that must be adhered to? These are the requirement specifications for the project.
-- **Timeline** - How long the project will run for and any specific milestones or checkpoints along the way.
+- **Problem Statement:** The problem statement is an overall descriptive statement about what needs to be solved. It includes a justification for the project (explains why is it being undertaken in the first place).
+- **Objectives:** These are the overall project goals that will meet the needs of your customers.
+- **Deliverables:** The deliverables are the objects are that need to be produced. 
+- **Constraints and Limitations:** What are the barriers or things that must be adhered to? These are the requirement specifications for the project.
+- **Timeline:** How long the project will run for and any specific milestones or checkpoints along the way.
 
 We will deal with each of these in coming sections, but let's start with the Problem Statement.
 

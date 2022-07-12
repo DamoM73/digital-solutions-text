@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit 1: Generate Code &#8212; EDGE approach to Digital Solutions</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,16 +18,20 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -37,18 +39,18 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -61,21 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -84,10 +72,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -105,15 +92,14 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../intro.html">
-                    EDGE approach to Digital Solutions
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   EDGE approach to Digital Solutions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -796,17 +782,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
-    </div>
-    <div id="rtd-footer-container"></div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
 </div>
 
 
@@ -814,162 +795,77 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="header-article row sticky-top noprint">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F3_generate/2_generate_code/unit_1.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/3_generate/2_generate_code/unit_1.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/3_generate/2_generate_code/unit_1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F3_generate/2_generate_code/unit_1.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
     </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#basic-features-of-programming">
    Basic Features of Programming
@@ -1097,11 +993,12 @@ title="Print to PDF"
  </li>
 </ul>
 
-    </nav>
-</div>
+            </nav>
+        </div>
     </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Unit 1: Generate Code</h1>
@@ -1245,27 +1142,26 @@ title="Print to PDF"
                     </div>
                 </div>
             </div>
-            <main id="main-content" role="main">
-                
+            
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="unit-1-generate-code">
-<h1>Unit 1: Generate Code<a class="headerlink" href="#unit-1-generate-code" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="unit-1-generate-code">
+<h1>Unit 1: Generate Code<a class="headerlink" href="#unit-1-generate-code" title="Permalink to this headline">¶</a></h1>
 <p>In this section we will look at how we create code. We will look at  basic coding features and the types of operations.</p>
 <hr class="docutils" />
-<section id="basic-features-of-programming">
-<h2>Basic Features of Programming<a class="headerlink" href="#basic-features-of-programming" title="Permalink to this headline">#</a></h2>
+<div class="section" id="basic-features-of-programming">
+<h2>Basic Features of Programming<a class="headerlink" href="#basic-features-of-programming" title="Permalink to this headline">¶</a></h2>
 <p>Programs are created using six basic features. The skill of a programmer is knowing when and how to use these features.</p>
-<section id="variables">
-<h3>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h3>
+<div class="section" id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h3>
 <p>Variables are the names you give to computer memory locations which are used to store values in a computer program. Variables can store data of different types, and different variable types can do different things.</p>
 <p>In programming languages, there are two different type systems:</p>
 <ul class="simple">
 <li><p><strong>dynamic:</strong> type checking only occurs as the code runs, and the type of a variable is allowed to change over its lifetime.</p></li>
 <li><p><strong>static:</strong> type checks are performed without running the program. In most statically typed languages this is done as your program is compiled. The type of a variable is not allowed to change over its lifetime.</p></li>
 </ul>
-<section id="in-python">
-<h4>In Python<a class="headerlink" href="#in-python" title="Permalink to this headline">#</a></h4>
+<div class="section" id="in-python">
+<h4>In Python<a class="headerlink" href="#in-python" title="Permalink to this headline">¶</a></h4>
 <p>Python is a dynamically typed language.</p>
 <p>The Python data types that we will be using are:</p>
 <ul class="simple">
@@ -1305,13 +1201,13 @@ title="Print to PDF"
 </li>
 </ul>
 <p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fassigning.ipynb" target="_blank">How to assigning variables in Python</a></strong></p>
-</section>
-</section>
-<section id="conditions">
-<h3>Conditions<a class="headerlink" href="#conditions" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="conditions">
+<h3>Conditions<a class="headerlink" href="#conditions" title="Permalink to this headline">¶</a></h3>
 <p>A condition is the way that a computer asks a question. Computers can only generate two possible  responses to questions. Yes and No, or more precisely, True and False. A more formal definition is that a condition is a logical expression that evaluates to true or false.</p>
-<section id="id1">
-<h4>In Python<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h4>
+<div class="section" id="id1">
+<h4>In Python<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p>Conditions are part of <code class="docutils literal notranslate"><span class="pre">if</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code> statements. They have the syntax of <code class="docutils literal notranslate"><span class="pre">value</span></code> <code class="docutils literal notranslate"><span class="pre">operator</span></code> <code class="docutils literal notranslate"><span class="pre">value</span></code> with six possible operators:</p>
 <ul class="simple">
 <li><p>Equals: a == b</p></li>
@@ -1321,21 +1217,21 @@ title="Print to PDF"
 <li><p>Greater than: a &gt; b</p></li>
 <li><p>Greater than or equal to: a &gt;= b</p></li>
 </ul>
-</section>
-</section>
-<section id="control-structures">
-<h3>Control Structures<a class="headerlink" href="#control-structures" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="control-structures">
+<h3>Control Structures<a class="headerlink" href="#control-structures" title="Permalink to this headline">¶</a></h3>
 <p>Flow of control through any given function is implemented with three basic types of control structures:</p>
 <ul class="simple">
 <li><p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fsequence.ipynb" target="_blank">Sequential</a></strong></p></li>
 <li><p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fselection.ipynb" target="_blank">Selection</a></strong></p></li>
 <li><p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fiteration.ipynb" target="_blank">Iteration</a></strong></p></li>
 </ul>
-</section>
-<section id="modularisation-functions">
-<h3>Modularisation (Functions)<a class="headerlink" href="#modularisation-functions" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="modularisation-functions">
+<h3>Modularisation (Functions)<a class="headerlink" href="#modularisation-functions" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><p>Modular programming refers to the process of breaking a large, unwieldy programming task into separate, smaller, more manageable subtasks or modules. Individual modules can then be cobbled together like building blocks to create a larger application <span id="id2">[<a class="reference internal" href="../../bibliography.html#id26" title="Christopher Bailey. Python modules and packages: an introduction (overview) – real python. 06 2022. URL: https://realpython.com/lessons/python-modules-packages-overview/#:~:text=Simplicity%3A%20Rather%20than%20focusing%20on (visited on 2022-06-22).">Bailey, 2022</a>]</span>.</p>
+<div><p>Modular programming refers to the process of breaking a large, unwieldy programming task into separate, smaller, more manageable subtasks or modules. Individual modules can then be cobbled together like building blocks to create a larger application <span id="id2">[<a class="reference internal" href="../../bibliography.html#id26">Bailey, 2022</a>]</span>.</p>
 </div></blockquote>
 <p>There are several advantages to modularizing code in a large application:</p>
 <ul class="simple">
@@ -1366,11 +1262,11 @@ title="Print to PDF"
 </li>
 </ul>
 <p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fmodular.ipynb" target="_blank">Using modularisation in Python</a></strong></p>
-</section>
-<section id="data-structures">
-<h3>Data Structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="data-structures">
+<h3>Data Structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><p>Data structures are used to store data in an organized form. No matter what problem are you solving, in one way or another you have to deal with data — whether it’s an employee’s salary, stock prices, a grocery list, or even a simple telephone directory. <span id="id3">[<a class="reference internal" href="../../bibliography.html#id22" title="Fahim ul Haq. The top data structures you should know for your next coding interview. 07 2018. URL: https://www.freecodecamp.org/news/the-top-data-structures-you-should-know-for-your-next-coding-interview-36af0831f5e3/ (visited on 2022-06-14).">ul Haq, 2018</a>]</span></p>
+<div><p>Data structures are used to store data in an organized form. No matter what problem are you solving, in one way or another you have to deal with data — whether it’s an employee’s salary, stock prices, a grocery list, or even a simple telephone directory. <span id="id3">[<a class="reference internal" href="../../bibliography.html#id22">ul Haq, 2018</a>]</span></p>
 </div></blockquote>
 <p>Based on different scenarios, data will need to be stored in a specific format.</p>
 <p>In Python we will deal with four data structures:</p>
@@ -1431,18 +1327,18 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</section>
-<section id="syntax">
-<h3>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="syntax">
+<h3>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h3>
 <p>The syntax of a computer language is the set of rules that defines the combinations of symbols that are considered to be correctly structured statements or expressions in that language.</p>
 <p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=basic_prog_feat%2Fsyntax.ipynb" target="_blank">Learn about Python’s syntax</a></strong></p>
-</section>
-<section id="libraries">
-<h3>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="libraries">
+<h3>Libraries<a class="headerlink" href="#libraries" title="Permalink to this headline">¶</a></h3>
 <p>A software library refers to a collection of files, programs, routines, scripts, or functions referenced in the programming code. Python comes with a standard library which provides basic functionality. Python allows you to install additional libraries, as well as create your own.</p>
-</section>
-<section id="classes">
-<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
 <p>Classes and object are basic building blocks in object-oriented programming languages. A class is written by a programmer in a defined structure to create an object in an object-oriented programming language. It defines a set of properties and methods that are common to all objects of one type.</p>
 <p>For example, a class could be a car, which could have a colour field, four tire fields, and a drive method.</p>
 <p>Another related class could be a truck, which would have similar fields, but not be exactly the same as a car. Both a car and a truck could be a kind of a third class which could be called a vehicle class. In this way, the programmer could create the parts of the program that are the same for both the car and the truck in programming the vehicle class, yet the programmer would be free to program how a car is different from a truck without duplicating all of the programming.</p>
@@ -1453,9 +1349,9 @@ title="Print to PDF"
 <li><p><strong>attributes:</strong> store data; you could have a colour field, a speed field and a size field.</p></li>
 </ul>
 <p>You can call methods by first making an object of the Car or Truck class, and call it for example <code class="docutils literal notranslate"><span class="pre">ferrari</span></code>, and doing <code class="docutils literal notranslate"><span class="pre">ferrari.methodName()</span></code>. In this case, if we wanted to make the vehicle move, we could do <code class="docutils literal notranslate"><span class="pre">ferrari.drive(distance)</span></code>.</p>
-</section>
-<section id="scope-local-and-global-variables">
-<h3>Scope: Local and Global Variables<a class="headerlink" href="#scope-local-and-global-variables" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="scope-local-and-global-variables">
+<h3>Scope: Local and Global Variables<a class="headerlink" href="#scope-local-and-global-variables" title="Permalink to this headline">¶</a></h3>
 <p>In programming, the scope of a name defines the area of a program in which you can unambiguously access that name, such as variables, functions, objects, and so on. A name will only be visible to and accessible by the code in its scope. Several programming languages take advantage of scope for avoiding name collisions and unpredictable behaviours. Most commonly, you’ll distinguish two general scopes:</p>
 <ul class="simple">
 <li><p><strong>Global scope:</strong> The names that you define in this scope are available to all your code.</p></li>
@@ -1463,8 +1359,8 @@ title="Print to PDF"
 </ul>
 <p>Scope came about because early programming languages (like BASIC) only had global names. With this kind of name, any part of the program could modify any variable at any time, so maintaining and debugging large programs could become a real nightmare. To work with global names, you’d need to keep all the code in mind at the same time to know what the value of a given name is at any time. This was an important side-effect of not having scopes.</p>
 <p>Some languages like Python use scope to avoid this kind of problem. When you use a language that implements scope, there’s no way for you to access all the variables in a program at all locations in that program. In this case, your ability to access a given name will depend on where you’ve defined that name.</p>
-<section id="using-the-legb-rule-for-python-scope">
-<h4>Using the LEGB Rule for Python Scope<a class="headerlink" href="#using-the-legb-rule-for-python-scope" title="Permalink to this headline">#</a></h4>
+<div class="section" id="using-the-legb-rule-for-python-scope">
+<h4>Using the LEGB Rule for Python Scope<a class="headerlink" href="#using-the-legb-rule-for-python-scope" title="Permalink to this headline">¶</a></h4>
 <p>Python resolves names using the so-called LEGB rule, which is named after the Python scope for names. The letters in LEGB stand for Local, Enclosing, Global, and Built-in. Here’s a quick overview of what these terms mean:</p>
 <ul class="simple">
 <li><p><strong>Local (or function) scope:</strong> the code block or body of any Python function or lambda expression. This Python scope contains the names that you define inside the function. These names will only be visible from the code of the function. It’s created at function call, not at function definition, so you’ll have as many different local scopes as function calls. This is true even if you call the same function multiple times, or recursively. Each call will result in a new local scope being created.</p></li>
@@ -1473,9 +1369,9 @@ title="Print to PDF"
 <li><p><strong>Built-in scope:</strong> a special Python scope that’s created or loaded whenever you run a script or open an interactive session. This scope contains names such as keywords, functions, exceptions, and other attributes that are built into Python. Names in this Python scope are also available from everywhere in your code. It’s automatically loaded by Python when you run a program or script.</p></li>
 </ul>
 <p>The LEGB rule is a kind of name lookup procedure, which determines the order in which Python looks up names. For example, if you reference a given name, then Python will look that name up sequentially in the local, enclosing, global, and built-in scope. If the name exists, then you’ll get the first occurrence of it. Otherwise, you’ll get an error.</p>
-</section>
-<section id="scope-limitations-on-actions">
-<h4>Scope limitations on actions<a class="headerlink" href="#scope-limitations-on-actions" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="scope-limitations-on-actions">
+<h4>Scope limitations on actions<a class="headerlink" href="#scope-limitations-on-actions" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Action</p></th>
@@ -1517,18 +1413,18 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-</section>
-</section>
-<section id="event-triggers">
-<h3>Event Triggers<a class="headerlink" href="#event-triggers" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="event-triggers">
+<h3>Event Triggers<a class="headerlink" href="#event-triggers" title="Permalink to this headline">¶</a></h3>
 <p>Events are “things” that happen as a result of something occurring. On a webpage, an event can be something that the browser does or something that the user does.</p>
 <p>These can include things like the web page finishing loading, text being typed into an input box or a button being clicked.</p>
 <p>Many languages call certain code be executed as a result of a certain event occurring. Webpages allow event handler attributes, with JavaScript code, to be added to HTML elements</p>
-</section>
-</section>
+</div>
+</div>
 <hr class="docutils" />
-<section id="operations">
-<h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">#</a></h2>
+<div class="section" id="operations">
+<h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">¶</a></h2>
 <p>Operators are used to perform operations on variables and values.</p>
 <p>Python divides the operators in the following groups:</p>
 <ul class="simple">
@@ -1540,8 +1436,8 @@ title="Print to PDF"
 <li><p>Membership operators</p></li>
 <li><p>Bitwise operators</p></li>
 </ul>
-<section id="arithmetic-operators">
-<h3>Arithmetic Operators<a class="headerlink" href="#arithmetic-operators" title="Permalink to this headline">#</a></h3>
+<div class="section" id="arithmetic-operators">
+<h3>Arithmetic Operators<a class="headerlink" href="#arithmetic-operators" title="Permalink to this headline">¶</a></h3>
 <p>Arithmetic operators are used with numeric values to perform common mathematical operations.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1584,9 +1480,9 @@ title="Print to PDF"
 <p>In Python addition, subtraction, and multiplication are all strait forward and do exactly like you would expect. Note: that brackets <code class="docutils literal notranslate"><span class="pre">(</span></code> and <code class="docutils literal notranslate"><span class="pre">)</span></code> work the same as they would in mathematical equations.</p>
 <p>It is worth checking out how division, modulus, floor division and exponentiation work.</p>
 <p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Farithmetic_ops.ipynb" target="_blank">Arithmetic operators examples</a></strong></p>
-</section>
-<section id="assignment-operators">
-<h3>Assignment Operators<a class="headerlink" href="#assignment-operators" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="assignment-operators">
+<h3>Assignment Operators<a class="headerlink" href="#assignment-operators" title="Permalink to this headline">¶</a></h3>
 <p>The standard assignment operator <code class="docutils literal notranslate"><span class="pre">=</span></code> is used to assign values to a variable.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1632,9 +1528,9 @@ title="Print to PDF"
 </table>
 <p>The other assignment operators <code class="docutils literal notranslate"><span class="pre">+=</span></code>, <code class="docutils literal notranslate"><span class="pre">-=</span></code>, <code class="docutils literal notranslate"><span class="pre">*=</span></code>, etc. adjust a variable by operation sign and the value provided.</p>
 <p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Fassign_ops.ipynb" target="_blank">Assignment operators examples</a></strong></p>
-</section>
-<section id="comparison-operators">
-<h3>Comparison Operators<a class="headerlink" href="#comparison-operators" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="comparison-operators">
+<h3>Comparison Operators<a class="headerlink" href="#comparison-operators" title="Permalink to this headline">¶</a></h3>
 <p>Comparison operators are used to compare two values, and will return a value of <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1672,9 +1568,9 @@ title="Print to PDF"
 </table>
 <p>Comparisons can be between values, variables, calculations or even the results of a function call.</p>
 <p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Fcomparison_ops.ipynb" target="_blank">Comparison operators examples</a></strong></p>
-</section>
-<section id="logical-operators">
-<h3>Logical Operators<a class="headerlink" href="#logical-operators" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="logical-operators">
+<h3>Logical Operators<a class="headerlink" href="#logical-operators" title="Permalink to this headline">¶</a></h3>
 <p>Logical operators are used to combine conditional statements. The truthiness of the conditions is tested, and then operator combines the resulting Boolean values to produce either <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1699,9 +1595,9 @@ title="Print to PDF"
 </tbody>
 </table>
 <p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Flogical_ops.ipynb" target="_blank">Logical operators examples</a></strong></p>
-</section>
-<section id="identity-operators">
-<h3>Identity Operators<a class="headerlink" href="#identity-operators" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="identity-operators">
+<h3>Identity Operators<a class="headerlink" href="#identity-operators" title="Permalink to this headline">¶</a></h3>
 <p>Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1722,9 +1618,9 @@ title="Print to PDF"
 </tbody>
 </table>
 <p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Fidenity_ops.ipynb" target="_blank">Identity operators examples</a></strong></p>
-</section>
-<section id="membership-operators">
-<h3>Membership Operators<a class="headerlink" href="#membership-operators" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="membership-operators">
+<h3>Membership Operators<a class="headerlink" href="#membership-operators" title="Permalink to this headline">¶</a></h3>
 <p>Membership operators are used to test if a sequence is presented in an object (list, tuple or string).</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1745,9 +1641,9 @@ title="Print to PDF"
 </tbody>
 </table>
 <p><strong><a href="https://mybinder.org/v2/gh/DamoM73/edge-approach-to-digital-solutions/HEAD?labpath=operators%2Fmember_op.ipynb" target="_blank">Membership operators examples</a></strong></p>
-</section>
-<section id="bitwise-operators">
-<h3>Bitwise Operators<a class="headerlink" href="#bitwise-operators" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="bitwise-operators">
+<h3>Bitwise Operators<a class="headerlink" href="#bitwise-operators" title="Permalink to this headline">¶</a></h3>
 <p>Bitwise operators are used to compare (binary) numbers. Realistically we are not going to use these, but it worth knowing they exist in case you come across them in some code.</p>
 <table class="colwidths-auto table">
 <thead>
@@ -1783,9 +1679,9 @@ title="Print to PDF"
 </tr>
 </tbody>
 </table>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1809,11 +1705,9 @@ title="Print to PDF"
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="../2_generate_code.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1829,28 +1723,24 @@ title="Print to PDF"
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            </footer>
+            
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By Damien Murtagh<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+    <footer class="footer">
+  <p>
     
-</div>
+      By Damien Murtagh<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>
