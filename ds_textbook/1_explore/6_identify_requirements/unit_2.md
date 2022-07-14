@@ -4,33 +4,45 @@ In addition to the requirements from Unit 1, you also need to consider
 ## Programming options
 
 ### Data models
-Data modelling is a process used to define and analyse data requirements.
+> Data modeling (data modelling) is the process of creating a data model for the data to be stored in a database. This data model is a conceptual representation of Data objects, the associations between different data objects, and the rules. {cite}`taylor_2018_what` 
 
-Data modelling requires the organization of data into tables, and accounts for access, performance and storage details. 
+It is defined as an abstract model that organizes:
+- data description
+- data semantics
+- consistency constraints 
 
-> Data modelling defines not just data elements, but also their 
-structures and the relationships between them. {cite}`wikipediacontributors_2019_data`
+Data models emphasizes on what data is needed and how it should be organized instead of what operations will be performed on data. 
 
-> Data modelling helps in the visual representation of data and 
-enforces business rules, regulatory compliances, and government policies on the data. Data Models ensure consistency in naming conventions, default values, semantics, security while ensuring quality of the data. {cite}`taylor_2018_what`
-
-The data model emphasizes on what data is needed and how it should be organized instead of what operations will be performed on data. Data Model is like an architect's building plan, which helps to build 
-conceptual models and set a relationship between data items.
-
-
-
-In this course we will focus on creating data models using Entity-relationship models. 
 The primary goal of using data model are:
-- Ensure that all data objects required by the database are accurately represented. Omission of 
-data will lead to creation of faulty reports and produce incorrect results.
-- To identify missing and redundant data. (Guru99, 2021)
+- ensuring that all data objects required by the database are accurately represented.
+- help designing the database at the logical level
+- defining the relational tables, primary and foreign keys and stored procedures.\
+- providing a clear picture of the base data and can be used by database developers to create a physical level
+- identifying missing and redundant data
+- making IT infrastructure upgrades and maintenance cheaper and faster
 
+In this course we will be creating data models using Enity Relationship models.
 
 ### Storage
+Data storage requirements can relate to either policies and procedures that need to be adhered to for 
+the safe storage, use and destruction of data and also to the physical and software requirements of 
+storing that information. 
 
+The safe storage of data is atopic that will be more closely investigated in Unit 4. For Unit 2 we are concern with storing data in way that ensures:
+- data integrity
+- data validity
+- data reliability
+
+You will need to consider:
+- Where will the data be stored (locally or remotely on a server)?
+- What file format will be used to store the data?
+- How will the data be backed-up?
+- What security will the data need?
 
 ### Output requirements
+The problem will have some explicit output requirements. What does the user need the application to provide?
 
+Identiying the output requirements, will help determine the data needed, and identify any missing data.
 
 ---
 ## Data Insertion

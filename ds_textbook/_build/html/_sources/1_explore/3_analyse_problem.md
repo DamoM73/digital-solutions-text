@@ -15,7 +15,7 @@ We use the UML Use Case Diagram to help identify the scope of the program and th
 ![Use Case Symbols](../1_explore/assests/use_case_symbols.png)
 
 ## For Units 2 to 4
-In addition to the requirements of Unit 1, you need to be cafeful wit hpw you represent databases in your Use Case Diagram.
+In addition to the requirements of Unit 1, you need to be cafeful with the representation of databases in the Use Case Diagram.
 
 |Type of Database|Use Case Representation|
 |:---------------|:----------------------|

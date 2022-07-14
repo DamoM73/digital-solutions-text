@@ -38,6 +38,21 @@ Consider this example for the DIWK Pyramid in action
 ### What is data-driven programming
 For the purposes of this course, data-driven programming filters, transforms and aggregates structured data.
 
+## Working with data
+A data driven application can be though as having three different viewing layers:
+- **External layer:** 
+  - what the end user will see (UI)
+  - ensure the data is represented in a way that enhances understanding
+- **Internal layer:** 
+  - relates to the underlying operational and physical storage such a file systems, management systems etc. 
+  - modern computer technologies automate this process.
+- **Logical layer:**
+  - conceptually sits between exteral layer and internal layer
+  - relates to how data is stored that ensures:
+    - **data integrity:** data is maintained to to continue to have meaning and value
+    - **data reliablity:** the abilty to trust that data accurately reflects the facts descriptions or actions it is representing
+    - **data validity:** the data meets defined formats, rules and criteria or order to maintain integrity and reliablity
+  - usually symbolic or structured representations that show links between data
 ---
 ## Changes to the Problems statement
 From Unit 2 in establishing the scope of your project you will need to also consider the data involved. Specficically you will need incorporate the problem's data driven nature as part of the problem description.

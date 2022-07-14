@@ -5,7 +5,7 @@
 - mind maps
 - requirments table
 ```
-## For Units 1 to 4
+## For Unit 1
 At this stage of the exploration you should have a clear idea of what the project demands of you.
 
 Identify the function and non-functional requirements that the project is explicitly and implicitly asking for and add them to the mind map under requirements.
@@ -13,6 +13,9 @@ Identify the function and non-functional requirements that the project is explic
 
 Now expand the requirements using the Requirements Table under the headings of must, should, could and won't.
 ![Requirements table](./assests/MuSCoW.png)
+
+## For Unit 2 to 4
+In addition to the Unit 1 requirements, you also need to 
 
 ```{admonition} Unit 1 subject matter covered:
 - analyse a given problem to identify the requirements of the solution
