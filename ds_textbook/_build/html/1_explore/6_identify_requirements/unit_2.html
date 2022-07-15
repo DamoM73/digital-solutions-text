@@ -45,6 +45,8 @@
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -915,6 +917,11 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-to-the-mind-map">
+   Adding to the mind map
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -984,6 +991,11 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-to-the-mind-map">
+   Adding to the mind map
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -1019,7 +1031,7 @@
 <li><p>identifying missing and redundant data</p></li>
 <li><p>making IT infrastructure upgrades and maintenance cheaper and faster</p></li>
 </ul>
-<p>In this course we will be creating data models using Enity Relationship models.</p>
+<p>In this course we will be creating data models using Entity Relationship models.</p>
 </div>
 <div class="section" id="storage">
 <h3>Storage<a class="headerlink" href="#storage" title="Permalink to this headline">¶</a></h3>
@@ -1043,24 +1055,123 @@ storing that information.</p>
 <div class="section" id="output-requirements">
 <h3>Output requirements<a class="headerlink" href="#output-requirements" title="Permalink to this headline">¶</a></h3>
 <p>The problem will have some explicit output requirements. What does the user need the application to provide?</p>
-<p>Identiying the output requirements, will help determine the data needed, and identify any missing data.</p>
+<p>Identifying the output requirements, will help determine the data needed, and identify any missing data.</p>
 </div>
 </div>
 <hr class="docutils" />
 <div class="section" id="data-insertion">
 <h2>Data Insertion<a class="headerlink" href="#data-insertion" title="Permalink to this headline">¶</a></h2>
+<p>In order to be able to store data into a database there are a number of important processes that need to be followed to make sure that the data that is stored is usable.</p>
+<p>These issues can relate to variations in data formats, data structures, validation rules and data
+requirements.</p>
 <div class="section" id="data-formats">
 <h3>Data formats<a class="headerlink" href="#data-formats" title="Permalink to this headline">¶</a></h3>
+<p>The storage of data needs to be consistent. That means the way that one data point is stored is the same from record to record. For example 100,000 and <span class="math notranslate nohighlight">\(10^5\)</span> are the same number, but they are formatted differently. Before designing a database and storing data, the accepted format of this data needs to be decided.</p>
+<p>Some common data formats that need to be established:</p>
+<ul class="simple">
+<li><p><strong>Dates:</strong></p>
+<ul>
+<li><p>dates have the widest range of accepted range of formats</p></li>
+<li><p>date formatting is represented by:</p>
+<ul>
+<li><p>d: day</p></li>
+<li><p>m: month</p></li>
+<li><p>y: year</p></li>
+</ul>
+</li>
+<li><p>common date formats (example is 13th August 1984):</p>
+<ul>
+<li><p>dd/mm/yyyy    13/08/1984</p></li>
+<li><p>dd/mm/yy      13/08/84</p></li>
+<li><p>d/m/yy        13/8/84</p></li>
+<li><p>mm/dd/yyyy    08/13/1984 (US date style)</p></li>
+<li><p>yyyymmdd      19840813</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Time:</strong></p>
+<ul>
+<li><p>time of day also has a range of accepted formats</p></li>
+<li><p>time of day formatting is represented by:</p>
+<ul>
+<li><p>H: 24hr hour</p></li>
+<li><p>h: 12hr hour</p></li>
+<li><p>m: minute</p></li>
+<li><p>s: second</p></li>
+<li><p>A: AM or PM</p></li>
+</ul>
+</li>
+<li><p>common time of day formats (example is 1:15pm)</p>
+<ul>
+<li><p>HH:mm     13:15</p></li>
+<li><p>hh:mmA    01:15pm</p></li>
+<li><p>h:mmA     1:15pm</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Numbers:</strong></p>
+<ul>
+<li><p>numbers and are often formatted in a specific way (eg. phone numbers and currency) or may be expected to have specific number of places after the decimal point.</p></li>
+<li><p>numbers formatting is represented by:</p>
+<ul>
+<li><p>0: required digit between 0 and 9</p></li>
+<li><p>9: optional number between 0 and 9</p></li>
+</ul>
+</li>
+<li><p>common number formats:</p>
+<ul>
+<li><p>mobile number:    0000 000 000</p></li>
+<li><p>landline number:  (00) 0000 0000</p></li>
+<li><p>postcode:         0000</p></li>
+<li><p>currency:         $ 90.00</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="section" id="data-structures">
 <h3>Data structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h3>
+<p>The two basic data structures that this course deals with are:</p>
+<ul class="simple">
+<li><p><strong>flat file databases:</strong> information is stored in a single table</p></li>
+<li><p><strong>relational databases:</strong> information is stored in many, interconnected tables</p></li>
+</ul>
+<p>This course will be dealing with relational databased, but the source data may be in a flat file database. Data from flat file databases will have to be parsed to be converted into the form acceptable for the relational database.</p>
 </div>
 <div class="section" id="validation-rules">
 <h3>Validation rules<a class="headerlink" href="#validation-rules" title="Permalink to this headline">¶</a></h3>
+<p>Data can have a limited range of acceptable values. Validation rules restrict data values to within these limitations.</p>
+<p>The limitations may be length, types of characters, range of numerical values or more. The data being sourced needs to validated against these limitation before it can be entered into the database.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>mobile numbers requiring 10 digits</p></li>
+<li><p>passwords requiring 8 characters or more, at least one uppercase and lower case, at least one digit</p></li>
+<li><p>the quantity of an item in a sale has to be less than the number of that item in stock</p></li>
+<li><p>age must be greater than 0</p></li>
+</ul>
 </div>
 <div class="section" id="data-requirements">
 <h3>Data requirements<a class="headerlink" href="#data-requirements" title="Permalink to this headline">¶</a></h3>
+<p>Before developing a database you will need to identify all the data that will need to be stored in the database. This is <strong>vital</strong>. Once a database is implemented and in use, it is a painstaking task to make significant changes to the data structure.</p>
 </div>
+</div>
+<hr class="docutils" />
+<div class="section" id="adding-to-the-mind-map">
+<h2>Adding to the mind map<a class="headerlink" href="#adding-to-the-mind-map" title="Permalink to this headline">¶</a></h2>
+<p>In the Explore Phase you need to consider both programming options and insertion problems and record the identified requirements in the mind map.</p>
+<p><img alt="mind map data" src="../../_images/mm_data.png" /></p>
+<p>You will need to consider the following issues:</p>
+<ul class="simple">
+<li><p>data models</p></li>
+<li><p>storage</p></li>
+<li><p>output requirements</p></li>
+<li><p>data formats</p></li>
+<li><p>validation rules</p></li>
+<li><p>data requirements</p></li>
+</ul>
 </div>
 </div>
 

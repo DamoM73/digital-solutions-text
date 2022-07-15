@@ -15,7 +15,17 @@ Now expand the requirements using the Requirements Table under the headings of m
 ![Requirements table](./assests/MuSCoW.png)
 
 ## For Unit 2 to 4
-In addition to the Unit 1 requirements, you also need to 
+In addition to the Unit 1 requirements, you also need to consider both programming options and insertion problems and record the identified requirements in the mind map.
+
+![mind map data](./assests/mm_data.png)
+
+You will need to consider the following issues:
+- data models
+- storage
+- output requirements
+- data formats
+- validation rules
+- data requirements
 
 ```{admonition} Unit 1 subject matter covered:
 - analyse a given problem to identify the requirements of the solution
