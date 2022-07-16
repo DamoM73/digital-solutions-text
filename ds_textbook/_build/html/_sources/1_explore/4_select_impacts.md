@@ -4,7 +4,7 @@
 :class: attention
 - mind maps
 ```
-## For Units 1 to 4
+## For Unit 1
 When selecting impacts the developer needs to consider what they hope to achieve with the solution.
 
 The types of impacts you can consider:
@@ -47,6 +47,18 @@ The types of impacts you can consider:
 This decision is recorded in the mind map.
 
 ![impacts mind map](./assests/mm_impact.png)
+
+## For Units 2 to 4
+In addition to the impacts from Unit 1, you can also consider the impacts that result from the use of data. 
+
+Consider impact resulting from:
+- Transparency, accountability and empowerment of users
+- Business opportunities including for data intermediaries and start-ups
+- Co-operation and competition across sectors and countries
+- Crowdsourcing new insights and user-driven innovation
+- Increased efficiency across society through data linkage and integration
+
+These impacts will still be recorded within the categories of personal, social, economic and environmental on the mind map.
 
 ```{admonition} Unit 1 subject matter covered:
 - understand and describe personal, social and economic impacts

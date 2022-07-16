@@ -43,4 +43,4 @@ For example:
 - data linkage and integration may also be critical for deploying smart applications across sectors, such as for smart cities. The data produced and collected in these cities are created by multiple actors.
 
 ## Selecting Impacts
-The information above will help you idenfity additional impacts personal, social, economic and environmental impact which you can incorporate into your mind map
+The information above will help you identify additional impacts personal, social, economic and environmental impact which you can incorporate into your mind map

@@ -29,4 +29,4 @@ First Mikey is now in a relationship, and it is getting serious. His partner, wh
 
 Speaking of records, Mikey would like to start viewing some stats about his hangman playing. Specifically he would like to know: how many games he has played, how many lost, how many won, and the win-loss percentage. He would also like to know what was the longest word he's guessed, and which word he has missed the most. He would also a word not to repeat once he has guessed it.
 
-Mikey has also found a dictionary spreadsheet with a heap of words that he would like the program to use. This spreadsheet has other details that he thinks might be useful, but he's not sure how to use them yet.
+Mikey has also found a dictionary spreadsheet with more words than the current list, so he would like the program to use this. This spreadsheet has other details that he thinks might be useful, but he's not sure how to use them yet.
