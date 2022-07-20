@@ -89,6 +89,8 @@ design.
 #### Alignment
 Alignment can be used to provide unity and proximity to the different elements used in the design. Good alignment aids readability and shows connections between different elements. Objects that are perfectly aligned provide a cleaner aesthetic and more professional appearance which inspires trust and confidence.
 
+![alignment](../assets/alignment.png)
+
 #### Repetition
 Repetition of the same element throughout the design brings consistency, unity and cohesion. For example, repetition of the same icon or button shape can reduce cognitive load and improve learnability for the user. However, too much repetition can become monotonous. Small variations in line, tone or colour to a repeated element can restore interest in the design and helps to retain user attention.
 
@@ -102,3 +104,6 @@ Hierarchy improves readability of the interface by emphasising more important el
 ---
 ## Demonstrating Visual Communication
 
+You will demonstrate your use of Visual Communication Principles and Elements in your annotated mock-ups. When adding your annotations, make sure that you bold the principles and elements that you at talking about. 
+
+![VC example](../assets/vc_example.png)

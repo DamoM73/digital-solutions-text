@@ -5,7 +5,7 @@
 - XD Mock-ups
 - QT Designer Mock-ups
 ```
-## For Units 1 to 4
+## For Units 1 to 3
 In designing our UI and UX we need to incorporate **Useability Principles**.
 
 Useability Principles are:
@@ -18,6 +18,33 @@ Useability Principles are:
 The design of the UI is shown through an **annotated mockup**
 
 ![annotated mockup](./assets/annotation.png)
+
+## For Units 2 to 3
+In additional to the requirements of Unit 1 (Useability Principles) you will also need to address the use of Visual Communication Principles and Visual Communications Elements.
+
+**Visual Communication Principles:**
+- Balance
+- Contrast
+- Proximity
+- Harmony
+- Alignment
+- Repetition
+- Hierarchy
+
+**Visual Communications Principles:**
+- Space
+- Line
+- Colour
+- Shape
+- Texture
+- Tone
+- Form
+- Proportion
+- Scale
+
+The use of Visual Communication should be demonstrated through annotated mockups.
+
+![VC example](./assets/vc_example.png)
 
 ```{admonition} Unit 1 subject matter covered:
 - recognise and describe the meaning and importance of user experience
