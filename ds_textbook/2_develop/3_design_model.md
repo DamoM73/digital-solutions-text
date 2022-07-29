@@ -7,12 +7,19 @@
 - Data Dictionaries
 - Relational Schemas
 ```
-## For Unit 1
+## For Units 1
 Data Stores are not addressed in Unit 1. For the purposes of developing your solution, you need to consider two things:
 1. What data will you need to collect and keep temporarily (whilst the program is running)
 2. What data will you need to load from or save to a file.
 
 This information can be add to your mind map.
+
+## For Units 2 to 3
+For units 2 to 3 the Model component of the MVC Architecture (datastore) is going to be a database. You will be responsible for the designing of this database.
+
+To design the database we will follow the steps outlined in the diagram below down to in the tasks steps in green (Data Dictionary and Relational Schema)
+
+![Database Design Process](./assets/db_design_process.png)
 
 ```{admonition} Unit 2 subject matter covered:
 - recognise data types, constraints, and primary and foreign keys
