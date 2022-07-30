@@ -17,7 +17,8 @@ This information can be add to your mind map.
 ## For Units 2 to 3
 For units 2 to 3 the Model component of the MVC Architecture (datastore) is going to be a database. You will be responsible for the designing of this database.
 
-To design the database we will follow the steps outlined in the diagram below.
+To design the database we will follow the steps outlined in the diagram below down to in the tasks steps in green (Data Dictionary and Relational Schema)
+
 ![Database Design Process](./assets/db_design_process.png)
 
 ```{admonition} Unit 2 subject matter covered:
