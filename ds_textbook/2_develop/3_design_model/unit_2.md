@@ -223,7 +223,11 @@ Sample tables are used to ensure that the database structure that the ERD produc
 
 You should create tables that reflects the entities identified and attributes identified by the ERD. Then fill the table with sample data. This data may be given to you, or you may produce mock data that is representative of data that will be stored in the database. A good resource for creating mock data is **<a href="https://www.mockaroo.com/" target="_blank">mockaroo</a>**.
 
+Below are the sample tables for the **Student Subject Database**.
 
+![Teacher table](../assets/sample_table_1.png)
+
+![]
 
 ## Normalisation
 
