@@ -5,7 +5,7 @@ The following technologies are used throughout this text.
 ## Programming Language
 We will be using Python as our programming language for this course. Specifically we will be using Python 3.10 or later (3.1X).
 
-To install Python go to the **[downloads section of the Python website](https://www.python.org/downloads/)** and choose the installer for your OS.
+To install Python go to the **<a href="https://www.python.org/downloads/" target="_blank">downloads section of the Python website</a>** and choose the installer for your OS.
 
 <font color=red>**Really important for Windows users (hence the red):** You need to make sure that you check the box beside **Add Python 3.1X to PATH**. Failure to do this will hamper the use of Python on Windows, and when you have a problem, I will just tell you to reinstall it using the instructions that you should have used the first time.</font>
 
@@ -14,12 +14,12 @@ To install Python go to the **[downloads section of the Python website](https://
 ![python installer](./assests/pytyon_installer.png)
 
 ### Packages
-Python comes installed with a range of packages. This is called **[The Python Standard Library](https://docs.python.org/3/library/)**. Although these might seem like a huge number of packages, it is actually a very small selection of packages available. These cover Python's basic operations, and limiting the install to these packages reduces the size of Python. 
+Python comes installed with a range of packages. This is called **<a href="https://docs.python.org/3/library/" target="_blank">The Python Standard Library</a>**. Although these might seem like a huge number of packages, it is actually a very small selection of packages available. These cover Python's basic operations, and limiting the install to these packages reduces the size of Python. 
 
-To extend the functionality of Python, you need to install additional packages. These packages can be found at the **[Python Package Index](https://pypi.org/)**. Some of the packages we will use are:
+To extend the functionality of Python, you need to install additional packages. These packages can be found at the **<a href="https://pypi.org/" target="_blank">Python Package Index</a>** **[]()**. Some of the packages we will use are:
 
-- **[PyQt6](https://pypi.org/)**
-- **[Requests](https://pypi.org/project/requests/)**
+- **<a href="https://pypi.org/project/PyQt6/" target="_blank">PyQt6</a>**
+- **<a href="https://pypi.org/project/requests/" target="_blank">Requests</a>**
 
 To install the packages, we will be using Python's built-in package installer `pip`.
 
@@ -39,7 +39,7 @@ An IDE (or Integrated Development Environment) is a program dedicated to softwar
 
 In contrast, a dedicated code editor can be as simple as a text editor with syntax highlighting and code formatting capabilities. Most good code editors can execute code and control a debugger. The very best ones interact with source control systems as well. Compared to an IDE, a good dedicated code editor is usually smaller and quicker, but often less feature rich.
 
-We will be using Visual Studio Code (VS Code) (**[download from here](https://code.visualstudio.com/)**) which is a code editor, although, we will use a range extensions to expand its capability so that is it almost and IDE.
+We will be using Visual Studio Code (VS Code) (**<a href="https://code.visualstudio.com/" target="_blank">download from here</a>**) which is a code editor, although, we will use a range extensions to expand its capability so that is it almost and IDE.
 
 Importantly, the extended VS Code will allows us to:
 - **Save and reload code files** - allows you to save your work and reopen everything later, in the same state it was in when you left.
@@ -51,48 +51,48 @@ Importantly, the extended VS Code will allows us to:
 ### Extensions
 We will be using the below extensions in VS Code to expand it's capabilities:
 
-- **[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)**
-- **[Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)**
-- **[Visual Studio IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)**
-- **[Qt for Python](https://marketplace.visualstudio.com/items?itemName=seanwu.vscode-qt-for-python)**
-- **[SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)**
-- **[Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)**
+- **<a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank">Python</a>**
+- **<a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance" target="_blank">Pylance</a>**
+- **<a href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode" target="_blank">Visual Studio IntelliCode</a>**
+- **<a href="https://marketplace.visualstudio.com/items?itemName=seanwu.vscode-qt-for-python" target="_blank">Qt for Python</a>**
+- **<a href="https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite" target="_blank">SQLite</a>**
+- **<a href="https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv" target="_blank">Rainbow CSV</a>**
 
 You can also install various icon and colour themes. For this course I will be using the extensions below, but you can use whatever you like.
 
-- **[Neon Vomit Colour Theme](https://marketplace.visualstudio.com/items?itemName=ghgofort.neon-vommit)**
-- **[Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)**
+- **<a href="https://marketplace.visualstudio.com/items?itemName=ghgofort.neon-vommit" target="_blank">Neon Vomit Colour Theme</a>**
+- **<a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank">Material Icon Theme</a>**
 
 ---
 ## Version Control
 Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time.
 
 ### Git
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is naturally incorporated into VS Code, but you will need to **[download and install the Git client](https://git-scm.com/downloads)** for it to work properly.
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Git is naturally incorporated into VS Code, but you will need to **<a href="https://git-scm.com/downloads" target="_blank">download and install the Git client</a>** for it to work properly.
 
 ### Github
-**[GitHub](https://github.com/)** is a provider of internet hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project. It is commonly used to host open-source projects. As of November 2021, GitHub reports having over 73 million developers and more than 200 million repositories (including at least 28 million public repositories).
+**<a href="https://github.com/" target="_blank">GitHub</a>** is a provider of internet hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project. It is commonly used to host open-source projects. As of November 2021, GitHub reports having over 73 million developers and more than 200 million repositories (including at least 28 million public repositories).
 
-We will be using GitHub to host your code for this course. If you don't already have an account, got to **[GitHub](https://github.com/)** and register. Use your personal email to register, as this is a tool you should be using after school, and you may wish to access the code you make during this course.
+We will be using GitHub to host your code for this course. If you don't already have an account, got to **<a href="https://github.com/" target="_blank">GitHub</a>** and register. Use your personal email to register, as this is a tool you should be using after school, and you may wish to access the code you make during this course.
 
-To make working with GitHub easier, we will also be using **[GitHub Desktop](https://desktop.github.com/)** which is a GUI interface for working with GitHub. It makes using GitHub significantly easier.
+To make working with GitHub easier, we will also be using **<a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>** which is a GUI interface for working with GitHub. It makes using GitHub significantly easier.
 
 ---
 ## Database Management System
 Database Management Systems (DBMS) are software systems used to store, retrieve, and run queries on data. A DBMS serves as an interface between an end-user and a database, allowing users to create, read, update, and delete data in the database. 
 
-In Unit 2 we will working with databases using SQL (Structured Query Language), in particular a version caller SQLite. Ultimately in Unit 3 we will designing and developing our own DBMS, but for Unit 2 we will use a lightweight DBMS called **[DB Browser for SQLite](https://sqlitebrowser.org/)**.
+In Unit 2 we will working with databases using SQL (Structured Query Language), in particular a version caller SQLite. Ultimately in Unit 3 we will designing and developing our own DBMS, but for Unit 2 we will use a lightweight DBMS called **<a href="https://sqlitebrowser.org/" target="_blank">DB Browser for SQLite</a>**.
 
 ---
 ## Other Tools
 ### FreeMind
-An important step in analysing and planning in Digital Solutions is using mind maps. There are many mind mapping tools available, both desktop and online, but I recommend that we use **[FreeMind](https://sourceforge.net/projects/freemind/)**. It's open source, has all the feature we need and it's desktop nature means it's always available. 
+An important step in analysing and planning in Digital Solutions is using mind maps. There are many mind mapping tools available, both desktop and online, but I recommend that we use **<a href="https://sourceforge.net/projects/freemind/" target="_blank">FreeMind</a>**. It's open source, has all the feature we need and it's desktop nature means it's always available. 
 
-### Diagrams.net
-Throughout the course you will need to create a range of diagrams. To do this we will use diagrams.net. You can use the **[online version](https://www.diagrams.net/)**, or you can download the **[desktop version](http://get.diagrams.net/)**. I personally use the desktop version to save my diagrams strait to my project folders.
+### Diagrams dot net
+Throughout the course you will need to create a range of diagrams. To do this we will use diagrams dot net. You can use the **<a href="https://www.diagrams.net/" target="_blank">online version</a>**, or you can download the **<a href="http://get.diagrams.net/" target="_blank">desktop version</a>**. I personally use the desktop version to save my diagrams straight to my project folders.
 
 ### Adobe XD
-We will be using Adobe XD to create wireframes, mockups, prototypes, and application interface flowcharts. To install Adobe XD you need to **[download and install Creative Cloud](https://creativecloud.adobe.com/en/apps/download/creative-cloud)**, log in using your school account and then choose to install Adobe XD.
+We will be using Adobe XD to create wireframes, mockups, prototypes, and application interface flowcharts. To install Adobe XD you need to **<a href="https://creativecloud.adobe.com/en/apps/download/creative-cloud" target="_blank">download and install Creative Cloud</a>**, log in using your school account and then choose to install Adobe XD.
 
 ### Qt Designer
-**[Qt Designer](https://build-system.fman.io/qt-designer-download)** is a tool for quickly building graphical user interfaces with widgets from the Qt GUI framework. It gives you a simple drag-and-drop interface for laying out components such as buttons, text fields, combo boxes and more. We will be using it throughout the course.
+**<a href="https://build-system.fman.io/qt-designer-download" target="_blank">Qt Designer</a>** is a tool for quickly building graphical user interfaces with widgets from the Qt GUI framework. It gives you a simple drag-and-drop interface for laying out components such as buttons, text fields, combo boxes and more. We will be using it throughout the course.
