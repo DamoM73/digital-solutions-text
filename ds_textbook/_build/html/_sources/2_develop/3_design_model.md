@@ -4,7 +4,6 @@
 :class: attention
 - Data Flow Diagrams
 - Entity Relationship Diagrams
-- Data Dictionaries
 - Relational Schemas
 ```
 ## For Units 1
