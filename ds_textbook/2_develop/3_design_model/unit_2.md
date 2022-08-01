@@ -194,6 +194,7 @@ Identifying the foreign keys establishes how the different entities are connecte
 Steps to establish foreign keys
 - choose a relationship
 - check the table on the many end for an attribute that naturally connects to the other entity
+  - ensure that the name of the foreign key reflects the primary key.
   - if you can't find one, you should add an attribute and name it after the primary key of the other entity
 - place a FK in front of the foreign key attribute
 - move the relationship so that it connects the foreign key to it respective primary key
