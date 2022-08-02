@@ -1,4 +1,4 @@
-# Unit 2: Design Data Source
+# Unit 2: Design Data Store
 
 ## Scenario
 The first step in designing a database is developing an understanding of the scenario. For learning about designing databases we will use the following example:
@@ -223,9 +223,56 @@ Sample tables are used to ensure that the database structure that the ERD produc
 
 You should create tables that reflects the entities identified and attributes identified by the ERD. Then fill the table with sample data. This data may be given to you, or you may produce mock data that is representative of data that will be stored in the database. A good resource for creating mock data is **<a href="https://www.mockaroo.com/" target="_blank">mockaroo</a>**.
 
-## Normalisation
+Below are the sample tables for the **Student Subject Database**.
 
+![Teacher table](../assets/sample_table_1.png)
+
+![Student table](../assets/sample_table_2.png)
+
+![Subject table](../assets/sample_table_3.png)
+
+![Enrolments table](../assets/sample_table_4.png)
+
+## Normalisation
+> Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalisation ... is to eliminate redundant (repetitive) data and ensure data is stored logically. {cite}`richardpeterson_2019_what`
+
+Data redundancy is undesirable because it results in:
+- Increased database size
+- Erosion of data integrity through:
+  - **Insertion anomalies**
+    - the need to repeat data when entering new values 
+  - **Deletion anomalies**
+    - the loss of a related dataset when some other dataset is deleted
+  - **Causes update anomalies**
+    - the same entity can have conflicting values after an incorrect update
+
+To understand the process of normalisation, watch the following videos.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xoTyrdT9SZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mUtAPbb1ECM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R7UblSu4744" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aAx_JoEDXQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### For the project
+If your ERD was successful your database should already be in 3rd Normal Form. Using your sample tables ensure that each table meets the requirements for 1st, 2nd and 3rd Normal Form. If you find that your table is not in 3NF you may need to adjust your ERD.
+
+#### 1st Normal Form (1NF)
+- Each column should contain atomic values
+- Each column should contain the same type of data
+- Each column should have a unique name
+- The order in which the data is saved does not matter
+
+#### 2nd Normal Form (2NF)
+- Is at 1NF
+- There are no **partial dependencies:**
+  - where an attribute is only dependant upon part of a composite key
+
+#### 3rd Normal Form (3NF)
+- Is at 2NF
+- There are no **transitive dependencies:**
+  - where an attribute is dependant on an attribute other than the primary key
 
 ## Relational Schema
-
-

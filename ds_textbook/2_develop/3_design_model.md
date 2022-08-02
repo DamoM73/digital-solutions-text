@@ -20,6 +20,34 @@ To design the database we will follow the steps outlined in the diagram below do
 
 ![Database Design Process](./assets/db_design_process.png)
 
+### Steps for creating a DFD
+- Step 1: Identify the External Entities
+- Step 2: Identify Processes
+- Step 3: Identify Data Stores
+- Step 4: Identify Data Flows
+- Step 5: Decompose to next level
+
+### Steps for creating a ERD
+- Step 1: Identify the entities
+- Step 2: Add attributes
+- Step 3: Establish relationships and cardinality
+- Step 4: Resolve many-to-many relationships
+- Step 5: Identify the foreign keys
+- Step 6: Add data types
+
+### Rules for normalisation of database
+- 1st Normal Form (1NF)
+  - Each column should contain atomic values
+  - Each column should contain the same type of data
+  - Each column should have a unique name
+  - The order in which the data is saved does not matter
+- 2nd Normal Form (2NF)
+  - Is in 1NF
+  - There are no **partial dependencies:**
+- 3rd Normal Form (3NF)
+  - Is in 2NF
+  - There are no **transitive dependencies:**
+
 ```{admonition} Unit 2 subject matter covered:
 - recognise data types, constraints, and primary and foreign keys
 - symbolise the links between external entities, data sources, data flow, processes and data storage in annotated context diagrams or data flow diagrams
