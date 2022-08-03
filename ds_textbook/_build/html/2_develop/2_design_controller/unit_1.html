@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit 1: Develop Algorithms &#8212; EDGE approach to Digital Solutions</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,16 +18,20 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -37,13 +39,12 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -61,21 +62,7 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -84,10 +71,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -105,15 +91,14 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../intro.html">
-                    EDGE approach to Digital Solutions
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   EDGE approach to Digital Solutions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -796,17 +781,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
-    </div>
-    <div id="rtd-footer-container"></div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
 </div>
 
 
@@ -814,162 +794,77 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="header-article row sticky-top noprint">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_develop/2_design_controller/unit_1.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/2_develop/2_design_controller/unit_1.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/2_develop/2_design_controller/unit_1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_develop/2_design_controller/unit_1.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
     </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#good-programming-practices">
    Good Programming Practices
@@ -1080,11 +975,12 @@ title="Print to PDF"
  </li>
 </ul>
 
-    </nav>
-</div>
+            </nav>
+        </div>
     </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Unit 1: Develop Algorithms</h1>
@@ -1211,12 +1107,11 @@ title="Print to PDF"
                     </div>
                 </div>
             </div>
-            <main id="main-content" role="main">
-                
+            
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="unit-1-develop-algorithms">
-<h1>Unit 1: Develop Algorithms<a class="headerlink" href="#unit-1-develop-algorithms" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="unit-1-develop-algorithms">
+<h1>Unit 1: Develop Algorithms<a class="headerlink" href="#unit-1-develop-algorithms" title="Permalink to this headline">¶</a></h1>
 <p>Algorithms are the commands that make up our programs.</p>
 <p>There are 6 basic building blocks that an algorithm consists of. Each of them serve a particular purpose.</p>
 <ul class="simple">
@@ -1237,11 +1132,11 @@ title="Print to PDF"
 <li><p>Desk-checking</p></li>
 </ul>
 <hr class="docutils" />
-<section id="good-programming-practices">
-<h2>Good Programming Practices<a class="headerlink" href="#good-programming-practices" title="Permalink to this headline">#</a></h2>
+<div class="section" id="good-programming-practices">
+<h2>Good Programming Practices<a class="headerlink" href="#good-programming-practices" title="Permalink to this headline">¶</a></h2>
 <p>The are many good practices to following when programming. These need to be applied right from when the algorithms are first being developed.</p>
-<section id="dependability">
-<h3>Dependability<a class="headerlink" href="#dependability" title="Permalink to this headline">#</a></h3>
+<div class="section" id="dependability">
+<h3>Dependability<a class="headerlink" href="#dependability" title="Permalink to this headline">¶</a></h3>
 <p>In systems engineering, dependability is a measure of a system’s reliability, maintainability.</p>
 <ul class="simple">
 <li><p><strong>maintainability:</strong> easy-to-read code that is easy to dissect, so that parts relating to a required change are easy to modify without risking a chain reaction of errors in dependant modules.</p></li>
@@ -1252,25 +1147,25 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</section>
-<section id="efficiency">
-<h3>Efficiency<a class="headerlink" href="#efficiency" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="efficiency">
+<h3>Efficiency<a class="headerlink" href="#efficiency" title="Permalink to this headline">¶</a></h3>
 <p>A situation in which a system or machine uses minimal resources such as time and processing power while still achieving its goals; there are two types of efficiency:</p>
 <ul class="simple">
 <li><p><strong>algorithmic efficiency:</strong> refers to the reliability, speed and programming methodology for developing succinct structures within an application</p></li>
 <li><p><strong>code efficiency:</strong> is directly linked with algorithmic efficiency and the speed of runtime execution for software, and is the key element in ensuring high performance; its goal is to reduce resource consumption and completion time as much as possible with minimum risk to the business or operating environment, e.g. using a FOR loop instead of repetitive IF, THEN and ELSE statements where appropriate.</p></li>
 </ul>
-</section>
-<section id="effectiveness">
-<h3>Effectiveness<a class="headerlink" href="#effectiveness" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="effectiveness">
+<h3>Effectiveness<a class="headerlink" href="#effectiveness" title="Permalink to this headline">¶</a></h3>
 <p>A measure of the success of the algorithm to solve an identified problem; depending on the complexity of the problem, this could be tested with a desk check, but generally, the effectiveness of an algorithm can only be determined after the code has been generated and then tested within the appropriate context;</p>
-</section>
-</section>
+</div>
+</div>
 <hr class="docutils" />
-<section id="activity-diagrams">
-<h2>Activity Diagrams<a class="headerlink" href="#activity-diagrams" title="Permalink to this headline">#</a></h2>
+<div class="section" id="activity-diagrams">
+<h2>Activity Diagrams<a class="headerlink" href="#activity-diagrams" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>Activity diagrams show the workflow from a start point to the finish point detailing the many decision paths that exist in the progression of events contained in the activity <span id="id1">[<a class="reference internal" href="../../bibliography.html#id15" title="Sparx Systems. Activity diagram - uml 2 tutorial | sparx systems. 06 2022. URL: https://sparxsystems.com/resources/tutorials/uml2/activity-diagram.html (visited on 2022-06-08).">Systems, 2022</a>]</span>.</p>
+<div><p>Activity diagrams show the workflow from a start point to the finish point detailing the many decision paths that exist in the progression of events contained in the activity <span id="id1">[<a class="reference internal" href="../../bibliography.html#id15">Systems, 2022</a>]</span>.</p>
 </div></blockquote>
 <p>An activity diagram is made of of different components. Some of the most common components of an activity diagram include:</p>
 <ul class="simple">
@@ -1281,15 +1176,15 @@ title="Print to PDF"
 <li><p><strong>End node:</strong> Represents the final step in the activity.</p></li>
 </ul>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/knM8BGY9yVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p><span id="id2">[<a class="reference internal" href="../../bibliography.html#id20" title="Master2Teach. Activity diagram - step by step guide with example. 05 2020. URL: https://www.youtube.com/watch?v=knM8BGY9yVI (visited on 2022-06-14).">Master2Teach, 2020</a>]</span></p>
+<p><span id="id2">[<a class="reference internal" href="../../bibliography.html#id20">Master2Teach, 2020</a>]</span></p>
 <p><strong>Activity Diagram Symbols</strong></p>
 <p><img alt="activity diagram symbols" src="../../_images/activity_symbols.png" /></p>
-</section>
+</div>
 <hr class="docutils" />
-<section id="class-diagrams">
-<h2>Class Diagrams<a class="headerlink" href="#class-diagrams" title="Permalink to this headline">#</a></h2>
+<div class="section" id="class-diagrams">
+<h2>Class Diagrams<a class="headerlink" href="#class-diagrams" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>Class diagrams clearly map out the structure of a particular system by modelling its classes, attributes, operations, and relationships between objects <span id="id3">[<a class="reference internal" href="../../bibliography.html#id16" title="Lucidchart. Uml class diagram tutorial. 2017. URL: https://www.lucidchart.com/pages/uml-class-diagram (visited on 2022-06-08).">Lucidchart, 2017</a>]</span>.</p>
+<div><p>Class diagrams clearly map out the structure of a particular system by modelling its classes, attributes, operations, and relationships between objects <span id="id3">[<a class="reference internal" href="../../bibliography.html#id16">Lucidchart, 2017</a>]</span>.</p>
 </div></blockquote>
 <p>Class diagrams are particularly useful when using Object Orientated Programming.</p>
 <p>The standard class diagram is composed of three sections:</p>
@@ -1299,12 +1194,12 @@ title="Print to PDF"
 <li><p><strong>Bottom section:</strong> Includes class operations (methods). Displayed in list format, each operation takes up its own line.</p></li>
 </ul>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UI6lqHOVHic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p><span id="id4">[<a class="reference internal" href="../../bibliography.html#id21" title="Lucidchart. Uml class diagram tutorial. 07 2017. URL: https://www.youtube.com/watch?v=UI6lqHOVHic (visited on 2022-06-14).">Lucidchart, 2017</a>]</span></p>
+<p><span id="id4">[<a class="reference internal" href="../../bibliography.html#id21">Lucidchart, 2017</a>]</span></p>
 <p><strong>Class Diagram Symbols</strong></p>
 <p><img alt="class symbols" src="../../_images/class_symbols.png" /></p>
-</section>
-<section id="pseudocode">
-<h2>Pseudocode<a class="headerlink" href="#pseudocode" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="pseudocode">
+<h2>Pseudocode<a class="headerlink" href="#pseudocode" title="Permalink to this headline">¶</a></h2>
 <p>Pseudocode is a technique used to describe the distinct steps of an algorithm in a manner that is easy to understand for anyone with basic programming knowledge.</p>
 <p>Although pseudocode is a syntax-free description of an algorithm, it must provide a full description of the algorithm’s logic so that moving from it to implementation should be merely a task of translating each line into code using the syntax of any programming language.</p>
 <p>Advantages of pseudocode:</p>
@@ -1315,29 +1210,29 @@ title="Print to PDF"
 <li><p><strong>Act as a start point for documentation</strong> - Documentation is an essential aspect of building a good project. Often, starting documentation is the most difficult part. However, pseudocode can represent a good starting point for what the documentation should include. Sometimes, programmers include the pseudocode as a docstring at the beginning of the code file.</p></li>
 <li><p><strong>Easier bug detection and fixing</strong> - Since pseudocode is written in a human-readable format, it is easier to edit and discover bugs before actually writing a single line of code. Editing pseudocode can be done more efficiently than testing, debugging, and fixing actual code.</p></li>
 </ul>
-<section id="qcaa-pseudocode-rules">
-<h3>QCAA Pseudocode Rules<a class="headerlink" href="#qcaa-pseudocode-rules" title="Permalink to this headline">#</a></h3>
+<div class="section" id="qcaa-pseudocode-rules">
+<h3>QCAA Pseudocode Rules<a class="headerlink" href="#qcaa-pseudocode-rules" title="Permalink to this headline">¶</a></h3>
 <p>In Digital Solutions, pseudocode has an additional purpose. The Digital Solutions Syllabus allows for a range of programming languages to be used. With different languages being used in schools across Queensland, pseudocode is used as the formal method of representing algorithms in Digital Solutions. In that capacity, QCAA has established very specific rules around for its use.</p>
-<section id="keywords">
-<h4>Keywords<a class="headerlink" href="#keywords" title="Permalink to this headline">#</a></h4>
+<div class="section" id="keywords">
+<h4>Keywords<a class="headerlink" href="#keywords" title="Permalink to this headline">¶</a></h4>
 <p><strong>KEYWORDS</strong> should be written bold and capitalized.</p>
 <p>Keywords do not have to be valid programming language words as long as they clearly convey the intent of the line of pseudocode.</p>
-</section>
-<section id="calculations">
-<h4>Calculations<a class="headerlink" href="#calculations" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="calculations">
+<h4>Calculations<a class="headerlink" href="#calculations" title="Permalink to this headline">¶</a></h4>
 <p>Pseudocode should clearly indicate what is happening at each step, including formulas of calculations.</p>
 <p>For example:
 <code class="docutils literal notranslate"><span class="pre">CALCULATE</span> <span class="pre">net</span></code> is not as clear as <code class="docutils literal notranslate"><span class="pre">CALCULATE</span> <span class="pre">net</span> <span class="pre">=</span> <span class="pre">gross</span> <span class="pre">−</span> <span class="pre">tax</span></code></p>
-</section>
-<section id="naming-conventions">
-<h4>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="naming-conventions">
+<h4>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this headline">¶</a></h4>
 <p>Use snake case naming convention for variable names with multiple words, subroutines, methods and functions.</p>
 <p>Snake case is a convention where all words are in lowercase and spaces between words is replaces with an <code class="docutils literal notranslate"><span class="pre">_</span></code></p>
 <p>For example:
 <code class="docutils literal notranslate"><span class="pre">VAR</span> <span class="pre">file_name</span></code></p>
-</section>
-<section id="font">
-<h4>Font<a class="headerlink" href="#font" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="font">
+<h4>Font<a class="headerlink" href="#font" title="Permalink to this headline">¶</a></h4>
 <p>Use a mono-space typeface when writing algorithms on computer:</p>
 <p>Windows mono-space fonts:</p>
 <ul class="simple">
@@ -1353,9 +1248,9 @@ title="Print to PDF"
 <li><p>Courier</p></li>
 <li><p>Courier New</p></li>
 </ul>
-</section>
-<section id="variables">
-<h4>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="variables">
+<h4>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h4>
 <p>To input or output values, common words can be used as keywords.</p>
 <p>For example:</p>
 <ul class="simple">
@@ -1371,9 +1266,9 @@ title="Print to PDF"
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">CALCULATE</span> <span class="pre">net</span> <span class="pre">=</span> <span class="pre">gross</span> <span class="pre">-</span> <span class="pre">tax</span></code></p></li>
 </ul>
-</section>
-<section id="modularisation">
-<h4>Modularisation<a class="headerlink" href="#modularisation" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="modularisation">
+<h4>Modularisation<a class="headerlink" href="#modularisation" title="Permalink to this headline">¶</a></h4>
 <p>All pseudocode modules start and ends with the <code class="docutils literal notranslate"><span class="pre">BEGIN</span></code> and <code class="docutils literal notranslate"><span class="pre">END</span></code> keywords.</p>
 <p>Main algorithm:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BEGIN</span>
@@ -1393,9 +1288,9 @@ title="Print to PDF"
 <span class="n">statements</span>
 </pre></div>
 </div>
-</section>
-<section id="iterations">
-<h4>Iterations<a class="headerlink" href="#iterations" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="iterations">
+<h4>Iterations<a class="headerlink" href="#iterations" title="Permalink to this headline">¶</a></h4>
 <p>There are three main types of loops — each has a clear start and end, with the statements within the loop indented.</p>
 <p><strong>Post-test loops</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">REPEAT</span>
@@ -1417,9 +1312,9 @@ title="Print to PDF"
 <span class="n">ENDFOR</span>
 </pre></div>
 </div>
-</section>
-<section id="selection">
-<h4>Selection<a class="headerlink" href="#selection" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="selection">
+<h4>Selection<a class="headerlink" href="#selection" title="Permalink to this headline">¶</a></h4>
 <p>A control structure used for decisions or branching and choosing alternate paths. The beginning and end of these structures are indicated with keywords.</p>
 <p><strong>IF statement</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">IF</span> <span class="n">condition</span> <span class="n">THEN</span>
@@ -1456,11 +1351,11 @@ In most other languages these are called switches</p>
 <span class="n">ENDSWITCH</span>
 </pre></div>
 </div>
-</section>
-</section>
-</section>
-<section id="ipo-tables">
-<h2>IPO Tables<a class="headerlink" href="#ipo-tables" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+</div>
+<div class="section" id="ipo-tables">
+<h2>IPO Tables<a class="headerlink" href="#ipo-tables" title="Permalink to this headline">¶</a></h2>
 <p>Input Process Output (IPO) tables show sections of your algorithms. They are made up of three columns:</p>
 <ul class="simple">
 <li><p><strong>Inputs:</strong> Lists all the information/actions this section needs.</p></li>
@@ -1478,10 +1373,10 @@ In most other languages these are called switches</p>
 <li><p>iteration</p></li>
 <li><p>modularisation</p></li>
 </ul>
-</section>
+</div>
 <hr class="docutils" />
-<section id="desk-checking">
-<h2>Desk-checking<a class="headerlink" href="#desk-checking" title="Permalink to this headline">#</a></h2>
+<div class="section" id="desk-checking">
+<h2>Desk-checking<a class="headerlink" href="#desk-checking" title="Permalink to this headline">¶</a></h2>
 <p>Desk checking is a manual (non computerised) technique for checking the logic of an algorithm. The person performing the desk check effectively acts as the computer, using pen and paper to record results. The desk checker carefully follows the algorithm being careful to rigidly adhere to the logic specified. The desk check can expose problems with the algorithm.</p>
 <p>Desk checks are useful to check an algorithm (before coding) thereby confirming that the algorithm works as expected and saves time possibly writing a program that doesn’t do what was intended. Another benefit of a desk check is that it confirms to the programmer/designer that the algorithm performs as intended.</p>
 <p>A desk check is normally done as a table with columns for:</p>
@@ -1511,8 +1406,8 @@ In most other languages these are called switches</p>
 </ul>
 </li>
 </ul>
-<section id="branching-example">
-<h3>Branching Example<a class="headerlink" href="#branching-example" title="Permalink to this headline">#</a></h3>
+<div class="section" id="branching-example">
+<h3>Branching Example<a class="headerlink" href="#branching-example" title="Permalink to this headline">¶</a></h3>
 <p>Consider the following pseudocode:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="n">BEGIN</span> <span class="n">calcPrice</span><span class="p">()</span>
 <span class="mi">2</span>    <span class="n">INPUT</span> <span class="n">price</span>
@@ -1531,9 +1426,9 @@ Correct results: price = $170
 <p>Inputs: price = $50<br />
 Correct results: price = $50.
 <img alt="desk check 2" src="../../_images/desk_check_2.png" /></p>
-</section>
-<section id="iteration-example">
-<h3>Iteration Example<a class="headerlink" href="#iteration-example" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="iteration-example">
+<h3>Iteration Example<a class="headerlink" href="#iteration-example" title="Permalink to this headline">¶</a></h3>
 <p>Consider the following pseudocode:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="n">BEGIN</span> <span class="n">calcSquares</span><span class="p">()</span>
 <span class="mi">2</span>    <span class="n">DISPLAY</span> <span class="s2">&quot;X&quot;</span><span class="p">,</span> <span class="s2">&quot;X Squared&quot;</span>
@@ -1547,9 +1442,9 @@ Correct results: price = $50.
 </pre></div>
 </div>
 <p><img alt="desk check 3" src="../../_images/desk_check_3.png" /></p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1573,11 +1468,9 @@ Correct results: price = $50.
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="../2_design_controller.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1593,28 +1486,24 @@ Correct results: price = $50.
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            </footer>
+            
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By Damien Murtagh<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+    <footer class="footer">
+  <p>
     
-</div>
+      By Damien Murtagh<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>
