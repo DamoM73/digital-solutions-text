@@ -5,8 +5,8 @@ For unit 2 we are concerned about the development of algorithms for the manageme
 Specifically we will need to create IPO tables for:
 - Creating the database
 - Processing data for insertion
-- Manipulation of data
 - Retrieval of data
+- Manipulation of data
 
 ## Creating database structure
 You will need a algorithm to create each table of the database expressed in an IPO table.
@@ -84,10 +84,50 @@ END
 ### Inserting data into
 Once the data has been cleaned, it need to be inserted into your database. This can get quite tricky, as Unit 2 data will be provided in a flat file database, and you will need to parse it into a relational database. Why is this tricky? Well each row of the flat file data source may contain multiple database tables, or a single database table my be provided over several rows in the flat file data source.
 
-Your application will read the source data one row at a time, and you will need to assemble the data into the appropriate tables for your database.
+Your application will read the source data one row at a time, and you will need to assemble the insertion data into the appropriate tables for your database. How this insertion data is assembled will differ depending on each data source.
+
+For example, consider the data in this flat file data source:
+![FF Database](../assets/sample_data.png)
+
+Your pseudocode would have to address the following issues:
+- the data contained in the data source will need to be written to four different database tables
+- there is duplicate data
+  - teacher names
+  - student names
+- the student column contains a list and each item needs to be processed separately
+- the results column also contains a list which requires you to assume that the results correspond with the names from the student column
+
+Your pseudocode could look something like this:
+
+```
+BEGIN insert_data(row)
+
+IF row[0] NOT IN Subject
+  INSERT row[0] INTO Subject
+ENDIF
+
+IF row[1] NOT IN Teacher
+  INSERT row[1] INTO Teacher
+ENDIF
+
+FOR index = 0 to LEN(row[2])
+  IF row[2][index] NOT IN Student
+    INSERT row[2][index] IN Student
+  ENDIF
+
+  INSERT row[0], row[2][index], row[3][index] INTO Enrolment
+NEXT FOR
+ENDFOR
+
+END 
+```
+
+## Retrieving data
+In designing algorithms for data retrieval you need to identify
+- The fields being retrieved
+- Any filtering involved
 
 
 ## Manipulating data 
+Manipulating data involves
 
-
-## Displaying retrieved data
