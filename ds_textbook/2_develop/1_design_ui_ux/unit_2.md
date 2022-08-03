@@ -1,4 +1,4 @@
-# Unit 2: Design UI and UX
+# Unit 2: Develop UI and UX
 
 ## Visual communication
 > Visual communication is the practice of using visual elements to convey a message, inspire change, or evoke emotion. {cite}`nediger_2020_how`

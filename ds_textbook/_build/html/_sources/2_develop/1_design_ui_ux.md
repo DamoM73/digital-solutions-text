@@ -1,4 +1,4 @@
-# Design UI and UX
+# Develop UI and UX
 
 ```{admonition} Tools used:
 :class: attention 

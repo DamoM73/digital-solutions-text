@@ -16,7 +16,7 @@ To install Python go to the **<a href="https://www.python.org/downloads/" target
 ### Packages
 Python comes installed with a range of packages. This is called **<a href="https://docs.python.org/3/library/" target="_blank">The Python Standard Library</a>**. Although these might seem like a huge number of packages, it is actually a very small selection of packages available. These cover Python's basic operations, and limiting the install to these packages reduces the size of Python. 
 
-To extend the functionality of Python, you need to install additional packages. These packages can be found at the **<a href="https://pypi.org/" target="_blank">Python Package Index</a>** **[]()**. Some of the packages we will use are:
+To extend the functionality of Python, you need to install additional packages. These packages can be found at the **<a href="https://pypi.org/" target="_blank">Python Package Index</a>**. Some of the packages we will use are:
 
 - **<a href="https://pypi.org/project/PyQt6/" target="_blank">PyQt6</a>**
 - **<a href="https://pypi.org/project/requests/" target="_blank">Requests</a>**

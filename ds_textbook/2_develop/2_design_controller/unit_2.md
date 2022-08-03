@@ -1,6 +1,7 @@
-# Unit 2: Design Algorithms
+# Unit 2: Develop Algorithms
 
 ## Creating data store structure
+
 
 ## Processes data for insertion
 

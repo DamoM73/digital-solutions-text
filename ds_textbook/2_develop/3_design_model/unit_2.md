@@ -1,4 +1,4 @@
-# Unit 2: Design Data Store
+# Unit 2: Develop Data Store
 
 ## Scenario
 The first step in designing a database is developing an understanding of the scenario. For learning about designing databases we will use the following example:
@@ -203,21 +203,6 @@ Our **Student Subject Database** example at the end of step 5:
 
 ![ERD Step 5](../assets/erd_step_5.png)
 
-### Step 6: Add data types
-In the final step, we need to identify the data types for each of the attributes.
-
-We will be using SQLite which provides the following data type options:
-- INTEGER: signed integers
-- REAL: floating point values
-- TEXT: text strings
-- BLOB: a blob of data, stored exactly as it was input
-
-Since Diagram.net does not provide a three column entity table, we will separate the attribute name and data type using the `|` symbol.
-
-The final **Student Subject Database** ERD:
-
-![ERD Step 6](../assets/erd_step_6.png)
-
 ## Sample Tables
 Sample tables are used to ensure that the database structure that the ERD produced can effectively store the required data adequately.
 
@@ -256,7 +241,7 @@ To understand the process of normalisation, watch the following videos.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aAx_JoEDXQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### For the project
+### Normalisation checking
 If your ERD was successful your database should already be in 3rd Normal Form. Using your sample tables ensure that each table meets the requirements for 1st, 2nd and 3rd Normal Form. If you find that your table is not in 3NF you may need to adjust your ERD.
 
 #### 1st Normal Form (1NF)
@@ -275,4 +260,17 @@ If your ERD was successful your database should already be in 3rd Normal Form. U
 - There are no **transitive dependencies:**
   - where an attribute is dependant on an attribute other than the primary key
 
-## Relational Schema
+### Relational Schema
+To convert your final, adjusted ERD to a Relational Schema (RS) you will need to identify the datatype of each field.
+
+We will be using SQLite which provides the following data type options:
+- INTEGER: signed integers
+- REAL: floating point values
+- TEXT: text strings
+- BLOB: a blob of data, stored exactly as it was input
+
+Since Diagram.net does not provide a three column entity table, we will separate the attribute name and data type using the `|` symbol.
+
+The RS for the **Student Subject Database** will look like:
+
+![ERD Step 6](../assets/erd_step_6.png)

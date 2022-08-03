@@ -1,4 +1,4 @@
-# Unit 1: Design Algorithms
+# Unit 1: Develop Algorithms
 
 Algorithms are the commands that make up our programs.
 

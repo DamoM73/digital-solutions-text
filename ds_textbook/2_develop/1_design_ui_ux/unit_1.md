@@ -1,4 +1,4 @@
-# Unit 1: Design UI and UX
+# Unit 1: Develop UI and UX
 
 The user needs to be central to the development of the User Interface (UI) and the User Experience (UX). They are examples of human-first design, or, to be more specific, user-first design.
 

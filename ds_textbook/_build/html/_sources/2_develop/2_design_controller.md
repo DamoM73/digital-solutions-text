@@ -1,4 +1,4 @@
-# Design Algorithms
+# Develop Algorithms
 
 ```{admonition} Tools used:
 :class: attention
@@ -21,7 +21,7 @@ You will use the following tools to design your algorithms. You will work with t
 ![class diagram](./assets/class_diagram.png)
 
 ## IPO Tables
-![ipo example](./assets/ipo_example.png)
+![IPO example](./assets/ipo_example.png)
 
 ## Desk Checking
 ![desk check](./assets/desk_check_1.png)

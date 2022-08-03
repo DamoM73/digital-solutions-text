@@ -1,4 +1,4 @@
-# Design Data Store
+# Develop Data Store
 
 ```{admonition} Tools used to complete the Develop phase:
 :class: attention
@@ -33,7 +33,6 @@ To design the database we will follow the steps outlined in the diagram below do
 - Step 3: Establish relationships and cardinality
 - Step 4: Resolve many-to-many relationships
 - Step 5: Identify the foreign keys
-- Step 6: Add data types
 
 ### Rules for normalisation of database
 - 1st Normal Form (1NF)
@@ -47,6 +46,9 @@ To design the database we will follow the steps outlined in the diagram below do
 - 3rd Normal Form (3NF)
   - Is in 2NF
   - There are no **transitive dependencies:**
+
+### Relational Schema
+The Relational Schema is the final ERD where the Data Type for each field has been identified.
 
 ```{admonition} Unit 2 subject matter covered:
 - recognise data types, constraints, and primary and foreign keys

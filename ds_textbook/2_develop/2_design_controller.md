@@ -1,4 +1,4 @@
-# Design Algorithms
+# Develop Algorithms
 
 ```{admonition} Tools used:
 :class: attention
@@ -8,7 +8,7 @@
 - IPO Tables
 - Desk-checking
 ```
-## For Units 1 to 4
+## For Unit 1 to 4
 
 Algorithms are the heart of your program, so we spend a bit of effort in designing them.
 
@@ -21,10 +21,19 @@ You will use the following tools to design your algorithms. You will work with t
 ![class diagram](./assets/class_diagram.png)
 
 ## IPO Tables
-![ipo example](./assets/ipo_example.png)
+![IPO example](./assets/ipo_example.png)
 
 ## Desk Checking
 ![desk check](./assets/desk_check_1.png)
+
+## For Units 2 to 4
+In additional to the requirements from Unit 1, for Units 2 to 4 you will need to create IPO tables for the operation of the Database. 
+
+Specifically you will need tables for:
+- Creating the database
+- Processing data for insertion
+- Manipulation of data
+- Retrieval of data
 
 ```{admonition} Unit 1 subject matter covered:
 - recognise and describe programming syntax and rules
