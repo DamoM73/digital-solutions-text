@@ -1,4 +1,4 @@
-# Unit 1 Scenario: Development Phase
+# Unit 1 Scenario: Develop Phase
 
 ## Mockup
 ![Annotated Mockup](../assets/annotation.png)

@@ -22,6 +22,7 @@ bibtex_bibfiles:
 sphinx:
   config:
     bibtex_reference_style: author_year
+    html_show_copyright: false
 
 # Information about where the book exists on the web
 repository:
@@ -34,3 +35,7 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  extra_footer: |
+    <p>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </p>

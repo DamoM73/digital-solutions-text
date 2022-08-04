@@ -56,17 +56,17 @@ parts:
       - file: 2_develop/1_design_ui_ux/unit_1
       - file: 2_develop/1_design_ui_ux/unit_2
       - file: 2_develop/1_design_ui_ux/unit_3
-    - file: 2_develop/2_design_controller
+    - file: 2_develop/2_design_model
       sections:
-      - file: 2_develop/2_design_controller/unit_1
-      - file: 2_develop/2_design_controller/unit_2
-      - file: 2_develop/2_design_controller/unit_3
-      - file: 2_develop/2_design_controller/unit_4
-    - file: 2_develop/3_design_model
+      - file: 2_develop/2_design_model/unit_2
+      - file: 2_develop/2_design_model/unit_3
+      - file: 2_develop/2_design_model/unit_4
+    - file: 2_develop/3_design_controller
       sections:
-      - file: 2_develop/3_design_model/unit_2
-      - file: 2_develop/3_design_model/unit_3
-      - file: 2_develop/3_design_model/unit_4
+      - file: 2_develop/3_design_controller/unit_1
+      - file: 2_develop/3_design_controller/unit_2
+      - file: 2_develop/3_design_controller/unit_3
+      - file: 2_develop/3_design_controller/unit_4
     - file: 2_develop/4_scenario
       sections:
       - file: 2_develop/4_scenario/unit_1
