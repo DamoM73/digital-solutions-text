@@ -260,7 +260,7 @@ If your ERD was successful your database should already be in 3rd Normal Form. U
 - There are no **transitive dependencies:**
   - where an attribute is dependant on an attribute other than the primary key
 
-### Relational Schema
+## Relational Schema
 To convert your final, adjusted ERD to a Relational Schema (RS) you will need to identify the datatype of each field.
 
 We will be using SQLite which provides the following data type options:
