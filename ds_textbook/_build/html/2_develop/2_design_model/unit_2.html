@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit 2: Develop Data Store &#8212; EDGE approach to Digital Solutions</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,16 +18,20 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -37,18 +39,18 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -61,21 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -84,10 +72,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -105,15 +92,14 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../intro.html">
-                    EDGE approach to Digital Solutions
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   EDGE approach to Digital Solutions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -796,17 +782,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
-    </div>
-    <div id="rtd-footer-container"></div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
 </div>
 
 
@@ -814,162 +795,77 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="header-article row sticky-top noprint">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_develop/2_design_model/unit_2.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/2_develop/2_design_model/unit_2.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/2_develop/2_design_model/unit_2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_develop/2_design_model/unit_2.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
     </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#scenario">
    Scenario
@@ -1097,11 +993,12 @@ title="Print to PDF"
  </li>
 </ul>
 
-    </nav>
-</div>
+            </nav>
+        </div>
     </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Unit 2: Develop Data Store</h1>
@@ -1245,14 +1142,13 @@ title="Print to PDF"
                     </div>
                 </div>
             </div>
-            <main id="main-content" role="main">
-                
+            
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="unit-2-develop-data-store">
-<h1>Unit 2: Develop Data Store<a class="headerlink" href="#unit-2-develop-data-store" title="Permalink to this headline">#</a></h1>
-<section id="scenario">
-<h2>Scenario<a class="headerlink" href="#scenario" title="Permalink to this headline">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="unit-2-develop-data-store">
+<h1>Unit 2: Develop Data Store<a class="headerlink" href="#unit-2-develop-data-store" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="scenario">
+<h2>Scenario<a class="headerlink" href="#scenario" title="Permalink to this headline">¶</a></h2>
 <p>The first step in designing a database is developing an understanding of the scenario. For learning about designing databases we will use the following example:</p>
 <p><strong>Student Subject Database</strong></p>
 <ul class="simple">
@@ -1270,11 +1166,11 @@ title="Print to PDF"
 <li><p>Each subject is only offered once, with one teacher</p></li>
 <li><p>Each student can enrol in each subject only once.</p></li>
 </ul>
-</section>
-<section id="data-flow-diagram">
-<h2>Data Flow Diagram<a class="headerlink" href="#data-flow-diagram" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="data-flow-diagram">
+<h2>Data Flow Diagram<a class="headerlink" href="#data-flow-diagram" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>A data flow diagram (DFD) maps out the flow of information for any process or system. It uses defined symbols like rectangles, circles and arrows, plus short text labels, to show data inputs, outputs, storage points and the routes between each destination. <span id="id1">[<a class="reference internal" href="../../bibliography.html#id32" title="Lucidchart. What is a data flow diagram | lucidchart. 2017. URL: https://www.lucidchart.com/pages/data-flow-diagram (visited on 2022-07-29).">Lucidchart, 2017</a>]</span></p>
+<div><p>A data flow diagram (DFD) maps out the flow of information for any process or system. It uses defined symbols like rectangles, circles and arrows, plus short text labels, to show data inputs, outputs, storage points and the routes between each destination. <span id="id1">[<a class="reference internal" href="../../bibliography.html#id32">Lucidchart, 2017</a>]</span></p>
 </div></blockquote>
 <p>The Data Flow Diagram is made up from four components:</p>
 <ul class="simple">
@@ -1285,10 +1181,10 @@ title="Print to PDF"
 </ul>
 <p>We will use the following symbols to represent the components of DFD</p>
 <p><img alt="DFD Components" src="../../_images/dfd_symbols.png" /></p>
-<section id="steps-for-creating-a-dfd">
-<h3>Steps for creating a DFD<a class="headerlink" href="#steps-for-creating-a-dfd" title="Permalink to this headline">#</a></h3>
-<section id="step-1-identify-the-external-entities">
-<h4>Step 1: Identify the External Entities<a class="headerlink" href="#step-1-identify-the-external-entities" title="Permalink to this headline">#</a></h4>
+<div class="section" id="steps-for-creating-a-dfd">
+<h3>Steps for creating a DFD<a class="headerlink" href="#steps-for-creating-a-dfd" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="step-1-identify-the-external-entities">
+<h4>Step 1: Identify the External Entities<a class="headerlink" href="#step-1-identify-the-external-entities" title="Permalink to this headline">¶</a></h4>
 <p>External entities are:</p>
 <ul class="simple">
 <li><p>an outside system that sends or receives data, communicating with the system being diagrammed</p></li>
@@ -1313,9 +1209,9 @@ title="Print to PDF"
 </ul>
 <p>When considering the <strong>Student Subject Database</strong> all data is sourced from and destined for two external entities:</p>
 <p><img alt="DFD Step 1" src="../../_images/dfd_step_1.png" /></p>
-</section>
-<section id="step-2-identify-processes">
-<h4>Step 2: Identify Processes<a class="headerlink" href="#step-2-identify-processes" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="step-2-identify-processes">
+<h4>Step 2: Identify Processes<a class="headerlink" href="#step-2-identify-processes" title="Permalink to this headline">¶</a></h4>
 <p>Processes are:</p>
 <ul class="simple">
 <li><p>any process that changes the data, producing an output</p></li>
@@ -1325,9 +1221,9 @@ title="Print to PDF"
 <p>Once again consider the scenario you are designing a database for. What things within the systems do some kind of work on the data passing through it. Referring back to your Use Case Diagram, can help in identifying these.</p>
 <p>In our <strong>Student Subject Database</strong> there are three processes can occur:</p>
 <p><img alt="DFD Step 2" src="../../_images/dfd_step_2.png" /></p>
-</section>
-<section id="step-3-identify-data-stores">
-<h4>Step 3: Identify Data Stores<a class="headerlink" href="#step-3-identify-data-stores" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="step-3-identify-data-stores">
+<h4>Step 3: Identify Data Stores<a class="headerlink" href="#step-3-identify-data-stores" title="Permalink to this headline">¶</a></h4>
 <p>Data stores are</p>
 <ul class="simple">
 <li><p>files or repositories that hold information for later use, such as a database table or a membership form</p></li>
@@ -1336,9 +1232,9 @@ title="Print to PDF"
 <p>To identify your data stores, look for groupings of associated information. In our course we will generally have one datastore, unless the prescribed requirements indicate otherwise.</p>
 <p>We only have one data store (a digital one) in our <strong>Student Subject Database</strong> example</p>
 <p><img alt="DFD Step 3" src="../../_images/dfd_step_3.png" /></p>
-</section>
-<section id="step-4-identify-data-flows">
-<h4>Step 4: Identify Data Flows<a class="headerlink" href="#step-4-identify-data-flows" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="step-4-identify-data-flows">
+<h4>Step 4: Identify Data Flows<a class="headerlink" href="#step-4-identify-data-flows" title="Permalink to this headline">¶</a></h4>
 <p>Data flows represent:</p>
 <ul class="simple">
 <li><p>the route that data takes between the external entities, processes and data stores</p></li>
@@ -1353,25 +1249,25 @@ title="Print to PDF"
 </ul>
 <p>Here is the <strong>Student Subject Database</strong> example with all data flows added</p>
 <p><img alt="DFD Step 4" src="../../_images/dfd_step_4.png" /></p>
-</section>
-<section id="step-5-decompose-to-next-level">
-<h4>Step 5: Decompose to next level<a class="headerlink" href="#step-5-decompose-to-next-level" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="step-5-decompose-to-next-level">
+<h4>Step 5: Decompose to next level<a class="headerlink" href="#step-5-decompose-to-next-level" title="Permalink to this headline">¶</a></h4>
 <p>To keep DFDs to a manageable size, each process can be decomposed into more detail.</p>
 <p>The top level DFD is called <strong>Level 0</strong> and should only involve around seven processes. If you have more than seven, then you need to combine processes that logically fit together.</p>
 <p>Once the Level 0 DFD is created identify any processes that require more detail. Each of these processes are then decomposed into another DFD. The first deposition is called <strong>Level 1</strong> and subsequent decompositions, Level 2, Level 3 etc.</p>
 <p>The processes in the subsequent decompositions inherent their numbering from their parent process.</p>
 <p>We will decompose the Log in process in the <strong>Student Subject Database</strong> example.</p>
 <p><img alt="DFD Step 5" src="../../_images/dfd_step_5.png" /></p>
-</section>
-</section>
-<section id="record-in-project">
-<h3>Record in project<a class="headerlink" href="#record-in-project" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="record-in-project">
+<h3>Record in project<a class="headerlink" href="#record-in-project" title="Permalink to this headline">¶</a></h3>
 <p>All levels of your final DFD will be included in your project documentation.</p>
-</section>
-</section>
+</div>
+</div>
 <hr class="docutils" />
-<section id="data-needs-and-requirements">
-<h2>Data needs and requirements<a class="headerlink" href="#data-needs-and-requirements" title="Permalink to this headline">#</a></h2>
+<div class="section" id="data-needs-and-requirements">
+<h2>Data needs and requirements<a class="headerlink" href="#data-needs-and-requirements" title="Permalink to this headline">¶</a></h2>
 <p>In assessing the data needs and requirements you need to list all the data that needs to be stored in the database. Most of these have already been identified in the Explore phase and are present in the mind map.</p>
 <p>This list will inform the design of your Entity Relationship Diagram. There is no need to record it in your project documentation.</p>
 <p>For our <strong>Student Subject Database</strong> example:</p>
@@ -1385,30 +1281,30 @@ title="Print to PDF"
 <li><p>Subject name</p></li>
 <li><p>Subject result</p></li>
 </ul>
-</section>
-<section id="entity-relationship-diagram">
-<h2>Entity Relationship Diagram<a class="headerlink" href="#entity-relationship-diagram" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="entity-relationship-diagram">
+<h2>Entity Relationship Diagram<a class="headerlink" href="#entity-relationship-diagram" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>An Entity Relationship Diagram (ERD) is a type of flowchart that illustrates how “entities” such as people, objects or concepts relate to each other within a system. <span id="id2">[<a class="reference internal" href="../../bibliography.html#id33" title="LucidChart. Er diagram tutorial. 2017. URL: https://www.lucidchart.com/pages/er-diagrams (visited on 2022-07-30).">LucidChart, 2017</a>]</span></p>
+<div><p>An Entity Relationship Diagram (ERD) is a type of flowchart that illustrates how “entities” such as people, objects or concepts relate to each other within a system. <span id="id2">[<a class="reference internal" href="../../bibliography.html#id33">LucidChart, 2017</a>]</span></p>
 </div></blockquote>
 <p>Watch the videos below to understand designing an ERD.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QpdhBUYk7Kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-CuY5ADwn24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>We will use the following steps to create our Entity Relationship Diagrams, using the <strong>Student Subject Database</strong> as an example:</p>
-<section id="step-1-identify-the-entities">
-<h3>Step 1: Identify the entities<a class="headerlink" href="#step-1-identify-the-entities" title="Permalink to this headline">#</a></h3>
+<div class="section" id="step-1-identify-the-entities">
+<h3>Step 1: Identify the entities<a class="headerlink" href="#step-1-identify-the-entities" title="Permalink to this headline">¶</a></h3>
 <p>Look at the scenario and the data needs and identify all the entities that the database needs to store. Entities can be people, places, things or processes.</p>
 <p>In the <strong>Student Subject Database</strong> we have the following entities.</p>
 <p><img alt="ERD Step 1" src="../../_images/erd_step_1.png" /></p>
-</section>
-<section id="step-2-add-attributes">
-<h3>Step 2: Add attributes<a class="headerlink" href="#step-2-add-attributes" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="step-2-add-attributes">
+<h3>Step 2: Add attributes<a class="headerlink" href="#step-2-add-attributes" title="Permalink to this headline">¶</a></h3>
 <p>Refer back to your data needs and requirements and add the relevant attributes to each entity.</p>
 <p>The <strong>Student Subject Database</strong> ERD after stage 2:</p>
 <p><img alt="ERD Step 2" src="../../_images/erd_step_2.png" /></p>
-</section>
-<section id="step-3-establish-relationships-and-cardinality">
-<h3>Step 3: Establish relationships and cardinality<a class="headerlink" href="#step-3-establish-relationships-and-cardinality" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="step-3-establish-relationships-and-cardinality">
+<h3>Step 3: Establish relationships and cardinality<a class="headerlink" href="#step-3-establish-relationships-and-cardinality" title="Permalink to this headline">¶</a></h3>
 <p>The next step is to create the connection between the entities. First connect the related entities using lines. Then establish the cardinality by working out the range of connections each entity can have to the second entity.</p>
 <p>For example in the <strong>Student Subject Database</strong>:</p>
 <ul class="simple">
@@ -1427,9 +1323,9 @@ title="Print to PDF"
 </ul>
 <p>You will end up with the following ERD</p>
 <p><img alt="ERD Step 3" src="../../_images/erd_step_3.png" /></p>
-</section>
-<section id="step-4-resolve-many-to-many-relationships">
-<h3>Step 4: Resolve many-to-many relationships<a class="headerlink" href="#step-4-resolve-many-to-many-relationships" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="step-4-resolve-many-to-many-relationships">
+<h3>Step 4: Resolve many-to-many relationships<a class="headerlink" href="#step-4-resolve-many-to-many-relationships" title="Permalink to this headline">¶</a></h3>
 <p>In this course we will use bridging entities to deal with many-to-many relationships.</p>
 <p>To do this:</p>
 <ul class="simple">
@@ -1463,9 +1359,9 @@ title="Print to PDF"
 </ul>
 <p>At the end of step 4 our ERD looks like this:</p>
 <p><img alt="ERD Step 4" src="../../_images/erd_step_4.png" /></p>
-</section>
-<section id="step-5-identify-the-foreign-keys">
-<h3>Step 5: Identify the foreign keys<a class="headerlink" href="#step-5-identify-the-foreign-keys" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="step-5-identify-the-foreign-keys">
+<h3>Step 5: Identify the foreign keys<a class="headerlink" href="#step-5-identify-the-foreign-keys" title="Permalink to this headline">¶</a></h3>
 <p>Identifying the foreign keys establishes how the different entities are connected together. If there is a relationship drawn between entities, then there must be a primary key / foreign key connection.</p>
 <p>Steps to establish foreign keys</p>
 <ul class="simple">
@@ -1481,10 +1377,10 @@ title="Print to PDF"
 </ul>
 <p>Our <strong>Student Subject Database</strong> example at the end of step 5:</p>
 <p><img alt="ERD Step 5" src="../../_images/erd_step_5.png" /></p>
-</section>
-</section>
-<section id="sample-tables">
-<h2>Sample Tables<a class="headerlink" href="#sample-tables" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+<div class="section" id="sample-tables">
+<h2>Sample Tables<a class="headerlink" href="#sample-tables" title="Permalink to this headline">¶</a></h2>
 <p>Sample tables are used to ensure that the database structure that the ERD produced can effectively store the required data adequately.</p>
 <p>You should create tables that reflects the entities identified and attributes identified by the ERD. Then fill the table with sample data. This data may be given to you, or you may produce mock data that is representative of data that will be stored in the database. A good resource for creating mock data is <strong><a href="https://www.mockaroo.com/" target="_blank">mockaroo</a></strong>.</p>
 <p>Below are the sample tables for the <strong>Student Subject Database</strong>.</p>
@@ -1492,11 +1388,11 @@ title="Print to PDF"
 <p><img alt="Student table" src="../../_images/sample_table_2.png" /></p>
 <p><img alt="Subject table" src="../../_images/sample_table_3.png" /></p>
 <p><img alt="Enrolments table" src="../../_images/sample_table_4.png" /></p>
-</section>
-<section id="normalisation">
-<h2>Normalisation<a class="headerlink" href="#normalisation" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="normalisation">
+<h2>Normalisation<a class="headerlink" href="#normalisation" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalisation … is to eliminate redundant (repetitive) data and ensure data is stored logically. <span id="id3">[<a class="reference internal" href="../../bibliography.html#id34" title="Richard Peterson. What is normalization? 1nf, 2nf, 3nf &amp; bcnf with examples. 03 2019. URL: https://www.guru99.com/database-normalization.html (visited on 2022-08-02).">Peterson, 2019</a>]</span></p>
+<div><p>Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. Normalization rules divides larger tables into smaller tables and links them using relationships. The purpose of Normalisation … is to eliminate redundant (repetitive) data and ensure data is stored logically. <span id="id3">[<a class="reference internal" href="../../bibliography.html#id34">Peterson, 2019</a>]</span></p>
 </div></blockquote>
 <p>Data redundancy is undesirable because it results in:</p>
 <ul class="simple">
@@ -1526,20 +1422,20 @@ title="Print to PDF"
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mUtAPbb1ECM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/R7UblSu4744" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aAx_JoEDXQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<section id="normalisation-checking">
-<h3>Normalisation checking<a class="headerlink" href="#normalisation-checking" title="Permalink to this headline">#</a></h3>
+<div class="section" id="normalisation-checking">
+<h3>Normalisation checking<a class="headerlink" href="#normalisation-checking" title="Permalink to this headline">¶</a></h3>
 <p>If your ERD was successful your database should already be in 3rd Normal Form. Using your sample tables ensure that each table meets the requirements for 1st, 2nd and 3rd Normal Form. If you find that your table is not in 3NF you may need to adjust your ERD.</p>
-<section id="st-normal-form-1nf">
-<h4>1st Normal Form (1NF)<a class="headerlink" href="#st-normal-form-1nf" title="Permalink to this headline">#</a></h4>
+<div class="section" id="st-normal-form-1nf">
+<h4>1st Normal Form (1NF)<a class="headerlink" href="#st-normal-form-1nf" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Each column should contain atomic values</p></li>
 <li><p>Each column should contain the same type of data</p></li>
 <li><p>Each column should have a unique name</p></li>
 <li><p>The order in which the data is saved does not matter</p></li>
 </ul>
-</section>
-<section id="nd-normal-form-2nf">
-<h4>2nd Normal Form (2NF)<a class="headerlink" href="#nd-normal-form-2nf" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="nd-normal-form-2nf">
+<h4>2nd Normal Form (2NF)<a class="headerlink" href="#nd-normal-form-2nf" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Is at 1NF</p></li>
 <li><p>There are no <strong>partial dependencies:</strong></p>
@@ -1548,9 +1444,9 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</section>
-<section id="rd-normal-form-3nf">
-<h4>3rd Normal Form (3NF)<a class="headerlink" href="#rd-normal-form-3nf" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="rd-normal-form-3nf">
+<h4>3rd Normal Form (3NF)<a class="headerlink" href="#rd-normal-form-3nf" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>Is at 2NF</p></li>
 <li><p>There are no <strong>transitive dependencies:</strong></p>
@@ -1559,11 +1455,11 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-</section>
-</section>
-</section>
-<section id="relational-schema">
-<h2>Relational Schema<a class="headerlink" href="#relational-schema" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+</div>
+<div class="section" id="relational-schema">
+<h2>Relational Schema<a class="headerlink" href="#relational-schema" title="Permalink to this headline">¶</a></h2>
 <p>To convert your final, adjusted ERD to a Relational Schema (RS) you will need to identify the datatype of each field.</p>
 <p>We will be using SQLite which provides the following data type options:</p>
 <ul class="simple">
@@ -1575,8 +1471,8 @@ title="Print to PDF"
 <p>Since <a class="reference external" href="http://Diagram.net">Diagram.net</a> does not provide a three column entity table, we will separate the attribute name and data type using the <code class="docutils literal notranslate"><span class="pre">|</span></code> symbol.</p>
 <p>The RS for the <strong>Student Subject Database</strong> will look like:</p>
 <p><img alt="ERD Step 6" src="../../_images/erd_step_6.png" /></p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1600,11 +1496,9 @@ title="Print to PDF"
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="../2_design_model.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1620,32 +1514,28 @@ title="Print to PDF"
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            </footer>
+            
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By Damien Murtagh<br/>
-  
-    <div class="extra_footer">
-      <p>
+    <footer class="footer">
+  <p>
+    
+      By Damien Murtagh<br/>
+    
+      <div class="extra_footer">
+        <p>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 </p>
-    </div>
-</p>
-        </footer>
-    </div>
-    
-</div>
+      </div>
+  </p>
+</footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>
