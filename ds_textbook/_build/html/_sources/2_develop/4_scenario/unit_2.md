@@ -16,6 +16,6 @@
 ![Activity Diagram](../assets/scenario_unit_2_activity.png)
 
 ## Class Diagram
-
+![Case Diagram](../assets/scenario_unit_2_class.png)
 
 ## IPO Tables
