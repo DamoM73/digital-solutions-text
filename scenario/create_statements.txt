@@ -1,0 +1,44 @@
+CREATE TABLE "User" (
+	"user_id"	INTEGER,
+	"username"	TEXT NOT NULL,
+	"Field4"	TEXT,
+	PRIMARY KEY("user_id","username","Field4")
+)
+
+CREATE TABLE "Word" (
+	"word_id"	INTEGER,
+	"word"	TEXT NOT NULL,
+	PRIMARY KEY("word_id" AUTOINCREMENT)
+)
+
+CREATE TABLE "Game" (
+	"game_id"	INTEGER,
+	"user_id"	INTEGER NOT NULL,
+	"word_id"	INTEGER NOT NULL,
+	"result"	TEXT,
+	PRIMARY KEY("game_id" AUTOINCREMENT),
+	FOREIGN KEY("user_id") REFERENCES "User"("user_id"),
+	FOREIGN KEY("word_id") REFERENCES "Word"("word_id")
+)
+
+CREATE TABLE "Definition" (
+	"definition_id"	INTEGER,
+	"word_id"	INTEGER NOT NULL,
+	"definition"	TEXT NOT NULL,
+	PRIMARY KEY("definition_id" AUTOINCREMENT),
+	FOREIGN KEY("word_id") REFERENCES "Word"("word_id")
+)
+
+CREATE TABLE "Word_category" (
+	"word_id"	INTEGER,
+	"category_id"	INTEGER,
+	PRIMARY KEY("word_id","category_id"),
+	FOREIGN KEY("word_id") REFERENCES "Word"("word_id"),
+	FOREIGN KEY("category_id") REFERENCES "Category"("category_id")
+)
+
+CREATE TABLE "Category" (
+	"category_id"	INTEGER,
+	"type"	TEXT NOT NULL,
+	PRIMARY KEY("category_id" AUTOINCREMENT)
+)
