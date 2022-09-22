@@ -6,8 +6,15 @@
 Develop
 - Normalisation examples 
 - Scenario
-  - Mockups
   - IPO Tables
 
 Generate
--  
+-  Generate Code
+-  Test Code
+-  Scenario
+
+Evaluate
+- Evaluate Components
+- Scenario
+
+Generate website
