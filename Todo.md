@@ -4,7 +4,6 @@
 ## Unit 2
 
 Develop
-- Normalisation examples 
 - Scenario
   - IPO Tables
 

@@ -861,6 +861,48 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structured-query-language-sql">
+   Structured Query Language (SQL)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sqlite">
+     SQLite
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sql-tutorials">
+     SQL Tutorials
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#retrieving-data">
+       Retrieving Data
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#create-tables-and-modify-data">
+       Create Tables and Modify Data
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sql-python">
+   SQL &amp; Python
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -873,6 +915,48 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structured-query-language-sql">
+   Structured Query Language (SQL)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sqlite">
+     SQLite
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sql-tutorials">
+     SQL Tutorials
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#retrieving-data">
+       Retrieving Data
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#create-tables-and-modify-data">
+       Create Tables and Modify Data
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sql-python">
+   SQL &amp; Python
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -881,6 +965,85 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="unit-2-generate-code">
 <h1>Unit 2: Generate Code<a class="headerlink" href="#unit-2-generate-code" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="structured-query-language-sql">
+<h2>Structured Query Language (SQL)<a class="headerlink" href="#structured-query-language-sql" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>SQL is a standard language for storing, manipulating and retrieving data in databases <span id="id1">[<a class="reference internal" href="../../bibliography.html#id36">W3Schools, 2019</a>]</span>.</p>
+</div></blockquote>
+<p>SQL is the the most popular language for working with databases despite being over 50 years old. It is everywhere and every major IT platform uses it. Why? Because it is powerful and effective.</p>
+<div class="section" id="sqlite">
+<h3>SQLite<a class="headerlink" href="#sqlite" title="Permalink to this headline">¶</a></h3>
+<p>There are many different flavours of SQL. Most of these work by setting up an SQL server separate from the computer running the program. We will be using SQLite as our SQL database. It is a lightweight and fast database management system, which can run off a file stored on your local machine.</p>
+</div>
+<div class="section" id="sql-tutorials">
+<h3>SQL Tutorials<a class="headerlink" href="#sql-tutorials" title="Permalink to this headline">¶</a></h3>
+<p>Below are links to tutorials to refresh your knowledge on the SQL we will use in this course.</p>
+<div class="section" id="retrieving-data">
+<h4>Retrieving Data<a class="headerlink" href="#retrieving-data" title="Permalink to this headline">¶</a></h4>
+<p><strong>Basic Queries</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_select.asp" target="_blank">SELECT Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_alias.asp" target="_blank">Aliases</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_distinct.asp" target="_blank">SELECT DISTINCT Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_where.asp" target="_blank">WHERE Clause</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_and_or.asp" target="_blank">AND, OR, NOT Operators</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_null_values.asp" target="_blank">NULL Values</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_top.asp" target="_blank">LIMIT Clause</strong> (use the MySQL syntax)</a></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_orderby.asp" target="_blank">ORDER BY Keyword</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_operators.asp" target="_blank">Arithmetic Operators</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_like.asp" target="_blank">LIKE Operator</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_wildcards.asp" target="_blank">Wildcard Characters</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_between.asp" target="_blank">BETWEEN Operator</a></strong></p></li>
+</ul>
+<p><strong>Aggregation</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_min_max.asp" target="_blank">MIN() and MAX() Functions</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_count_avg_sum.asp" target="_blank">COUNT(), AVG() and SUM() Functions</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_groupby.asp" target="_blank">GROUP BY Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_having.asp" target="_blank">HAVING Clause</a></strong></p></li>
+</ul>
+<p><strong>Joins</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join.asp" target="_blank">JOIN</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join_inner.asp" target="_blank">INNER JOIN Keyword</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join_left.asp" target="_blank">LEFT JOIN Keyword</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join_right.asp" target="_blank">RIGHT JOIN Keyword</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join_full.asp" target="_blank">FULL OUTER JOIN Keyword</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join_self.asp" target="_blank">Self Join</a></strong></p></li>
+</ul>
+<p><strong>Sub-queries</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_in.asp" target="_blank">IN Operator</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_exists.asp" target="_blank">EXISTS Operator</a></strong></p></li>
+</ul>
+</div>
+<div class="section" id="create-tables-and-modify-data">
+<h4>Create Tables and Modify Data<a class="headerlink" href="#create-tables-and-modify-data" title="Permalink to this headline">¶</a></h4>
+<p><strong>Database Management</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_create_db.asp" target="_blank">CREATE DATABASE Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_drop_db.asp" target="_blank">DROP DATABASE Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_create_table.asp" target="_blank">CREATE TABLE Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_drop_table.asp" target="_blank">DROP TABLE Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_alter.asp" target="_blank">ALTER TABLE Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_notnull.asp" target="_blank">NOT NULL Constraint</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_unique.asp" target="_blank">UNIQUE Constraint</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_primarykey.asp" target="_blank">PRIMARY KEY Constraint</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_foreignkey.asp" target="_blank">FORIEGN KEY Constraint</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_autoincrement.asp" target="_blank">AUTO INCREMENT Field</a></strong></p></li>
+</ul>
+<p><strong>Data Management</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_insert.asp" target="_blank">INSERT INTO Statement</a></strong>
+<strong><a href="https://www.w3schools.com/sql/sql_update.asp" target="_blank">UPDATE Statement</a></strong>
+<strong><a href="https://www.w3schools.com/sql/sql_delete.asp" target="_blank">DELETE Statement</a></strong></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="sql-python">
+<h2>SQL &amp; Python<a class="headerlink" href="#sql-python" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

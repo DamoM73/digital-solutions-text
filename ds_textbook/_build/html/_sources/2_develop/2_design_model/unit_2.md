@@ -250,15 +250,45 @@ If your ERD was successful your database should already be in 3rd Normal Form. U
 - Each column should have a unique name
 - The order in which the data is saved does not matter
 
+**For example: the table below is not in 1NF**
+- There are two columns with the name of Details
+- The first Details column stores information about the type of product **and** the type of device
+- The second Details column values are not atomic (each record has multiple colours stored)
+
+![1NF before](../assets/1NF_before.png)
+
+The tables below represent the same data in 1NF.
+![1NF after](../assets/1NF_after.png)
+
 #### 2nd Normal Form (2NF)
-- Is at 1NF
+- It is in 1NF
 - There are no **partial dependencies:**
-  - where an attribute is only dependant upon part of a composite key
+  - where an attribute is only dependant upon part of a composite key (this can only happen when you have a composite key).
+
+**For example: the table below is not in 2NF**
+- The composite key is *Customer ID* and *Store ID*.
+- *Date* is dependent on both the *Customer ID* and the *Store ID*.
+- *Location* is only dependent on the *Store ID* it has no connection to *Customer ID* at all, therefore it is a partial dependency.
+
+![2NF before](../assets/2NF_before.png)
+
+The tables below represent the same data in 2NF
+![2NF after](../assets/2NF_after.png)
+
 
 #### 3rd Normal Form (3NF)
 - Is at 2NF
 - There are no **transitive dependencies:**
-  - where an attribute is dependant on an attribute other than the primary key
+  - where an attribute is dependant on an attribute other than the primary key.
+
+**For example: the table below is not in 3NF**
+- The key of the table is *Book ID*
+- The field *Genre Type* is dependent on the non-key field of *Genre ID* therefore it is a transitive dependency.
+
+![3NF before](../assets/3NF_before.png)
+
+The tables below represent the same data in 3NF
+![3NF after](../assets/3NF_after.png)
 
 ## Relational Schema
 To convert your final, adjusted ERD to a Relational Schema (RS) you will need to identify the datatype of each field.

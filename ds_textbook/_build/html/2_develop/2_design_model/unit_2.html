@@ -1433,17 +1433,35 @@
 <li><p>Each column should have a unique name</p></li>
 <li><p>The order in which the data is saved does not matter</p></li>
 </ul>
+<p><strong>For example: the table below is not in 1NF</strong></p>
+<ul class="simple">
+<li><p>There are two columns with the name of Details</p></li>
+<li><p>The first Details column stores information about the type of product <strong>and</strong> the type of device</p></li>
+<li><p>The second Details column values are not atomic (each record has multiple colours stored)</p></li>
+</ul>
+<p><img alt="1NF before" src="../../_images/1NF_before.png" /></p>
+<p>The tables below represent the same data in 1NF.
+<img alt="1NF after" src="../../_images/1NF_after.png" /></p>
 </div>
 <div class="section" id="nd-normal-form-2nf">
 <h4>2nd Normal Form (2NF)<a class="headerlink" href="#nd-normal-form-2nf" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><p>Is at 1NF</p></li>
+<li><p>It is in 1NF</p></li>
 <li><p>There are no <strong>partial dependencies:</strong></p>
 <ul>
-<li><p>where an attribute is only dependant upon part of a composite key</p></li>
+<li><p>where an attribute is only dependant upon part of a composite key (this can only happen when you have a composite key).</p></li>
 </ul>
 </li>
 </ul>
+<p><strong>For example: the table below is not in 2NF</strong></p>
+<ul class="simple">
+<li><p>The composite key is <em>Customer ID</em> and <em>Store ID</em>.</p></li>
+<li><p><em>Date</em> is dependent on both the <em>Customer ID</em> and the <em>Store ID</em>.</p></li>
+<li><p><em>Location</em> is only dependent on the <em>Store ID</em> it has no connection to <em>Customer ID</em> at all, therefore it is a partial dependency.</p></li>
+</ul>
+<p><img alt="2NF before" src="../../_images/2NF_before.png" /></p>
+<p>The tables below represent the same data in 2NF
+<img alt="2NF after" src="../../_images/2NF_after.png" /></p>
 </div>
 <div class="section" id="rd-normal-form-3nf">
 <h4>3rd Normal Form (3NF)<a class="headerlink" href="#rd-normal-form-3nf" title="Permalink to this headline">¶</a></h4>
@@ -1451,10 +1469,18 @@
 <li><p>Is at 2NF</p></li>
 <li><p>There are no <strong>transitive dependencies:</strong></p>
 <ul>
-<li><p>where an attribute is dependant on an attribute other than the primary key</p></li>
+<li><p>where an attribute is dependant on an attribute other than the primary key.</p></li>
 </ul>
 </li>
 </ul>
+<p><strong>For example: the table below is not in 3NF</strong></p>
+<ul class="simple">
+<li><p>The key of the table is <em>Book ID</em></p></li>
+<li><p>The field <em>Genre Type</em> is dependent on the non-key field of <em>Genre ID</em> therefore it is a transitive dependency.</p></li>
+</ul>
+<p><img alt="3NF before" src="../../_images/3NF_before.png" /></p>
+<p>The tables below represent the same data in 3NF
+<img alt="3NF after" src="../../_images/3NF_after.png" /></p>
 </div>
 </div>
 </div>

@@ -58,5 +58,5 @@ The Requirements Table is about triaging all the possible requirements into a pr
 How to fill the table out:
 - **Must:** This column contains all the requirements you have identified and added to the mind map.
 - **Should:** This column contains requirements that you think are important. It might include functional and non-functional requirements not mentioned in the criteria sheet or stimulus (eg. the Usability Principle of Safety).
-- **Could:** This column contains ideas that you would love to implement, but you do not have the time or knowledge needed (eg. making a post on social media).
+- **Could:** This column is for really good ideas that you do not have the time, skills or resources to implement (eg. making a post on social media).
 - **Won't** This column contains ideas that other might like, but you are not interested in. Don't simply put the negative of a requirement (eg. if you have mentioned the Usability Principle of Effectiveness, don't add "Won't crash" to this column).
