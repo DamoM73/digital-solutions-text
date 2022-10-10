@@ -19,6 +19,11 @@ These can include:
   - Process user input
   - Calculate results using data
   - Store or display data
+  - The code is:
+    - Effective
+    - Efficient
+    - Maintainable
+    - Reliable
 - **Data interface** criteria concerning:
   - Specific datasets that must be considered or used
   - File formats to be used
