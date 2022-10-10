@@ -8,7 +8,7 @@ Specifically we will need to create IPO tables for:
 - Retrieval of data
 - Manipulation of data
 
-In writing the pseudocode you can use SQL keywords and methods, but they do not have to be syntactically correct. Like all pseudocode, it only need to be explicit what it wishes to acheive.
+In writing the pseudocode you can use SQL keywords and methods, but they do not have to be syntactically correct. Like all pseudocode, it only need to be explicit what it wishes to achieve.
 
 ## Creating database structure
 The pseudocode for the algorithm developed to create the database should explicitly identify all tables created.
