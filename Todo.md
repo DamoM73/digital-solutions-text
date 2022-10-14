@@ -4,7 +4,6 @@
 ## Unit 2
 
 Generate
--  Generate Code - SQL and Python
 -  Test Code
 -  Scenario
 
