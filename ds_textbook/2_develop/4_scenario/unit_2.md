@@ -19,3 +19,6 @@
 ![Case Diagram](../assets/scenario_unit_2_class.png)
 
 ## IPO Tables
+![IPO Table stats](../assets/ipo_senario_2_a.png)
+
+![IPO Table most missed](../assets/ipo_senario_2_b.png)

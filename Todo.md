@@ -3,12 +3,8 @@
 ---
 ## Unit 2
 
-Develop
-- Scenario
-  - IPO Tables
-
 Generate
--  Generate Code
+-  Generate Code - SQL and Python
 -  Test Code
 -  Scenario
 

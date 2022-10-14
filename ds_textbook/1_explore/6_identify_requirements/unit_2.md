@@ -117,6 +117,8 @@ In the Explore Phase you need to consider both programming options and insertion
 ![mind map data](../assests/mm_data.png)
 
 You will need to consider the following issues:
+- data accuracy
+- data completeness
 - data models
 - storage
 - output requirements
