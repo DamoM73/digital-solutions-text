@@ -2,6 +2,8 @@
 
 We will use a scenario to assist in learning the content of this text. This scenario will develop as we move through the text, evolving to present new issues relevant to the context of each unit. Each subsequent scenario builds upon the previous scenarios, allow for students to use the tools and work they have previously developed.
 
+It is important to note that the examples provided in scenario sections are just a sample designed for understanding. They are not representative of assessment quality.
+
 ## Templates
 Files useful for completing the Learning Scenarios and your projects can be found on **<a href="https://github.com/DamoM73/digital-solutions-text/tree/main/resources" target="_blank">this following GitHub Repo</a>**.
 

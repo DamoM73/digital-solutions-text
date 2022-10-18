@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Unit 2: Test Code &#8212; EDGE approach to Digital Solutions</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -39,18 +37,18 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -63,7 +61,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -72,9 +84,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -92,14 +105,15 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../intro.html">
-   EDGE approach to Digital Solutions
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    EDGE approach to Digital Solutions
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -782,90 +796,180 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/3_generate/4_test_code/unit_2.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F3_generate/4_test_code/unit_2.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F3_generate/4_test_code/unit_2.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/3_generate/4_test_code/unit_2.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#code-testing">
    Code Testing
@@ -894,8 +998,8 @@
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#efficiency-todo">
-     Efficiency TODO
+    <a class="reference internal nav-link" href="#efficiency">
+     Efficiency
     </a>
    </li>
   </ul>
@@ -934,12 +1038,11 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Unit 2: Test Code</h1>
@@ -980,8 +1083,8 @@
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#efficiency-todo">
-     Efficiency TODO
+    <a class="reference internal nav-link" href="#efficiency">
+     Efficiency
     </a>
    </li>
   </ul>
@@ -1024,29 +1127,30 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="unit-2-test-code">
-<h1>Unit 2: Test Code<a class="headerlink" href="#unit-2-test-code" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="code-testing">
-<h2>Code Testing<a class="headerlink" href="#code-testing" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="unit-2-test-code">
+<h1>Unit 2: Test Code<a class="headerlink" href="#unit-2-test-code" title="Permalink to this headline">#</a></h1>
+<section id="code-testing">
+<h2>Code Testing<a class="headerlink" href="#code-testing" title="Permalink to this headline">#</a></h2>
 <p>Code testing should be completed by the developer. In testing the code you need to ensure that it is:</p>
 <ul class="simple">
 <li><p>Reliable</p></li>
 <li><p>Maintainable</p></li>
 <li><p>Efficient</p></li>
 </ul>
-<div class="section" id="reliability">
-<h3>Reliability<a class="headerlink" href="#reliability" title="Permalink to this headline">¶</a></h3>
+<section id="reliability">
+<h3>Reliability<a class="headerlink" href="#reliability" title="Permalink to this headline">#</a></h3>
 <p>Testing reliability involves the determining the probability of a program producing an error or failing to process a task. Unit tests and integration testing will determine the effectiveness of you code, but reliability also depends on preventing users from making mistakes. For example, preventing the entering of values outside the expected range.</p>
 <p>These consideration need to be incorporated into your unit and integrated testing.</p>
-</div>
-<div class="section" id="maintainability">
-<h3>Maintainability<a class="headerlink" href="#maintainability" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="maintainability">
+<h3>Maintainability<a class="headerlink" href="#maintainability" title="Permalink to this headline">#</a></h3>
 <p>We will be using two tools to test and improve the maintainability of our code. Both tools are used extensively by Python Developers.</p>
-<div class="section" id="sourcery">
-<h4>Sourcery<a class="headerlink" href="#sourcery" title="Permalink to this headline">¶</a></h4>
+<section id="sourcery">
+<h4>Sourcery<a class="headerlink" href="#sourcery" title="Permalink to this headline">#</a></h4>
 <p>Sourcery is leverages AI and provides metrics assessing your code.</p>
 <p>To need to go to the <strong><a class="reference external" href="https://sourcery.ai/">Sourcey website</a></strong> to sign-up and receive your access token. You can then install the VS Code extension.</p>
 <p>With the extension installed you can hover over functions <code class="docutils literal notranslate"><span class="pre">def</span></code> statements and a pop-up will provide metric on your code, as well as suggest ways of improving the code.</p>
@@ -1066,19 +1170,20 @@
 <li><p>No not enter: Bad</p></li>
 </ul>
 <p>When completing your unit tests make sure that your include the metrics for each function.</p>
-</div>
-<div class="section" id="black">
-<h4>Black<a class="headerlink" href="#black" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="black">
+<h4>Black<a class="headerlink" href="#black" title="Permalink to this headline">#</a></h4>
 <p>Black is the uncompromising Python code formatter, which will ensure that your code formatting is compliant to PEP8. Ensuring your code is PEP8 compliant improves the readability of your code.</p>
 <p>To install Black use pip:</p>
 <p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">black</span></code></p>
 <p>To run simply call Black and point it to your project directory.</p>
 <p><code class="docutils literal notranslate"><span class="pre">black</span> <span class="pre">.</span></code></p>
 <p>Black should be run at the conclusion of your coding.</p>
-</div>
-</div>
-<div class="section" id="efficiency-todo">
-<h3>Efficiency TODO<a class="headerlink" href="#efficiency-todo" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="efficiency">
+<h3>Efficiency<a class="headerlink" href="#efficiency" title="Permalink to this headline">#</a></h3>
+<p>In industry, efficiency testing is undertaken through the process of code reviews. In code reviews, the developer works with another developer to assess the efficiency of the code. For us, you will need to undertake your won review.</p>
 <p>In testing your code for efficiency, you need to ensure your code:</p>
 <ul class="simple">
 <li><p>has no unnecessary code</p>
@@ -1089,24 +1194,21 @@
 </ul>
 </li>
 <li><p>has no unnecessary reading and writing to the drive.</p></li>
-<li><p>ensure the best speed or run time for completing the algorithm</p></li>
-<li><p>make use of reusable components wherever possible</p></li>
-<li><p>make use of error and exception handling at all layers of software, such as the user interface, logic and data flow</p></li>
-<li><p>create programming code that ensures data integrity and consistency</p></li>
-<li><p>develop programming code that’s compliant with the design logic and flow</p></li>
+<li><p>uses reusable components wherever possible</p></li>
+<li><p>uses atomic modularisation (each function only does one thing)</p></li>
+<li><p>uses error and exception handling at all layers of software</p></li>
+<li><p>ensures data integrity and consistency</p></li>
 <li><p>make use of coding practices applicable to the related software</p></li>
-<li><p>optimize the use of data access and data management practices</p></li>
-<li><p>use the best keywords, data types and variables, and other available programming concepts to implement the related algorithm</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="useability-testing">
-<h2>Useability Testing<a class="headerlink" href="#useability-testing" title="Permalink to this headline">¶</a></h2>
+<section id="useability-testing">
+<h2>Useability Testing<a class="headerlink" href="#useability-testing" title="Permalink to this headline">#</a></h2>
 <p>Useability testing should be completed by the developer and other users. Those features that can be tested using objective measures and tools (eg. perceivability of text) can be tested by the developer. For features that are more subjective (eg. learnability) the developer is far too familiar with the application to genuinely assess them. These principles need to be tested by users who are unfamiliar with the project.</p>
 <p>The features that need to be tested will depend on the useability requirements and respective criteria determined during the Explore phase.</p>
-<div class="section" id="accessibility">
-<h3>Accessibility<a class="headerlink" href="#accessibility" title="Permalink to this headline">¶</a></h3>
+<section id="accessibility">
+<h3>Accessibility<a class="headerlink" href="#accessibility" title="Permalink to this headline">#</a></h3>
 <p>Some accessibility principle features that may be tested:</p>
 <ul class="simple">
 <li><p>Perceivable: Information and user interface components must be presented to users in ways that they can perceive.</p></li>
@@ -1114,18 +1216,18 @@
 <li><p>Understandable: Information and user interface operation must be understandable.</p></li>
 <li><p>Robust: Content must be robust enough so that it can be interpreted reliably by a wide variety of users and types of assistive technologies.</p></li>
 </ul>
-</div>
-<div class="section" id="effectiveness">
-<h3>Effectiveness<a class="headerlink" href="#effectiveness" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="effectiveness">
+<h3>Effectiveness<a class="headerlink" href="#effectiveness" title="Permalink to this headline">#</a></h3>
 <p>Some effectiveness principle features that may be tested:</p>
 <ul class="simple">
 <li><p>Can a user interact with a digital solution quickly and easily</p></li>
 <li><p>Are outputs presented clearly in a way that can be easily interpreted</p></li>
 <li><p>Is the application reliable (constant, dependable, consistent and repeatable).</p></li>
 </ul>
-</div>
-<div class="section" id="safety">
-<h3>Safety<a class="headerlink" href="#safety" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="safety">
+<h3>Safety<a class="headerlink" href="#safety" title="Permalink to this headline">#</a></h3>
 <p>Get feedback from the tester on safety principles features the following questions could be asked:</p>
 <ul class="simple">
 <li><p>Is there sufficient instructional information?</p></li>
@@ -1145,22 +1247,22 @@
 <li><p>Are lists ordered appropriately?</p></li>
 <li><p>Is there adequate and informative feedback?</p></li>
 </ul>
-</div>
-<div class="section" id="utility">
-<h3>Utility<a class="headerlink" href="#utility" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="utility">
+<h3>Utility<a class="headerlink" href="#utility" title="Permalink to this headline">#</a></h3>
 <p>To test for the utility of the application, you need to assess if the testers have been provided all the functionality that they need. They could be asked if there is functionality missing, or if they would expand some current functionality.</p>
-</div>
-<div class="section" id="learnability">
-<h3>Learnability<a class="headerlink" href="#learnability" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="learnability">
+<h3>Learnability<a class="headerlink" href="#learnability" title="Permalink to this headline">#</a></h3>
 <p>In testing the learnability principles features, the tester needs to be asked quickly and easily they could:</p>
 <ul class="simple">
 <li><p>Find information</p></li>
 <li><p>Complete tasks</p></li>
 <li><p>Navigate the digital solution</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1184,9 +1286,11 @@
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="unit_1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1202,28 +1306,32 @@
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      By Damien Murtagh<br/>
-    
-      <div class="extra_footer">
-        <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Damien Murtagh<br/>
+  
+    <div class="extra_footer">
+      <p>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 </p>
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

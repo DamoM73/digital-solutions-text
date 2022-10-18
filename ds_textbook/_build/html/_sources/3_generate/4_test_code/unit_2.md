@@ -58,7 +58,9 @@ To run simply call Black and point it to your project directory.
 
 Black should be run at the conclusion of your coding.
 
-### Efficiency TODO
+### Efficiency
+
+In industry, efficiency testing is undertaken through the process of code reviews. In code reviews, the developer works with another developer to assess the efficiency of the code. For us, you will need to undertake your won review.
 
 In testing your code for efficiency, you need to ensure your code:
 
@@ -67,14 +69,11 @@ In testing your code for efficiency, you need to ensure your code:
   - unused variables
   - unused imports
 - has no unnecessary reading and writing to the drive.
-- ensure the best speed or run time for completing the algorithm 
-- make use of reusable components wherever possible
-- make use of error and exception handling at all layers of software, such as the user interface, logic and data flow
-- create programming code that ensures data integrity and consistency
-- develop programming code that's compliant with the design logic and flow
+- uses reusable components wherever possible
+- uses atomic modularisation (each function only does one thing)
+- uses error and exception handling at all layers of software
+- ensures data integrity and consistency
 - make use of coding practices applicable to the related software
-- optimize the use of data access and data management practices
-- use the best keywords, data types and variables, and other available programming concepts to implement the related algorithm
 
 ---
 
