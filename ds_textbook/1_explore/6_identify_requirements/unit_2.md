@@ -138,11 +138,9 @@ In the Explore Phase you need to consider both programming options and insertion
 
 You will need to consider the following issues:
 
-- data accuracy
-- data completeness
-- data models
-- storage
-- output requirements
-- data formats
-- validation rules
-- data requirements
+- Accuracy: Is the information false?
+- Completeness: Are there gaps in the data?
+- Reliability: Is the data contradictory?
+- Timeliness: Is the information up to date?
+- Relevance: How applicable is the data to what you’re trying to do?
+- Availability: Is the data accessible to those who need it?

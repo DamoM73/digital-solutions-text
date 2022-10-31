@@ -1,10 +1,12 @@
 # Evaluate Components
+
 ```{admonition} Tools use:
 :class: attention  
 - component evaluation table
 ```
 
 ## For Units 1 to 4
+
 The evaluation of components occurs throughout the Generation phase, up to and including the end.
 
 Every time you make a change to your solution in order to refine it, you have evaluated it. You should record these in the components evaluation table.
@@ -13,6 +15,9 @@ Every time you make a change to your solution in order to refine it, you have ev
 
 When assessing the UI component you will need to get feedback from other people.
 
+## For Units 2 to 4
+
+In addition to Unit 1 evaluation of components, from units 2 onwards you will need to evaluate the accuracy and completion of your data.
 
 ```{admonition} Unit 1 subject matter covered:
 - evaluate and make recommendations about the use of programming language rules and syntax for a given problem

@@ -1,13 +1,15 @@
 # Text Book To Do
 
 ---
+
 ## Unit 2
 
 Generate
--  Test Code
--  Scenario
+
+- Scenario
 
 Evaluate
+
 - Evaluate Components
 - Scenario
 
