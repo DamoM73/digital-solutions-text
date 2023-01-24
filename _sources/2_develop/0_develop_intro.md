@@ -9,7 +9,6 @@
 - Desk-checking
 - Data Flow Diagrams
 - Entity Relationship Diagrams
-- Data Dictionaries
 - Relational Schemas
 ```
 ## Overview

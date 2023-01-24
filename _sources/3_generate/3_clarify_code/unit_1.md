@@ -322,3 +322,54 @@ Here are the suggestions PEP 8 provides to remove that ambiguity and preserve co
     - rather than using `if var` use `if var is not None`
 - Use `.startswith()` and `.endswith()` instead of slicing.
     - rather than using `my_string[:3] == 'cat'` use `my_string.startswith('cat')`
+
+---
+## Type hints
+
+Python is a dynamic language, which mean its variables can hold any data type. In other languages, a variable's data type is determined before the variable is used and cannot change. Dynamic languages are faster to develop in, but run the risk of variables storing the wrong data type, and these type of errors are often difficult to troubleshoot.
+
+Type hints are for other programmers. Whether that other programmer is someone else, or future you. Therefore their role is to improve the maintainability of the code.
+
+### Function type hints
+
+Incorrect data types are a significant issue when passing and returning values to and from a function. Especially if the function is not well documented, and it is not obvious what data type need to be passed, or what data type will be returned.
+
+The following code shows the type hinting of the definition of the function `sum()` which accepts two `int` numbers and returns a `int` number.
+
+``` python
+def sum(num_1: int, num_2: int) -> int:
+```
+
+Type hints in arguments involve `variable_name` followed by a `:` followed by the type. 
+
+Type hints for return values are placed after the closing `)` and start with `->` and then the type.
+
+We will only be concerned about the basic Python data types:
+
+- integers: `int`
+- floats: `float`
+- Booleans: `bool`
+- strings: `str`
+
+
+### Type hints for collections
+
+Functions can be passed and return collections (lists, tuples, dictionaries, etc.). For example, the following code show the definition of the function `above()` which accepts a list and threshold and returns a list of the numbers above the threshold.
+
+``` python
+def above(numbers: list[int], threshold: int) -> list[int]:
+```
+
+Below are the type hints for different collections:
+
+- lists: `list[int, str, float]`
+- dictionaries: `dict[str, float]`
+- tuples: `tuple[int, int, int]`
+
+### Multiple type hints
+
+It is possible for an argument to accept multiple data types. For example, below is the `sum()` function which uses either `int` or `float` numbers.
+
+``` python
+def sum(num_1: int | float, num_2: int | float) -> int | float:
+```

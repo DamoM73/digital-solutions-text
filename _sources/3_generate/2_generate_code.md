@@ -7,7 +7,7 @@
 ```
 
 ## For Units 1 to 4
-In generating code we will need to use programming features and operations:
+In generating code we will need to use the following programming features and operations:
 - Basic Features of Programming
   - Variables
   - Functions
@@ -23,6 +23,28 @@ In generating code we will need to use programming features and operations:
   - Logical operators
   - Identity operators
   - Membership operators 
+
+## For Units 3 to 4
+In addition to the programming features from Unit 1, we will also need to use the following Structured Query Language (SQL) features:
+- Retrieving data
+  - WHERE
+  - GROUP BY
+  - HAVING
+  - ORDER BY
+  - COUNT
+  - MIN
+  - MAX
+  - AVG
+  - IN
+  - inner-joins
+  - sub-queries
+- Creating tables and modify stored data:
+  - CREATE
+  - INSERT
+  - UPDATE
+  - DELETE
+
+We will also need to use the SQLite3 Python package to interface with an SQL database.
 
 ```{admonition} Unit 1 subject matter covered:
 - generate user interfaces by investigating and applying useability principles

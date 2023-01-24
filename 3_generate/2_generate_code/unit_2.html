@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit 2: Generate Code &#8212; EDGE approach to Digital Solutions</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,16 +18,20 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -37,18 +39,18 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -61,21 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -84,10 +72,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -105,15 +92,14 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../intro.html">
-                    EDGE approach to Digital Solutions
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   EDGE approach to Digital Solutions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -356,7 +342,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../2_develop/1_design_ui_ux.html">
-   Design UI and UX
+   Develop UI and UX
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
   <label for="toctree-checkbox-9">
@@ -366,24 +352,24 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/1_design_ui_ux/unit_1.html">
-     Unit 1: Design UI and UX
+     Unit 1: Develop UI and UX
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/1_design_ui_ux/unit_2.html">
-     Unit 2: Design UI and UX
+     Unit 2: Develop UI and UX
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/1_design_ui_ux/unit_3.html">
-     Unit 3: Design UI and UX
+     Unit 3: Develop UI and UX
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../2_develop/2_design_controller.html">
-   Design Algorithms
+  <a class="reference internal" href="../../2_develop/2_design_model.html">
+   Develop Data Store
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
   <label for="toctree-checkbox-10">
@@ -392,30 +378,25 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../2_develop/2_design_controller/unit_1.html">
-     Unit 1: Design Algorithms
+    <a class="reference internal" href="../../2_develop/2_design_model/unit_2.html">
+     Unit 2: Develop Data Store
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../2_develop/2_design_controller/unit_2.html">
-     Unit 2: Design Algorithms
+    <a class="reference internal" href="../../2_develop/2_design_model/unit_3.html">
+     Unit 3: Develop Data Store
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../2_develop/2_design_controller/unit_3.html">
-     Unit 3: Design Algorithms
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../2_develop/2_design_controller/unit_4.html">
-     Unit 4: Design Algorithms
+    <a class="reference internal" href="../../2_develop/2_design_model/unit_4.html">
+     Unit 4: Develop Data Store
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../2_develop/3_design_model.html">
-   Design Data Store
+  <a class="reference internal" href="../../2_develop/3_design_controller.html">
+   Develop Algorithms
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
   <label for="toctree-checkbox-11">
@@ -424,18 +405,23 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../2_develop/3_design_model/unit_2.html">
-     Unit 2: Design Data Source
+    <a class="reference internal" href="../../2_develop/3_design_controller/unit_1.html">
+     Unit 1: Develop Algorithms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../2_develop/3_design_model/unit_3.html">
-     Unit 3: Design Data Source
+    <a class="reference internal" href="../../2_develop/3_design_controller/unit_2.html">
+     Unit 2: Develop Algorithms
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../2_develop/3_design_model/unit_4.html">
-     Unit 4: Design Data Source
+    <a class="reference internal" href="../../2_develop/3_design_controller/unit_3.html">
+     Unit 3: Develop Algorithms
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../2_develop/3_design_controller/unit_4.html">
+     Unit 4: Develop Algorithms
     </a>
    </li>
   </ul>
@@ -452,22 +438,22 @@ const thebe_selector_output = ".output, .cell_output"
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/4_scenario/unit_1.html">
-     Unit 1 Scenario: Development Phase
+     Unit 1 Scenario: Develop Phase
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/4_scenario/unit_2.html">
-     Unit 2 Scenario: Development Phase
+     Unit 2 Scenario: Develop Phase
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/4_scenario/unit_3.html">
-     Unit 3 Scenario: Development Phase
+     Unit 3 Scenario: Develop Phase
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../2_develop/4_scenario/unit_4.html">
-     Unit 4 Scenario: Development Phase
+     Unit 4 Scenario: Develop Phase
     </a>
    </li>
   </ul>
@@ -796,168 +782,207 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
             
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/3_generate/2_generate_code/unit_2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F3_generate/2_generate_code/unit_2.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
             </div>
-            
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structured-query-language-sql">
+   Structured Query Language (SQL)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sqlite">
+     SQLite
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sql-tutorials">
+     SQL Tutorials
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#retrieving-data">
+       Retrieving Data
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#create-tables-and-modify-data">
+       Create Tables and Modify Data
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sql-python">
+   SQL &amp; Python
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup">
+     Setup
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#import-the-module">
+       1. Import the module
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#connect-to-the-database">
+       2. Connect to the database
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#create-a-cursor">
+       3. Create a cursor
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#queries">
+     Queries
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#execute-the-sql-query-statement">
+       1. Execute the SQL query statement
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#fetch-the-results">
+       2. Fetch the results
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#insert-create-update-delete">
+     INSERT, CREATE, UPDATE, DELETE
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#execute-the-sql-statement">
+       Execute the SQL statement
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#commit-changes">
+       Commit changes
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-variables">
+     Using variables
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Queries
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       INSERT, CREATE, UPDATE, DELETE
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
-    <div id="rtd-footer-container"></div>
 </div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F3_generate/2_generate_code/unit_2.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/3_generate/2_generate_code/unit_2.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-    </div>
-</div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-</div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Unit 2: Generate Code</h1>
@@ -965,16 +990,358 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structured-query-language-sql">
+   Structured Query Language (SQL)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sqlite">
+     SQLite
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sql-tutorials">
+     SQL Tutorials
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#retrieving-data">
+       Retrieving Data
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#create-tables-and-modify-data">
+       Create Tables and Modify Data
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sql-python">
+   SQL &amp; Python
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup">
+     Setup
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#import-the-module">
+       1. Import the module
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#connect-to-the-database">
+       2. Connect to the database
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#create-a-cursor">
+       3. Create a cursor
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#queries">
+     Queries
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#execute-the-sql-query-statement">
+       1. Execute the SQL query statement
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#fetch-the-results">
+       2. Fetch the results
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#insert-create-update-delete">
+     INSERT, CREATE, UPDATE, DELETE
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#execute-the-sql-statement">
+       Execute the SQL statement
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#commit-changes">
+       Commit changes
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-variables">
+     Using variables
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Queries
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       INSERT, CREATE, UPDATE, DELETE
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
-            <main id="main-content" role="main">
-                
+            
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="unit-2-generate-code">
-<h1>Unit 2: Generate Code<a class="headerlink" href="#unit-2-generate-code" title="Permalink to this headline">#</a></h1>
-</section>
+  <div class="tex2jax_ignore mathjax_ignore section" id="unit-2-generate-code">
+<h1>Unit 2: Generate Code<a class="headerlink" href="#unit-2-generate-code" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="structured-query-language-sql">
+<h2>Structured Query Language (SQL)<a class="headerlink" href="#structured-query-language-sql" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>SQL is a standard language for storing, manipulating and retrieving data in databases <span id="id1">[<a class="reference internal" href="../../bibliography.html#id36">W3Schools, 2019</a>]</span>.</p>
+</div></blockquote>
+<p>SQL is the the most popular language for working with databases despite being over 50 years old. It is everywhere and every major IT platform uses it. Why? Because it is powerful and effective.</p>
+<div class="section" id="sqlite">
+<h3>SQLite<a class="headerlink" href="#sqlite" title="Permalink to this headline">¶</a></h3>
+<p>There are many different flavours of SQL. Most of these work by setting up an SQL server separate from the computer running the program. We will be using SQLite as our SQL database. It is a lightweight and fast database management system, which can run off a file stored on your local machine.</p>
+</div>
+<div class="section" id="sql-tutorials">
+<h3>SQL Tutorials<a class="headerlink" href="#sql-tutorials" title="Permalink to this headline">¶</a></h3>
+<p>Below are links to tutorials to refresh your knowledge on the SQL we will use in this course.</p>
+<div class="section" id="retrieving-data">
+<h4>Retrieving Data<a class="headerlink" href="#retrieving-data" title="Permalink to this headline">¶</a></h4>
+<p><strong>Basic Queries</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_select.asp" target="_blank">SELECT Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_alias.asp" target="_blank">Aliases</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_distinct.asp" target="_blank">SELECT DISTINCT Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_where.asp" target="_blank">WHERE Clause</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_and_or.asp" target="_blank">AND, OR, NOT Operators</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_null_values.asp" target="_blank">NULL Values</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_top.asp" target="_blank">LIMIT Clause</strong> (use the MySQL syntax)</a></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_orderby.asp" target="_blank">ORDER BY Keyword</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_operators.asp" target="_blank">Arithmetic Operators</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_like.asp" target="_blank">LIKE Operator</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_wildcards.asp" target="_blank">Wildcard Characters</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_between.asp" target="_blank">BETWEEN Operator</a></strong></p></li>
+</ul>
+<p><strong>Aggregation</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_min_max.asp" target="_blank">MIN() and MAX() Functions</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_count_avg_sum.asp" target="_blank">COUNT(), AVG() and SUM() Functions</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_groupby.asp" target="_blank">GROUP BY Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_having.asp" target="_blank">HAVING Clause</a></strong></p></li>
+</ul>
+<p><strong>Joins</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join.asp" target="_blank">JOIN</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join_inner.asp" target="_blank">INNER JOIN Keyword</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join_left.asp" target="_blank">LEFT JOIN Keyword</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join_right.asp" target="_blank">RIGHT JOIN Keyword</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join_full.asp" target="_blank">FULL OUTER JOIN Keyword</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_join_self.asp" target="_blank">Self Join</a></strong></p></li>
+</ul>
+<p><strong>Sub-queries</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_in.asp" target="_blank">IN Operator</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_exists.asp" target="_blank">EXISTS Operator</a></strong></p></li>
+</ul>
+</div>
+<div class="section" id="create-tables-and-modify-data">
+<h4>Create Tables and Modify Data<a class="headerlink" href="#create-tables-and-modify-data" title="Permalink to this headline">¶</a></h4>
+<p><strong>Database Management</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_create_db.asp" target="_blank">CREATE DATABASE Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_drop_db.asp" target="_blank">DROP DATABASE Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_create_table.asp" target="_blank">CREATE TABLE Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_drop_table.asp" target="_blank">DROP TABLE Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_alter.asp" target="_blank">ALTER TABLE Statement</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_notnull.asp" target="_blank">NOT NULL Constraint</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_unique.asp" target="_blank">UNIQUE Constraint</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_primarykey.asp" target="_blank">PRIMARY KEY Constraint</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_foreignkey.asp" target="_blank">FORIEGN KEY Constraint</a></strong></p></li>
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_autoincrement.asp" target="_blank">AUTO INCREMENT Field</a></strong></p></li>
+</ul>
+<p><strong>Data Management</strong></p>
+<ul class="simple">
+<li><p><strong><a href="https://www.w3schools.com/sql/sql_insert.asp" target="_blank">INSERT INTO Statement</a></strong>
+<strong><a href="https://www.w3schools.com/sql/sql_update.asp" target="_blank">UPDATE Statement</a></strong>
+<strong><a href="https://www.w3schools.com/sql/sql_delete.asp" target="_blank">DELETE Statement</a></strong></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="sql-python">
+<h2>SQL &amp; Python<a class="headerlink" href="#sql-python" title="Permalink to this headline">¶</a></h2>
+<p>This section gives a brief overview of using SQLite in Python. W3schools give more details in <strong><a class="reference external" href="https://www.w3schools.blog/sqlite-tutorial">this blog</a></strong>.</p>
+<p>To work with SQLite in Python we will use the <code class="docutils literal notranslate"><span class="pre">sqlite3</span></code> module. It is part of the Python standard Library, so it is already installed.</p>
+<div class="section" id="setup">
+<h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
+<p>There are three steps to setting up your Python code to use <code class="docutils literal notranslate"><span class="pre">sqlite3</span></code>:</p>
+<div class="section" id="import-the-module">
+<h4>1. Import the module<a class="headerlink" href="#import-the-module" title="Permalink to this headline">¶</a></h4>
+<p>This is your usual <code class="docutils literal notranslate"><span class="pre">import</span></code> command at the top of your Python file.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="connect-to-the-database">
+<h4>2. Connect to the database<a class="headerlink" href="#connect-to-the-database" title="Permalink to this headline">¶</a></h4>
+<p>You need to create a connection object. The connection object is used to make changes to the database file. Generate a connection object using the <code class="docutils literal notranslate"><span class="pre">sqlite3.connect</span></code> method and assign it to a variable.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;database_file.db&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-a-cursor">
+<h4>3. Create a cursor<a class="headerlink" href="#create-a-cursor" title="Permalink to this headline">¶</a></h4>
+<p>Finally you need to create a cursor object. The cursor object is used to run SQL queries on the database via the connection object.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s2">&quot;database_file.db&quot;</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Now you are set to access your SQLite database with Python.</p>
+</div>
+</div>
+<div class="section" id="queries">
+<h3>Queries<a class="headerlink" href="#queries" title="Permalink to this headline">¶</a></h3>
+<p>There are two steps to running a query in using <code class="docutils literal notranslate"><span class="pre">sqlite3</span></code> and Python.</p>
+<div class="section" id="execute-the-sql-query-statement">
+<h4>1. Execute the SQL query statement<a class="headerlink" href="#execute-the-sql-query-statement" title="Permalink to this headline">¶</a></h4>
+<p>The SQL query statement is provided as a string. Below is an example of how I format the code using a multiline string. It makes it easier to read, and, therefore, increases maintainability.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    SELECT name, phone_num</span>
+<span class="sd">    FROM customers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fetch-the-results">
+<h4>2. Fetch the results<a class="headerlink" href="#fetch-the-results" title="Permalink to this headline">¶</a></h4>
+<p>Once the query has been executed, you need to fetch the results that are stored in the cursor. You have three fetching options:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">fetchall()</span></code> - returns all the results</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fetchone()</span></code> - returns the next result</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fetchmany(size)</span></code> - returns the <code class="docutils literal notranslate"><span class="pre">size</span></code> number of rows</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    SELECT name, phone_num</span>
+<span class="sd">    FROM Customers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<span class="p">)</span>
+
+<span class="n">reults</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="insert-create-update-delete">
+<h3>INSERT, CREATE, UPDATE, DELETE<a class="headerlink" href="#insert-create-update-delete" title="Permalink to this headline">¶</a></h3>
+<p>All SQL statements that involve making changes to the database (INSERT, CREATE, UPDATE and DELETE) also have two steps, but they are slightly different.</p>
+<div class="section" id="execute-the-sql-statement">
+<h4>Execute the SQL statement<a class="headerlink" href="#execute-the-sql-statement" title="Permalink to this headline">¶</a></h4>
+<p>The first step in as the same. The cursor needs to be used to execute the SQL statement.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    INSERT INTO Customers (name, phone_num)</span>
+<span class="sd">    VALUES (&quot;John&quot;, &quot;0434123456&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="commit-changes">
+<h4>Commit changes<a class="headerlink" href="#commit-changes" title="Permalink to this headline">¶</a></h4>
+<p>The changes to the database will not be permanent until they have been committed to the database file. You can commit numerous execute commands to the database in one go. To make the commitment we use the connection’s <code class="docutils literal notranslate"><span class="pre">commit()</span></code> method.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    INSERT INTO Customers (name, phone_num)</span>
+<span class="sd">    VALUES (&quot;John&quot;, &quot;0434123456&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<span class="p">)</span>
+
+<span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="using-variables">
+<h3>Using variables<a class="headerlink" href="#using-variables" title="Permalink to this headline">¶</a></h3>
+<p><img alt="XKCD" src="https://imgs.xkcd.com/comics/exploits_of_a_mom.png" /></p>
+<p>To avoid SQL injection attacks, the correct way to insert variables values into your SQL statements is to use the parameter substitution method. This method inserts a placeholder in the SQL statement, and the values are then passes as a second argument to the <code class="docutils literal notranslate"><span class="pre">execute()</span></code> method. We will be using dictionaries to do this, although lists can also be used.</p>
+<div class="section" id="id2">
+<h4>Queries<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p>Below is an example of a parameterised query statement.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    SELECT name, phone_num</span>
+<span class="sd">    FROM Customers</span>
+<span class="sd">    WHERE name = :name</span>
+<span class="sd">    &quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;John&quot;</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+
+<span class="n">reults</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h4>INSERT, CREATE, UPDATE, DELETE<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p>Below is an example of a parameterised insert statement</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    INSERT INTO Customers (name, phone_num)</span>
+<span class="sd">    VALUES (:name, :phone)</span>
+<span class="sd">    &quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;John&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;phone&quot;</span><span class="p">:</span><span class="s2">&quot;0434123456&quot;</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+
+<span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -998,11 +1365,9 @@ title="Print to PDF"
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="unit_1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1018,28 +1383,28 @@ title="Print to PDF"
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            </footer>
+            
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By Damien Murtagh<br/>
-  
-      &copy; Copyright 2022.<br/>
-</p>
-        </footer>
-    </div>
+    <footer class="footer">
+  <p>
     
-</div>
+      By Damien Murtagh<br/>
+    
+      <div class="extra_footer">
+        <p>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</p>
+      </div>
+  </p>
+</footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>
