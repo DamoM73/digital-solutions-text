@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Text Structure &#8212; EDGE approach to Digital Solutions</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,16 +18,20 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -37,18 +39,18 @@
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -61,21 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -84,10 +72,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -105,15 +92,14 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
-                    EDGE approach to Digital Solutions
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   EDGE approach to Digital Solutions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -796,17 +782,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
-    </div>
-    <div id="rtd-footer-container"></div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
 </div>
 
 
@@ -814,162 +795,77 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="header-article row sticky-top noprint">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F1_text_structure.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/1_text_structure.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/1_text_structure.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F1_text_structure.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
     </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#digital-solutions-context">
    Digital Solutions Context
@@ -1036,11 +932,12 @@ title="Print to PDF"
  </li>
 </ul>
 
-    </nav>
-</div>
+            </nav>
+        </div>
     </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>The Text Structure</h1>
@@ -1123,55 +1020,58 @@ title="Print to PDF"
                     </div>
                 </div>
             </div>
-            <main id="main-content" role="main">
-                
+            
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="the-text-structure">
-<h1>The Text Structure<a class="headerlink" href="#the-text-structure" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="the-text-structure">
+<h1>The Text Structure<a class="headerlink" href="#the-text-structure" title="Permalink to this headline">¶</a></h1>
 <p>In this text students will learn the Digital Solutions content, through the application of the EDGE processes. The process has been broken down into sub-phases. Students will navigate these phases for each of the four units, applying the process to a sample problem and developing the required skills, whilst learning the content.</p>
 <hr class="docutils" />
-<section id="digital-solutions-context">
-<h2>Digital Solutions Context<a class="headerlink" href="#digital-solutions-context" title="Permalink to this headline">#</a></h2>
+<div class="section" id="digital-solutions-context">
+<h2>Digital Solutions Context<a class="headerlink" href="#digital-solutions-context" title="Permalink to this headline">¶</a></h2>
 <p>The Digital Solutions Technology context we will be using for this text is Interactive Media.</p>
-</section>
+</div>
 <hr class="docutils" />
-<section id="digital-solutions-units">
-<h2>Digital Solutions Units<a class="headerlink" href="#digital-solutions-units" title="Permalink to this headline">#</a></h2>
-<section id="unit-1-creating-with-code">
-<h3>Unit 1: Creating with code<a class="headerlink" href="#unit-1-creating-with-code" title="Permalink to this headline">#</a></h3>
+<div class="section" id="digital-solutions-units">
+<h2>Digital Solutions Units<a class="headerlink" href="#digital-solutions-units" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="unit-1-creating-with-code">
+<h3>Unit 1: Creating with code<a class="headerlink" href="#unit-1-creating-with-code" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><p>In Unit 1, students will explore the creative and technical aspects of developing interactive digital solutions. They investigate algorithms, programming features and useability principles to generate small interactive solutions using programming tools and gain a practical understanding of programming features. This allows them the opportunity to explore existing and developing trends involving digital technologies <span id="id1">[<a class="reference internal" href="bibliography.html#id6" title="QCAA. Digital Solutions General Senior Syllabus 2019. The State of Queensland (Queensland Curriculum &amp; Assessment Authority), 2017. URL: https://www.qcaa.qld.edu.au/downloads/senior-qce/syllabuses/snr_digital_solutions_19_syll.pdf (visited on 2022-06-03).">QCAA, 2017</a>]</span>.</p>
+<div><p>In Unit 1, students will explore the creative and technical aspects of developing interactive digital solutions. They investigate algorithms, programming features and useability principles to generate small interactive solutions using programming tools and gain a practical understanding of programming features. This allows them the opportunity to explore existing and developing trends involving digital technologies <span id="id1">[<a class="reference internal" href="bibliography.html#id6">QCAA, 2017</a>]</span>.</p>
 </div></blockquote>
-</section>
-<section id="unit-2-application-and-data-solutions">
-<h3>Unit 2: Application and data solutions<a class="headerlink" href="#unit-2-application-and-data-solutions" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="unit-2-application-and-data-solutions">
+<h3>Unit 2: Application and data solutions<a class="headerlink" href="#unit-2-application-and-data-solutions" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><p>Unit 2, students are required to engage with and learn subject matter through the use of the various phases of the problem-solving process in Digital Solutions. Students will optimise a given database and use programming skills acquired in Unit 1 to write procedural text-based code to generate a solution that interacts with an existing database via structured query language (SQL). Students will plan, develop and generate the interface and code to enable the user to insert, update, retrieve and delete data using an existing database via SQL. Prior to inserting the data, the system will validate the data being entered to ensure its integrity and reliability for use and storage. Retrieved data will be displayed to the user in an appropriate format, such as text or a symbolic visual form <span id="id2">[<a class="reference internal" href="bibliography.html#id6" title="QCAA. Digital Solutions General Senior Syllabus 2019. The State of Queensland (Queensland Curriculum &amp; Assessment Authority), 2017. URL: https://www.qcaa.qld.edu.au/downloads/senior-qce/syllabuses/snr_digital_solutions_19_syll.pdf (visited on 2022-06-03).">QCAA, 2017</a>]</span>.</p>
+<div><p>Unit 2, students are required to engage with and learn subject matter through the use of the various phases of the problem-solving process in Digital Solutions. Students will optimise a given database and use programming skills acquired in Unit 1 to write procedural text-based code to generate a solution that interacts with an existing database via structured query language (SQL). Students will plan, develop and generate the interface and code to enable the user to insert, update, retrieve and delete data using an existing database via SQL. Prior to inserting the data, the system will validate the data being entered to ensure its integrity and reliability for use and storage. Retrieved data will be displayed to the user in an appropriate format, such as text or a symbolic visual form <span id="id2">[<a class="reference internal" href="bibliography.html#id6">QCAA, 2017</a>]</span>.</p>
 </div></blockquote>
 <blockquote>
-<div><p>Students are required to understand the structure of a database, along with how primary and foreign keys and data types affect the performance of the database. Students will evaluate the security, privacy and ethical effects of storing data in databases from individual, organisational and government perspectives <span id="id3">[<a class="reference internal" href="bibliography.html#id6" title="QCAA. Digital Solutions General Senior Syllabus 2019. The State of Queensland (Queensland Curriculum &amp; Assessment Authority), 2017. URL: https://www.qcaa.qld.edu.au/downloads/senior-qce/syllabuses/snr_digital_solutions_19_syll.pdf (visited on 2022-06-03).">QCAA, 2017</a>]</span>.</p>
+<div><p>Students are required to understand the structure of a database, along with how primary and foreign keys and data types affect the performance of the database. Students will evaluate the security, privacy and ethical effects of storing data in databases from individual, organisational and government perspectives <span id="id3">[<a class="reference internal" href="bibliography.html#id6">QCAA, 2017</a>]</span>.</p>
 </div></blockquote>
-</section>
-<section id="unit-3-digital-innovation">
-<h3>Unit 3: Digital innovation<a class="headerlink" href="#unit-3-digital-innovation" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="unit-3-digital-innovation">
+<h3>Unit 3: Digital innovation<a class="headerlink" href="#unit-3-digital-innovation" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><p>In Unit 3, students are required to engage with and learn subject matter through the use of the various phases of the problem-solving process in Digital Solutions. Students analyse the requirements of particular groups of people, and use knowledge and skills of problem-solving, computational, design and systems thinking. They will determine data requirements and use available resources to create prototyped digital solutions by programming and developing user interfaces to improve user experiences <span id="id4">[<a class="reference internal" href="bibliography.html#id6" title="QCAA. Digital Solutions General Senior Syllabus 2019. The State of Queensland (Queensland Curriculum &amp; Assessment Authority), 2017. URL: https://www.qcaa.qld.edu.au/downloads/senior-qce/syllabuses/snr_digital_solutions_19_syll.pdf (visited on 2022-06-03).">QCAA, 2017</a>]</span>.</p>
+<div><p>In Unit 3, students are required to engage with and learn subject matter through the use of the various phases of the problem-solving process in Digital Solutions. Students analyse the requirements of particular groups of people, and use knowledge and skills of problem-solving, computational, design and systems thinking. They will determine data requirements and use available resources to create prototyped digital solutions by programming and developing user interfaces to improve user experiences <span id="id4">[<a class="reference internal" href="bibliography.html#id6">QCAA, 2017</a>]</span>.</p>
 </div></blockquote>
-</section>
-<section id="unit-4-digital-impacts">
-<h3>Unit 4: Digital impacts<a class="headerlink" href="#unit-4-digital-impacts" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="unit-4-digital-impacts">
+<h3>Unit 4: Digital impacts<a class="headerlink" href="#unit-4-digital-impacts" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><p>In Unit 4, students learn how data is shared in both local and global contexts, particularly how digital solutions are increasingly required to exchange data securely and efficiently. Students will understand elements of cybersecurity by exploring the conditions, environment and methods for enabling data to flow between different digital systems. They will analyse data privacy and data integrity risks associated with transferring data between applications and evaluate the personal, social and economic impacts associated with the use and availability of both public and private data. Students will develop an application that simulates the exchange of data between two applications <span id="id5">[<a class="reference internal" href="bibliography.html#id6" title="QCAA. Digital Solutions General Senior Syllabus 2019. The State of Queensland (Queensland Curriculum &amp; Assessment Authority), 2017. URL: https://www.qcaa.qld.edu.au/downloads/senior-qce/syllabuses/snr_digital_solutions_19_syll.pdf (visited on 2022-06-03).">QCAA, 2017</a>]</span>.</p>
+<div><p>In Unit 4, students learn how data is shared in both local and global contexts, particularly how digital solutions are increasingly required to exchange data securely and efficiently. Students will understand elements of cybersecurity by exploring the conditions, environment and methods for enabling data to flow between different digital systems. They will analyse data privacy and data integrity risks associated with transferring data between applications and evaluate the personal, social and economic impacts associated with the use and availability of both public and private data. Students will develop an application that simulates the exchange of data between two applications <span id="id5">[<a class="reference internal" href="bibliography.html#id6">QCAA, 2017</a>]</span>.</p>
 </div></blockquote>
-</section>
-</section>
+</div>
+</div>
 <hr class="docutils" />
-<section id="edge-phases">
-<h2>EDGE Phases<a class="headerlink" href="#edge-phases" title="Permalink to this headline">#</a></h2>
+<div class="section" id="edge-phases">
+<h2>EDGE Phases<a class="headerlink" href="#edge-phases" title="Permalink to this headline">¶</a></h2>
 <p>Below are the four phases, and their sub-phases, as used by this text. There is an additional phase which addresses syllabus content that is used throughout the EDGE process.</p>
-<section id="explore">
-<h3>Explore<a class="headerlink" href="#explore" title="Permalink to this headline">#</a></h3>
+<div class="section" id="explore">
+<h3>Explore<a class="headerlink" href="#explore" title="Permalink to this headline">¶</a></h3>
+<p>In the <strong>Explore</strong> phase students are tasked with identifying and defining a problem or opportunity.</p>
+<p>This phase involves research, brainstorming, and stakeholder consultation to gather information and ideas that will inform the design of a solution. The goal of this phase is to gain a deep understanding of the problem or opportunity and to identify key requirements for the solution.</p>
+<p>This phase may include activities such as conducting surveys, interviews, and focus groups, as well as analysing existing data to identify patterns and trends.</p>
+<p>The steps we will use to implement the <strong>Explore</strong> phase are:</p>
 <ul class="simple">
 <li><p>Describe the problem</p></li>
 <li><p>Determine human needs or wants</p></li>
@@ -1181,34 +1081,49 @@ title="Print to PDF"
 <li><p>Identify Requirements</p></li>
 <li><p>Determine Criteria</p></li>
 </ul>
-</section>
-<section id="develop">
-<h3>Develop<a class="headerlink" href="#develop" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="develop">
+<h3>Develop<a class="headerlink" href="#develop" title="Permalink to this headline">¶</a></h3>
+<p>In the <strong>Develop</strong> phase students use the information and ideas gathered in the Explore phase to design and prototype solutions.</p>
+<p>In this phase, students use the requirements identified in the Explore phase as a guide to develop solutions that meet the needs of the stakeholders.</p>
+<p>This phase may include activities such as creating flowcharts, wireframes, and storyboards to plan the solution, and creating working prototypes to test and evaluate the design.</p>
+<p>Additionally, in this phase, students will also be expected to consider ethical, legal and social implications of their solutions as well as possible risks and mitigations.</p>
+<p>The steps we will use to implement the <strong>Develop</strong> phase are:</p>
 <ul class="simple">
 <li><p>Design UI and UX</p></li>
 <li><p>Design Algorithms</p></li>
 <li><p>Design Data Source</p></li>
 </ul>
-</section>
-<section id="generate">
-<h3>Generate<a class="headerlink" href="#generate" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="generate">
+<h3>Generate<a class="headerlink" href="#generate" title="Permalink to this headline">¶</a></h3>
+<p>In the <strong>Generate</strong> phase students use the requirements identified in the Explore phase, and the design created in the Develop phase to create a final solution.</p>
+<p>This phase may include activities such as coding, testing, and debugging, as well as creating user documentation and training materials.</p>
+<p>Additionally, in this phase, students will also be expected to apply the principles of user-centered design to ensure the solution is user-friendly, accessible and meets the needs of the stakeholders.</p>
+<p>The steps we will use to implement the <strong>Generate</strong> phase are:</p>
 <ul class="simple">
 <li><p>Select Development Environment</p></li>
 <li><p>Generate Code</p></li>
 <li><p>Clarify Code</p></li>
 <li><p>Test Code</p></li>
 </ul>
-</section>
-<section id="evaluate">
-<h3>Evaluate<a class="headerlink" href="#evaluate" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="evaluate">
+<h3>Evaluate<a class="headerlink" href="#evaluate" title="Permalink to this headline">¶</a></h3>
+<p>In the <strong>Evaluate</strong> phase students evaluate the final solution created in the Generate phase against the requirements identified in the Explore phase.</p>
+<p>This phase involves testing the solution with users and stakeholders, gathering feedback, and analysing the results to determine if the solution meets the needs of the stakeholders and if it is effective, efficient and satisfactory. The goal of this phase is to identify any issues or problems with the solution and to make improvements or modifications as needed.</p>
+<p>This phase may include activities such as usability testing, user acceptance testing, and performance testing.</p>
+<p>Additionally, in this phase, students will also be expected to consider the sustainability, scalability and maintenance of their solutions.</p>
+<p>The steps we will use to implement the <strong>Evaluate</strong> phase are:</p>
 <ul class="simple">
 <li><p>Evaluate Components</p></li>
 <li><p>Assess Impacts</p></li>
 <li><p>Evaluate Solution</p></li>
 </ul>
-</section>
-<section id="throughout">
-<h3>Throughout<a class="headerlink" href="#throughout" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="throughout">
+<h3>Throughout<a class="headerlink" href="#throughout" title="Permalink to this headline">¶</a></h3>
+<p>Throughout the EDGE design process students will need to demonstrate the following skills.</p>
 <ul class="simple">
 <li><p>Communicate</p></li>
 <li><p>Use Project Conventions</p></li>
@@ -1216,9 +1131,9 @@ title="Print to PDF"
 <li><p>Use Technical Language</p></li>
 <li><p>Apply Referencing</p></li>
 </ul>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1242,11 +1157,9 @@ title="Print to PDF"
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1262,32 +1175,28 @@ title="Print to PDF"
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            </footer>
+            
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By Damien Murtagh<br/>
-  
-    <div class="extra_footer">
-      <p>
+    <footer class="footer">
+  <p>
+    
+      By Damien Murtagh<br/>
+    
+      <div class="extra_footer">
+        <p>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 </p>
-    </div>
-</p>
-        </footer>
-    </div>
-    
-</div>
+      </div>
+  </p>
+</footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

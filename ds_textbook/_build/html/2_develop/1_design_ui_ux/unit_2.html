@@ -4,13 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit 2: Develop UI and UX &#8212; EDGE approach to Digital Solutions</title>
     
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -20,16 +18,20 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
+    
+      
+
+    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -37,18 +39,18 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -61,21 +63,7 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
-
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
     <div class="container-fluid" id="banner"></div>
 
@@ -84,10 +72,9 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -105,15 +92,14 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../intro.html">
-                    EDGE approach to Digital Solutions
-                </a>
-            </li>
-        </ul>
-        <p aria-level="2" class="caption" role="heading">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   EDGE approach to Digital Solutions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -796,17 +782,12 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
-    </div>
-    <div id="rtd-footer-container"></div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
 </div>
 
 
@@ -814,162 +795,77 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="header-article row sticky-top noprint">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
         
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-expand"></i>
-  </span>
-
-</button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_develop/1_design_ui_ux/unit_2.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../_sources/2_develop/1_design_ui_ux/unit_2.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/2_develop/1_design_ui_ux/unit_2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F2_develop/1_design_ui_ux/unit_2.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
     </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#visual-communication">
    Visual communication
@@ -1078,11 +974,12 @@ title="Print to PDF"
  </li>
 </ul>
 
-    </nav>
-</div>
+            </nav>
+        </div>
     </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Unit 2: Develop UI and UX</h1>
@@ -1207,16 +1104,15 @@ title="Print to PDF"
                     </div>
                 </div>
             </div>
-            <main id="main-content" role="main">
-                
+            
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="unit-2-develop-ui-and-ux">
-<h1>Unit 2: Develop UI and UX<a class="headerlink" href="#unit-2-develop-ui-and-ux" title="Permalink to this headline">#</a></h1>
-<section id="visual-communication">
-<h2>Visual communication<a class="headerlink" href="#visual-communication" title="Permalink to this headline">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="unit-2-develop-ui-and-ux">
+<h1>Unit 2: Develop UI and UX<a class="headerlink" href="#unit-2-develop-ui-and-ux" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="visual-communication">
+<h2>Visual communication<a class="headerlink" href="#visual-communication" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>Visual communication is the practice of using visual elements to convey a message, inspire change, or evoke emotion. <span id="id1">[<a class="reference internal" href="../../bibliography.html#id31" title="Midori Nediger. How to use visual communication: definition, examples, templates. 08 2020. URL: https://venngage.com/blog/visual-communication/ (visited on 2022-07-20).">Nediger, 2020</a>]</span></p>
+<div><p>Visual communication is the practice of using visual elements to convey a message, inspire change, or evoke emotion. <span id="id1">[<a class="reference internal" href="../../bibliography.html#id31">Nediger, 2020</a>]</span></p>
 </div></blockquote>
 <p>We will consider two aspects of Visual Communication:</p>
 <ul class="simple">
@@ -1224,106 +1120,106 @@ title="Print to PDF"
 <li><p>Visual Communication Elements</p></li>
 </ul>
 <p>You use elements of visual communication to achieve the principles of visual communication.  An analogy, if the principle is the cake you want to make, then the elements are the ingredients you use to make it.</p>
-<section id="visual-communication-elements">
-<h3>Visual Communication Elements<a class="headerlink" href="#visual-communication-elements" title="Permalink to this headline">#</a></h3>
+<div class="section" id="visual-communication-elements">
+<h3>Visual Communication Elements<a class="headerlink" href="#visual-communication-elements" title="Permalink to this headline">¶</a></h3>
 <p>The elements of visual communication are the building block of UI design. By manipulating visual communication elements to implement the principles of visual communication you achieve the desired effect on the UI and, subsequently the UX. In other words, the elements of visual communication are the <strong>how</strong> of what you want top achieve.</p>
-<section id="space">
-<h4>Space<a class="headerlink" href="#space" title="Permalink to this headline">#</a></h4>
+<div class="section" id="space">
+<h4>Space<a class="headerlink" href="#space" title="Permalink to this headline">¶</a></h4>
 <p>Space is the area you have to work with. It includes space that is empty and space that contains text, images and other design features. Different uses of space can create clutter or it can create simplicity.</p>
 <p><img alt="space" src="../../_images/space.png" /></p>
-</section>
-<section id="line">
-<h4>Line<a class="headerlink" href="#line" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="line">
+<h4>Line<a class="headerlink" href="#line" title="Permalink to this headline">¶</a></h4>
 <p>Lines can direct the user to a focal point, divide different sections, form shapes and provide emphasis. They can be thick, thin, straight or wavy. They can create order or encourage creativity.</p>
 <p><img alt="lines" src="../../_images/lines.png" /></p>
-</section>
-<section id="colour">
-<h4>Colour<a class="headerlink" href="#colour" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="colour">
+<h4>Colour<a class="headerlink" href="#colour" title="Permalink to this headline">¶</a></h4>
 <p>Colour can provide contrast or emphasis, unify a design, fill a shape or space and imply emotion. A colour scheme can be inspired by a logo or photograph. Colour theory defines rules that can be used to select aesthetically pleasing colour combinations.</p>
 <p><img alt="colour" src="../../_images/colour.png" /></p>
-</section>
-<section id="shape">
-<h4>Shape<a class="headerlink" href="#shape" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="shape">
+<h4>Shape<a class="headerlink" href="#shape" title="Permalink to this headline">¶</a></h4>
 <p>Shapes can be natural, abstract or geometrical. They can be used to symbolically represent an action or create proximity by grouping similar elements.</p>
 <p><img alt="geometric shapes" src="../../_images/shape_1.png" /></p>
 <p><img alt="natural shapes" src="../../_images/shape_2.png" /></p>
 <p><img alt="abstract shapes" src="../../_images/shape_3.png" /></p>
-</section>
-<section id="texture">
-<h4>Texture<a class="headerlink" href="#texture" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="texture">
+<h4>Texture<a class="headerlink" href="#texture" title="Permalink to this headline">¶</a></h4>
 <p>Texture can be used to add interesting to a shape or space, attract attention or unify a design by linking it to the a real world idea with a similar texture.</p>
 <p><img alt="texture" src="../../_images/texture.png" /></p>
-</section>
-<section id="tone">
-<h4>Tone<a class="headerlink" href="#tone" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="tone">
+<h4>Tone<a class="headerlink" href="#tone" title="Permalink to this headline">¶</a></h4>
 <p>Tone is the lightness or the darkness of a colour and can be contrasted to provide hierarchy, emphasis or separation of content.</p>
 <p><img alt="tone" src="../../_images/tone.png" /></p>
-</section>
-<section id="form">
-<h4>Form<a class="headerlink" href="#form" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="form">
+<h4>Form<a class="headerlink" href="#form" title="Permalink to this headline">¶</a></h4>
 <p>Form is the combination of other elements to create solid effects such as the use of tone and shape to create shadows, or the use of line, shape and colour to create a 3D perspective.</p>
 <p><img alt="form" src="../../_images/form.png" /></p>
-</section>
-<section id="proportion">
-<h4>Proportion<a class="headerlink" href="#proportion" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="proportion">
+<h4>Proportion<a class="headerlink" href="#proportion" title="Permalink to this headline">¶</a></h4>
 <p>Proportion relates to the size or quantity of elements in the design in comparison with other elements. Images with disproportionate height and width appear distorted. Unbalanced proportions are usually unattractive but can be used strategically to provide emphasis.</p>
 <p><img alt="proportion" src="../../_images/proportion.png" /></p>
-</section>
-<section id="scale">
-<h4>Scale<a class="headerlink" href="#scale" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="scale">
+<h4>Scale<a class="headerlink" href="#scale" title="Permalink to this headline">¶</a></h4>
 <p>Scale refers to the size of an element. It can be used consistently to provide order and repetition to a design or contrasted to create a focal point or emphasis the importance of one element over another.</p>
 <p><img alt="scale" src="../../_images/scale.png" /></p>
-</section>
-</section>
-<section id="visual-communication-principles">
-<h3>Visual Communication Principles<a class="headerlink" href="#visual-communication-principles" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="visual-communication-principles">
+<h3>Visual Communication Principles<a class="headerlink" href="#visual-communication-principles" title="Permalink to this headline">¶</a></h3>
 <p>The principles of visual communication are the effects you wish to express with your design. They address the overall feel of your design and communicate a message to the user which effects the UI and UX. In other words the principles of visual communication are the <strong>what</strong> that you want to achieve.</p>
-<section id="balance">
-<h4>Balance<a class="headerlink" href="#balance" title="Permalink to this headline">#</a></h4>
+<div class="section" id="balance">
+<h4>Balance<a class="headerlink" href="#balance" title="Permalink to this headline">¶</a></h4>
 <p>Balance occurs when the combination of elements on one side of a design appears equal to the other side. The weight of the design on each side can be influenced by use of colour, space and shape. For example, adding a dark colour to a small empty space on one side can balance a large area of black type on a white background.</p>
 <p><img alt="balance" src="../../_images/balance.png" /></p>
-</section>
-<section id="contrast">
-<h4>Contrast<a class="headerlink" href="#contrast" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="contrast">
+<h4>Contrast<a class="headerlink" href="#contrast" title="Permalink to this headline">¶</a></h4>
 <p>Contrast is used to emphasise an element of the design by using a markedly different colour, size or other characteristic. Contrast
 is also an important factor for readability of text. It is important that there is high contrast between the colour used for typeface and its background colour.</p>
 <p><img alt="contrast" src="../../_images/contrast.png" /></p>
-</section>
-<section id="proximity">
-<h4>Proximity<a class="headerlink" href="#proximity" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="proximity">
+<h4>Proximity<a class="headerlink" href="#proximity" title="Permalink to this headline">¶</a></h4>
 <p>Proximity is the positioning of elements near other elements. Proximity is an important factor in useability because it is easier to interact with a digital solution if similar functions are in close proximity to each other, such as the navigation links in a webpage.</p>
 <p><img alt="proximity" src="../../_images/proximity.png" /></p>
-</section>
-<section id="harmony">
-<h4>Harmony<a class="headerlink" href="#harmony" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="harmony">
+<h4>Harmony<a class="headerlink" href="#harmony" title="Permalink to this headline">¶</a></h4>
 <p>Harmony is the pleasing effect of combining similar elements such as using similar colours, typeface and shapes throughout the
 design.</p>
 <p><img alt="harmony" src="../../_images/harmony.png" /></p>
-</section>
-<section id="alignment">
-<h4>Alignment<a class="headerlink" href="#alignment" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="alignment">
+<h4>Alignment<a class="headerlink" href="#alignment" title="Permalink to this headline">¶</a></h4>
 <p>Alignment can be used to provide unity and proximity to the different elements used in the design. Good alignment aids readability and shows connections between different elements. Objects that are perfectly aligned provide a cleaner aesthetic and more professional appearance which inspires trust and confidence.</p>
 <p><img alt="alignment" src="../../_images/alignment.png" /></p>
-</section>
-<section id="repetition">
-<h4>Repetition<a class="headerlink" href="#repetition" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="repetition">
+<h4>Repetition<a class="headerlink" href="#repetition" title="Permalink to this headline">¶</a></h4>
 <p>Repetition of the same element throughout the design brings consistency, unity and cohesion. For example, repetition of the same icon or button shape can reduce cognitive load and improve learnability for the user. However, too much repetition can become monotonous. Small variations in line, tone or colour to a repeated element can restore interest in the design and helps to retain user attention.</p>
 <p><img alt="repetition" src="../../_images/repetition.png" /></p>
-</section>
-<section id="hierarchy">
-<h4>Hierarchy<a class="headerlink" href="#hierarchy" title="Permalink to this headline">#</a></h4>
+</div>
+<div class="section" id="hierarchy">
+<h4>Hierarchy<a class="headerlink" href="#hierarchy" title="Permalink to this headline">¶</a></h4>
 <p>Hierarchy improves readability of the interface by emphasising more important elements with placement or size. Larger elements or those positioned towards the top of the design are considered more important.</p>
 <p><img alt="hierarchy" src="../../_images/heirarchy.png" /></p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 <hr class="docutils" />
-<section id="demonstrating-visual-communication">
-<h2>Demonstrating Visual Communication<a class="headerlink" href="#demonstrating-visual-communication" title="Permalink to this headline">#</a></h2>
+<div class="section" id="demonstrating-visual-communication">
+<h2>Demonstrating Visual Communication<a class="headerlink" href="#demonstrating-visual-communication" title="Permalink to this headline">¶</a></h2>
 <p>You will demonstrate your use of Visual Communication Principles and Elements in your annotated mock-ups. When adding your annotations, make sure that you bold the principles and elements that you at talking about.</p>
 <p><img alt="VC example" src="../../_images/vc_example.png" /></p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1347,11 +1243,9 @@ design.</p>
 
               </div>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="unit_1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1367,32 +1261,28 @@ design.</p>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            </footer>
+            
         </div>
     </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
-  
-    By Damien Murtagh<br/>
-  
-    <div class="extra_footer">
-      <p>
+    <footer class="footer">
+  <p>
+    
+      By Damien Murtagh<br/>
+    
+      <div class="extra_footer">
+        <p>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 </p>
-    </div>
-</p>
-        </footer>
-    </div>
-    
-</div>
+      </div>
+  </p>
+</footer>
+</main>
 
 
       </div>
     </div>
   
-  <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
-
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>
