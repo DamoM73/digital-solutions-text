@@ -1,6 +1,7 @@
 # Unit 1: Determine Needs or Wants
 
 Determining the human needs and wants provides us with an understanding that we can use to assess the effectiveness of solution, as well as the individual constituent components.
+
 ---
 ## Empathy Maps
 
