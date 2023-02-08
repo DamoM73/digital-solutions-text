@@ -5,67 +5,57 @@ Algorithms are the commands that make up our programs.
 There are 6 basic building blocks that an algorithm consists of. Each of them serve a particular purpose.
 
 - **Sequence:** a number of instructions that are processed one after the other.
-- **Assignment:** used to store the value of an expression into a variable. 
+- **Assignment:** used to store the value of an expression into a variable.
 - **Condition:** the way that a computer asks a question which can only generate two possible responses: True (yes) or False (no).
 - **Selection:** a statement that uses a condition to select, or determine, whether the next line of the program is to be executed.
-- **Iteration:** the repetition of a number of instructions. These are generally referred to as loops and refer to a section of code that is repeated. 
+- **Iteration:** the repetition of a number of instructions. These are generally referred to as loops and refer to a section of code that is repeated.
 - **Modularisation:** refers to the process of breaking a large, unwieldy programming task into separate, smaller, more manageable subtasks or modules. Individual modules can then be cobbled together like building blocks to create a larger application.
 
 In designing your algorithm, you will need to decide how to arrange these building block to achieve you outcome. To do this it is wise to follow good programming practices.
 
 We will use a number of tools to develop algorithms using good programming practices:
-- Activity Diagrams
+
 - Class Diagrams
 - Pseudocode
 - IPO Tables
 - Desk-checking
 
 ---
+
 ## Good Programming Practices
+
 The are many good practices to following when programming. These need to be applied right from when the algorithms are first being developed.
 
 ### Dependability
+
 In systems engineering, dependability is a measure of a system's reliability, maintainability.
 
 - **maintainability:** easy-to-read code that is easy to dissect, so that parts relating to a required change are easy to modify without risking a chain reaction of errors in dependant modules.
 - **reliability:** the probability of a program producing an error or failing to process a task;
-    - In Digital Solutions, testing and useability considerations contribute to reliability. 
-    - For example, predicting where errors are likely to occur (whether user or systems related) can inform mindful use programming constructs.
+  - In Digital Solutions, testing and useability considerations contribute to reliability.
+  - For example, predicting where errors are likely to occur (whether user or systems related) can inform mindful use programming constructs.
 
 ### Efficiency
+
 A situation in which a system or machine uses minimal resources such as time and processing power while still achieving its goals; there are two types of efficiency:
+
 - **algorithmic efficiency:** refers to the reliability, speed and programming methodology for developing succinct structures within an application
 - **code efficiency:** is directly linked with algorithmic efficiency and the speed of runtime execution for software, and is the key element in ensuring high performance; its goal is to reduce resource consumption and completion time as much as possible with minimum risk to the business or operating environment, e.g. using a FOR loop instead of repetitive IF, THEN and ELSE statements where appropriate.
 
 ### Effectiveness
+
 A measure of the success of the algorithm to solve an identified problem; depending on the complexity of the problem, this could be tested with a desk check, but generally, the effectiveness of an algorithm can only be determined after the code has been generated and then tested within the appropriate context;
 
 ---
-## Activity Diagrams
-> Activity diagrams show the workflow from a start point to the finish point detailing the many decision paths that exist in the progression of events contained in the activity {cite}`sparxsystems_2022_activity`.
 
-An activity diagram is made of of different components. Some of the most common components of an activity diagram include:
-- **Action:** A step in the activity wherein the users or software perform a given task.
-- **Decision node:** A conditional branch in the flow that includes a single input and two or more outputs.
-- **Control flows:** Another name for the connectors that show the flow between steps in the diagram.
-- **Start node:** Symbolizes the beginning of the activity.
-- **End node:** Represents the final step in the activity.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/knM8BGY9yVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-{cite}`master2teach_2020_activity`
-
-**Activity Diagram Symbols**
-
-![activity diagram symbols](../assets/activity_symbols.png)
-
----
 ## Class Diagrams
+>
 > Class diagrams clearly map out the structure of a particular system by modelling its classes, attributes, operations, and relationships between objects {cite}`lucidchart_2017_uml`.
 
 Class diagrams are particularly useful when using Object Orientated Programming.
 
 The standard class diagram is composed of three sections:
+
 - **Upper section:** Contains the name of the class. This section is always required.
 - **Middle section:** Contains the attributes of the class. Use this section to describe the qualities of the class.
 - **Bottom section:** Includes class operations (methods). Displayed in list format, each operation takes up its own line.
@@ -74,7 +64,7 @@ The standard class diagram is composed of three sections:
 
 {cite}`lucidchart_2017_uml_vid`
 
-**Class Diagram Symbols**
+### Class Diagram Symbols
 
 ![class symbols](../assets/class_symbols.png)
 
@@ -123,12 +113,14 @@ For example:
 Use a mono-space typeface when writing algorithms on computer:
 
 Windows mono-space fonts:
-- Courier New 
+
+- Courier New
 - Consolas
 - Cascadia Code
 - Cascadia Mono
 
 Mac mono-spaced fonts:
+
 - Andalé Mono
 - Consolas
 - Courier
@@ -139,6 +131,7 @@ Mac mono-spaced fonts:
 To input or output values, common words can be used as keywords.
 
 For example:
+
 - `INPUT mark`
 - `WRITE "the total is" count`
 - `PRINT x, y`
@@ -149,6 +142,7 @@ For example:
 Pseudocode uses the assignment operator, `=` to assign values.
 
 For example:
+
 - `CALCULATE net = gross - tax`
 
 #### Modularisation
@@ -156,21 +150,24 @@ For example:
 All pseudocode modules start and ends with the `BEGIN` and `END` keywords.
 
 Main algorithm:
-```
+
+``` pseudocode
 BEGIN
     statements
 END
 ```
 
 Defining procedures, subroutines, methods or functions
-```
+
+``` pseudocode
 BEGIN function_name
     statements
 END
 ```
 
 Calling procedures, subroutines, methods or functions
-```
+
+``` pseudocode
 statements
 function_name
 statements
@@ -178,25 +175,29 @@ statements
 
 #### Iterations
 
-There are three main types of loops — each has a clear start and end, with the statements within the loop indented. 
+There are three main types of loops — each has a clear start and end, with the statements within the loop indented.
 
-**Post-test loops**
-```
+##### Post-test loops
+
+``` pseudocode
 REPEAT
     statements
 UNTIL
 ```
+
 **Note:** Python does not have a Post-test loop, so we will not be using this.
 
-**Pre-test loop**
-```
+##### Pre-test loop
+
+``` pseudocode
 WHILE
     statements
 ENDWHILE
 ```
 
-**Counted loop**
-```
+##### Counted loop
+
+``` pseudocode
 FOR count = start_val TO end_val
     statements
 NEXT count
@@ -207,15 +208,17 @@ ENDFOR
 
 A control structure used for decisions or branching and choosing alternate paths. The beginning and end of these structures are indicated with keywords.
 
-**IF statement**
-```
+##### IF statement
+
+``` pseudocode
 IF condition THEN
     statements
 ENDIF
 ```
 
-**IF...ELSE statement**
-```
+##### IF...ELSE statement
+
+``` pseudocode
 IF condition THEN
     statements
 ELSE
@@ -223,8 +226,9 @@ ELSE
 ENDIF
 ```
 
-**IF...ELIF...ELSE statement**
-```
+##### IF...ELIF...ELSE statement
+
+``` pseudocode
 IF condition THEN
     statements
 ELSE IF condition THEN
@@ -234,9 +238,11 @@ ELSE
 ENDIF
 ```
 
-**MATCH statement**
+##### MATCH statement
+
 In most other languages these are called switches
-```
+
+``` pseudocode
 SWITCH test_variable
     CASE option
         statements
@@ -247,16 +253,19 @@ ENDSWITCH
 ```
 
 ## IPO Tables
+
 Input Process Output (IPO) tables show sections of your algorithms. They are made up of three columns:
+
 - **Inputs:** Lists all the information/actions this section needs.
 - **Process:** Contains the pseudocode for this algorithm, following QCAA pseudocode rules
 - **Output:** Lists all the information/actions that result from this section.
 
 ![IPO Table](../assets/ipo_table.png)
 
-There is no need to represent all of your program in IPO tables, but rather you need to show the more complicated or tricky code. Each table should represent a section of code, with different functions (modules) being the obvious breaking point. 
+There is no need to represent all of your program in IPO tables, but rather you need to show the more complicated or tricky code. Each table should represent a section of code, with different functions (modules) being the obvious breaking point.
 
 Across all you IPO Tables you should have examples of all algorithm components:
+
 - sequence
 - assignment
 - condition
@@ -265,6 +274,7 @@ Across all you IPO Tables you should have examples of all algorithm components:
 - modularisation
 
 ---
+
 ## Desk-checking
 
 Desk checking is a manual (non computerised) technique for checking the logic of an algorithm. The person performing the desk check effectively acts as the computer, using pen and paper to record results. The desk checker carefully follows the algorithm being careful to rigidly adhere to the logic specified. The desk check can expose problems with the algorithm.
@@ -274,26 +284,26 @@ Desk checks are useful to check an algorithm (before coding) thereby confirming 
 A desk check is normally done as a table with columns for:
 
 - Pseudo code line number - Pseudo code doesn't normally have lines numbers, but these are necessary in a desk check to specify the line(s) being executed
-- One column per variable used. 
-    - The columns should be in alphabetical order on variable name with the variable name at the top of the column. 
-    - As the algorithm is executed, the new values of the variables are put in the appropriate column. 
-    - Show working for calculations. 
-    - If variable names consist of a number of words it is permissible to put a space between each word in the name so that the name fits better in the column by wrapping to the next line. e.g. the variable column heading discount Price could be used rather than the actual variable name discountPrice.
-- condition column. 
-    - The result of the condition will be true (T) or false (F). 
-    - As the algorithm is executed, conditions are evaluated and the details are recorded in the column. 
-    - Show working when evaluating the conditions. 
-    - This is used whenever a condition is evaluated - IF WHILE or FOR statements all have explicit or implicit conditions.
+- One column per variable used.
+  - The columns should be in alphabetical order on variable name with the variable name at the top of the column.
+  - As the algorithm is executed, the new values of the variables are put in the appropriate column.
+  - Show working for calculations.
+  - If variable names consist of a number of words it is permissible to put a space between each word in the name so that the name fits better in the column by wrapping to the next line. e.g. the variable column heading discount Price could be used rather than the actual variable name discountPrice.
+- condition column.
+  - The result of the condition will be true (T) or false (F).
+  - As the algorithm is executed, conditions are evaluated and the details are recorded in the column.
+  - Show working when evaluating the conditions.
+  - This is used whenever a condition is evaluated - IF WHILE or FOR statements all have explicit or implicit conditions.
 - Input/Output
-    - used to show what is input by the user and displayed by the program. 
-    - Show inputs with: the variable name, a "?" and the value input e.g. price ? 200. 
-    - Show outputs with the variable name, an =, and the value displayed (or just the value displayed) e.g. discountPrice= 180 .
-    
+  - used to show what is input by the user and displayed by the program.
+  - Show inputs with: the variable name, a "?" and the value input e.g. price ? 200.
+  - Show outputs with the variable name, an =, and the value displayed (or just the value displayed) e.g. discountPrice= 180 .
+
 ### Branching Example
 
 Consider the following pseudocode:
 
-```
+``` pseudocode
 1 BEGIN calcPrice()
 2    INPUT price
 3    IF price > 100 THEN
@@ -318,7 +328,7 @@ Correct results: price = \$50.
 
 Consider the following pseudocode:
 
-```
+``` pseudocode
 1 BEGIN calcSquares()
 2    DISPLAY "X", "X Squared"
 3    FOR x = 1 TO 3

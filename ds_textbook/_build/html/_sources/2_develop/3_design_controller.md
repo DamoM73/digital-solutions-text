@@ -2,34 +2,36 @@
 
 ```{admonition} Tools used:
 :class: attention
-- Activity Diagrams
 - Class Diagrams
 - Pseudocode
 - IPO Tables
 - Desk-checking
 ```
+
 ## For Unit 1 to 4
 
 Algorithms are the heart of your program, so we spend a bit of effort in designing them.
 
 You will use the following tools to design your algorithms. You will work with them in no particular order, and will most likely move back a forth between them.
 
-### Activity Diagram
-![activity diagram](./assets/activity.png)
-
 ## Class Diagram
+
 ![class diagram](./assets/class_diagram.png)
 
 ## IPO Tables
+
 ![IPO example](./assets/ipo_example.png)
 
 ## Desk Checking
+
 ![desk check](./assets/desk_check_1.png)
 
 ## For Units 2 to 4
-In additional to the requirements from Unit 1, for Units 2 to 4 you will need to create IPO tables for the operation of the Database. 
+
+In additional to the requirements from Unit 1, for Units 2 to 4 you will need to create IPO tables for the operation of the Database.
 
 Specifically you will need tables for:
+
 - Creating the database
 - Processing data for insertion
 - Manipulation of data
