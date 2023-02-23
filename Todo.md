@@ -9,6 +9,7 @@
 Generate
 
 - Scenario
+  - mockup
 
 Evaluate
 
