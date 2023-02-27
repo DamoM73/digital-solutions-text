@@ -6,6 +6,10 @@
 
 ## Unit 2
 
+Explore
+
+- Data analysis
+
 Generate
 
 - Scenario

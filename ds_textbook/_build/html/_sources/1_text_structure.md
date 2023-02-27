@@ -107,6 +107,6 @@ Throughout the EDGE design process students will need to demonstrate the followi
 
 - Communicate
 - Use Project Conventions
-- Use Gramma and Language Structures
+- Use Grammar and Language Structures
 - Use Technical Language
 - Apply Referencing
