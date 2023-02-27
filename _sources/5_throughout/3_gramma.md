@@ -1,13 +1,15 @@
-# Use Gramma and Language Structures
+# Use Grammar and Language Structures
 
-## Gramma and Spell Checking
-Please ensure that you use spelling and gramma checks in your documentation. 
+## Grammar and Spell Checking
+
+Please ensure that you use spelling and grammar checks in your documentation.
 
 ## Annotating
 
-Throughout the EDGE process you will need comment on visual elements. The correct way to do this is through annotations. 
+Throughout the EDGE process you will need comment on visual elements. The correct way to do this is through annotations.
 
 Annotation has three elements:
+
 1. An image you wish to comment on
 2. A text box commenting on a feature of the image
 3. An arrow pointing from the text box to the feature that it is commenting on.
