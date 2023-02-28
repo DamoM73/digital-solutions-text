@@ -2,7 +2,6 @@
 ```{admonition} Tools used to complete the Develop phase:
 :class: attention
 - Mockups
-- Activity Diagrams
 - Class Diagrams
 - IPO Tables
 - Pseudocode
