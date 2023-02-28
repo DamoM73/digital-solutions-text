@@ -1,16 +1,17 @@
 # Unit 1 Scenario: Develop Phase
 
 ## Mockup
+
 ![Annotated Mockup](../assets/annotation.png)
 
-## Activity Diagram
-![Activity Diagram](../assets/scenario_activity.png)
-
 ## Class Diagram
+
 ![Class Diagram](../assets/scenario_class.png)
 
 ## IPO Tables
+
 When deciding which IPOs to show in your document, make sure that you cover the basics:
+
 - Sequence
 - Selection
 - Iteration
@@ -25,6 +26,7 @@ Also show the IPO tables for any especially tricky algorithms.
 ![Check Letter IPO](../assets/scenario_check_letter_ipo.png)
 
 ## Desk-checking
+
 This is only one desk check. You should desk check your more complicated algorithms.
 
 ![Desk Check](../assets/scenario_desk_check.png)

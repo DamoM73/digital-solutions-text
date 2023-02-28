@@ -11,7 +11,6 @@ You will communicate throughout this course using the tools identified in each p
   - Criteria Tables
 - **Develop:**
   - Mockups
-  - Activity Diagrams
   - Class Diagrams
   - IPO Tables
   - Pseudocode
