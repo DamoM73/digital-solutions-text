@@ -8,11 +8,14 @@
 
 Explore
 
-- Data analysis
+- data analysis
+  - dataset analysis
+  - mindmap
 
 Generate
 
 - Scenario
+  - data analysis
   - mockup
 
 Evaluate
