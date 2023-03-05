@@ -2,6 +2,8 @@
 
 ## Mockups
 
+![Mockup 1](../assets/unit_2_scenario_mockup_1.png)
+
 ## Data Flow Diagram
 
 ![Data Flow Diagram](../assets/scenario_unit_2_dfd.png)
