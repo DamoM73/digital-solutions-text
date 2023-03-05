@@ -11,36 +11,43 @@ What distinguishes a digital problem is that the solution consists of digital ha
 ![IPO](./../assests/IPO.png)
 
 In a digital system:
+
 - data goes in (input)
 - data is manipulated (process)
 - data is sent out (output)
+
 ---
+
 ## Scope
+
 The scope of the project provides detail about how the solution will address the problem and what types of things will be produced or delivered. The scope defines the boundaries of the system (or problem) that is being addressed.
 
 The scope includes:
+
 - **Problem Statement:** The problem statement is an overall descriptive statement about what needs to be solved. It includes a justification for the project (explains why is it being undertaken in the first place).
 - **Objectives:** These are the overall project goals that will meet the needs of your customers.
-- **Deliverables:** The deliverables are the objects are that need to be produced. 
+- **Deliverables:** The deliverables are the objects are that need to be produced.
 - **Constraints and Limitations:** What are the barriers or things that must be adhered to? These are the requirement specifications for the project.
 - **Timeline:** How long the project will run for and any specific milestones or checkpoints along the way.
 
 We will deal with each of these in coming sections, but let's start with the Problem Statement.
 
 ### Problem Statement
+>
 > A problem statement is a concise and unbiased description of the problem or issues a process improvement project seeks to address. {cite}`indeededitorialteam_2021_what`
 
 Use this step-by-step guide to craft your problem statement:
+
 - **Identify the problem:** Before you write your problem statement, you must first identify the problem.
 - **Begin your statement with your ideal situation:** Next, your problem statement should identify the ideal environment if the problem didn't exist.
 - **Describe the current gaps:** Concisely identify what the current environment looks like and then focus on the 5Ws and H:
   - **who** does the problem affect?
   - **what** is causing the problem?
-  - **where** where does the problem occurs? Is it location specific?
+  - **where** does the problem occur? Is it location specific?
   - **when** does the problem occurs? **When** did it became a problem? Is it time specific?
   - **why** is it a problem? **Why** must it be resolve?
   - **how** much of an impact does the problem have on individuals or groups?
-- **State the consequences of the problem:** Highlight and quantify the consequences of the problem. 
+- **State the consequences of the problem:** Highlight and quantify the consequences of the problem.
 - **Propose addressing the problem:** Identify how you will make progress towards reaching the desired goal.
 
 ![problem statement](../assests/mm_problem_statement.png)

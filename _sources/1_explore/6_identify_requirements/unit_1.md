@@ -27,7 +27,7 @@ These can include:
     - Efficient - uses minimal resources to solve identified problem
     - Maintainable - code that is easy to read and modify
     - Reliable - operate without producing errors or fail at a task
-- **Data interface** criteria concerning:
+- **Data** criteria concerning:
   - Specific datasets that must be considered or used
   - File formats to be used
   - Data structures to be implemented and created
