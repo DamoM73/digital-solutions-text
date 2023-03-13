@@ -64,7 +64,7 @@ When you identify a solution requirements from the criteria sheet or documentati
 
 ## Creating the Requirements Table
 
-The Requirements Table is about triaging all the possible requirements into a priority for your project. The table has four columns, like the one below:
+Now that we have fully explored the problem and identified all the requirements, we need to prioritise them. Looking at the needs and wants and the mind map, take the identified requirements and add them to the table below.
 
 ![Requirements Table](../assests/MuSCoW.png)
 
@@ -73,4 +73,4 @@ How to fill the table out:
 - **Must:** This column contains all the requirements that are explicitly expressed in the criteria sheet or stimulus material.
 - **Should:** This column contains requirements that you think are important. It might include functional and non-functional requirements not mentioned in the criteria sheet or stimulus (eg. the Usability Principle of Safety).
 - **Could:** This column is for really good ideas that you do not have the time, skills or resources to implement (eg. making it post on social media).
-- **Won't** This column contains ideas that other might like, but you are not interested in. Don't simply put the negative of a requirement (eg. if you have mentioned the Usability Principle of Effectiveness, don't add "Won't crash" to this column).
+- **Won't** This column contains ideas that other might like, but you are not interested in. **Don't simply put the negative of a requirement** (eg. if you have mentioned the Usability Principle of Effectiveness, don't add "Won't crash" to this column).
