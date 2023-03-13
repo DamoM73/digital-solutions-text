@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Unit 2: Identify Requirements &#8212; EDGE approach to Digital Solutions</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -39,21 +37,21 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="shortcut icon" href="../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -66,7 +64,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -75,9 +87,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -95,14 +108,15 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../intro.html">
-   EDGE approach to Digital Solutions
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    EDGE approach to Digital Solutions
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Introduction
  </span>
@@ -785,90 +799,180 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/1_explore/6_identify_requirements/unit_2.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F1_explore/6_identify_requirements/unit_2.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F1_explore/6_identify_requirements/unit_2.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/1_explore/6_identify_requirements/unit_2.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#programming-options">
    Programming options
@@ -976,12 +1080,11 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Unit 2: Identify Requirements</h1>
@@ -1105,18 +1208,19 @@
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="unit-2-identify-requirements">
-<h1>Unit 2: Identify Requirements<a class="headerlink" href="#unit-2-identify-requirements" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="unit-2-identify-requirements">
+<h1>Unit 2: Identify Requirements<a class="headerlink" href="#unit-2-identify-requirements" title="Permalink to this headline">#</a></h1>
 <p>In addition to the requirements from Unit 1, you also need to consider</p>
-<div class="section" id="programming-options">
-<h2>Programming options<a class="headerlink" href="#programming-options" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="data-models">
-<h3>Data models<a class="headerlink" href="#data-models" title="Permalink to this headline">¶</a></h3>
+<section id="programming-options">
+<h2>Programming options<a class="headerlink" href="#programming-options" title="Permalink to this headline">#</a></h2>
+<section id="data-models">
+<h3>Data models<a class="headerlink" href="#data-models" title="Permalink to this headline">#</a></h3>
 <blockquote>
-<div><p>Data modeling (data modelling) is the process of creating a data model for the data to be stored in a database. This data model is a conceptual representation of Data objects, the associations between different data objects, and the rules. <span id="id1">[<a class="reference internal" href="../../bibliography.html#id30">Taylor, 2018</a>]</span></p>
+<div><p>Data modeling (data modelling) is the process of creating a data model for the data to be stored in a database. This data model is a conceptual representation of Data objects, the associations between different data objects, and the rules. <span id="id1">[<a class="reference internal" href="../../bibliography.html#id30" title="David Taylor. What is data modelling? conceptual, logical, &amp; physical data models. 12 2018. URL: https://www.guru99.com/data-modelling-conceptual-logical.html (visited on 2022-07-14).">Taylor, 2018</a>]</span></p>
 </div></blockquote>
 <p>It is defined as an abstract model that organizes:</p>
 <ul class="simple">
@@ -1135,9 +1239,9 @@
 <li><p>making IT infrastructure upgrades and maintenance cheaper and faster</p></li>
 </ul>
 <p>In this course we will be creating data models using Entity Relationship models.</p>
-</div>
-<div class="section" id="storage">
-<h3>Storage<a class="headerlink" href="#storage" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="storage">
+<h3>Storage<a class="headerlink" href="#storage" title="Permalink to this headline">#</a></h3>
 <p>Data storage requirements can relate to either policies and procedures that need to be adhered to for
 the safe storage, use and destruction of data and also to the physical and software requirements of
 storing that information.</p>
@@ -1154,21 +1258,21 @@ storing that information.</p>
 <li><p>How will the data be backed-up?</p></li>
 <li><p>What security will the data need?</p></li>
 </ul>
-</div>
-<div class="section" id="output-requirements">
-<h3>Output requirements<a class="headerlink" href="#output-requirements" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="output-requirements">
+<h3>Output requirements<a class="headerlink" href="#output-requirements" title="Permalink to this headline">#</a></h3>
 <p>The problem will have some explicit output requirements. What does the user need the application to provide?</p>
 <p>Identifying the output requirements, will help determine the data needed, and identify any missing data.</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="data-insertion">
-<h2>Data Insertion<a class="headerlink" href="#data-insertion" title="Permalink to this headline">¶</a></h2>
+<section id="data-insertion">
+<h2>Data Insertion<a class="headerlink" href="#data-insertion" title="Permalink to this headline">#</a></h2>
 <p>In order to be able to store data into a database there are a number of important processes that need to be followed to make sure that the data that is stored is usable.</p>
 <p>These issues can relate to variations in data formats, data structures, validation rules and data
 requirements.</p>
-<div class="section" id="data-formats">
-<h3>Data formats<a class="headerlink" href="#data-formats" title="Permalink to this headline">¶</a></h3>
+<section id="data-formats">
+<h3>Data formats<a class="headerlink" href="#data-formats" title="Permalink to this headline">#</a></h3>
 <p>The storage of data needs to be consistent. That means the way that one data point is stored is the same from record to record. For example 100,000 and <span class="math notranslate nohighlight">\(10^5\)</span> are the same number, but they are formatted differently. Before designing a database and storing data, the accepted format of this data needs to be decided.</p>
 <p>Some common data formats that need to be established:</p>
 <ul class="simple">
@@ -1234,18 +1338,18 @@ requirements.</p>
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="data-structures">
-<h3>Data structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="data-structures">
+<h3>Data structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">#</a></h3>
 <p>The two basic data structures that this course deals with are:</p>
 <ul class="simple">
 <li><p><strong>flat file databases:</strong> information is stored in a single table</p></li>
 <li><p><strong>relational databases:</strong> information is stored in many, interconnected tables</p></li>
 </ul>
 <p>This course will be dealing with relational databased, but the source data may be in a flat file database. Data from flat file databases will have to be parsed to be converted into the form acceptable for the relational database.</p>
-</div>
-<div class="section" id="validation-rules">
-<h3>Validation rules<a class="headerlink" href="#validation-rules" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="validation-rules">
+<h3>Validation rules<a class="headerlink" href="#validation-rules" title="Permalink to this headline">#</a></h3>
 <p>Data can have a limited range of acceptable values. Validation rules restrict data values to within these limitations.</p>
 <p>The limitations may be length, types of characters, range of numerical values or more. The data being sourced needs to validated against these limitation before it can be entered into the database.</p>
 <p>Examples:</p>
@@ -1255,15 +1359,15 @@ requirements.</p>
 <li><p>the quantity of an item in a sale has to be less than the number of that item in stock</p></li>
 <li><p>age must be greater than 0</p></li>
 </ul>
-</div>
-<div class="section" id="data-requirements">
-<h3>Data requirements<a class="headerlink" href="#data-requirements" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="data-requirements">
+<h3>Data requirements<a class="headerlink" href="#data-requirements" title="Permalink to this headline">#</a></h3>
 <p>Before developing a database you will need to identify all the data that will need to be stored in the database. This is <strong>vital</strong>. Once a database is implemented and in use, it is a painstaking task to make significant changes to the data structure.</p>
-</div>
-</div>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="data-management-issues">
-<h2>Data Management Issues<a class="headerlink" href="#data-management-issues" title="Permalink to this headline">¶</a></h2>
+<section id="data-management-issues">
+<h2>Data Management Issues<a class="headerlink" href="#data-management-issues" title="Permalink to this headline">#</a></h2>
 <p>Delivering a data-driven digital solution requires a detailed understanding of the data involved. Therefore it is vital to consider the data that underpins the application and issues related to managing that data.</p>
 <p>These issues fall under four main categories:</p>
 <ul class="simple">
@@ -1272,16 +1376,16 @@ requirements.</p>
 <li><p>Data anomalies</p></li>
 <li><p>Security and protection</p></li>
 </ul>
-<div class="section" id="acquisition">
-<h3>Acquisition<a class="headerlink" href="#acquisition" title="Permalink to this headline">¶</a></h3>
+<section id="acquisition">
+<h3>Acquisition<a class="headerlink" href="#acquisition" title="Permalink to this headline">#</a></h3>
 <p>Data acquisition is the process of collecting and capturing data from various sources and converting it into a usable digital format for further analysis and processing. In acquiring the data that will be the foundation of your solution you need to consider both the timeliness of the data acquisition and the ownership of the data.</p>
-<div class="section" id="timeliness">
-<h4>Timeliness<a class="headerlink" href="#timeliness" title="Permalink to this headline">¶</a></h4>
+<section id="timeliness">
+<h4>Timeliness<a class="headerlink" href="#timeliness" title="Permalink to this headline">#</a></h4>
 <p>Data is a point-in-time measurement, which means there is always a delay between between data creation and dated entry. The impact of data timeliness data depends upon its purpose. A database that records daily temperature has a different timeliness demand than a database that records the core temperature of a nuclear powerplant. Despite both databases recording temperature, a delay of a minute would be of no concern for recording the daily temperature, but could be catastrophic for the nuclear powerplant.</p>
 <p>In exploring the data needs of your solution, consider what delay there may be in your data acquisition, as well as, how much delay can be tolerated.</p>
-</div>
-<div class="section" id="ownership">
-<h4>Ownership<a class="headerlink" href="#ownership" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="ownership">
+<h4>Ownership<a class="headerlink" href="#ownership" title="Permalink to this headline">#</a></h4>
 <p>There are three types of data ownership:</p>
 <ol class="simple">
 <li><p><strong>Personal data ownership</strong>: refers to an individual’s ownership of their personal data, such as their name, address, and contact information.</p></li>
@@ -1289,10 +1393,10 @@ requirements.</p>
 <li><p><strong>Public data ownership</strong>: refers to data that is owned by the public or government, such as census data, public records, and government statistics.</p></li>
 </ol>
 <p>It is possible for the data in a database to contain a mix of ownerships. Each type of data ownership has different handling requirements. These will be addressed in Unit 4. For Unit 2 purposes it is adequate to identify the ownership of the data we are working with.</p>
-</div>
-</div>
-<div class="section" id="data-integrity">
-<h3>Data Integrity<a class="headerlink" href="#data-integrity" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="data-integrity">
+<h3>Data Integrity<a class="headerlink" href="#data-integrity" title="Permalink to this headline">#</a></h3>
 <p>Data integrity means that data is accurate, complete, and consistent throughout its lifecycle, from creation and storage to processing and distribution, ensuring that it is trustworthy and not susceptible to unauthorized modification, deletion, or corruption, and is vital in maintaining data quality and reliability in fields such as healthcare, finance, and research.</p>
 <p>In analysing the data for your solution you should consider both the current data integrity as well as step you need to take to ensure the integrity of the data once it is entered into your system.</p>
 <p>Data integrity depends on the data being:</p>
@@ -1304,9 +1408,9 @@ requirements.</p>
 <li><p><strong>secure</strong>: the data is protected from others who may intentionally corrupt it</p></li>
 <li><p><strong>relevant</strong>: the data has meaning and use in the context of your solution</p></li>
 </ul>
-</div>
-<div class="section" id="data-anomalies">
-<h3>Data Anomalies<a class="headerlink" href="#data-anomalies" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="data-anomalies">
+<h3>Data Anomalies<a class="headerlink" href="#data-anomalies" title="Permalink to this headline">#</a></h3>
 <p>Data anomalies refer to inconsistencies or errors that arise when storing or manipulating data in a database. These anomalies can occur in various forms, such as:</p>
 <ul class="simple">
 <li><p><strong>Insertion anomalies</strong>: Occur when it is not possible to insert data into a database table without also adding additional, unnecessary data.</p></li>
@@ -1315,12 +1419,12 @@ requirements.</p>
 </ul>
 <p>Identifying and resolving these data anomalies is critical for maintaining data integrity in databases and ensuring that the data is accurate, complete, and consistent.</p>
 <p>Proper database design, normalization techniques, and data validation processes can help minimize the occurrence of data anomalies. We will learn about these techniques later in this Unit. For the purposes of the Explore phase, the prevention of such anomalies would form a requirement for your digital solution.</p>
-</div>
-<div class="section" id="security-and-protection">
-<h3>Security and Protection<a class="headerlink" href="#security-and-protection" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="security-and-protection">
+<h3>Security and Protection<a class="headerlink" href="#security-and-protection" title="Permalink to this headline">#</a></h3>
 <p>Security is essential to the success of any information system and the valuable data stored in it.</p>
-<div class="section" id="threats">
-<h4>Threats<a class="headerlink" href="#threats" title="Permalink to this headline">¶</a></h4>
+<section id="threats">
+<h4>Threats<a class="headerlink" href="#threats" title="Permalink to this headline">#</a></h4>
 <p>The potential threats to your digital solution include:</p>
 <ul class="simple">
 <li><p><strong>malware</strong>: software with malicious intent that can infect systems that serve a data-driven application. Malware examples include:</p>
@@ -1337,9 +1441,9 @@ requirements.</p>
 <li><p><strong>data theft and identity theft</strong>: major concerns in relation to information systems and data-driven applications. Systems whose security measures become compromised can be mined for values, sensitive and private data.</p></li>
 <li><p><strong>invasion of privacy</strong>: the security of data access and transmission can lead to invasion of privacy as information may be leaked, gathered, and used for blackmail or unsolicited marketing.</p></li>
 </ul>
-</div>
-<div class="section" id="solutions">
-<h4>Solutions<a class="headerlink" href="#solutions" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="solutions">
+<h4>Solutions<a class="headerlink" href="#solutions" title="Permalink to this headline">#</a></h4>
 <p>Steps can be taken to minimise the risks presented by the potential threats. These include:</p>
 <ul class="simple">
 <li><p><strong>user-level access control</strong>: a security mechanism that limits the access of users to specific resources or functionalities within a database based on their roles or permissions. User-level access control can protect a database in several ways:</p>
@@ -1362,12 +1466,12 @@ requirements.</p>
 </ul>
 </li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 <hr class="docutils" />
-<div class="section" id="adding-to-the-mind-map">
-<h2>Adding to the mind map<a class="headerlink" href="#adding-to-the-mind-map" title="Permalink to this headline">¶</a></h2>
+<section id="adding-to-the-mind-map">
+<h2>Adding to the mind map<a class="headerlink" href="#adding-to-the-mind-map" title="Permalink to this headline">#</a></h2>
 <p>In the Explore Phase you need to consider both programming options and insertion problems and record the identified requirements in the mind map.</p>
 <p><img alt="mind map data" src="../../_images/mm_data.png" /></p>
 <p>You will need to consider the following issues:</p>
@@ -1379,8 +1483,8 @@ requirements.</p>
 <li><p>Relevance: How applicable is the data to what you’re trying to do?</p></li>
 <li><p>Availability: Is the data accessible to those who need it?</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1394,7 +1498,7 @@ requirements.</p>
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./1_explore\6_identify_requirements"
         },
         predefinedOutput: true
@@ -1404,9 +1508,11 @@ requirements.</p>
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="unit_1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1422,28 +1528,32 @@ requirements.</p>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      By Damien Murtagh<br/>
-    
-      <div class="extra_footer">
-        <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Damien Murtagh<br/>
+  
+    <div class="extra_footer">
+      <p>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 </p>
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
