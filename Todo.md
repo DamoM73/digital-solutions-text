@@ -4,7 +4,8 @@
 
 Develop
 
-- UI/UX - Adobe color
+- UI/UX - Adobe colour
+- UI/UX - XD basics
 
 ---
 
@@ -12,7 +13,7 @@ Develop
 
 Explore
 
-- data analysis
+- Data analysis
   - dataset analysis
   - mindmap
 
