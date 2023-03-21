@@ -7,6 +7,12 @@ Develop
 - UI/UX - Adobe colour
 - UI/UX - XD basics
 
+Assessment Structure
+
+- FIA1
+- FIA2
+- FIA3
+
 ---
 
 ## Unit 2
