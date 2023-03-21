@@ -13,6 +13,11 @@ Assessment Structure
 - FIA2
 - FIA3
 
+Applications
+
+- Visual Studio code
+- Draw.io
+
 ---
 
 ## Unit 2
