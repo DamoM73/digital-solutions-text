@@ -1674,13 +1674,18 @@ title="Print to PDF"
 <li><p>Definition of the Field: these details should naturally flow from the ERD</p></li>
 <li><p>Data type: in SQLite we have Text, Integer, Real, and Blob</p></li>
 <li><p>Possible values: taken from sample data</p></li>
-<li><p><a href="https://www.tutorialspoint.com/sqlite/sqlite_constraints.htm" target="_blank">Validation rules</a>:</p>
+<li><p>Validation rules: ensures only correct values can be entered</p>
+<ul>
+<li><p>SQLite has built in <a href="https://www.tutorialspoint.com/sqlite/sqlite_constraints.htm" target="_blank">validation rules</a>:</p>
 <ul>
 <li><p>NOT NULL - Ensures that a column cannot have NULL value</p></li>
 <li><p>DEFAULT Constraint − Provides a default value for a column when none is specified</p></li>
 <li><p>UNIQUE Constraint − Ensures that all values in a column are different</p></li>
 <li><p>PRIMARY Key − Uniquely identifies each row/record in a database table</p></li>
 <li><p>CHECK Constraint − Ensures that all values in a column satisfies certain conditions.</p></li>
+</ul>
+</li>
+<li><p>Data can also be validated in Python before Inserting it into the database.</p></li>
 </ul>
 </li>
 <li><p>Formatting: data can either be stored formatted or can be formatted once retrieved.</p></li>
