@@ -124,9 +124,13 @@ Examples:
 - the quantity of an item in a sale has to be less than the number of that item in stock
 - age must be greater than 0
 
-### Data requirements
+---
 
-Before developing a database you will need to identify all the data that will need to be stored in the database. This is **vital**. Once a database is implemented and in use, it is a painstaking task to make significant changes to the data structure.
+## Data requirements
+
+Before developing a database you will need to identify all the data that will need to be stored in the database. Check that you have access to all the required data and if there is any missing data.
+
+This is **vital**. Once a database is implemented and in use, it is a painstaking task to make significant changes to the data structure.
 
 ---
 
