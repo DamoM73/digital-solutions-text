@@ -86,7 +86,7 @@ In Unit 2 we will working with databases using SQL (Structured Query Language), 
 ---
 ## Other Tools
 ### XMind
-An important step in analysing and planning in Digital Solutions is using mind maps. There are many mind mapping tools available, both desktop and online, but I recommend that we use **<a href="https://xmind.app/" target="_blank">Xmind</a>**. It's open source, has all the feature we need and it's desktop nature means it's always available. 
+An important step in analysing and planning in Digital Solutions is using mind maps. There are many mind mapping tools available, both desktop and online, but I recommend that we use **<a href="https://xmind.app/" target="_blank">Xmind</a>**. The free version has all the features we need. When it asks you to create an account, choose the skip option.
 
 ### Diagrams dot net
 Throughout the course you will need to create a range of diagrams. To do this we will use diagrams dot net. You can use the **<a href="https://www.diagrams.net/" target="_blank">online version</a>**, or you can download the **<a href="http://get.diagrams.net/" target="_blank">desktop version</a>**. I personally use the desktop version to save my diagrams straight to my project folders.
