@@ -32,6 +32,10 @@ Explore
   - dataset analysis
   - mindmap
 
+Develop
+
+- QT Designer Tutorials
+
 Generate
 
 - Scenario
