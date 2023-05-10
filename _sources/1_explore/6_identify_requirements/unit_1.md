@@ -17,7 +17,7 @@ These can include:
 - **User interface** criteria concerning:
   - Hardware or software that are required to be used.
   - The way that a user is to interact with the system.
-  - The specific [UI components](https://www.usability.gov/how-to-and-tools/methods/user-interface-elements.html) that you might use.
+  - The specific **[UI components](https://www.usability.gov/how-to-and-tools/methods/user-interface-elements.html)** that you might use.
 - **Coded components** presented as a list of specific code modules that need to be developed in order to:
   - Process user input
   - Calculate results using data
