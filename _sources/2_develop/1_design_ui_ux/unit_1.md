@@ -106,11 +106,34 @@ Learnability is concerned with how easy a system is to learn.
 
 How intuitive or memorable is the digital solution? Does it match pre-existing patterns in other digital products? For example, does it function like a store if it is a store? Does the game use standardised controls like arrow keys of WASD?
 
-Learnability includes how quickly and easily users can learn to:
+Here are some strategies to enhance UI learnability:
 
-- Find information
-- Complete tasks
-- Navigate the digital solution
+- Clear and Consistent Design:
+  - Use a clean and uncluttered interface with clear visual hierarchy.
+  - Maintain consistency in layout, colours, fonts, and icons throughout the UI.
+  - Avoid using jargon or complex terminology; instead, use simple and familiar language.
+- Intuitive Navigation:
+  - Provide easily identifiable and labelled navigation elements, such as menus or buttons.
+  - Use familiar icons and symbols that the user can quickly associate with specific actions.
+  - Incorporate visual cues, like arrows or highlighted areas, to guide users through different sections or steps.
+- Interactive Tutorials and Onboarding:
+  - Include interactive tutorials or onboarding processes to introduce the UI and its features gradually.
+  - Break down complex tasks into smaller, manageable steps with clear instructions and visual cues.
+  - Provide interactive elements like tooltips or pop-up messages to offer additional guidance when needed.
+- Visual Feedback:
+  - Ensure the UI provides immediate visual feedback when the user interact with elements.
+  - Use animation or colour changes to indicate the success or failure of an action.
+  - Highlight selected or active elements to help users understand their current state.
+- Progress Tracking and Rewards:
+  - Incorporate progress indicators, such as progress bars or completion percentages, to help users track their advancement.
+  - Consider implementing rewards or achievements for completing tasks or reaching milestones to motivate users
+- Responsive Design:
+  - Optimize the UI for different screen sizes and devices to ensure a seamless experience across platforms.
+  - Adapt the UI layout dynamically to fit smaller screens.
+- User Testing and Feedback:
+  - Conduct user testing to gather their feedback on the UI's usability and comprehension.
+  - Actively listen to their suggestions, concerns, and difficulties to make necessary improvements.
+  - Iterate and refine the UI based on the feedback received, continuously striving for better learnability.
 
 ---
 
