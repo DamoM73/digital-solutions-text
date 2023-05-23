@@ -36,11 +36,19 @@ Accessibility guidelines are based on four principles (often referred to as POUR
 - **Understandable:** Information and user interface operation must be understandable. For example, information and instructions are clear and navigation methods are easy to understand and use.
 - **Robust:** Content must be robust enough so that it can be interpreted reliably by a wide variety of users and types of assistive technologies. As technologies evolve, code and content should remain accessible for users of common and current assistive devices and tools.
 
+### Utility
+
+Utility is the ability of the system to provide all the functionality that users need. Does the solution have all the components needed to complete the task.
+
+It matters little that something is easy if it's not what you want. There are many ways that a solution can be useful, and will be strongly influenced by users' needs and the desired impacts of the solution.
+
 ### Effectiveness
 
 Effectiveness is the ability of users to use the system to do the work they need to do.
 
 Users need to be able to interact with a digital solution quickly and easily; and outputs need to be presented clearly in a way that can be easily interpreted by the user. Effectiveness includes reliability, which means the solution needs to be constant, dependable, consistent and repeatable. When you evaluate effectiveness you are looking for things that work or do not work as expected.
+
+Effectiveness interacts closely with utility. It is possible for a solution to have high utility, but be ineffective. For example, a solution may have all the functionality necessary, but be unreliable, overly complex or time-consuming, therefore rendering it ineffective.
 
 ### Safety
 
@@ -93,12 +101,6 @@ Eliminate error-prone conditions.
 Use informative feedback.
 
 - Alerts need to be compatible with, and exist within, the messaging framework
-
-### Utility
-
-Utility is the ability of the system to provide all the functionality that users need.
-
-It matters little that something is easy if it's not what you want. There are many ways that a solution can be useful, and will be strongly influenced by users' needs and the desired impacts of the solution.
 
 ### Learnability
 
