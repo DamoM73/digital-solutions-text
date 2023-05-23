@@ -36,11 +36,19 @@ Accessibility guidelines are based on four principles (often referred to as POUR
 - **Understandable:** Information and user interface operation must be understandable. For example, information and instructions are clear and navigation methods are easy to understand and use.
 - **Robust:** Content must be robust enough so that it can be interpreted reliably by a wide variety of users and types of assistive technologies. As technologies evolve, code and content should remain accessible for users of common and current assistive devices and tools.
 
+### Utility
+
+Utility is the ability of the system to provide all the functionality that users need. Does the solution have all the components needed to complete the task.
+
+It matters little that something is easy if it's not what you want. There are many ways that a solution can be useful, and will be strongly influenced by users' needs and the desired impacts of the solution.
+
 ### Effectiveness
 
 Effectiveness is the ability of users to use the system to do the work they need to do.
 
 Users need to be able to interact with a digital solution quickly and easily; and outputs need to be presented clearly in a way that can be easily interpreted by the user. Effectiveness includes reliability, which means the solution needs to be constant, dependable, consistent and repeatable. When you evaluate effectiveness you are looking for things that work or do not work as expected.
+
+Effectiveness interacts closely with utility. It is possible for a solution to have high utility, but be ineffective. For example, a solution may have all the functionality necessary, but be unreliable, overly complex or time-consuming, therefore rendering it ineffective.
 
 ### Safety
 
@@ -94,23 +102,40 @@ Use informative feedback.
 
 - Alerts need to be compatible with, and exist within, the messaging framework
 
-### Utility
-
-Utility is the ability of the system to provide all the functionality that users need.
-
-It matters little that something is easy if it's not what you want. There are many ways that a solution can be useful, and will be strongly influenced by users' needs and the desired impacts of the solution.
-
 ### Learnability
 
 Learnability is concerned with how easy a system is to learn.
 
 How intuitive or memorable is the digital solution? Does it match pre-existing patterns in other digital products? For example, does it function like a store if it is a store? Does the game use standardised controls like arrow keys of WASD?
 
-Learnability includes how quickly and easily users can learn to:
+Here are some strategies to enhance UI learnability:
 
-- Find information
-- Complete tasks
-- Navigate the digital solution
+- Clear and Consistent Design:
+  - Use a clean and uncluttered interface with clear visual hierarchy.
+  - Maintain consistency in layout, colours, fonts, and icons throughout the UI.
+  - Avoid using jargon or complex terminology; instead, use simple and familiar language.
+- Intuitive Navigation:
+  - Provide easily identifiable and labelled navigation elements, such as menus or buttons.
+  - Use familiar icons and symbols that the user can quickly associate with specific actions.
+  - Incorporate visual cues, like arrows or highlighted areas, to guide users through different sections or steps.
+- Interactive Tutorials and Onboarding:
+  - Include interactive tutorials or onboarding processes to introduce the UI and its features gradually.
+  - Break down complex tasks into smaller, manageable steps with clear instructions and visual cues.
+  - Provide interactive elements like tooltips or pop-up messages to offer additional guidance when needed.
+- Visual Feedback:
+  - Ensure the UI provides immediate visual feedback when the user interact with elements.
+  - Use animation or colour changes to indicate the success or failure of an action.
+  - Highlight selected or active elements to help users understand their current state.
+- Progress Tracking and Rewards:
+  - Incorporate progress indicators, such as progress bars or completion percentages, to help users track their advancement.
+  - Consider implementing rewards or achievements for completing tasks or reaching milestones to motivate users
+- Responsive Design:
+  - Optimize the UI for different screen sizes and devices to ensure a seamless experience across platforms.
+  - Adapt the UI layout dynamically to fit smaller screens.
+- User Testing and Feedback:
+  - Conduct user testing to gather their feedback on the UI's usability and comprehension.
+  - Actively listen to their suggestions, concerns, and difficulties to make necessary improvements.
+  - Iterate and refine the UI based on the feedback received, continuously striving for better learnability.
 
 ---
 
