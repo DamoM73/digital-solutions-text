@@ -1,4 +1,5 @@
 # Explore Introduction
+
 ```{admonition} Tools used to complete the Explore phase:
 :class: attention
 - Mind Maps
