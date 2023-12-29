@@ -2,11 +2,11 @@
 
 The user needs to be central to the development of the User Interface (UI) and the User Experience (UX). They are examples of human-first design, or, to be more specific, user-first design.
 
-This might seem obvious, but the history of digital solutions is littered with strewn with examples of developer-first design, where the solution is based on the developer's needs. Even worst is machine-first design where the solution is based on the needs of the machine running it.
+This might seem obvious, but the history of digital solutions is littered with examples of developer-first design, where the solution is based on the developer's needs. Even worst is machine-first design where the solution is based on the needs of the machine running it.
 
 So what is the difference between UI and UX.
 
-> UX design is all about the overall feel of the experience, while UI design is all about how the product’s interfaces look and function. {cite}`lamprecht_2022_ux`
+
 
 Although they are two distinct fields, they do have significant overlap. For the purposes of this course, we will address them together.
 

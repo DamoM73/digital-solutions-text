@@ -1,6 +1,6 @@
 # Unit 2: Describing the Problem
 
-When describing the problemyou will need to consider the data aspect, in addtion to the requirements from Unit 1.
+When describing the problem you will need to consider the data aspect, in addition to the requirements from Unit 1.
 
 ## The nature of data-driven problems
 >
@@ -8,9 +8,9 @@ When describing the problemyou will need to consider the data aspect, in addtion
 
 Data driven solutions have the following characteristics:
 
-- They access data that has been colleceted
+- They access data that has been collected
   - This data may be collect by the solution or retrieved from a third-party
-  - Quality of the data is important than the quanity
+  - Quality of the data is important than the quantity
 - They query the data
   - The storage of the data must enable the querying of the data
 - They interpret the data
@@ -20,7 +20,7 @@ Data driven solutions have the following characteristics:
 >
 > The DIKW Pyramid is introduced is use to understand the way data is converted to wisdom, which is the one overall goal of data.{cite}`dataliteracy_2020_11`
 
-Data needs to be tranformed to become meaningfoul and meet the needs of the user. This process is represented by the DIKW Pyramid.
+Data needs to be transformed to become meaningful and meet the needs of the user. This process is represented by the DIKW Pyramid.
 
 ![DIWK Pyramid](../assests/DIKWPyramid.png)
 

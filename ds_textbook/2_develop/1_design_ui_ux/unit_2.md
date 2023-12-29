@@ -70,8 +70,7 @@ Balance occurs when the combination of elements on one side of a design appears 
 ![balance](../assets/balance.png)
 
 #### Contrast
-Contrast is used to emphasise an element of the design by using a markedly different colour, size or other characteristic. Contrast 
-is also an important factor for readability of text. It is important that there is high contrast between the colour used for typeface and its background colour.
+Contrast is used to emphasise an element of the design by using a markedly different colour, size or other characteristic. Contrast is also an important factor for readability of text. It is important that there is high contrast between the colour used for typeface and its background colour.
 
 ![contrast](../assets/contrast.png)
 
@@ -81,8 +80,7 @@ Proximity is the positioning of elements near other elements. Proximity is an im
 ![proximity](../assets/proximity.png)
 
 #### Harmony
-Harmony is the pleasing effect of combining similar elements such as using similar colours, typeface and shapes throughout the
-design.
+Harmony is the pleasing effect of combining similar elements such as using similar colours, typeface and shapes throughout the design.
 
 ![harmony](../assets/harmony.png)
 
