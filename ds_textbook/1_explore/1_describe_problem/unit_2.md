@@ -3,7 +3,7 @@
 When describing the problem you will need to consider the data aspect, in addition to the requirements from Unit 1.
 
 ## The nature of data-driven problems
->
+
 > Data can be enormously helpful with formulating policies, providing services and performing government tasks. This is something that we will tackle systematically. Taking a data-driven approach refers to the systematic collection, management, analysis, interpretation and application of data. {cite}`nldigibeter_2019_problem`
 
 Data driven solutions have the following characteristics:
