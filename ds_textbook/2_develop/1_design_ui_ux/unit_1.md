@@ -6,8 +6,6 @@ This might seem obvious, but the history of digital solutions is littered with e
 
 So what is the difference between UI and UX.
 
-
-
 Although they are two distinct fields, they do have significant overlap. For the purposes of this course, we will address them together.
 
 ## Useability Principles

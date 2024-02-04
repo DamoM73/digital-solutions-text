@@ -3,6 +3,7 @@
 Criteria are the characteristics by which a project is evaluated or judged. In Digital Solutions, there are two types of criteria, prescribed and self-determined.
 
 ## Prescribed Criteria
+
 Prescribed criteria are those criteria that are provided or placed on a project by the client. In an educational context like Digital Solutions, these can also be provided by the teacher or detailed in an assignment.
 
 In our workflow, we have already identified our prescribed requirements in the Must column of the Requirements table. So  create a Prescribed-criteria table (see below) and transfer all the requirements from the Must column into the Requirements column.
